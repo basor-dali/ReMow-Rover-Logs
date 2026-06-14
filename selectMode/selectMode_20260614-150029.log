@@ -31,3 +31,8 @@
 2026-06-14 15:10:30,489 - WARNING - No valid heading captured to persist
 2026-06-14 15:10:30,489 - INFO - Waiting for user input...
 2026-06-14 15:10:30,490 - INFO - Background GPS heading capture started
+2026-06-14 15:12:30,530 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 15:12:30,657 - INFO - Background GPS port closed
+2026-06-14 15:12:30,657 - WARNING - No valid heading captured to persist
+2026-06-14 15:12:30,658 - INFO - Waiting for user input...
+2026-06-14 15:12:30,659 - INFO - Background GPS heading capture started

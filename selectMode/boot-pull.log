@@ -16,3 +16,15 @@ Fast-forward
  mode change 100644 => 100755 scripts/safe_pull.sh
  mode change 100644 => 100755 scripts/upload_logs.py
 [2026-06-14T15:11:33-05:00] pull OK on rework-turn-radius
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   46a6036..20faca8  main -> main
+[2026-06-14T15:13:06-05:00] safe_pull start
+[2026-06-14T15:13:07-05:00] local tracked-file changes detected; stashing and dropping
+From github.com:basor-dali/ReMow-Rover-Tests
+ * branch            rework-turn-radius -> FETCH_HEAD
+   6d4ab54..9197890  rework-turn-radius -> origin/rework-turn-radius
+Updating 6d4ab54..9197890
+Fast-forward
+ LAST_PUSH.txt | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+[2026-06-14T15:13:09-05:00] pull OK on rework-turn-radius
