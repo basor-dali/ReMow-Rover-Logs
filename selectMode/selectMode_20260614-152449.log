@@ -1,0 +1,6 @@
+2026-06-14 15:24:50,038 - INFO - Constants module loaded successfully
+2026-06-14 15:24:50,050 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-06-14 15:24:50,050 - INFO - Application started
+2026-06-14 15:24:50,050 - INFO - Starting main function
+2026-06-14 15:24:50,050 - INFO - Waiting for user input...
+2026-06-14 15:24:50,054 - INFO - Background GPS heading capture started
