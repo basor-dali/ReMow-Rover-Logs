@@ -1,0 +1,38 @@
+2026-06-14 14:46:45,310 - INFO - Constants module loaded successfully
+2026-06-14 14:46:45,330 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-06-14 14:46:45,645 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-06-14 14:46:45,950 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-06-14 14:46:45,950 - INFO - Application started
+2026-06-14 14:46:45,950 - INFO - Starting main function
+2026-06-14 14:46:45,950 - INFO - Waiting for user input...
+2026-06-14 14:46:45,955 - INFO - Background GPS heading capture started
+2026-06-14 14:48:45,992 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 14:48:46,039 - INFO - Background GPS port closed
+2026-06-14 14:48:46,040 - WARNING - No valid heading captured to persist
+2026-06-14 14:48:46,041 - INFO - Waiting for user input...
+2026-06-14 14:48:46,043 - INFO - Background GPS heading capture started
+2026-06-14 14:50:46,133 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 14:50:46,242 - INFO - Background GPS port closed
+2026-06-14 14:50:46,242 - WARNING - No valid heading captured to persist
+2026-06-14 14:50:46,242 - INFO - Waiting for user input...
+2026-06-14 14:50:46,244 - INFO - Background GPS heading capture started
+2026-06-14 14:52:46,268 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 14:52:46,284 - INFO - Background GPS port closed
+2026-06-14 14:52:46,284 - WARNING - No valid heading captured to persist
+2026-06-14 14:52:46,284 - INFO - Waiting for user input...
+2026-06-14 14:52:46,285 - INFO - Background GPS heading capture started
+2026-06-14 14:54:46,317 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 14:54:46,369 - INFO - Background GPS port closed
+2026-06-14 14:54:46,369 - WARNING - No valid heading captured to persist
+2026-06-14 14:54:46,369 - INFO - Waiting for user input...
+2026-06-14 14:54:46,370 - INFO - Background GPS heading capture started
+2026-06-14 14:56:46,406 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 14:56:46,447 - INFO - Background GPS port closed
+2026-06-14 14:56:46,447 - WARNING - No valid heading captured to persist
+2026-06-14 14:56:46,447 - INFO - Waiting for user input...
+2026-06-14 14:56:46,448 - INFO - Background GPS heading capture started
+2026-06-14 14:58:46,495 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 14:58:46,649 - INFO - Background GPS port closed
+2026-06-14 14:58:46,649 - WARNING - No valid heading captured to persist
+2026-06-14 14:58:46,649 - INFO - Waiting for user input...
+2026-06-14 14:58:46,650 - INFO - Background GPS heading capture started

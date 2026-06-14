@@ -1,0 +1,21 @@
+2026-06-14 11:48:01,760 - INFO - Constants module loaded successfully
+2026-06-14 11:48:01,783 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-06-14 11:48:02,099 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-06-14 11:48:02,403 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-06-14 11:48:02,404 - INFO - Application started
+2026-06-14 11:48:02,404 - INFO - Starting main function
+2026-06-14 11:48:02,404 - INFO - Waiting for user input...
+2026-06-14 11:48:02,408 - INFO - Background GPS heading capture started
+2026-06-14 11:48:07,016 - INFO - Background GPS port closed
+2026-06-14 11:50:07,862 - INFO - Persisted heading 30.5° (accuracy: 1.0°) captured at 2026-06-14 11:48:06
+2026-06-14 11:50:08,863 - INFO - User selected mode: B
+2026-06-14 11:50:08,864 - INFO - Mode B selected
+2026-06-14 11:50:08,864 - INFO - Enter a 2-digit combination
+2026-06-14 11:50:09,757 - INFO - Digit entered: 5
+2026-06-14 11:50:09,768 - INFO - Digit entered: 5
+2026-06-14 11:50:09,768 - INFO - Combination entered: 55
+2026-06-14 11:50:09,772 - INFO - File with ID 55 found in Record/Data
+2026-06-14 11:50:15,774 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-06-14 11:50:24,283 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-06-14 11:50:24,284 - INFO - Closed GPS port after configuration
+2026-06-14 11:50:24,285 - INFO - Triggering readRecordedRun with combination: 55

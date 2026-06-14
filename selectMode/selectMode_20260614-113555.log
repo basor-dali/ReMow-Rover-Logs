@@ -1,0 +1,32 @@
+2026-06-14 11:35:55,642 - INFO - Constants module loaded successfully
+2026-06-14 11:35:55,663 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-06-14 11:35:55,986 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-06-14 11:35:56,290 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-06-14 11:35:56,290 - INFO - Application started
+2026-06-14 11:35:56,290 - INFO - Starting main function
+2026-06-14 11:35:56,291 - INFO - Waiting for user input...
+2026-06-14 11:35:56,295 - INFO - Background GPS heading capture started
+2026-06-14 11:37:24,267 - INFO - Background GPS port closed
+2026-06-14 11:37:27,038 - INFO - Persisted heading 32.9° (accuracy: 1.0°) captured at 2026-06-14 11:37:24
+2026-06-14 11:37:28,039 - INFO - User selected mode: B
+2026-06-14 11:37:28,040 - INFO - Mode B selected
+2026-06-14 11:37:28,040 - INFO - Enter a 2-digit combination
+2026-06-14 11:37:28,491 - INFO - Digit entered: 5
+2026-06-14 11:37:28,501 - INFO - Digit entered: 5
+2026-06-14 11:37:28,501 - INFO - Combination entered: 55
+2026-06-14 11:37:28,505 - INFO - File with ID 55 found in Record/Data
+2026-06-14 11:37:34,507 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-06-14 11:37:43,017 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-06-14 11:37:43,018 - INFO - Closed GPS port after configuration
+2026-06-14 11:37:43,018 - INFO - Triggering readRecordedRun with combination: 55
+2026-06-14 11:38:02,120 - INFO - Mode D pressed, attempting graceful shutdown...
+2026-06-14 11:38:08,382 - WARNING - Graceful shutdown failed, forcing termination...
+2026-06-14 11:38:08,416 - INFO - GREEN LED forced off after terminating recording process.
+2026-06-14 11:38:08,431 - INFO - User requested stop with 'D'. Returning to main menu.
+2026-06-14 11:38:09,452 - INFO - Waiting for user input...
+2026-06-14 11:38:09,529 - INFO - Background GPS heading capture started
+2026-06-14 11:40:09,575 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-14 11:40:09,707 - INFO - Background GPS port closed
+2026-06-14 11:40:09,779 - INFO - Persisted heading 347.5° (accuracy: 1.0°) captured at 2026-06-14 11:39:52
+2026-06-14 11:40:09,794 - INFO - Waiting for user input...
+2026-06-14 11:40:09,846 - INFO - Background GPS heading capture started

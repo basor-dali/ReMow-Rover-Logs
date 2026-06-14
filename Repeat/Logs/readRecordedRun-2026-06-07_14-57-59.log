@@ -1,0 +1,26 @@
+2026-06-07 14:57:59,617 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-06-07_14-57-59.log
+2026-06-07 14:57:59,618 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-06-07 14:57:59,922 - INFO - Encoders reset to zero
+2026-06-07 14:57:59,922 - INFO - Starting readRecordedRun with combination: 55
+2026-06-07 14:57:59,922 - INFO - Selected most recent recording: 55_20260510-134004_GPSData.csv
+2026-06-07 14:57:59,927 - INFO - GREEN_LED initialized on GPIO 17
+2026-06-07 14:57:59,929 - INFO - Bootstrap: Initialized modifiers with estimate 73.86 mm/(rad/s)
+2026-06-07 14:57:59,929 - INFO - ENU origin from first waypoint: 37.9008713333, -97.66418
+2026-06-07 14:57:59,948 - INFO - goto_positions: M1=1100, M2=1100 [Startup - ensuring neutral position]
+2026-06-07 14:57:59,949 - INFO - Actuators initialized to neutral (1100)
+2026-06-07 14:57:59,949 - INFO - === STATE MACHINE INITIALIZED ===
+2026-06-07 14:57:59,949 - INFO - Start waypoint: East=0.000m, North=0.000m, Heading=1.8°
+2026-06-07 14:57:59,949 - INFO - Initial state: NAVIGATING_TO_START
+2026-06-07 14:57:59,949 - INFO - Navigation timeout: 300.0s
+2026-06-07 14:57:59,949 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-06-07 14:57:59,949 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-06-07 14:58:00,777 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (0.8s)
+2026-06-07 14:58:01,774 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (1.8s)
+2026-06-07 14:58:02,775 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (2.8s)
+2026-06-07 14:58:03,773 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (3.8s)
+2026-06-07 14:58:04,776 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (4.8s)
+2026-06-07 14:58:05,775 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (5.8s)
+2026-06-07 14:58:06,774 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (6.8s)
+2026-06-07 14:58:07,775 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (7.8s)
+2026-06-07 14:58:08,775 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (8.8s)
+2026-06-07 14:58:09,777 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (9.8s)

@@ -1,0 +1,62 @@
+2026-06-07 14:38:42,812 - INFO - Constants module loaded successfully
+2026-06-07 14:38:42,834 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-06-07 14:38:43,151 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-06-07 14:38:43,455 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-06-07 14:38:43,455 - INFO - Application started
+2026-06-07 14:38:43,455 - INFO - Starting main function
+2026-06-07 14:38:43,456 - INFO - Waiting for user input...
+2026-06-07 14:38:43,461 - INFO - Background GPS heading capture started
+2026-06-07 14:38:51,060 - INFO - Background GPS port closed
+2026-06-07 14:38:51,061 - WARNING - No valid heading captured to persist
+2026-06-07 14:38:52,062 - INFO - User selected mode: B
+2026-06-07 14:38:52,062 - INFO - Mode B selected
+2026-06-07 14:38:52,062 - INFO - Enter a 2-digit combination
+2026-06-07 14:38:53,177 - INFO - Digit entered: 5
+2026-06-07 14:38:53,187 - INFO - Digit entered: 5
+2026-06-07 14:38:53,191 - INFO - Combination entered: 55
+2026-06-07 14:38:53,191 - INFO - Data directory does not exist
+2026-06-07 14:38:53,192 - INFO - No file with ID 55 found in Record/Data
+2026-06-07 14:38:55,193 - INFO - Waiting for user input...
+2026-06-07 14:38:55,195 - INFO - Background GPS heading capture started
+2026-06-07 14:40:55,270 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-07 14:40:55,276 - INFO - Background GPS port closed
+2026-06-07 14:40:55,277 - WARNING - No valid heading captured to persist
+2026-06-07 14:40:55,277 - INFO - Waiting for user input...
+2026-06-07 14:40:55,279 - INFO - Background GPS heading capture started
+2026-06-07 14:40:56,437 - INFO - Background GPS port closed
+2026-06-07 14:40:56,437 - WARNING - No valid heading captured to persist
+2026-06-07 14:40:57,438 - INFO - User selected mode: B
+2026-06-07 14:40:57,439 - INFO - Mode B selected
+2026-06-07 14:40:57,439 - INFO - Enter a 2-digit combination
+2026-06-07 14:41:00,978 - INFO - Digit entered: 5
+2026-06-07 14:41:00,989 - INFO - Digit entered: 5
+2026-06-07 14:41:00,989 - INFO - Combination entered: 55
+2026-06-07 14:41:00,989 - INFO - Data directory does not exist
+2026-06-07 14:41:00,989 - INFO - No file with ID 55 found in Record/Data
+2026-06-07 14:41:02,991 - INFO - Waiting for user input...
+2026-06-07 14:41:02,993 - INFO - Background GPS heading capture started
+2026-06-07 14:41:06,634 - INFO - Background GPS port closed
+2026-06-07 14:41:06,634 - WARNING - No valid heading captured to persist
+2026-06-07 14:41:07,636 - INFO - User selected mode: 5
+2026-06-07 14:41:07,636 - INFO - Invalid mode selected
+2026-06-07 14:41:08,636 - INFO - Waiting for user input...
+2026-06-07 14:41:08,637 - INFO - Background GPS heading capture started
+2026-06-07 14:43:08,707 - INFO - Inactivity timeout reached. Restarting menu.
+2026-06-07 14:43:08,847 - INFO - Background GPS port closed
+2026-06-07 14:43:08,847 - WARNING - No valid heading captured to persist
+2026-06-07 14:43:08,847 - INFO - Waiting for user input...
+2026-06-07 14:43:08,849 - INFO - Background GPS heading capture started
+2026-06-07 14:44:15,891 - INFO - Background GPS port closed
+2026-06-07 14:44:15,891 - WARNING - No valid heading captured to persist
+2026-06-07 14:44:16,892 - INFO - User selected mode: B
+2026-06-07 14:44:16,892 - INFO - Mode B selected
+2026-06-07 14:44:16,893 - INFO - Enter a 2-digit combination
+2026-06-07 14:44:17,564 - INFO - Digit entered: 5
+2026-06-07 14:44:17,575 - INFO - Digit entered: 5
+2026-06-07 14:44:17,575 - INFO - Combination entered: 55
+2026-06-07 14:44:17,575 - INFO - File with ID 55 found in Record/Data
+2026-06-07 14:44:23,578 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-06-07 14:44:32,087 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-06-07 14:44:32,090 - INFO - Closed GPS port after configuration
+2026-06-07 14:44:32,090 - INFO - Triggering readRecordedRun with combination: 55
+2026-06-07 14:44:38,291 - INFO - Mode D pressed, attempting graceful shutdown...
