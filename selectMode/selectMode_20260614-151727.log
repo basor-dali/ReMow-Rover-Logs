@@ -6,3 +6,12 @@
 2026-06-14 15:17:28,516 - INFO - Starting main function
 2026-06-14 15:17:28,516 - INFO - Waiting for user input...
 2026-06-14 15:17:28,520 - INFO - Background GPS heading capture started
+2026-06-14 15:17:30,763 - INFO - Background GPS port closed
+2026-06-14 15:17:31,031 - INFO - Persisted heading 48.4° (accuracy: 1.0°) captured at 2026-06-14 15:17:30
+2026-06-14 15:17:32,033 - INFO - User selected mode: B
+2026-06-14 15:17:32,033 - INFO - Mode B selected
+2026-06-14 15:17:32,033 - INFO - Enter a 2-digit combination
+2026-06-14 15:17:32,264 - INFO - Digit entered: 5
+2026-06-14 15:17:32,275 - INFO - Digit entered: 5
+2026-06-14 15:17:32,275 - INFO - Combination entered: 55
+2026-06-14 15:17:32,275 - INFO - File with ID 55 found in Record/Data
