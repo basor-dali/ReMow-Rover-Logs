@@ -6,3 +6,118 @@
 2026-07-05 14:06:17,883 - INFO - Starting main function
 2026-07-05 14:06:17,883 - INFO - Waiting for user input...
 2026-07-05 14:06:17,888 - INFO - Background GPS heading capture started
+2026-07-05 14:09:21,956 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:09:22,039 - INFO - Background GPS port closed
+2026-07-05 14:09:22,040 - WARNING - No valid heading captured to persist
+2026-07-05 14:09:22,040 - INFO - Waiting for user input...
+2026-07-05 14:09:22,041 - INFO - Background GPS heading capture started
+2026-07-05 14:11:22,123 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:11:22,240 - INFO - Background GPS port closed
+2026-07-05 14:11:22,241 - WARNING - No valid heading captured to persist
+2026-07-05 14:11:22,241 - INFO - Waiting for user input...
+2026-07-05 14:11:22,243 - INFO - Background GPS heading capture started
+2026-07-05 14:13:22,262 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:13:22,265 - INFO - Background GPS port closed
+2026-07-05 14:13:22,265 - WARNING - No valid heading captured to persist
+2026-07-05 14:13:22,265 - INFO - Waiting for user input...
+2026-07-05 14:13:22,267 - INFO - Background GPS heading capture started
+2026-07-05 14:15:22,269 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:15:22,434 - INFO - Background GPS port closed
+2026-07-05 14:15:22,435 - WARNING - No valid heading captured to persist
+2026-07-05 14:15:22,435 - INFO - Waiting for user input...
+2026-07-05 14:15:22,436 - INFO - Background GPS heading capture started
+2026-07-05 14:17:22,437 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:17:22,440 - INFO - Background GPS port closed
+2026-07-05 14:17:22,440 - WARNING - No valid heading captured to persist
+2026-07-05 14:17:22,440 - INFO - Waiting for user input...
+2026-07-05 14:17:22,442 - INFO - Background GPS heading capture started
+2026-07-05 14:19:22,442 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:19:22,450 - INFO - Background GPS port closed
+2026-07-05 14:19:22,450 - WARNING - No valid heading captured to persist
+2026-07-05 14:19:22,450 - INFO - Waiting for user input...
+2026-07-05 14:19:22,451 - INFO - Background GPS heading capture started
+2026-07-05 14:21:22,453 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:21:22,458 - INFO - Background GPS port closed
+2026-07-05 14:21:22,458 - WARNING - No valid heading captured to persist
+2026-07-05 14:21:22,458 - INFO - Waiting for user input...
+2026-07-05 14:21:22,460 - INFO - Background GPS heading capture started
+2026-07-05 14:23:22,472 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:23:22,631 - INFO - Background GPS port closed
+2026-07-05 14:23:22,631 - WARNING - No valid heading captured to persist
+2026-07-05 14:23:22,632 - INFO - Waiting for user input...
+2026-07-05 14:23:22,633 - INFO - Background GPS heading capture started
+2026-07-05 14:25:22,643 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:25:22,650 - INFO - Background GPS port closed
+2026-07-05 14:25:22,651 - WARNING - No valid heading captured to persist
+2026-07-05 14:25:22,651 - INFO - Waiting for user input...
+2026-07-05 14:25:22,652 - INFO - Background GPS heading capture started
+2026-07-05 14:27:22,652 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:27:22,655 - INFO - Background GPS port closed
+2026-07-05 14:27:22,655 - WARNING - No valid heading captured to persist
+2026-07-05 14:27:22,656 - INFO - Waiting for user input...
+2026-07-05 14:27:22,657 - INFO - Background GPS heading capture started
+2026-07-05 14:29:22,673 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:29:22,830 - INFO - Background GPS port closed
+2026-07-05 14:29:22,831 - WARNING - No valid heading captured to persist
+2026-07-05 14:29:22,831 - INFO - Waiting for user input...
+2026-07-05 14:29:22,832 - INFO - Background GPS heading capture started
+2026-07-05 14:31:22,848 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:31:22,855 - INFO - Background GPS port closed
+2026-07-05 14:31:22,855 - WARNING - No valid heading captured to persist
+2026-07-05 14:31:22,855 - INFO - Waiting for user input...
+2026-07-05 14:31:22,857 - INFO - Background GPS heading capture started
+2026-07-05 14:33:22,857 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:33:23,023 - INFO - Background GPS port closed
+2026-07-05 14:33:23,023 - WARNING - No valid heading captured to persist
+2026-07-05 14:33:23,023 - INFO - Waiting for user input...
+2026-07-05 14:33:23,025 - INFO - Background GPS heading capture started
+2026-07-05 14:35:23,024 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:35:23,036 - INFO - Background GPS port closed
+2026-07-05 14:35:23,037 - WARNING - No valid heading captured to persist
+2026-07-05 14:35:23,037 - INFO - Waiting for user input...
+2026-07-05 14:35:23,038 - INFO - Background GPS heading capture started
+2026-07-05 14:37:23,156 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:37:23,215 - INFO - Background GPS port closed
+2026-07-05 14:37:23,216 - WARNING - No valid heading captured to persist
+2026-07-05 14:37:23,216 - INFO - Waiting for user input...
+2026-07-05 14:37:23,218 - INFO - Background GPS heading capture started
+2026-07-05 14:39:23,217 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:39:23,229 - INFO - Background GPS port closed
+2026-07-05 14:39:23,229 - WARNING - No valid heading captured to persist
+2026-07-05 14:39:23,229 - INFO - Waiting for user input...
+2026-07-05 14:39:23,231 - INFO - Background GPS heading capture started
+2026-07-05 14:41:23,236 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:41:23,239 - INFO - Background GPS port closed
+2026-07-05 14:41:23,239 - WARNING - No valid heading captured to persist
+2026-07-05 14:41:23,240 - INFO - Waiting for user input...
+2026-07-05 14:41:23,241 - INFO - Background GPS heading capture started
+2026-07-05 14:43:23,253 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:43:23,415 - INFO - Background GPS port closed
+2026-07-05 14:43:23,415 - WARNING - No valid heading captured to persist
+2026-07-05 14:43:23,415 - INFO - Waiting for user input...
+2026-07-05 14:43:23,417 - INFO - Background GPS heading capture started
+2026-07-05 14:45:23,536 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:45:23,619 - INFO - Background GPS port closed
+2026-07-05 14:45:23,620 - WARNING - No valid heading captured to persist
+2026-07-05 14:45:23,620 - INFO - Waiting for user input...
+2026-07-05 14:45:23,622 - INFO - Background GPS heading capture started
+2026-07-05 14:47:23,634 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:47:23,638 - INFO - Background GPS port closed
+2026-07-05 14:47:23,638 - WARNING - No valid heading captured to persist
+2026-07-05 14:47:23,638 - INFO - Waiting for user input...
+2026-07-05 14:47:23,640 - INFO - Background GPS heading capture started
+2026-07-05 14:49:23,641 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:49:23,645 - INFO - Background GPS port closed
+2026-07-05 14:49:23,646 - WARNING - No valid heading captured to persist
+2026-07-05 14:49:23,646 - INFO - Waiting for user input...
+2026-07-05 14:49:23,647 - INFO - Background GPS heading capture started
+2026-07-05 14:51:23,652 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:51:23,657 - INFO - Background GPS port closed
+2026-07-05 14:51:23,657 - WARNING - No valid heading captured to persist
+2026-07-05 14:51:23,657 - INFO - Waiting for user input...
+2026-07-05 14:51:23,659 - INFO - Background GPS heading capture started
+2026-07-05 14:53:23,659 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-05 14:53:23,829 - INFO - Background GPS port closed
+2026-07-05 14:53:23,830 - WARNING - No valid heading captured to persist
+2026-07-05 14:53:23,830 - INFO - Waiting for user input...
+2026-07-05 14:53:23,832 - INFO - Background GPS heading capture started
