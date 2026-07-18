@@ -205,3 +205,11 @@ Fast-forward
  july-5-2026-fix.md           | 111 ++++++++++++++++++-------------------------
  5 files changed, 62 insertions(+), 187 deletions(-)
 [2026-07-18T11:27:37-05:00] pull OK on rework-turn-radius
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   c5a99cc..c983c4e  main -> main
+[2026-07-18T11:33:08-05:00] safe_pull start
+[2026-07-18T11:33:10-05:00] local tracked-file changes detected; stashing and dropping
+From github.com:basor-dali/ReMow-Rover-Tests
+ * branch            rework-turn-radius -> FETCH_HEAD
+Already up to date.
+[2026-07-18T11:33:12-05:00] pull OK on rework-turn-radius
