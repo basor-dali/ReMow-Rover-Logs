@@ -165,3 +165,19 @@ From github.com:basor-dali/ReMow-Rover-Tests
  * branch            rework-turn-radius -> FETCH_HEAD
 Already up to date.
 [2026-07-18T09:57:18-05:00] pull OK on rework-turn-radius
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   4f1f885..5fb2d60  main -> main
+[2026-07-18T10:20:03-05:00] safe_pull start
+[2026-07-18T10:20:06-05:00] local tracked-file changes detected; stashing and dropping
+From github.com:basor-dali/ReMow-Rover-Tests
+ * branch            rework-turn-radius -> FETCH_HEAD
+   e14c7d8..8b0444e  rework-turn-radius -> origin/rework-turn-radius
+Updating e14c7d8..8b0444e
+Fast-forward
+ Repeat/pathModel.py          | 57 +++++++++++++++++++++++---------
+ Repeat/readRecordedRun.py    |  5 +--
+ Repeat/test_path_follower.py | 75 ++++++++++++++++++++++++++++++++++++++++++
+ constants.py                 |  1 +
+ july-5-2026-fix.md           | 78 +++++++++++++++++++++++++++++++-------------
+ 5 files changed, 176 insertions(+), 40 deletions(-)
+[2026-07-18T10:20:09-05:00] pull OK on rework-turn-radius
