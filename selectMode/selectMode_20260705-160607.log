@@ -1,3 +1,36 @@
 2026-07-05 16:06:07,100 - INFO - Constants module loaded successfully
 2026-07-05 16:06:07,118 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
 2026-07-05 16:06:07,431 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-07-05 16:06:07,736 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-07-05 16:06:07,736 - INFO - Application started
+2026-07-05 16:06:07,736 - INFO - Starting main function
+2026-07-05 16:06:07,736 - INFO - Waiting for user input...
+2026-07-05 16:06:07,741 - INFO - Background GPS heading capture started
+2026-07-18 09:53:19,005 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-18 09:53:19,064 - INFO - Background GPS port closed
+2026-07-18 09:53:19,065 - WARNING - No valid heading captured to persist
+2026-07-18 09:53:19,065 - INFO - Waiting for user input...
+2026-07-18 09:53:19,066 - INFO - Background GPS heading capture started
+2026-07-18 09:55:19,126 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-18 09:55:19,204 - INFO - Background GPS port closed
+2026-07-18 09:55:19,204 - WARNING - No valid heading captured to persist
+2026-07-18 09:55:19,204 - INFO - Waiting for user input...
+2026-07-18 09:55:19,205 - INFO - Background GPS heading capture started
+2026-07-18 09:55:42,829 - INFO - Background GPS port closed
+2026-07-18 09:55:42,829 - WARNING - No valid heading captured to persist
+2026-07-18 09:55:43,830 - INFO - User selected mode: B
+2026-07-18 09:55:43,830 - INFO - Mode B selected
+2026-07-18 09:55:43,830 - INFO - Enter a 2-digit combination
+2026-07-18 09:55:43,841 - INFO - Digit entered: 5
+2026-07-18 09:55:43,851 - INFO - Digit entered: 5
+2026-07-18 09:55:43,851 - INFO - Combination entered: 55
+2026-07-18 09:55:43,851 - INFO - File with ID 55 found in Record/Data
+2026-07-18 09:56:24,853 - WARNING - safe_pull failed (ignored): Command '['/home/dali/Documents/ReMow-Rover-Tests/scripts/safe_pull.sh']' timed out after 34.99996434099998 seconds
+2026-07-18 09:56:24,855 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-07-18 09:56:33,364 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-07-18 09:56:33,365 - INFO - Closed GPS port after configuration
+2026-07-18 09:56:33,365 - INFO - Triggering readRecordedRun with combination: 55
+2026-07-18 09:57:16,273 - INFO - Subprocess exited with code: 0
+2026-07-18 09:57:17,334 - INFO - Waiting for user input...
+2026-07-18 09:57:17,401 - INFO - Background GPS heading capture started
+2026-07-18 09:57:28,652 - INFO - Background GPS port closed
