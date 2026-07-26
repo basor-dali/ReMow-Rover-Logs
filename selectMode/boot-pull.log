@@ -240,3 +240,17 @@ From github.com:basor-dali/ReMow-Rover-Tests
  * branch            rework-turn-radius -> FETCH_HEAD
 Already up to date.
 [2026-07-26T10:38:16-05:00] pull OK on rework-turn-radius
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   20715d4..7846f5c  main -> main
+[2026-07-26T11:57:09-05:00] safe_pull start
+From github.com:basor-dali/ReMow-Rover-Tests
+ * branch            rework-turn-radius -> FETCH_HEAD
+   0e9461c..f4b8fbe  rework-turn-radius -> origin/rework-turn-radius
+Updating 0e9461c..f4b8fbe
+Fast-forward
+ Repeat/pathModel.py          | 156 ++++++++++++++++++++++++++++++----------
+ Repeat/readRecordedRun.py    |   5 +-
+ Repeat/test_path_follower.py | 168 +++++++++++++++++++++++++++++++++++++++++--
+ constants.py                 |   5 +-
+ 4 files changed, 289 insertions(+), 45 deletions(-)
+[2026-07-26T11:57:16-05:00] pull OK on rework-turn-radius
