@@ -232,3 +232,11 @@ Fast-forward
  7 files changed, 381 insertions(+), 65 deletions(-)
  create mode 100644 Repeat/test_heading_integrity.py
 [2026-07-18T12:33:07-05:00] pull OK on rework-turn-radius
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   347058f..20715d4  main -> main
+[2026-07-26T10:38:13-05:00] safe_pull start
+[2026-07-26T10:38:14-05:00] local tracked-file changes detected; stashing and dropping
+From github.com:basor-dali/ReMow-Rover-Tests
+ * branch            rework-turn-radius -> FETCH_HEAD
+Already up to date.
+[2026-07-26T10:38:16-05:00] pull OK on rework-turn-radius
