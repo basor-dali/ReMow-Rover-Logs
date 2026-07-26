@@ -1,2 +1,92 @@
 2026-07-26 11:57:16,036 - INFO - Constants module loaded successfully
 2026-07-26 11:57:16,053 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-07-26 11:57:16,370 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-07-26 11:57:16,675 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-07-26 11:57:16,675 - INFO - Application started
+2026-07-26 11:57:16,675 - INFO - Starting main function
+2026-07-26 11:57:16,675 - INFO - Waiting for user input...
+2026-07-26 11:57:16,679 - INFO - Background GPS heading capture started
+2026-07-26 12:45:34,946 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:45:34,974 - INFO - Background GPS port closed
+2026-07-26 12:45:34,975 - WARNING - No valid heading captured to persist
+2026-07-26 12:45:34,975 - INFO - Waiting for user input...
+2026-07-26 12:45:34,976 - INFO - Background GPS heading capture started
+2026-07-26 12:47:35,036 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:47:35,066 - INFO - Background GPS port closed
+2026-07-26 12:47:35,066 - WARNING - No valid heading captured to persist
+2026-07-26 12:47:35,066 - INFO - Waiting for user input...
+2026-07-26 12:47:35,068 - INFO - Background GPS heading capture started
+2026-07-26 12:49:35,118 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:49:35,231 - INFO - Background GPS port closed
+2026-07-26 12:49:35,231 - WARNING - No valid heading captured to persist
+2026-07-26 12:49:35,231 - INFO - Waiting for user input...
+2026-07-26 12:49:35,233 - INFO - Background GPS heading capture started
+2026-07-26 12:51:35,280 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:51:35,426 - INFO - Background GPS port closed
+2026-07-26 12:51:35,426 - WARNING - No valid heading captured to persist
+2026-07-26 12:51:35,426 - INFO - Waiting for user input...
+2026-07-26 12:51:35,428 - INFO - Background GPS heading capture started
+2026-07-26 12:53:35,480 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:53:35,626 - INFO - Background GPS port closed
+2026-07-26 12:53:35,626 - WARNING - No valid heading captured to persist
+2026-07-26 12:53:35,626 - INFO - Waiting for user input...
+2026-07-26 12:53:35,628 - INFO - Background GPS heading capture started
+2026-07-26 12:55:35,681 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:55:35,829 - INFO - Background GPS port closed
+2026-07-26 12:55:35,829 - WARNING - No valid heading captured to persist
+2026-07-26 12:55:35,829 - INFO - Waiting for user input...
+2026-07-26 12:55:35,831 - INFO - Background GPS heading capture started
+2026-07-26 12:57:35,882 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:57:36,033 - INFO - Background GPS port closed
+2026-07-26 12:57:36,033 - WARNING - No valid heading captured to persist
+2026-07-26 12:57:36,033 - INFO - Waiting for user input...
+2026-07-26 12:57:36,034 - INFO - Background GPS heading capture started
+2026-07-26 12:59:36,083 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 12:59:36,232 - INFO - Background GPS port closed
+2026-07-26 12:59:36,232 - WARNING - No valid heading captured to persist
+2026-07-26 12:59:36,232 - INFO - Waiting for user input...
+2026-07-26 12:59:36,233 - INFO - Background GPS heading capture started
+2026-07-26 13:01:36,283 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 13:01:36,429 - INFO - Background GPS port closed
+2026-07-26 13:01:36,429 - WARNING - No valid heading captured to persist
+2026-07-26 13:01:36,429 - INFO - Waiting for user input...
+2026-07-26 13:01:36,431 - INFO - Background GPS heading capture started
+2026-07-26 13:03:36,485 - INFO - Inactivity timeout reached. Restarting menu.
+2026-07-26 13:03:36,633 - INFO - Background GPS port closed
+2026-07-26 13:03:36,633 - WARNING - No valid heading captured to persist
+2026-07-26 13:03:36,633 - INFO - Waiting for user input...
+2026-07-26 13:03:36,634 - INFO - Background GPS heading capture started
+2026-07-26 13:04:40,480 - INFO - Background GPS port closed
+2026-07-26 13:04:40,481 - WARNING - No valid heading captured to persist
+2026-07-26 13:04:41,482 - INFO - User selected mode: B
+2026-07-26 13:04:41,482 - INFO - Mode B selected
+2026-07-26 13:04:41,482 - INFO - Enter a 2-digit combination
+2026-07-26 13:04:42,815 - INFO - Digit entered: 5
+2026-07-26 13:04:42,825 - INFO - Digit entered: 5
+2026-07-26 13:04:42,825 - INFO - Combination entered: 55
+2026-07-26 13:04:42,825 - INFO - File with ID 55 found in Record/Data
+2026-07-26 13:05:23,827 - WARNING - safe_pull failed (ignored): Command '['/home/dali/Documents/ReMow-Rover-Tests/scripts/safe_pull.sh']' timed out after 34.99996642499991 seconds
+2026-07-26 13:05:23,829 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-07-26 13:05:32,339 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-07-26 13:05:32,339 - INFO - Closed GPS port after configuration
+2026-07-26 13:05:32,340 - INFO - Triggering readRecordedRun with combination: 55
+2026-07-26 13:06:05,322 - INFO - Mode D pressed, attempting graceful shutdown...
+2026-07-26 13:06:11,573 - WARNING - Graceful shutdown failed, forcing termination...
+2026-07-26 13:06:11,613 - INFO - GREEN LED forced off after terminating recording process.
+2026-07-26 13:06:11,633 - INFO - User requested stop with 'D'. Returning to main menu.
+2026-07-26 13:06:12,674 - INFO - Waiting for user input...
+2026-07-26 13:06:12,731 - INFO - Background GPS heading capture started
+2026-07-26 13:06:15,017 - INFO - Background GPS port closed
+2026-07-26 13:06:15,042 - WARNING - No valid heading captured to persist
+2026-07-26 13:06:16,109 - INFO - User selected mode: B
+2026-07-26 13:06:16,119 - INFO - Mode B selected
+2026-07-26 13:06:16,134 - INFO - Enter a 2-digit combination
+2026-07-26 13:06:16,419 - INFO - Digit entered: 5
+2026-07-26 13:06:16,457 - INFO - Digit entered: 5
+2026-07-26 13:06:16,472 - INFO - Combination entered: 55
+2026-07-26 13:06:16,513 - INFO - File with ID 55 found in Record/Data
+2026-07-26 13:06:57,625 - WARNING - safe_pull failed (ignored): Command '['/home/dali/Documents/ReMow-Rover-Tests/scripts/safe_pull.sh']' timed out after 34.99997105500006 seconds
+2026-07-26 13:06:57,675 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-07-26 13:07:06,310 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-07-26 13:07:06,376 - INFO - Closed GPS port after configuration
+2026-07-26 13:07:06,394 - INFO - Triggering readRecordedRun with combination: 55

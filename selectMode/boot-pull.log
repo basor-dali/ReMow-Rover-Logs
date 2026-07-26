@@ -254,3 +254,11 @@ Fast-forward
  constants.py                 |   5 +-
  4 files changed, 289 insertions(+), 45 deletions(-)
 [2026-07-26T11:57:16-05:00] pull OK on rework-turn-radius
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   7846f5c..24dc8d4  main -> main
+[2026-07-26T13:07:59-05:00] safe_pull start
+[2026-07-26T13:08:00-05:00] local tracked-file changes detected; stashing and dropping
+From github.com:basor-dali/ReMow-Rover-Tests
+ * branch            rework-turn-radius -> FETCH_HEAD
+Already up to date.
+[2026-07-26T13:08:01-05:00] pull OK on rework-turn-radius
