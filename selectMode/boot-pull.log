@@ -353,3 +353,16 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 From github.com:basor-dali/ReMow-Rover-Tests
  * [new branch]      fix/gary-tangent-not-capture -> origin/fix/gary-tangent-not-capture
 [2026-08-23T16:20:28-05:00] already at pinned commit 9a561e4 (main)
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   d2a05d9..135c627  main -> main
+                                                                                                                                     [2026-08-23T16:38:05-05:00] safe_pull start
+[2026-08-23T16:38:06-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   45abf71..8e733ba  main       -> origin/main
+   45a02a7..5251d1d  fix/gary-tangent-not-capture -> origin/fix/gary-tangent-not-capture
+Updating 45abf71..8e733ba
+Fast-forward
+ Repeat/test_guidance.py | 2 +-
+ constants.py            | 9 ++++++++-
+ 2 files changed, 9 insertions(+), 2 deletions(-)
+[2026-08-23T16:38:11-05:00] pull OK -- following branch main, was 45abf71, now 8e733ba

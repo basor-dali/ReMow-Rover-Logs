@@ -6,3 +6,41 @@
 2026-08-23 16:20:27,166 - INFO - Starting main function
 2026-08-23 16:20:27,166 - INFO - Waiting for user input...
 2026-08-23 16:20:27,170 - INFO - Background GPS heading capture started
+2026-08-23 16:30:27,270 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-23 16:30:27,295 - INFO - Background GPS port closed
+2026-08-23 16:30:27,296 - WARNING - No valid heading captured to persist
+2026-08-23 16:30:27,296 - INFO - Waiting for user input...
+2026-08-23 16:30:27,297 - INFO - Background GPS heading capture started
+2026-08-23 16:32:27,360 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-23 16:32:27,435 - INFO - Background GPS port closed
+2026-08-23 16:32:27,435 - WARNING - No valid heading captured to persist
+2026-08-23 16:32:27,435 - INFO - Waiting for user input...
+2026-08-23 16:32:27,437 - INFO - Background GPS heading capture started
+2026-08-23 16:33:58,896 - INFO - Background GPS port closed
+2026-08-23 16:33:58,925 - INFO - Persisted heading 49.3° (accuracy: 1.0°) captured at 2026-08-23 16:33:58
+2026-08-23 16:33:59,926 - INFO - User selected mode: B
+2026-08-23 16:33:59,926 - INFO - Mode B selected
+2026-08-23 16:33:59,926 - INFO - Enter a 2-digit combination
+2026-08-23 16:33:59,937 - INFO - Digit entered: 5
+2026-08-23 16:33:59,947 - INFO - Digit entered: 5
+2026-08-23 16:33:59,947 - INFO - Combination entered: 55
+2026-08-23 16:33:59,947 - INFO - File with ID 55 found in Record/Data
+2026-08-23 16:34:05,953 - INFO - Deployed version:  @ 
+2026-08-23 16:34:05,955 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-08-23 16:34:14,465 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-08-23 16:34:14,466 - INFO - Closed GPS port after configuration
+2026-08-23 16:34:14,466 - INFO - Triggering readRecordedRun with combination: 55
+2026-08-23 16:34:35,623 - INFO - Subprocess exited with code: 0
+2026-08-23 16:34:36,669 - INFO - Waiting for user input...
+2026-08-23 16:34:36,721 - INFO - Background GPS heading capture started
+2026-08-23 16:34:52,113 - INFO - Background GPS port closed
+2026-08-23 16:34:52,175 - INFO - Persisted heading 86.1° (accuracy: 1.0°) captured at 2026-08-23 16:34:48
+2026-08-23 16:34:53,246 - INFO - User selected mode: D
+2026-08-23 16:34:53,262 - INFO - Mode D selected
+2026-08-23 16:34:54,282 - INFO - Waiting for user input...
+2026-08-23 16:34:54,335 - INFO - Background GPS heading capture started
+2026-08-23 16:36:54,352 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-23 16:36:54,643 - INFO - Background GPS port closed
+2026-08-23 16:36:55,686 - INFO - Persisted heading 298.9° (accuracy: 1.0°) captured at 2026-08-23 16:35:24
+2026-08-23 16:36:55,701 - INFO - Waiting for user input...
+2026-08-23 16:36:55,783 - INFO - Background GPS heading capture started
