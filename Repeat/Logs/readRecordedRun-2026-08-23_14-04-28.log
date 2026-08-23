@@ -1,0 +1,38 @@
+2026-08-23 14:04:28,404 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-08-23_14-04-28.log
+2026-08-23 14:04:28,406 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-23 14:04:28,708 - INFO - Encoders reset to zero
+2026-08-23 14:04:28,709 - INFO - Starting readRecordedRun with combination: 55
+2026-08-23 14:04:28,709 - INFO - Selected most recent recording: 55_20260510-134004_GPSData.csv
+2026-08-23 14:04:28,713 - INFO - GREEN_LED initialized on GPIO 17
+2026-08-23 14:04:28,720 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-08-23_14-04-28_navigation_log.csv
+2026-08-23 14:04:28,721 - INFO - ENU origin from first waypoint: 37.9008713333, -97.66418
+2026-08-23 14:04:28,800 - INFO - Path model: 42 rows -> 37 points -> 36 segments, 40.7m total, leading dwell 3.0s
+2026-08-23 14:04:28,801 - INFO - === GUIDANCE: tangent_pose === tangent_window=3.0m lookahead=2.0m+0.8s*v [1.5-5.0m] kappa_max=1.00/m slew=0.6/m/s deadband=0.04/m
+2026-08-23 14:04:28,801 - WARNING - UNVALIDATED GUIDANCE MODE 'tangent_pose' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-08-23 14:04:28,801 - WARNING - tangent_pose OPEN DEFECT: large-offset entry may not converge. In simulation, starting ~2m off the path with ~45deg heading error leaves 2.40m residual cross-track and commands ZERO reversals (pure_pursuit recovers the same case to 0.05m). START ON OR NEAR THE PATH, roughly along it, and ABORT if cross-track is not closing. See docs/GUIDANCE.md sections 10 and 12.
+2026-08-23 14:04:28,815 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-08-23 14:04:28,815 - INFO - Actuators initialized to neutral (1100)
+2026-08-23 14:04:28,815 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-08-23 14:04:28,815 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a tangent_pose TRACK test.
+2026-08-23 14:04:28,816 - WARNING - Refuses to start if cross-track exceeds 1.00m (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-08-23 14:04:28,816 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-08-23 14:04:28,816 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-08-23 14:04:28,816 - INFO - First segment: heading 3.8°, length 0.67m; path ends at (2.81E, 0.81N)
+2026-08-23 14:04:28,816 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-08-23 14:04:28,816 - INFO - Acquire timeout: 300.0s
+2026-08-23 14:04:28,816 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-08-23 14:04:28,816 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-08-23 14:04:28,887 - INFO - GPS status: relPosValid=1, carrSoln=2, headingValid=1 (0.1s)
+2026-08-23 14:04:28,888 - INFO - === GPS RTK FIXED — ready to navigate (0.1s) ===
+2026-08-23 14:04:28,894 - INFO - Using persisted heading from driving to work area: 65.99° (captured at 2026-08-23 14:04:10)
+2026-08-23 14:04:29,111 - INFO - 2026-08-23 14:04:29 Initial Moving Baseline state: active
+2026-08-23 14:04:29,111 - INFO - 2026-08-23 14:04:29 Initial carrier solution: fixed
+2026-08-23 14:04:29,118 - INFO - 2026-08-23 14:04:29 [3.4 OBSERVED] current_turn_radius: infm
+2026-08-23 14:04:29,119 - INFO - 2026-08-23 14:04:29 [3.4 OBSERVED] turn_direction: STRAIGHT
+2026-08-23 14:04:29,119 - INFO - 2026-08-23 14:04:29 [3.4 OBSERVED] estimated left/right wheel speeds: 0.004, 0.004 m/s
+2026-08-23 14:04:29,123 - INFO - 2026-08-23 14:04:29 [STATE] Current state: FOLLOWING_PATH
+2026-08-23 14:04:29,123 - ERROR - 2026-08-23 14:04:29 [FOLLOW] SAFETY ABORT: skip-acquire refused: mower is 4.46m from the recorded route, limit 1.00m (path_resume_max_cross_track). Park the mower on the path and retry, or set path_resume_nearest=False to drive to the recorded start instead.
+2026-08-23 14:04:29,145 - INFO - Actuators commanded to neutral (1100) -- Follower safety abort
+2026-08-23 14:04:29,166 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-08-23 14:04:29,169 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-08-23 14:04:29,170 - INFO - GREEN_LED GPIO cleaned up successfully
