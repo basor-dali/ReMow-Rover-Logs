@@ -1,0 +1,43 @@
+2026-08-23 11:30:26,832 - INFO - Constants module loaded successfully
+2026-08-23 11:30:26,838 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-23 11:30:27,153 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-08-23 11:30:27,457 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-08-23 11:30:27,457 - INFO - Application started
+2026-08-23 11:30:27,457 - INFO - Starting main function
+2026-08-23 11:30:27,457 - INFO - Waiting for user input...
+2026-08-23 11:30:27,462 - INFO - Background GPS heading capture started
+2026-08-23 11:30:29,875 - INFO - Background GPS port closed
+2026-08-23 11:30:30,097 - INFO - Persisted heading 74.6° (accuracy: 1.0°) captured at 2026-08-23 11:30:29
+2026-08-23 11:30:31,099 - INFO - User selected mode: B
+2026-08-23 11:30:31,099 - INFO - Mode B selected
+2026-08-23 11:30:31,099 - INFO - Enter a 2-digit combination
+2026-08-23 11:30:31,109 - INFO - Digit entered: 5
+2026-08-23 11:30:31,120 - INFO - Digit entered: 5
+2026-08-23 11:30:31,120 - INFO - Combination entered: 55
+2026-08-23 11:30:31,120 - INFO - File with ID 55 found in Record/Data
+2026-08-23 11:30:37,125 - INFO - Deployed version:  @ 
+2026-08-23 11:30:37,127 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-08-23 11:31:42,400 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-08-23 11:31:42,400 - INFO - Closed GPS port after configuration
+2026-08-23 11:31:42,400 - INFO - Triggering readRecordedRun with combination: 55
+2026-08-23 11:31:56,347 - INFO - Subprocess exited with code: 0
+2026-08-23 11:31:57,388 - INFO - Waiting for user input...
+2026-08-23 11:31:57,445 - INFO - Background GPS heading capture started
+2026-08-23 11:32:54,169 - INFO - Background GPS port closed
+2026-08-23 11:32:54,241 - INFO - Persisted heading 74.4° (accuracy: 1.0°) captured at 2026-08-23 11:32:53
+2026-08-23 11:32:55,308 - INFO - User selected mode: B
+2026-08-23 11:32:55,323 - INFO - Mode B selected
+2026-08-23 11:32:55,343 - INFO - Enter a 2-digit combination
+2026-08-23 11:32:58,372 - INFO - Digit entered: 5
+2026-08-23 11:32:58,408 - INFO - Digit entered: 5
+2026-08-23 11:32:58,423 - INFO - Combination entered: 55
+2026-08-23 11:32:58,469 - INFO - File with ID 55 found in Record/Data
+2026-08-23 11:33:04,693 - INFO - Deployed version:  @ 
+2026-08-23 11:33:04,750 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-08-23 11:33:13,412 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-08-23 11:33:13,499 - INFO - Closed GPS port after configuration
+2026-08-23 11:33:13,515 - INFO - Triggering readRecordedRun with combination: 55
+2026-08-23 11:33:26,425 - INFO - Subprocess exited with code: 0
+2026-08-23 11:33:27,701 - INFO - Waiting for user input...
+2026-08-23 11:33:27,832 - INFO - Background GPS heading capture started
+2026-08-23 11:33:34,789 - INFO - Background GPS port closed
