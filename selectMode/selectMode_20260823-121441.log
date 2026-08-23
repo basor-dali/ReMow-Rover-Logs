@@ -1,0 +1,37 @@
+2026-08-23 12:14:41,576 - INFO - Constants module loaded successfully
+2026-08-23 12:14:41,582 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-23 12:14:41,901 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-08-23 12:14:42,204 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-08-23 12:14:42,205 - INFO - Application started
+2026-08-23 12:14:42,205 - INFO - Starting main function
+2026-08-23 12:14:42,205 - INFO - Waiting for user input...
+2026-08-23 12:14:42,210 - INFO - Background GPS heading capture started
+2026-08-23 12:59:34,419 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-23 12:59:34,441 - INFO - Background GPS port closed
+2026-08-23 12:59:34,441 - WARNING - No valid heading captured to persist
+2026-08-23 12:59:34,442 - INFO - Waiting for user input...
+2026-08-23 12:59:34,443 - INFO - Background GPS heading capture started
+2026-08-23 13:01:34,554 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-23 13:01:34,644 - INFO - Background GPS port closed
+2026-08-23 13:01:34,644 - WARNING - No valid heading captured to persist
+2026-08-23 13:01:34,645 - INFO - Waiting for user input...
+2026-08-23 13:01:34,646 - INFO - Background GPS heading capture started
+2026-08-23 13:03:34,701 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-23 13:03:34,723 - INFO - Background GPS port closed
+2026-08-23 13:03:34,724 - WARNING - No valid heading captured to persist
+2026-08-23 13:03:34,724 - INFO - Waiting for user input...
+2026-08-23 13:03:34,725 - INFO - Background GPS heading capture started
+2026-08-23 13:03:40,664 - INFO - Background GPS port closed
+2026-08-23 13:03:40,665 - WARNING - No valid heading captured to persist
+2026-08-23 13:03:41,665 - INFO - User selected mode: B
+2026-08-23 13:03:41,666 - INFO - Mode B selected
+2026-08-23 13:03:41,666 - INFO - Enter a 2-digit combination
+2026-08-23 13:03:42,117 - INFO - Digit entered: 5
+2026-08-23 13:03:42,127 - INFO - Digit entered: 5
+2026-08-23 13:03:42,127 - INFO - Combination entered: 55
+2026-08-23 13:03:42,128 - INFO - File with ID 55 found in Record/Data
+2026-08-23 13:03:48,133 - INFO - Deployed version:  @ 
+2026-08-23 13:03:48,135 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-08-23 13:03:56,644 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-08-23 13:03:56,645 - INFO - Closed GPS port after configuration
+2026-08-23 13:03:56,645 - INFO - Triggering readRecordedRun with combination: 55
