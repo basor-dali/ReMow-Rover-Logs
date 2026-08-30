@@ -411,3 +411,25 @@ Fast-forward
  Repeat/test_gary_arrows.py | 122 +++++++++++++++++++++++++++++++++++++++++++--
  3 files changed, 205 insertions(+), 17 deletions(-)
 [2026-08-30T13:45:36-05:00] pull OK -- following branch main, was 6ff931a, now b0c2b98
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   c263f0f..bbac6be  main -> main
+[2026-08-30T14:11:56-05:00] safe_pull start
+[2026-08-30T14:11:57-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   b0c2b98..ca10ca5  main                    -> origin/main
+ * [new branch]      feat/tight-turn-speed-cap -> origin/feat/tight-turn-speed-cap
+ * [new branch]      fix/zero-radius-escapes -> origin/fix/zero-radius-escapes
+Updating b0c2b98..ca10ca5
+Fast-forward
+ Repeat/guidance.py                  |  69 +++++--
+ Repeat/pathModel.py                 |  13 +-
+ Repeat/readRecordedRun.py           |  68 ++++++-
+ Repeat/test_gary_tangent_formula.py |   3 +
+ Repeat/test_guidance_integration.py |  14 +-
+ Repeat/test_path_follower.py        |  75 ++++++--
+ Repeat/test_tight_turn_speed_cap.py | 350 ++++++++++++++++++++++++++++++++++++
+ constants.py                        |  45 ++++-
+ scripts/compare_guidance.py         |   5 +-
+ 9 files changed, 598 insertions(+), 44 deletions(-)
+ create mode 100644 Repeat/test_tight_turn_speed_cap.py
+[2026-08-30T14:12:03-05:00] pull OK -- following branch main, was b0c2b98, now ca10ca5
