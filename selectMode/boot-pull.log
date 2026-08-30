@@ -397,3 +397,17 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 [2026-08-30T13:03:53-05:00] safe_pull start
 [2026-08-30T13:03:54-05:00] deploy ref: main
 [2026-08-30T13:03:59-05:00] already at pinned commit 6ff931a (main)
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   fa9d388..c263f0f  main -> main
+[2026-08-30T13:45:32-05:00] safe_pull start
+[2026-08-30T13:45:32-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   6ff931a..b0c2b98  main       -> origin/main
+ * [new branch]      fix/gary-passed-target-advance -> origin/fix/gary-passed-target-advance
+Updating 6ff931a..b0c2b98
+Fast-forward
+ Repeat/pathModel.py        |  81 +++++++++++++++++++++++++-----
+ Repeat/readRecordedRun.py  |  19 +++++++
+ Repeat/test_gary_arrows.py | 122 +++++++++++++++++++++++++++++++++++++++++++--
+ 3 files changed, 205 insertions(+), 17 deletions(-)
+[2026-08-30T13:45:36-05:00] pull OK -- following branch main, was 6ff931a, now b0c2b98
