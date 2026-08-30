@@ -1,3 +1,51 @@
 2026-08-30 10:40:55,964 - INFO - Constants module loaded successfully
 2026-08-30 10:40:55,971 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
 2026-08-30 10:40:56,287 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-08-30 10:40:56,590 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-08-30 10:40:56,591 - INFO - Application started
+2026-08-30 10:40:56,591 - INFO - Starting main function
+2026-08-30 10:40:56,591 - INFO - Waiting for user input...
+2026-08-30 10:40:56,595 - INFO - Background GPS heading capture started
+2026-08-30 11:43:54,218 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-30 11:43:54,235 - INFO - Background GPS port closed
+2026-08-30 11:43:54,235 - WARNING - No valid heading captured to persist
+2026-08-30 11:43:54,235 - INFO - Waiting for user input...
+2026-08-30 11:43:54,237 - INFO - Background GPS heading capture started
+2026-08-30 11:44:37,041 - INFO - Background GPS port closed
+2026-08-30 11:44:37,078 - INFO - Persisted heading 0.3° (accuracy: 1.0°) captured at 2026-08-30 11:44:36
+2026-08-30 11:44:38,078 - INFO - User selected mode: A
+2026-08-30 11:44:38,079 - INFO - Mode A (RECORD) selected
+2026-08-30 11:44:38,079 - INFO - Enter a 2-digit combination
+2026-08-30 11:44:38,310 - INFO - Digit entered: 6
+2026-08-30 11:44:38,320 - INFO - Digit entered: 6
+2026-08-30 11:44:38,320 - INFO - Combination entered: 66
+2026-08-30 11:44:38,320 - INFO - No file with the combination found
+2026-08-30 11:44:44,323 - INFO - Setting UBX Rate to 1000 ms (1 Hz)
+2026-08-30 11:44:52,832 - INFO - UBX Rate set to 1000 ms (1 Hz)
+2026-08-30 11:44:52,833 - INFO - Closed GPS port after configuration
+2026-08-30 11:44:52,834 - INFO - Triggering recording with combination: 66
+2026-08-30 11:45:29,668 - INFO - Mode D pressed - requesting graceful stop (SIGINT). Subprocess will neutralize actuators before exiting.
+2026-08-30 11:45:30,915 - INFO - Subprocess exited gracefully (actuators neutralized by its own cleanup path)
+2026-08-30 11:45:30,930 - INFO - User requested stop with 'D'. Returning to main menu.
+2026-08-30 11:45:31,991 - INFO - Waiting for user input...
+2026-08-30 11:45:32,066 - INFO - Background GPS heading capture started
+2026-08-30 11:47:32,132 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-30 11:47:32,189 - INFO - Background GPS port closed
+2026-08-30 11:47:32,545 - INFO - Persisted heading 329.8° (accuracy: 1.0°) captured at 2026-08-30 11:45:45
+2026-08-30 11:47:32,568 - INFO - Waiting for user input...
+2026-08-30 11:47:32,605 - INFO - Background GPS heading capture started
+2026-08-30 11:49:32,649 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-30 11:49:32,880 - INFO - Background GPS port closed
+2026-08-30 11:49:32,973 - INFO - Persisted heading 329.8° (accuracy: 1.0°) captured at 2026-08-30 11:45:45
+2026-08-30 11:49:32,988 - INFO - Waiting for user input...
+2026-08-30 11:49:33,061 - INFO - Background GPS heading capture started
+2026-08-30 11:51:33,138 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-30 11:51:33,303 - INFO - Background GPS port closed
+2026-08-30 11:51:33,388 - INFO - Persisted heading 329.8° (accuracy: 1.0°) captured at 2026-08-30 11:45:45
+2026-08-30 11:51:33,399 - INFO - Waiting for user input...
+2026-08-30 11:51:33,466 - INFO - Background GPS heading capture started
+2026-08-30 11:53:33,503 - INFO - Inactivity timeout reached. Restarting menu.
+2026-08-30 11:53:33,678 - INFO - Background GPS port closed
+2026-08-30 11:53:33,770 - INFO - Persisted heading 329.8° (accuracy: 1.0°) captured at 2026-08-30 11:45:45
+2026-08-30 11:53:33,781 - INFO - Waiting for user input...
+2026-08-30 11:53:33,860 - INFO - Background GPS heading capture started

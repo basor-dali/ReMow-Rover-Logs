@@ -1,0 +1,79 @@
+2026-08-30 11:44:54,752 - INFO - TRIGGERING RECORDING
+2026-08-30 11:44:54,752 - INFO - Filename: /home/dali/Documents/ReMow-Rover-Tests/Record/Data/66_20260830-114454_GPSData.csv
+2026-08-30 11:44:54,752 - INFO - Opening file
+2026-08-30 11:44:54,753 - INFO - file open
+2026-08-30 11:44:54,753 - INFO - Logging specific fields to /home/dali/Documents/ReMow-Rover-Tests/Record/Data/66_20260830-114454_GPSData.csv. Press Ctrl+C to stop.
+2026-08-30 11:44:55,096 - INFO - ENU origin set from first GNRMC: 37.9008976667, -97.6641736667
+2026-08-30 11:44:55,168 - INFO - Updated heading from NAV-RELPOSNED: 0.64°
+2026-08-30 11:44:55,218 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:44:55,218 - INFO - First line written to CSV. Starting LED flashing.
+2026-08-30 11:44:56,110 - INFO - Updated heading from NAV-RELPOSNED: 359.61°
+2026-08-30 11:44:56,160 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:44:57,138 - INFO - Updated heading from NAV-RELPOSNED: 359.27°
+2026-08-30 11:44:57,188 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:44:58,104 - INFO - Updated heading from NAV-RELPOSNED: 0.17°
+2026-08-30 11:44:58,154 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:44:59,120 - INFO - Updated heading from NAV-RELPOSNED: 359.21°
+2026-08-30 11:44:59,170 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:00,100 - INFO - Updated heading from NAV-RELPOSNED: 356.81°
+2026-08-30 11:45:00,151 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:01,106 - INFO - Updated heading from NAV-RELPOSNED: 0.20°
+2026-08-30 11:45:01,157 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:02,093 - INFO - Updated heading from NAV-RELPOSNED: 1.39°
+2026-08-30 11:45:02,143 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:03,109 - INFO - Updated heading from NAV-RELPOSNED: 2.14°
+2026-08-30 11:45:03,162 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:04,096 - INFO - Updated heading from NAV-RELPOSNED: 357.83°
+2026-08-30 11:45:04,147 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:05,105 - INFO - Updated heading from NAV-RELPOSNED: 2.55°
+2026-08-30 11:45:05,155 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:06,103 - INFO - Updated heading from NAV-RELPOSNED: 9.41°
+2026-08-30 11:45:06,153 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:07,101 - INFO - Updated heading from NAV-RELPOSNED: 40.40°
+2026-08-30 11:45:07,151 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:08,096 - INFO - Updated heading from NAV-RELPOSNED: 66.04°
+2026-08-30 11:45:08,147 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:09,110 - INFO - Updated heading from NAV-RELPOSNED: 74.32°
+2026-08-30 11:45:09,161 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:10,103 - INFO - Updated heading from NAV-RELPOSNED: 80.99°
+2026-08-30 11:45:10,153 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:11,112 - INFO - Updated heading from NAV-RELPOSNED: 83.52°
+2026-08-30 11:45:11,162 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:12,101 - INFO - Updated heading from NAV-RELPOSNED: 100.37°
+2026-08-30 11:45:12,152 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:13,112 - INFO - Updated heading from NAV-RELPOSNED: 129.95°
+2026-08-30 11:45:13,162 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:14,100 - INFO - Updated heading from NAV-RELPOSNED: 156.39°
+2026-08-30 11:45:14,150 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:15,105 - INFO - Updated heading from NAV-RELPOSNED: 170.57°
+2026-08-30 11:45:15,155 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:16,097 - INFO - Updated heading from NAV-RELPOSNED: 174.03°
+2026-08-30 11:45:16,147 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:17,101 - INFO - Updated heading from NAV-RELPOSNED: 173.76°
+2026-08-30 11:45:17,151 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:18,100 - INFO - Updated heading from NAV-RELPOSNED: 174.20°
+2026-08-30 11:45:18,150 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:19,100 - INFO - Updated heading from NAV-RELPOSNED: 177.39°
+2026-08-30 11:45:19,150 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:20,114 - INFO - Updated heading from NAV-RELPOSNED: 184.01°
+2026-08-30 11:45:20,167 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:21,121 - INFO - Updated heading from NAV-RELPOSNED: 208.96°
+2026-08-30 11:45:21,171 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:22,120 - INFO - Updated heading from NAV-RELPOSNED: 235.11°
+2026-08-30 11:45:22,170 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:23,103 - INFO - Updated heading from NAV-RELPOSNED: 256.21°
+2026-08-30 11:45:23,154 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:24,118 - INFO - Updated heading from NAV-RELPOSNED: 264.61°
+2026-08-30 11:45:24,168 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:25,106 - INFO - Updated heading from NAV-RELPOSNED: 265.14°
+2026-08-30 11:45:25,156 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:26,120 - INFO - Updated heading from NAV-RELPOSNED: 267.56°
+2026-08-30 11:45:26,170 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:27,101 - INFO - Updated heading from NAV-RELPOSNED: 268.45°
+2026-08-30 11:45:27,151 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:28,105 - INFO - Updated heading from NAV-RELPOSNED: 267.60°
+2026-08-30 11:45:28,155 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:29,106 - INFO - Updated heading from NAV-RELPOSNED: 267.53°
+2026-08-30 11:45:29,156 - INFO - Data written to CSV and LED flashed.
+2026-08-30 11:45:29,695 - INFO - Stop request acknowledged (signal=SIGINT). Exiting logging loop.
+2026-08-30 11:45:29,699 - INFO - Cleanup completed. GPIO resources released.
