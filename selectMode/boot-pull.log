@@ -366,3 +366,19 @@ Fast-forward
  constants.py            | 9 ++++++++-
  2 files changed, 9 insertions(+), 2 deletions(-)
 [2026-08-23T16:38:11-05:00] pull OK -- following branch main, was 45abf71, now 8e733ba
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   135c627..74e8230  main -> main
+[2026-08-30T10:40:49-05:00] safe_pull start
+[2026-08-30T10:40:50-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   8e733ba..6ff931a  main       -> origin/main
+Updating 8e733ba..6ff931a
+Fast-forward
+ Repeat/guidance.py                  | 17 ++++++--
+ Repeat/test_guidance.py             | 33 ++++++++++++---
+ Repeat/test_guidance_integration.py | 81 ++++++++++++++++++++++++++++++++-----
+ Repeat/test_july5_regression.py     | 56 ++++++++++++++++++++-----
+ Repeat/test_path_follower.py        | 45 +++++++++++++++------
+ constants.py                        | 22 +++++++++-
+ 6 files changed, 212 insertions(+), 42 deletions(-)
+[2026-08-30T10:40:56-05:00] pull OK -- following branch main, was 8e733ba, now 6ff931a

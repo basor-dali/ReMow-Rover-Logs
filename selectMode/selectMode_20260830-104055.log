@@ -1,0 +1,3 @@
+2026-08-30 10:40:55,964 - INFO - Constants module loaded successfully
+2026-08-30 10:40:55,971 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-30 10:40:56,287 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
