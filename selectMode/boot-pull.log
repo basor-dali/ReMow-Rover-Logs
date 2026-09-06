@@ -433,3 +433,8 @@ Fast-forward
  9 files changed, 598 insertions(+), 44 deletions(-)
  create mode 100644 Repeat/test_tight_turn_speed_cap.py
 [2026-08-30T14:12:03-05:00] pull OK -- following branch main, was b0c2b98, now ca10ca5
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   bbac6be..94ac96c  main -> main
+[2026-09-06T10:20:19-05:00] safe_pull start
+[2026-09-06T10:20:20-05:00] deploy ref: main
+[2026-09-06T10:20:22-05:00] already at pinned commit 97904cd (main)
