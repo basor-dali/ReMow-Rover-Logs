@@ -443,3 +443,23 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 [2026-09-06T10:24:00-05:00] safe_pull start
 [2026-09-06T10:24:00-05:00] deploy ref: main
 [2026-09-06T10:24:03-05:00] already at pinned commit 97904cd (main)
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   663838e..6075803  main -> main
+[2026-09-06T10:26:20-05:00] safe_pull start
+[2026-09-06T10:26:21-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   97904cd..61b7a6c  main       -> origin/main
+ * [new branch]      feat/gary-vertex-tolerance -> origin/feat/gary-vertex-tolerance
+ * [new branch]      feat/nav-log-target-coords -> origin/feat/nav-log-target-coords
+Updating 97904cd..61b7a6c
+Fast-forward
+ Repeat/guidance.py                   |  81 +++++--
+ Repeat/pathModel.py                  |  23 +-
+ Repeat/readRecordedRun.py            |  14 +-
+ Repeat/test_gary_arrows.py           |   6 +-
+ Repeat/test_gary_vertex_tolerance.py | 397 +++++++++++++++++++++++++++++++++++
+ Repeat/test_nav_log_fields.py        |  90 +++++++-
+ constants.py                         |  24 +++
+ 7 files changed, 610 insertions(+), 25 deletions(-)
+ create mode 100644 Repeat/test_gary_vertex_tolerance.py
+[2026-09-06T11:23:32-05:00] pull OK -- following branch main, was 97904cd, now 61b7a6c
