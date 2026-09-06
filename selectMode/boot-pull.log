@@ -463,3 +463,21 @@ Fast-forward
  7 files changed, 610 insertions(+), 25 deletions(-)
  create mode 100644 Repeat/test_gary_vertex_tolerance.py
 [2026-09-06T11:23:32-05:00] pull OK -- following branch main, was 97904cd, now 61b7a6c
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   6075803..6e3b0c7  main -> main
+[2026-09-06T11:29:36-05:00] safe_pull start
+[2026-09-06T11:29:38-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   61b7a6c..35d55a8  main                  -> origin/main
+ * [new branch]      feat/gary-last-hurrah -> origin/feat/gary-last-hurrah
+Updating 61b7a6c..35d55a8
+Fast-forward
+ Repeat/guidance.py                   | 284 ++++++++++++---------
+ Repeat/pathModel.py                  |  19 +-
+ Repeat/readRecordedRun.py            |  29 ++-
+ Repeat/test_gary_arrows.py           |  75 +++---
+ Repeat/test_gary_last_hurrah.py      | 468 +++++++++++++++++++++++++++++++++++
+ Repeat/test_gary_vertex_tolerance.py | 163 ++++++------
+ 6 files changed, 795 insertions(+), 243 deletions(-)
+ create mode 100644 Repeat/test_gary_last_hurrah.py
+[2026-09-06T11:29:42-05:00] pull OK -- following branch main, was 61b7a6c, now 35d55a8

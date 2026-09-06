@@ -1,0 +1,59 @@
+2026-09-06 11:26:07,683 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-09-06_11-26-07.log
+2026-09-06 11:26:07,685 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06 11:26:07,987 - INFO - Encoders reset to zero
+2026-09-06 11:26:07,987 - INFO - Starting readRecordedRun with combination: 66
+2026-09-06 11:26:07,987 - INFO - Selected most recent recording: 66_20260830-114454_GPSData.csv
+2026-09-06 11:26:07,992 - INFO - GREEN_LED initialized on GPIO 17
+2026-09-06 11:26:08,003 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-09-06_11-26-07_navigation_log.csv
+2026-09-06 11:26:08,004 - INFO - ENU origin from first waypoint: 37.9008976667, -97.6641736667
+2026-09-06 11:26:08,077 - INFO - Path model: 35 rows -> 30 points -> 29 segments, 37.2m total, leading dwell 2.0s
+2026-09-06 11:26:08,078 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06 11:26:08,078 - INFO - === GUIDANCE: gary_arrows === tangent_window=3.0m lookahead=2.0m+0.8s*v [1.5-5.0m] kappa_max=unbounded (no minimum radius) slew=0.6/m/s deadband=0.04/m
+2026-09-06 11:26:08,078 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06 11:26:08,093 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-09-06 11:26:08,093 - INFO - Actuators initialized to neutral (1100)
+2026-09-06 11:26:08,093 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06 11:26:08,093 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06 11:26:08,093 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06 11:26:08,093 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06 11:26:08,093 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-09-06 11:26:08,093 - INFO - First segment: heading 2.5°, length 0.33m; path ends at (3.30E, 2.61N)
+2026-09-06 11:26:08,093 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-09-06 11:26:08,093 - INFO - Acquire timeout: 300.0s
+2026-09-06 11:26:08,093 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-09-06 11:26:08,093 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-09-06 11:26:08,102 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (0.0s)
+2026-09-06 11:26:08,222 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (0.1s)
+2026-09-06 11:26:08,414 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (0.3s)
+2026-09-06 11:26:08,612 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (0.5s)
+2026-09-06 11:26:08,812 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (0.7s)
+2026-09-06 11:26:09,018 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (0.9s)
+2026-09-06 11:26:09,225 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (1.1s)
+2026-09-06 11:26:09,416 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (1.3s)
+2026-09-06 11:26:09,620 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (1.5s)
+2026-09-06 11:26:09,816 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (1.7s)
+2026-09-06 11:26:10,023 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (1.9s)
+2026-09-06 11:26:10,215 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (2.1s)
+2026-09-06 11:26:10,421 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (2.3s)
+2026-09-06 11:26:10,622 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (2.5s)
+2026-09-06 11:26:10,821 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (2.7s)
+2026-09-06 11:26:11,042 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (2.9s)
+2026-09-06 11:26:11,231 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (3.1s)
+2026-09-06 11:26:11,425 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (3.3s)
+2026-09-06 11:26:11,627 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (3.5s)
+2026-09-06 11:26:11,824 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (3.7s)
+2026-09-06 11:26:12,022 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (3.9s)
+2026-09-06 11:26:12,224 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (4.1s)
+2026-09-06 11:26:12,426 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (4.3s)
+2026-09-06 11:26:12,623 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (4.5s)
+2026-09-06 11:26:12,826 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (4.7s)
+2026-09-06 11:26:13,033 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (4.9s)
+2026-09-06 11:26:13,235 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (5.1s)
+2026-09-06 11:26:13,425 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (5.3s)
+2026-09-06 11:26:13,631 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (5.5s)
+2026-09-06 11:26:13,821 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (5.7s)
+2026-09-06 11:26:14,035 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (5.9s)
+2026-09-06 11:26:14,182 - INFO - STOP requested (signal 2) while waiting for GPS RTK fix - shutting down
+2026-09-06 11:26:14,200 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-09-06 11:26:14,203 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-09-06 11:26:14,203 - INFO - GREEN_LED GPIO cleaned up successfully
