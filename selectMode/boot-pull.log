@@ -496,3 +496,21 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 [2026-09-13T10:42:07-05:00] safe_pull start
 [2026-09-13T10:42:07-05:00] deploy ref: main
 [2026-09-13T10:42:09-05:00] already at pinned commit 35d55a8 (main)
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   ed73ff3..be5fa8f  main -> main
+[2026-09-13T10:44:56-05:00] safe_pull start
+[2026-09-13T10:44:56-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   35d55a8..29dc2f7  main                  -> origin/main
+   839901b..cd9109c  feat/gary-last-hurrah -> origin/feat/gary-last-hurrah
+ * [new branch]      fix/gary-diverge-floor-and-speed-cap -> origin/fix/gary-diverge-floor-and-speed-cap
+Updating 35d55a8..29dc2f7
+Fast-forward
+ Repeat/guidance.py                   |  60 +++++++++----
+ Repeat/test_gary_arrows.py           |   4 +-
+ Repeat/test_gary_last_hurrah.py      | 161 ++++++++++++++++++++++++++++++++++-
+ Repeat/test_gary_vertex_tolerance.py |   9 +-
+ Repeat/test_tight_turn_speed_cap.py  |   2 +-
+ constants.py                         |  79 +++++++++--------
+ 6 files changed, 258 insertions(+), 57 deletions(-)
+[2026-09-13T10:45:02-05:00] pull OK -- following branch main, was 35d55a8, now 29dc2f7
