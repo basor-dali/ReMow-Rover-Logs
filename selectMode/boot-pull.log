@@ -571,3 +571,22 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 [2026-09-13T14:31:26-05:00] safe_pull start
 [2026-09-13T14:31:27-05:00] deploy ref: main
 [2026-09-13T14:31:30-05:00] already at pinned commit 9e3d628 (main)
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   14f24a7..bb81ed3  main -> main
+[2026-09-13T14:36:53-05:00] safe_pull start
+[2026-09-13T14:36:55-05:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   9e3d628..331aa27  main       -> origin/main
+ * [new branch]      feat/lookahead-4m-and-intersection-point -> origin/feat/lookahead-4m-and-intersection-point
+Updating 9e3d628..331aa27
+Fast-forward
+ Repeat/guidance.py                   |  93 ++++++++------
+ Repeat/pathModel.py                  |  66 ++++++++--
+ Repeat/readRecordedRun.py            |  20 +++
+ Repeat/test_gary_arrows.py           |  60 +++++++--
+ Repeat/test_gary_last_hurrah.py      | 238 ++++++++++++++++++++++-------------
+ Repeat/test_gary_vertex_tolerance.py |  15 ++-
+ Repeat/test_path_follower.py         |  96 +++++++++-----
+ constants.py                         |  56 ++++++---
+ 8 files changed, 442 insertions(+), 202 deletions(-)
+[2026-09-13T14:37:01-05:00] pull OK -- following branch main, was 9e3d628, now 331aa27

@@ -6,3 +6,25 @@
 2026-09-13 14:31:29,256 - INFO - Starting main function
 2026-09-13 14:31:29,256 - INFO - Waiting for user input...
 2026-09-13 14:31:29,261 - INFO - Background GPS heading capture started
+2026-09-13 14:31:31,577 - INFO - Background GPS port closed
+2026-09-13 14:31:31,918 - INFO - Persisted heading 154.9° (accuracy: 1.0°) captured at 2026-09-13 14:31:31
+2026-09-13 14:31:32,921 - INFO - User selected mode: B
+2026-09-13 14:31:32,921 - INFO - Mode B selected
+2026-09-13 14:31:32,921 - INFO - Enter a 2-digit combination
+2026-09-13 14:31:32,931 - INFO - Digit entered: 6
+2026-09-13 14:31:32,942 - INFO - Digit entered: 6
+2026-09-13 14:31:32,942 - INFO - Combination entered: 66
+2026-09-13 14:31:32,942 - INFO - File with ID 66 found in Record/Data
+2026-09-13 14:31:38,947 - INFO - Deployed version:  @ 
+2026-09-13 14:31:38,948 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-09-13 14:33:03,733 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-09-13 14:33:03,733 - INFO - Closed GPS port after configuration
+2026-09-13 14:33:03,733 - INFO - Triggering readRecordedRun with combination: 66
+2026-09-13 14:34:14,395 - INFO - Subprocess exited with code: 0
+2026-09-13 14:34:15,431 - INFO - Waiting for user input...
+2026-09-13 14:34:15,492 - INFO - Background GPS heading capture started
+2026-09-13 14:36:15,570 - INFO - Inactivity timeout reached. Restarting menu.
+2026-09-13 14:36:15,881 - INFO - Background GPS port closed
+2026-09-13 14:36:16,330 - INFO - Persisted heading 3.4° (accuracy: 1.0°) captured at 2026-09-13 14:34:31
+2026-09-13 14:36:16,346 - INFO - Waiting for user input...
+2026-09-13 14:36:16,412 - INFO - Background GPS heading capture started
