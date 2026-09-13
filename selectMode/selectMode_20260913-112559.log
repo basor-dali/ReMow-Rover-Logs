@@ -6,3 +6,37 @@
 2026-09-13 11:26:00,510 - INFO - Starting main function
 2026-09-13 11:26:00,510 - INFO - Waiting for user input...
 2026-09-13 11:26:00,514 - INFO - Background GPS heading capture started
+2026-09-13 11:27:05,036 - INFO - Background GPS port closed
+2026-09-13 11:27:05,278 - INFO - Persisted heading 72.3° (accuracy: 1.0°) captured at 2026-09-13 11:27:04
+2026-09-13 11:27:06,280 - INFO - User selected mode: B
+2026-09-13 11:27:06,280 - INFO - Mode B selected
+2026-09-13 11:27:06,280 - INFO - Enter a 2-digit combination
+2026-09-13 11:27:06,511 - INFO - Digit entered: 6
+2026-09-13 11:27:06,521 - INFO - Digit entered: 6
+2026-09-13 11:27:06,521 - INFO - Combination entered: 66
+2026-09-13 11:27:06,521 - INFO - File with ID 66 found in Record/Data
+2026-09-13 11:27:12,527 - INFO - Deployed version:  @ 
+2026-09-13 11:27:12,529 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-09-13 11:27:21,038 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-09-13 11:27:21,080 - INFO - Closed GPS port after configuration
+2026-09-13 11:27:21,095 - INFO - Triggering readRecordedRun with combination: 66
+2026-09-13 11:27:29,341 - INFO - Subprocess exited with code: 0
+2026-09-13 11:27:30,387 - INFO - Waiting for user input...
+2026-09-13 11:27:30,453 - INFO - Background GPS heading capture started
+2026-09-13 11:28:14,916 - INFO - Background GPS port closed
+2026-09-13 11:28:14,974 - INFO - Persisted heading 66.7° (accuracy: 1.0°) captured at 2026-09-13 11:28:14
+2026-09-13 11:28:16,041 - INFO - User selected mode: B
+2026-09-13 11:28:16,056 - INFO - Mode B selected
+2026-09-13 11:28:16,076 - INFO - Enter a 2-digit combination
+2026-09-13 11:28:16,849 - INFO - Digit entered: 6
+2026-09-13 11:28:16,885 - INFO - Digit entered: 6
+2026-09-13 11:28:16,900 - INFO - Combination entered: 66
+2026-09-13 11:28:16,930 - INFO - File with ID 66 found in Record/Data
+2026-09-13 11:28:23,133 - INFO - Deployed version:  @ 
+2026-09-13 11:28:23,174 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-09-13 11:28:31,780 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-09-13 11:28:31,841 - INFO - Closed GPS port after configuration
+2026-09-13 11:28:31,857 - INFO - Triggering readRecordedRun with combination: 66
+2026-09-13 11:28:54,709 - INFO - Subprocess exited with code: 0
+2026-09-13 11:28:55,776 - INFO - Waiting for user input...
+2026-09-13 11:28:55,886 - INFO - Background GPS heading capture started
