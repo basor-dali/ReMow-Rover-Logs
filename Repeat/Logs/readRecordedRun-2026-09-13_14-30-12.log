@@ -1,0 +1,443 @@
+2026-09-13 14:30:12,012 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-09-13_14-30-12.log
+2026-09-13 14:30:12,015 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13 14:30:12,318 - INFO - Encoders reset to zero
+2026-09-13 14:30:12,319 - INFO - Starting readRecordedRun with combination: 66
+2026-09-13 14:30:12,319 - INFO - Selected most recent recording: 66_20260830-114454_GPSData.csv
+2026-09-13 14:30:12,322 - INFO - GREEN_LED initialized on GPIO 17
+2026-09-13 14:30:12,332 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-09-13_14-30-12_navigation_log.csv
+2026-09-13 14:30:12,333 - INFO - ENU origin from first waypoint: 37.9008976667, -97.6641736667
+2026-09-13 14:30:12,407 - INFO - Path model: 35 rows -> 30 points -> 29 segments, 37.2m total, leading dwell 2.0s
+2026-09-13 14:30:12,407 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13 14:30:12,407 - INFO - === GUIDANCE: pure_pursuit (legacy default) === fixed lookahead=2.0m, no command conditioning kappa_max=unbounded (no minimum radius) (conditioning and speed-adaptive lookahead are tangent_pose-only and stay off here)
+2026-09-13 14:30:12,419 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-09-13 14:30:12,419 - INFO - Actuators initialized to neutral (1100)
+2026-09-13 14:30:12,419 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13 14:30:12,419 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13 14:30:12,419 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13 14:30:12,419 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13 14:30:12,419 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-09-13 14:30:12,419 - INFO - First segment: heading 2.5°, length 0.33m; path ends at (3.30E, 2.61N)
+2026-09-13 14:30:12,419 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-09-13 14:30:12,419 - INFO - Acquire timeout: 300.0s
+2026-09-13 14:30:12,419 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-09-13 14:30:12,419 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-09-13 14:30:12,483 - INFO - GPS status: relPosValid=1, carrSoln=2, headingValid=1 (0.1s)
+2026-09-13 14:30:12,483 - INFO - === GPS RTK FIXED — ready to navigate (0.1s) ===
+2026-09-13 14:30:12,628 - INFO - Using persisted heading from driving to work area: 2.88° (captured at 2026-09-13 13:26:35)
+2026-09-13 14:30:12,665 - INFO - 2026-09-13 14:30:12 Initial Moving Baseline state: active
+2026-09-13 14:30:12,665 - INFO - 2026-09-13 14:30:12 Initial carrier solution: fixed
+2026-09-13 14:30:12,665 - INFO - 2026-09-13 14:30:12 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:12,665 - INFO - 2026-09-13 14:30:12 [3.4 OBSERVED] turn_direction: STRAIGHT
+2026-09-13 14:30:12,666 - INFO - 2026-09-13 14:30:12 [3.4 OBSERVED] estimated left/right wheel speeds: 0.007, 0.007 m/s
+2026-09-13 14:30:12,668 - INFO - 2026-09-13 14:30:12 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:12,668 - WARNING - 2026-09-13 14:30:12 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=2.55m (limit infm), heading=6.1°, target_progress=2.00m, target=(0.01,2.00), alpha=37.8°
+2026-09-13 14:30:12,668 - WARNING - 2026-09-13 14:30:12 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13 14:30:12,668 - INFO - 2026-09-13 14:30:12 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.55m alpha=37.8° target=(0.01,2.00) R=2.93 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:12,668 - INFO - 2026-09-13 14:30:12 [SPEED] wheel ceiling: max wheel 1.406 > 1.20 m/s, scaling by 0.853 -> body 1.072 m/s, wheels 1.200/0.944 (R=2.93m preserved)
+2026-09-13 14:30:12,668 - INFO - 2026-09-13 14:30:12 Turn: RIGHT, R: 2.93m, v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:12,668 - INFO - 2026-09-13 14:30:12 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:12,668 - INFO - 2026-09-13 14:30:12 right_actuator_position: 612 (counts) from v_R 0.944 m/s
+2026-09-13 14:30:12,683 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 612 (counts)
+2026-09-13 14:30:12,683 - INFO - 2026-09-13 14:30:12 APPLY → left_pos: 420, right_pos: 612 (counts), v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:12,683 - INFO - 2026-09-13 14:30:12 Path tracking needs correction: heading_ok=False (alpha=37.8deg), distance_ok=False (cross=2.547m)
+2026-09-13 14:30:12,864 - INFO - 2026-09-13 14:30:12 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:12,864 - INFO - 2026-09-13 14:30:12 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:12,864 - INFO - 2026-09-13 14:30:12 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:12,866 - INFO - 2026-09-13 14:30:12 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:12,866 - INFO - 2026-09-13 14:30:12 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.62m alpha=38.5° target=(0.01,2.00) R=2.93 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:12,866 - INFO - 2026-09-13 14:30:12 [SPEED] wheel ceiling: max wheel 1.407 > 1.20 m/s, scaling by 0.853 -> body 1.072 m/s, wheels 1.200/0.944 (R=2.93m preserved)
+2026-09-13 14:30:12,866 - INFO - 2026-09-13 14:30:12 Turn: RIGHT, R: 2.93m, v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:12,866 - INFO - 2026-09-13 14:30:12 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:12,866 - INFO - 2026-09-13 14:30:12 right_actuator_position: 613 (counts) from v_R 0.944 m/s
+2026-09-13 14:30:12,882 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 613 (counts)
+2026-09-13 14:30:12,882 - INFO - 2026-09-13 14:30:12 APPLY → left_pos: 420, right_pos: 613 (counts), v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:12,882 - INFO - 2026-09-13 14:30:12 Path tracking needs correction: heading_ok=False (alpha=38.5deg), distance_ok=False (cross=2.618m)
+2026-09-13 14:30:13,076 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:13,076 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:13,076 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:13,079 - INFO - 2026-09-13 14:30:13 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:13,079 - INFO - 2026-09-13 14:30:13 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.69m alpha=39.4° target=(0.01,2.00) R=2.91 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:13,079 - INFO - 2026-09-13 14:30:13 [SPEED] wheel ceiling: max wheel 1.407 > 1.20 m/s, scaling by 0.853 -> body 1.071 m/s, wheels 1.200/0.943 (R=2.91m preserved)
+2026-09-13 14:30:13,079 - INFO - 2026-09-13 14:30:13 Turn: RIGHT, R: 2.91m, v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,079 - INFO - 2026-09-13 14:30:13 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:13,079 - INFO - 2026-09-13 14:30:13 right_actuator_position: 613 (counts) from v_R 0.943 m/s
+2026-09-13 14:30:13,096 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 613 (counts)
+2026-09-13 14:30:13,096 - INFO - 2026-09-13 14:30:13 APPLY → left_pos: 420, right_pos: 613 (counts), v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,096 - INFO - 2026-09-13 14:30:13 Path tracking needs correction: heading_ok=False (alpha=39.4deg), distance_ok=False (cross=2.690m)
+2026-09-13 14:30:13,269 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:13,269 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:13,269 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:13,272 - INFO - 2026-09-13 14:30:13 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:13,272 - INFO - 2026-09-13 14:30:13 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.73m alpha=39.8° target=(0.01,2.00) R=2.91 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:13,272 - INFO - 2026-09-13 14:30:13 [SPEED] wheel ceiling: max wheel 1.407 > 1.20 m/s, scaling by 0.853 -> body 1.071 m/s, wheels 1.200/0.943 (R=2.91m preserved)
+2026-09-13 14:30:13,272 - INFO - 2026-09-13 14:30:13 Turn: RIGHT, R: 2.91m, v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,272 - INFO - 2026-09-13 14:30:13 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:13,272 - INFO - 2026-09-13 14:30:13 right_actuator_position: 613 (counts) from v_R 0.943 m/s
+2026-09-13 14:30:13,286 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 613 (counts)
+2026-09-13 14:30:13,286 - INFO - 2026-09-13 14:30:13 APPLY → left_pos: 420, right_pos: 613 (counts), v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,286 - INFO - 2026-09-13 14:30:13 Path tracking needs correction: heading_ok=False (alpha=39.8deg), distance_ok=False (cross=2.733m)
+2026-09-13 14:30:13,471 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] current_turn_radius: 12.52m
+2026-09-13 14:30:13,471 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:13,471 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] estimated left/right wheel speeds: 0.359, 0.339 m/s
+2026-09-13 14:30:13,475 - INFO - 2026-09-13 14:30:13 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:13,475 - INFO - 2026-09-13 14:30:13 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.71m alpha=39.5° target=(0.01,2.00) R=2.91 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:13,475 - INFO - 2026-09-13 14:30:13 [SPEED] wheel ceiling: max wheel 1.407 > 1.20 m/s, scaling by 0.853 -> body 1.071 m/s, wheels 1.200/0.942 (R=2.91m preserved)
+2026-09-13 14:30:13,475 - INFO - 2026-09-13 14:30:13 Turn: RIGHT, R: 2.91m, v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,475 - INFO - 2026-09-13 14:30:13 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:13,475 - INFO - 2026-09-13 14:30:13 right_actuator_position: 614 (counts) from v_R 0.942 m/s
+2026-09-13 14:30:13,489 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 614 (counts)
+2026-09-13 14:30:13,489 - INFO - 2026-09-13 14:30:13 APPLY → left_pos: 420, right_pos: 614 (counts), v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,489 - INFO - 2026-09-13 14:30:13 Path tracking needs correction: heading_ok=False (alpha=39.5deg), distance_ok=False (cross=2.714m)
+2026-09-13 14:30:13,679 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] current_turn_radius: 9.40m
+2026-09-13 14:30:13,679 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:13,679 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] estimated left/right wheel speeds: 0.495, 0.534 m/s
+2026-09-13 14:30:13,681 - INFO - 2026-09-13 14:30:13 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:13,681 - INFO - 2026-09-13 14:30:13 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.66m alpha=40.1° target=(0.01,2.00) R=2.83 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:13,681 - INFO - 2026-09-13 14:30:13 [SPEED] wheel ceiling: max wheel 1.412 > 1.20 m/s, scaling by 0.850 -> body 1.068 m/s, wheels 1.200/0.936 (R=2.83m preserved)
+2026-09-13 14:30:13,681 - INFO - 2026-09-13 14:30:13 Turn: RIGHT, R: 2.83m, v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,681 - INFO - 2026-09-13 14:30:13 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:13,682 - INFO - 2026-09-13 14:30:13 right_actuator_position: 619 (counts) from v_R 0.936 m/s
+2026-09-13 14:30:13,695 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 619 (counts)
+2026-09-13 14:30:13,695 - INFO - 2026-09-13 14:30:13 APPLY → left_pos: 420, right_pos: 619 (counts), v_L: 1.20 m/s, v_R: 0.94 m/s
+2026-09-13 14:30:13,695 - INFO - 2026-09-13 14:30:13 Path tracking needs correction: heading_ok=False (alpha=40.1deg), distance_ok=False (cross=2.664m)
+2026-09-13 14:30:13,870 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] current_turn_radius: 87.83m
+2026-09-13 14:30:13,870 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:13,870 - INFO - 2026-09-13 14:30:13 [3.4 OBSERVED] estimated left/right wheel speeds: 0.826, 0.833 m/s
+2026-09-13 14:30:13,872 - INFO - 2026-09-13 14:30:13 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:13,872 - INFO - 2026-09-13 14:30:13 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.48m alpha=38.7° target=(0.01,2.00) R=2.80 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:13,872 - INFO - 2026-09-13 14:30:13 [SPEED] wheel ceiling: max wheel 1.413 > 1.20 m/s, scaling by 0.849 -> body 1.067 m/s, wheels 1.200/0.933 (R=2.80m preserved)
+2026-09-13 14:30:13,872 - INFO - 2026-09-13 14:30:13 Turn: RIGHT, R: 2.80m, v_L: 1.20 m/s, v_R: 0.93 m/s
+2026-09-13 14:30:13,872 - INFO - 2026-09-13 14:30:13 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:13,872 - INFO - 2026-09-13 14:30:13 right_actuator_position: 621 (counts) from v_R 0.933 m/s
+2026-09-13 14:30:13,885 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 621 (counts)
+2026-09-13 14:30:13,885 - INFO - 2026-09-13 14:30:13 APPLY → left_pos: 420, right_pos: 621 (counts), v_L: 1.20 m/s, v_R: 0.93 m/s
+2026-09-13 14:30:13,885 - INFO - 2026-09-13 14:30:13 Path tracking needs correction: heading_ok=False (alpha=38.7deg), distance_ok=False (cross=2.484m)
+2026-09-13 14:30:14,073 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] current_turn_radius: 121.29m
+2026-09-13 14:30:14,073 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:14,073 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] estimated left/right wheel speeds: 1.128, 1.135 m/s
+2026-09-13 14:30:14,075 - INFO - 2026-09-13 14:30:14 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:14,075 - INFO - 2026-09-13 14:30:14 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.26m alpha=37.8° target=(0.01,2.00) R=2.66 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:14,075 - INFO - 2026-09-13 14:30:14 [SPEED] wheel ceiling: max wheel 1.421 > 1.20 m/s, scaling by 0.844 -> body 1.061 m/s, wheels 1.200/0.921 (R=2.66m preserved)
+2026-09-13 14:30:14,075 - INFO - 2026-09-13 14:30:14 Turn: RIGHT, R: 2.66m, v_L: 1.20 m/s, v_R: 0.92 m/s
+2026-09-13 14:30:14,075 - INFO - 2026-09-13 14:30:14 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:14,076 - INFO - 2026-09-13 14:30:14 right_actuator_position: 630 (counts) from v_R 0.921 m/s
+2026-09-13 14:30:14,089 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 630 (counts)
+2026-09-13 14:30:14,089 - INFO - 2026-09-13 14:30:14 APPLY → left_pos: 420, right_pos: 630 (counts), v_L: 1.20 m/s, v_R: 0.92 m/s
+2026-09-13 14:30:14,089 - INFO - 2026-09-13 14:30:14 Path tracking needs correction: heading_ok=False (alpha=37.8deg), distance_ok=False (cross=2.259m)
+2026-09-13 14:30:14,268 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] current_turn_radius: 14.15m
+2026-09-13 14:30:14,268 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:14,268 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] estimated left/right wheel speeds: 1.207, 1.268 m/s
+2026-09-13 14:30:14,271 - INFO - 2026-09-13 14:30:14 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:14,271 - INFO - 2026-09-13 14:30:14 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.01m alpha=36.8° target=(0.01,2.00) R=2.54 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:14,271 - INFO - 2026-09-13 14:30:14 [SPEED] wheel ceiling: max wheel 1.430 > 1.20 m/s, scaling by 0.839 -> body 1.055 m/s, wheels 1.200/0.909 (R=2.54m preserved)
+2026-09-13 14:30:14,271 - INFO - 2026-09-13 14:30:14 Turn: RIGHT, R: 2.54m, v_L: 1.20 m/s, v_R: 0.91 m/s
+2026-09-13 14:30:14,271 - INFO - 2026-09-13 14:30:14 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:14,272 - INFO - 2026-09-13 14:30:14 right_actuator_position: 639 (counts) from v_R 0.909 m/s
+2026-09-13 14:30:14,284 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 639 (counts)
+2026-09-13 14:30:14,284 - INFO - 2026-09-13 14:30:14 APPLY → left_pos: 420, right_pos: 639 (counts), v_L: 1.20 m/s, v_R: 0.91 m/s
+2026-09-13 14:30:14,284 - INFO - 2026-09-13 14:30:14 Path tracking needs correction: heading_ok=False (alpha=36.8deg), distance_ok=False (cross=2.013m)
+2026-09-13 14:30:14,478 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] current_turn_radius: 59.41m
+2026-09-13 14:30:14,478 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:14,478 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] estimated left/right wheel speeds: 1.509, 1.492 m/s
+2026-09-13 14:30:14,481 - INFO - 2026-09-13 14:30:14 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:30:14,481 - INFO - 2026-09-13 14:30:14 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=1.74m alpha=34.1° target=(0.01,2.00) R=2.47 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:30:14,481 - INFO - 2026-09-13 14:30:14 [SPEED] wheel ceiling: max wheel 1.435 > 1.20 m/s, scaling by 0.836 -> body 1.051 m/s, wheels 1.200/0.902 (R=2.47m preserved)
+2026-09-13 14:30:14,482 - INFO - 2026-09-13 14:30:14 Turn: RIGHT, R: 2.47m, v_L: 1.20 m/s, v_R: 0.90 m/s
+2026-09-13 14:30:14,482 - INFO - 2026-09-13 14:30:14 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:30:14,482 - INFO - 2026-09-13 14:30:14 right_actuator_position: 645 (counts) from v_R 0.902 m/s
+2026-09-13 14:30:14,494 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 645 (counts)
+2026-09-13 14:30:14,494 - INFO - 2026-09-13 14:30:14 APPLY → left_pos: 420, right_pos: 645 (counts), v_L: 1.20 m/s, v_R: 0.90 m/s
+2026-09-13 14:30:14,495 - INFO - 2026-09-13 14:30:14 Path tracking needs correction: heading_ok=False (alpha=34.1deg), distance_ok=False (cross=1.736m)
+2026-09-13 14:30:14,666 - INFO - 2026-09-13 14:30:14 Carrier solution: fixed -> float
+2026-09-13 14:30:14,666 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] current_turn_radius: 5.90m
+2026-09-13 14:30:14,666 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:14,666 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] estimated left/right wheel speeds: 1.499, 1.331 m/s
+2026-09-13 14:30:14,666 - WARNING - 2026-09-13 14:30:14 GNSS invalid - holding neutral: carrSoln=1 (need 2 = RTK Fixed)
+2026-09-13 14:30:14,678 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:14,869 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] current_turn_radius: 34.83m
+2026-09-13 14:30:14,869 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:14,869 - INFO - 2026-09-13 14:30:14 [3.4 OBSERVED] estimated left/right wheel speeds: 1.495, 1.466 m/s
+2026-09-13 14:30:14,884 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:15,079 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] current_turn_radius: 88.87m
+2026-09-13 14:30:15,079 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:15,079 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] estimated left/right wheel speeds: 1.739, 1.726 m/s
+2026-09-13 14:30:15,094 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:15,271 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] current_turn_radius: 1007.30m
+2026-09-13 14:30:15,271 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:15,271 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] estimated left/right wheel speeds: 1.265, 1.264 m/s
+2026-09-13 14:30:15,284 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:15,475 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] current_turn_radius: 139.54m
+2026-09-13 14:30:15,475 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:15,475 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] estimated left/right wheel speeds: 1.133, 1.127 m/s
+2026-09-13 14:30:15,488 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:15,668 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] current_turn_radius: 6.24m
+2026-09-13 14:30:15,668 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:15,668 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] estimated left/right wheel speeds: 1.177, 1.052 m/s
+2026-09-13 14:30:15,681 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:15,868 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] current_turn_radius: 8.84m
+2026-09-13 14:30:15,868 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:15,868 - INFO - 2026-09-13 14:30:15 [3.4 OBSERVED] estimated left/right wheel speeds: 0.662, 0.717 m/s
+2026-09-13 14:30:15,880 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:16,077 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] current_turn_radius: 13.55m
+2026-09-13 14:30:16,077 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:16,077 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] estimated left/right wheel speeds: 0.233, 0.245 m/s
+2026-09-13 14:30:16,090 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:16,269 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:16,269 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:16,269 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:16,281 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:16,479 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:16,479 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:16,479 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:16,491 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:16,670 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:16,670 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:16,670 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:16,682 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:16,873 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:16,873 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:16,873 - INFO - 2026-09-13 14:30:16 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:16,885 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:17,082 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:17,082 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:17,082 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:17,095 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:17,286 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:17,286 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:17,286 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:17,297 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:17,472 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:17,472 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:17,472 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:17,485 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:17,742 - INFO - 2026-09-13 14:30:17 Carrier solution: float -> none
+2026-09-13 14:30:17,742 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:17,742 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:17,742 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:17,755 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:17,870 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:17,870 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:17,870 - INFO - 2026-09-13 14:30:17 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:17,884 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:18,074 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:18,075 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:18,075 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:18,088 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:18,271 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:18,271 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:18,271 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:18,284 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:18,484 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:18,484 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:18,484 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:18,498 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:18,755 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:18,755 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:18,755 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:18,768 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:18,877 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:18,877 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:18,877 - INFO - 2026-09-13 14:30:18 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:18,891 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:19,085 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:19,085 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:19,085 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:19,097 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:19,279 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:19,279 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:19,279 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:19,291 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:19,479 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:19,479 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:19,480 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:19,491 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:19,682 - INFO - 2026-09-13 14:30:19 Carrier solution: none -> float
+2026-09-13 14:30:19,682 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:19,682 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:19,682 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:19,694 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:19,880 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:19,880 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:19,880 - INFO - 2026-09-13 14:30:19 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:19,894 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:20,084 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:20,084 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:20,084 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:20,096 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:20,273 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:20,273 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:20,273 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:20,286 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:20,486 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:20,486 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:20,486 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:20,499 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:20,677 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:20,677 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:20,677 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:20,689 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:20,877 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:20,878 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:20,878 - INFO - 2026-09-13 14:30:20 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:20,890 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:21,082 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:21,083 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:21,083 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:21,094 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:21,286 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:21,286 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:21,286 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:21,297 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:21,485 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:21,485 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:21,485 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:21,497 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:21,685 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:21,685 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:21,685 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:21,697 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:21,887 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:21,887 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:21,887 - INFO - 2026-09-13 14:30:21 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:21,900 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:22,083 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:22,083 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:22,083 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:22,097 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:22,282 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:22,282 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:22,282 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:22,294 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:22,483 - INFO - HEARTBEAT: Loop running, last GPS data 0.0s ago
+2026-09-13 14:30:22,492 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:22,493 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:22,493 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:22,504 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:22,698 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:22,698 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:22,698 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:22,711 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:22,885 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:22,885 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:22,885 - INFO - 2026-09-13 14:30:22 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:22,898 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:23,110 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:23,110 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:23,110 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:23,122 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:23,295 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:23,295 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:23,295 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:23,308 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:23,493 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:23,493 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:23,493 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:23,505 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:23,701 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:23,701 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:23,701 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:23,714 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:23,892 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:23,892 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:23,892 - INFO - 2026-09-13 14:30:23 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:23,905 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:24,106 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:24,106 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:24,106 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:24,119 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:24,292 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:24,293 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:24,293 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:24,305 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:24,494 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:24,494 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:24,494 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:24,508 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:24,682 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:24,682 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:24,682 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:24,696 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:24,891 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:24,891 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:24,891 - INFO - 2026-09-13 14:30:24 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:24,905 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:25,098 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:25,098 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:25,098 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:25,111 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:25,286 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:25,286 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:25,286 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:25,299 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:25,486 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:25,486 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:25,486 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:25,499 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:25,688 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:25,688 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:25,689 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:25,702 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:25,888 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:25,888 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:25,888 - INFO - 2026-09-13 14:30:25 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:25,902 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:26,097 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:26,097 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:26,097 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:26,111 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:26,288 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:26,288 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:26,288 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:26,302 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:26,480 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:26,480 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:26,480 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:26,492 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:26,686 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:26,686 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:26,687 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:26,698 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:26,892 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:26,893 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:26,893 - INFO - 2026-09-13 14:30:26 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:26,905 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:27,093 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:27,093 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:27,093 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:27,105 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:27,286 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:27,287 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:27,287 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:27,299 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:27,490 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:27,490 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:27,490 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:27,502 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:27,687 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:27,687 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:27,687 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:27,699 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:27,887 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:27,887 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:27,888 - INFO - 2026-09-13 14:30:27 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:27,899 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:28,096 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:28,096 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:28,096 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:28,109 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:28,280 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:28,280 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:28,280 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:28,292 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:28,488 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:28,488 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:30:28,488 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:28,501 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:28,689 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:30:28,690 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:30:28,690 - INFO - 2026-09-13 14:30:28 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:30:28,702 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-09-13 14:30:28,833 - INFO - STOP requested (signal 2) - commanding neutral and shutting down
+2026-09-13 14:30:28,851 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-09-13 14:30:28,853 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-09-13 14:30:28,853 - INFO - GREEN_LED GPIO cleaned up successfully

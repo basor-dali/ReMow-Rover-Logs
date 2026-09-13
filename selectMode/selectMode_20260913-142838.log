@@ -1,3 +1,44 @@
 2026-09-13 14:28:38,731 - INFO - Constants module loaded successfully
 2026-09-13 14:28:38,737 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
 2026-09-13 14:28:39,054 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-09-13 14:28:39,358 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-09-13 14:28:39,358 - INFO - Application started
+2026-09-13 14:28:39,358 - INFO - Starting main function
+2026-09-13 14:28:39,358 - INFO - Waiting for user input...
+2026-09-13 14:28:39,362 - INFO - Background GPS heading capture started
+2026-09-13 14:29:54,623 - INFO - Background GPS port closed
+2026-09-13 14:29:54,623 - WARNING - No valid heading captured to persist
+2026-09-13 14:29:55,624 - INFO - User selected mode: B
+2026-09-13 14:29:55,625 - INFO - Mode B selected
+2026-09-13 14:29:55,625 - INFO - Enter a 2-digit combination
+2026-09-13 14:29:55,855 - INFO - Digit entered: 6
+2026-09-13 14:29:55,866 - INFO - Digit entered: 6
+2026-09-13 14:29:55,866 - INFO - Combination entered: 66
+2026-09-13 14:29:55,866 - INFO - File with ID 66 found in Record/Data
+2026-09-13 14:30:01,871 - INFO - Deployed version:  @ 
+2026-09-13 14:30:01,874 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-09-13 14:30:10,384 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-09-13 14:30:10,384 - INFO - Closed GPS port after configuration
+2026-09-13 14:30:10,384 - INFO - Triggering readRecordedRun with combination: 66
+2026-09-13 14:30:28,745 - INFO - Mode D pressed - requesting graceful stop (SIGINT). Subprocess will neutralize actuators before exiting.
+2026-09-13 14:30:29,992 - INFO - Subprocess exited gracefully (actuators neutralized by its own cleanup path)
+2026-09-13 14:30:30,007 - INFO - User requested stop with 'D'. Returning to main menu.
+2026-09-13 14:30:31,048 - INFO - Waiting for user input...
+2026-09-13 14:30:31,120 - INFO - Background GPS heading capture started
+2026-09-13 14:30:54,859 - INFO - Background GPS port closed
+2026-09-13 14:30:54,940 - INFO - Persisted heading 69.4° (accuracy: 1.0°) captured at 2026-09-13 14:30:53
+2026-09-13 14:30:56,001 - INFO - User selected mode: B
+2026-09-13 14:30:56,016 - INFO - Mode B selected
+2026-09-13 14:30:56,032 - INFO - Enter a 2-digit combination
+2026-09-13 14:30:58,558 - INFO - Digit entered: 6
+2026-09-13 14:30:58,592 - INFO - Digit entered: 6
+2026-09-13 14:30:58,608 - INFO - Combination entered: 66
+2026-09-13 14:30:58,653 - INFO - File with ID 66 found in Record/Data
+2026-09-13 14:31:04,903 - INFO - Deployed version:  @ 
+2026-09-13 14:31:04,965 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-09-13 14:31:13,575 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-09-13 14:31:13,910 - INFO - Closed GPS port after configuration
+2026-09-13 14:31:13,925 - INFO - Triggering readRecordedRun with combination: 66
+2026-09-13 14:31:34,664 - INFO - Subprocess exited with code: 0
+2026-09-13 14:31:35,747 - INFO - Waiting for user input...
+2026-09-13 14:31:35,885 - INFO - Background GPS heading capture started

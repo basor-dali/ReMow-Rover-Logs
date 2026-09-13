@@ -1,0 +1,1129 @@
+2026-09-13 14:31:14,160 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-09-13_14-31-14.log
+2026-09-13 14:31:14,163 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13 14:31:14,466 - INFO - Encoders reset to zero
+2026-09-13 14:31:14,466 - INFO - Starting readRecordedRun with combination: 66
+2026-09-13 14:31:14,466 - INFO - Selected most recent recording: 66_20260830-114454_GPSData.csv
+2026-09-13 14:31:14,470 - INFO - GREEN_LED initialized on GPIO 17
+2026-09-13 14:31:14,477 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-09-13_14-31-14_navigation_log.csv
+2026-09-13 14:31:14,477 - INFO - ENU origin from first waypoint: 37.9008976667, -97.6641736667
+2026-09-13 14:31:14,508 - INFO - Path model: 35 rows -> 30 points -> 29 segments, 37.2m total, leading dwell 2.0s
+2026-09-13 14:31:14,508 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13 14:31:14,508 - INFO - === GUIDANCE: pure_pursuit (legacy default) === fixed lookahead=2.0m, no command conditioning kappa_max=unbounded (no minimum radius) (conditioning and speed-adaptive lookahead are tangent_pose-only and stay off here)
+2026-09-13 14:31:14,524 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-09-13 14:31:14,524 - INFO - Actuators initialized to neutral (1100)
+2026-09-13 14:31:14,524 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13 14:31:14,524 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13 14:31:14,524 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13 14:31:14,524 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13 14:31:14,524 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-09-13 14:31:14,524 - INFO - First segment: heading 2.5°, length 0.33m; path ends at (3.30E, 2.61N)
+2026-09-13 14:31:14,524 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-09-13 14:31:14,524 - INFO - Acquire timeout: 300.0s
+2026-09-13 14:31:14,524 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-09-13 14:31:14,524 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-09-13 14:31:14,535 - INFO - GPS status: relPosValid=1, carrSoln=2, headingValid=1 (0.0s)
+2026-09-13 14:31:14,535 - INFO - === GPS RTK FIXED — ready to navigate (0.0s) ===
+2026-09-13 14:31:14,535 - INFO - Using persisted heading from driving to work area: 69.37° (captured at 2026-09-13 14:30:53)
+2026-09-13 14:31:14,703 - INFO - 2026-09-13 14:31:14 Initial Moving Baseline state: active
+2026-09-13 14:31:14,703 - INFO - 2026-09-13 14:31:14 Initial carrier solution: fixed
+2026-09-13 14:31:14,837 - INFO - 2026-09-13 14:31:14 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:31:14,837 - INFO - 2026-09-13 14:31:14 [3.4 OBSERVED] turn_direction: STRAIGHT
+2026-09-13 14:31:14,837 - INFO - 2026-09-13 14:31:14 [3.4 OBSERVED] estimated left/right wheel speeds: 0.007, 0.007 m/s
+2026-09-13 14:31:14,840 - INFO - 2026-09-13 14:31:14 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:14,840 - WARNING - 2026-09-13 14:31:14 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=5.04m (limit infm), heading=68.6°, target_progress=2.00m, target=(0.01,2.00), alpha=-42.9°
+2026-09-13 14:31:14,840 - WARNING - 2026-09-13 14:31:14 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13 14:31:14,840 - INFO - 2026-09-13 14:31:14 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=5.04m alpha=-42.9° target=(0.01,2.00) R=4.97 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:14,840 - INFO - 2026-09-13 14:31:14 [SPEED] wheel ceiling: max wheel 1.345 > 1.20 m/s, scaling by 0.892 -> body 1.121 m/s, wheels 1.042/1.200 (R=4.97m preserved)
+2026-09-13 14:31:14,841 - INFO - 2026-09-13 14:31:14 Turn: LEFT, R: 4.97m, v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:14,841 - INFO - 2026-09-13 14:31:14 left_actuator_position: 537 (counts) from v_L 1.042 m/s
+2026-09-13 14:31:14,841 - INFO - 2026-09-13 14:31:14 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:14,857 - INFO - Sent actuator positions to RoboClaw → M1 (left): 537, M2 (right): 420 (counts)
+2026-09-13 14:31:14,857 - INFO - 2026-09-13 14:31:14 APPLY → left_pos: 537, right_pos: 420 (counts), v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:14,857 - INFO - 2026-09-13 14:31:14 Path tracking needs correction: heading_ok=False (alpha=42.9deg), distance_ok=False (cross=5.037m)
+2026-09-13 14:31:14,896 - INFO - 2026-09-13 14:31:14 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:31:14,896 - INFO - 2026-09-13 14:31:14 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:14,896 - INFO - 2026-09-13 14:31:14 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:31:14,903 - INFO - 2026-09-13 14:31:14 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:14,903 - INFO - 2026-09-13 14:31:14 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=5.04m alpha=-43.1° target=(0.01,2.00) R=4.96 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:14,903 - INFO - 2026-09-13 14:31:14 [SPEED] wheel ceiling: max wheel 1.345 > 1.20 m/s, scaling by 0.892 -> body 1.121 m/s, wheels 1.042/1.200 (R=4.96m preserved)
+2026-09-13 14:31:14,903 - INFO - 2026-09-13 14:31:14 Turn: LEFT, R: 4.96m, v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:14,903 - INFO - 2026-09-13 14:31:14 left_actuator_position: 537 (counts) from v_L 1.042 m/s
+2026-09-13 14:31:14,903 - INFO - 2026-09-13 14:31:14 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:14,926 - INFO - Sent actuator positions to RoboClaw → M1 (left): 537, M2 (right): 420 (counts)
+2026-09-13 14:31:14,926 - INFO - 2026-09-13 14:31:14 APPLY → left_pos: 537, right_pos: 420 (counts), v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:14,926 - INFO - 2026-09-13 14:31:14 Path tracking needs correction: heading_ok=False (alpha=43.1deg), distance_ok=False (cross=5.037m)
+2026-09-13 14:31:15,103 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:31:15,103 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:15,103 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:31:15,109 - INFO - 2026-09-13 14:31:15 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:15,110 - INFO - 2026-09-13 14:31:15 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=5.04m alpha=-43.1° target=(0.01,2.00) R=4.96 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:15,110 - INFO - 2026-09-13 14:31:15 [SPEED] wheel ceiling: max wheel 1.345 > 1.20 m/s, scaling by 0.892 -> body 1.121 m/s, wheels 1.042/1.200 (R=4.96m preserved)
+2026-09-13 14:31:15,110 - INFO - 2026-09-13 14:31:15 Turn: LEFT, R: 4.96m, v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,110 - INFO - 2026-09-13 14:31:15 left_actuator_position: 537 (counts) from v_L 1.042 m/s
+2026-09-13 14:31:15,110 - INFO - 2026-09-13 14:31:15 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:15,127 - INFO - Sent actuator positions to RoboClaw → M1 (left): 537, M2 (right): 420 (counts)
+2026-09-13 14:31:15,127 - INFO - 2026-09-13 14:31:15 APPLY → left_pos: 537, right_pos: 420 (counts), v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,127 - INFO - 2026-09-13 14:31:15 Path tracking needs correction: heading_ok=False (alpha=43.1deg), distance_ok=False (cross=5.037m)
+2026-09-13 14:31:15,299 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:31:15,299 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:15,299 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:31:15,303 - INFO - 2026-09-13 14:31:15 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:15,303 - INFO - 2026-09-13 14:31:15 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=5.04m alpha=-43.2° target=(0.01,2.00) R=4.95 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:15,303 - INFO - 2026-09-13 14:31:15 [SPEED] wheel ceiling: max wheel 1.345 > 1.20 m/s, scaling by 0.892 -> body 1.121 m/s, wheels 1.041/1.200 (R=4.95m preserved)
+2026-09-13 14:31:15,303 - INFO - 2026-09-13 14:31:15 Turn: LEFT, R: 4.95m, v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,304 - INFO - 2026-09-13 14:31:15 left_actuator_position: 537 (counts) from v_L 1.041 m/s
+2026-09-13 14:31:15,304 - INFO - 2026-09-13 14:31:15 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:15,320 - INFO - Sent actuator positions to RoboClaw → M1 (left): 537, M2 (right): 420 (counts)
+2026-09-13 14:31:15,320 - INFO - 2026-09-13 14:31:15 APPLY → left_pos: 537, right_pos: 420 (counts), v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,320 - INFO - 2026-09-13 14:31:15 Path tracking needs correction: heading_ok=False (alpha=43.2deg), distance_ok=False (cross=5.037m)
+2026-09-13 14:31:15,494 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] current_turn_radius: infm
+2026-09-13 14:31:15,494 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:15,494 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-09-13 14:31:15,497 - INFO - 2026-09-13 14:31:15 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:15,497 - INFO - 2026-09-13 14:31:15 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=5.03m alpha=-43.1° target=(0.01,2.00) R=4.96 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:15,497 - INFO - 2026-09-13 14:31:15 [SPEED] wheel ceiling: max wheel 1.345 > 1.20 m/s, scaling by 0.892 -> body 1.121 m/s, wheels 1.042/1.200 (R=4.96m preserved)
+2026-09-13 14:31:15,497 - INFO - 2026-09-13 14:31:15 Turn: LEFT, R: 4.96m, v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,497 - INFO - 2026-09-13 14:31:15 left_actuator_position: 537 (counts) from v_L 1.042 m/s
+2026-09-13 14:31:15,497 - INFO - 2026-09-13 14:31:15 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:15,519 - INFO - Sent actuator positions to RoboClaw → M1 (left): 537, M2 (right): 420 (counts)
+2026-09-13 14:31:15,519 - INFO - 2026-09-13 14:31:15 APPLY → left_pos: 537, right_pos: 420 (counts), v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,520 - INFO - 2026-09-13 14:31:15 Path tracking needs correction: heading_ok=False (alpha=43.1deg), distance_ok=False (cross=5.029m)
+2026-09-13 14:31:15,701 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] current_turn_radius: 2.75m
+2026-09-13 14:31:15,702 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:15,702 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] estimated left/right wheel speeds: 0.222, 0.287 m/s
+2026-09-13 14:31:15,704 - INFO - 2026-09-13 14:31:15 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:15,704 - INFO - 2026-09-13 14:31:15 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=4.99m alpha=-42.2° target=(0.01,2.00) R=5.01 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:15,704 - INFO - 2026-09-13 14:31:15 [SPEED] wheel ceiling: max wheel 1.344 > 1.20 m/s, scaling by 0.893 -> body 1.122 m/s, wheels 1.043/1.200 (R=5.01m preserved)
+2026-09-13 14:31:15,704 - INFO - 2026-09-13 14:31:15 Turn: LEFT, R: 5.01m, v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,704 - INFO - 2026-09-13 14:31:15 left_actuator_position: 536 (counts) from v_L 1.043 m/s
+2026-09-13 14:31:15,704 - INFO - 2026-09-13 14:31:15 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:15,723 - INFO - Sent actuator positions to RoboClaw → M1 (left): 536, M2 (right): 420 (counts)
+2026-09-13 14:31:15,723 - INFO - 2026-09-13 14:31:15 APPLY → left_pos: 536, right_pos: 420 (counts), v_L: 1.04 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,723 - INFO - 2026-09-13 14:31:15 Path tracking needs correction: heading_ok=False (alpha=42.2deg), distance_ok=False (cross=4.988m)
+2026-09-13 14:31:15,896 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] current_turn_radius: 2.02m
+2026-09-13 14:31:15,896 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:15,896 - INFO - 2026-09-13 14:31:15 [3.4 OBSERVED] estimated left/right wheel speeds: 0.517, 0.734 m/s
+2026-09-13 14:31:15,902 - INFO - 2026-09-13 14:31:15 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:15,902 - INFO - 2026-09-13 14:31:15 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=4.88m alpha=-39.7° target=(0.01,2.00) R=5.20 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:15,903 - INFO - 2026-09-13 14:31:15 [SPEED] wheel ceiling: max wheel 1.341 > 1.20 m/s, scaling by 0.895 -> body 1.124 m/s, wheels 1.049/1.200 (R=5.20m preserved)
+2026-09-13 14:31:15,903 - INFO - 2026-09-13 14:31:15 Turn: LEFT, R: 5.20m, v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,903 - INFO - 2026-09-13 14:31:15 left_actuator_position: 532 (counts) from v_L 1.049 m/s
+2026-09-13 14:31:15,903 - INFO - 2026-09-13 14:31:15 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:15,920 - INFO - Sent actuator positions to RoboClaw → M1 (left): 532, M2 (right): 420 (counts)
+2026-09-13 14:31:15,920 - INFO - 2026-09-13 14:31:15 APPLY → left_pos: 532, right_pos: 420 (counts), v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:15,920 - INFO - 2026-09-13 14:31:15 Path tracking needs correction: heading_ok=False (alpha=39.7deg), distance_ok=False (cross=4.883m)
+2026-09-13 14:31:16,103 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] current_turn_radius: 2.67m
+2026-09-13 14:31:16,103 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:16,103 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] estimated left/right wheel speeds: 0.749, 0.975 m/s
+2026-09-13 14:31:16,106 - INFO - 2026-09-13 14:31:16 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:16,106 - INFO - 2026-09-13 14:31:16 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=4.76m alpha=-37.1° target=(0.01,2.00) R=5.42 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:16,106 - INFO - 2026-09-13 14:31:16 [SPEED] wheel ceiling: max wheel 1.337 > 1.20 m/s, scaling by 0.897 -> body 1.127 m/s, wheels 1.054/1.200 (R=5.42m preserved)
+2026-09-13 14:31:16,106 - INFO - 2026-09-13 14:31:16 Turn: LEFT, R: 5.42m, v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,107 - INFO - 2026-09-13 14:31:16 left_actuator_position: 527 (counts) from v_L 1.054 m/s
+2026-09-13 14:31:16,107 - INFO - 2026-09-13 14:31:16 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:16,126 - INFO - Sent actuator positions to RoboClaw → M1 (left): 527, M2 (right): 420 (counts)
+2026-09-13 14:31:16,126 - INFO - 2026-09-13 14:31:16 APPLY → left_pos: 527, right_pos: 420 (counts), v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,126 - INFO - 2026-09-13 14:31:16 Path tracking needs correction: heading_ok=False (alpha=37.1deg), distance_ok=False (cross=4.756m)
+2026-09-13 14:31:16,288 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] current_turn_radius: 3.26m
+2026-09-13 14:31:16,289 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:16,289 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] estimated left/right wheel speeds: 1.115, 1.383 m/s
+2026-09-13 14:31:16,290 - INFO - 2026-09-13 14:31:16 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:16,290 - INFO - 2026-09-13 14:31:16 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=4.55m alpha=-34.3° target=(0.01,2.00) R=5.63 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:16,290 - INFO - 2026-09-13 14:31:16 [SPEED] wheel ceiling: max wheel 1.334 > 1.20 m/s, scaling by 0.899 -> body 1.130 m/s, wheels 1.060/1.200 (R=5.63m preserved)
+2026-09-13 14:31:16,290 - INFO - 2026-09-13 14:31:16 Turn: LEFT, R: 5.63m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,290 - INFO - 2026-09-13 14:31:16 left_actuator_position: 523 (counts) from v_L 1.060 m/s
+2026-09-13 14:31:16,290 - INFO - 2026-09-13 14:31:16 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:16,314 - INFO - Sent actuator positions to RoboClaw → M1 (left): 523, M2 (right): 420 (counts)
+2026-09-13 14:31:16,314 - INFO - 2026-09-13 14:31:16 APPLY → left_pos: 523, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,314 - INFO - 2026-09-13 14:31:16 Path tracking needs correction: heading_ok=False (alpha=34.3deg), distance_ok=False (cross=4.554m)
+2026-09-13 14:31:16,493 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] current_turn_radius: 12.46m
+2026-09-13 14:31:16,493 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:16,493 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] estimated left/right wheel speeds: 1.324, 1.401 m/s
+2026-09-13 14:31:16,497 - INFO - 2026-09-13 14:31:16 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:16,497 - INFO - 2026-09-13 14:31:16 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=4.30m alpha=-34.7° target=(0.01,2.00) R=5.38 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:16,497 - INFO - 2026-09-13 14:31:16 [SPEED] wheel ceiling: max wheel 1.338 > 1.20 m/s, scaling by 0.897 -> body 1.127 m/s, wheels 1.053/1.200 (R=5.38m preserved)
+2026-09-13 14:31:16,497 - INFO - 2026-09-13 14:31:16 Turn: LEFT, R: 5.38m, v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,497 - INFO - 2026-09-13 14:31:16 left_actuator_position: 528 (counts) from v_L 1.053 m/s
+2026-09-13 14:31:16,497 - INFO - 2026-09-13 14:31:16 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:16,516 - INFO - Sent actuator positions to RoboClaw → M1 (left): 528, M2 (right): 420 (counts)
+2026-09-13 14:31:16,516 - INFO - 2026-09-13 14:31:16 APPLY → left_pos: 528, right_pos: 420 (counts), v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,516 - INFO - 2026-09-13 14:31:16 Path tracking needs correction: heading_ok=False (alpha=34.7deg), distance_ok=False (cross=4.301m)
+2026-09-13 14:31:16,688 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] current_turn_radius: 2.79m
+2026-09-13 14:31:16,688 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:16,688 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] estimated left/right wheel speeds: 1.091, 1.404 m/s
+2026-09-13 14:31:16,690 - INFO - 2026-09-13 14:31:16 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:16,690 - INFO - 2026-09-13 14:31:16 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=4.08m alpha=-31.0° target=(0.01,2.00) R=5.76 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:16,690 - INFO - 2026-09-13 14:31:16 [SPEED] wheel ceiling: max wheel 1.333 > 1.20 m/s, scaling by 0.900 -> body 1.131 m/s, wheels 1.063/1.200 (R=5.76m preserved)
+2026-09-13 14:31:16,690 - INFO - 2026-09-13 14:31:16 Turn: LEFT, R: 5.76m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,690 - INFO - 2026-09-13 14:31:16 left_actuator_position: 521 (counts) from v_L 1.063 m/s
+2026-09-13 14:31:16,690 - INFO - 2026-09-13 14:31:16 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:16,711 - INFO - Sent actuator positions to RoboClaw → M1 (left): 521, M2 (right): 420 (counts)
+2026-09-13 14:31:16,711 - INFO - 2026-09-13 14:31:16 APPLY → left_pos: 521, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,711 - INFO - 2026-09-13 14:31:16 Path tracking needs correction: heading_ok=False (alpha=31.0deg), distance_ok=False (cross=4.080m)
+2026-09-13 14:31:16,888 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] current_turn_radius: 8.02m
+2026-09-13 14:31:16,888 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:16,888 - INFO - 2026-09-13 14:31:16 [3.4 OBSERVED] estimated left/right wheel speeds: 1.611, 1.758 m/s
+2026-09-13 14:31:16,890 - INFO - 2026-09-13 14:31:16 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:16,890 - INFO - 2026-09-13 14:31:16 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=3.74m alpha=-30.1° target=(0.01,2.00) R=5.59 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:16,890 - INFO - 2026-09-13 14:31:16 [SPEED] wheel ceiling: max wheel 1.335 > 1.20 m/s, scaling by 0.899 -> body 1.129 m/s, wheels 1.058/1.200 (R=5.59m preserved)
+2026-09-13 14:31:16,890 - INFO - 2026-09-13 14:31:16 Turn: LEFT, R: 5.59m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,890 - INFO - 2026-09-13 14:31:16 left_actuator_position: 524 (counts) from v_L 1.058 m/s
+2026-09-13 14:31:16,890 - INFO - 2026-09-13 14:31:16 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:16,909 - INFO - Sent actuator positions to RoboClaw → M1 (left): 524, M2 (right): 420 (counts)
+2026-09-13 14:31:16,909 - INFO - 2026-09-13 14:31:16 APPLY → left_pos: 524, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:16,909 - INFO - 2026-09-13 14:31:16 Path tracking needs correction: heading_ok=False (alpha=30.1deg), distance_ok=False (cross=3.736m)
+2026-09-13 14:31:17,095 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] current_turn_radius: 8.36m
+2026-09-13 14:31:17,095 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:17,095 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] estimated left/right wheel speeds: 1.467, 1.595 m/s
+2026-09-13 14:31:17,099 - INFO - 2026-09-13 14:31:17 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:17,099 - INFO - 2026-09-13 14:31:17 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=3.46m alpha=-30.0° target=(0.01,2.00) R=5.34 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:17,099 - INFO - 2026-09-13 14:31:17 [SPEED] wheel ceiling: max wheel 1.339 > 1.20 m/s, scaling by 0.896 -> body 1.126 m/s, wheels 1.052/1.200 (R=5.34m preserved)
+2026-09-13 14:31:17,099 - INFO - 2026-09-13 14:31:17 Turn: LEFT, R: 5.34m, v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,099 - INFO - 2026-09-13 14:31:17 left_actuator_position: 529 (counts) from v_L 1.052 m/s
+2026-09-13 14:31:17,099 - INFO - 2026-09-13 14:31:17 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:17,116 - INFO - Sent actuator positions to RoboClaw → M1 (left): 529, M2 (right): 420 (counts)
+2026-09-13 14:31:17,116 - INFO - 2026-09-13 14:31:17 APPLY → left_pos: 529, right_pos: 420 (counts), v_L: 1.05 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,116 - INFO - 2026-09-13 14:31:17 Path tracking needs correction: heading_ok=False (alpha=30.0deg), distance_ok=False (cross=3.456m)
+2026-09-13 14:31:17,292 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] current_turn_radius: 3.81m
+2026-09-13 14:31:17,292 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:17,292 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] estimated left/right wheel speeds: 1.148, 1.379 m/s
+2026-09-13 14:31:17,296 - INFO - 2026-09-13 14:31:17 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:17,296 - INFO - 2026-09-13 14:31:17 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=3.19m alpha=-27.4° target=(0.01,2.00) R=5.54 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:17,296 - INFO - 2026-09-13 14:31:17 [SPEED] wheel ceiling: max wheel 1.336 > 1.20 m/s, scaling by 0.898 -> body 1.129 m/s, wheels 1.057/1.200 (R=5.54m preserved)
+2026-09-13 14:31:17,296 - INFO - 2026-09-13 14:31:17 Turn: LEFT, R: 5.54m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,296 - INFO - 2026-09-13 14:31:17 left_actuator_position: 525 (counts) from v_L 1.057 m/s
+2026-09-13 14:31:17,296 - INFO - 2026-09-13 14:31:17 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:17,322 - INFO - Sent actuator positions to RoboClaw → M1 (left): 525, M2 (right): 420 (counts)
+2026-09-13 14:31:17,322 - INFO - 2026-09-13 14:31:17 APPLY → left_pos: 525, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,323 - INFO - 2026-09-13 14:31:17 Path tracking needs correction: heading_ok=False (alpha=27.4deg), distance_ok=False (cross=3.189m)
+2026-09-13 14:31:17,491 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] current_turn_radius: 4.05m
+2026-09-13 14:31:17,491 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:17,491 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] estimated left/right wheel speeds: 1.312, 1.560 m/s
+2026-09-13 14:31:17,493 - INFO - 2026-09-13 14:31:17 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:17,493 - INFO - 2026-09-13 14:31:17 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.93m alpha=-25.5° target=(0.01,2.00) R=5.65 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:17,493 - INFO - 2026-09-13 14:31:17 [SPEED] wheel ceiling: max wheel 1.334 > 1.20 m/s, scaling by 0.899 -> body 1.130 m/s, wheels 1.060/1.200 (R=5.65m preserved)
+2026-09-13 14:31:17,493 - INFO - 2026-09-13 14:31:17 Turn: LEFT, R: 5.65m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,493 - INFO - 2026-09-13 14:31:17 left_actuator_position: 523 (counts) from v_L 1.060 m/s
+2026-09-13 14:31:17,493 - INFO - 2026-09-13 14:31:17 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:17,514 - INFO - Sent actuator positions to RoboClaw → M1 (left): 523, M2 (right): 420 (counts)
+2026-09-13 14:31:17,514 - INFO - 2026-09-13 14:31:17 APPLY → left_pos: 523, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,514 - INFO - 2026-09-13 14:31:17 Path tracking needs correction: heading_ok=False (alpha=25.5deg), distance_ok=False (cross=2.931m)
+2026-09-13 14:31:17,692 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] current_turn_radius: 3.82m
+2026-09-13 14:31:17,692 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:17,692 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] estimated left/right wheel speeds: 1.282, 1.541 m/s
+2026-09-13 14:31:17,696 - INFO - 2026-09-13 14:31:17 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:17,696 - INFO - 2026-09-13 14:31:17 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.67m alpha=-22.0° target=(0.01,2.00) R=6.13 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:17,696 - INFO - 2026-09-13 14:31:17 [SPEED] wheel ceiling: max wheel 1.328 > 1.20 m/s, scaling by 0.904 -> body 1.135 m/s, wheels 1.070/1.200 (R=6.13m preserved)
+2026-09-13 14:31:17,696 - INFO - 2026-09-13 14:31:17 Turn: LEFT, R: 6.13m, v_L: 1.07 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,696 - INFO - 2026-09-13 14:31:17 left_actuator_position: 515 (counts) from v_L 1.070 m/s
+2026-09-13 14:31:17,696 - INFO - 2026-09-13 14:31:17 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:17,716 - INFO - Sent actuator positions to RoboClaw → M1 (left): 515, M2 (right): 420 (counts)
+2026-09-13 14:31:17,716 - INFO - 2026-09-13 14:31:17 APPLY → left_pos: 515, right_pos: 420 (counts), v_L: 1.07 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,716 - INFO - 2026-09-13 14:31:17 Path tracking needs correction: heading_ok=False (alpha=22.0deg), distance_ok=False (cross=2.665m)
+2026-09-13 14:31:17,889 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] current_turn_radius: 7.66m
+2026-09-13 14:31:17,889 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:17,889 - INFO - 2026-09-13 14:31:17 [3.4 OBSERVED] estimated left/right wheel speeds: 1.411, 1.547 m/s
+2026-09-13 14:31:17,896 - INFO - 2026-09-13 14:31:17 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:17,896 - INFO - 2026-09-13 14:31:17 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.35m alpha=-21.5° target=(0.01,2.00) R=5.88 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:17,896 - INFO - 2026-09-13 14:31:17 [SPEED] wheel ceiling: max wheel 1.331 > 1.20 m/s, scaling by 0.902 -> body 1.133 m/s, wheels 1.065/1.200 (R=5.88m preserved)
+2026-09-13 14:31:17,896 - INFO - 2026-09-13 14:31:17 Turn: LEFT, R: 5.88m, v_L: 1.07 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,896 - INFO - 2026-09-13 14:31:17 left_actuator_position: 519 (counts) from v_L 1.065 m/s
+2026-09-13 14:31:17,896 - INFO - 2026-09-13 14:31:17 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:17,917 - INFO - Sent actuator positions to RoboClaw → M1 (left): 519, M2 (right): 420 (counts)
+2026-09-13 14:31:17,917 - INFO - 2026-09-13 14:31:17 APPLY → left_pos: 519, right_pos: 420 (counts), v_L: 1.07 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:17,917 - INFO - 2026-09-13 14:31:17 Path tracking needs correction: heading_ok=False (alpha=21.5deg), distance_ok=False (cross=2.346m)
+2026-09-13 14:31:18,089 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] current_turn_radius: 5.26m
+2026-09-13 14:31:18,089 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:18,089 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] estimated left/right wheel speeds: 1.212, 1.384 m/s
+2026-09-13 14:31:18,092 - INFO - 2026-09-13 14:31:18 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:18,092 - INFO - 2026-09-13 14:31:18 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=2.07m alpha=-20.3° target=(0.01,2.00) R=5.82 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:18,092 - INFO - 2026-09-13 14:31:18 [SPEED] wheel ceiling: max wheel 1.332 > 1.20 m/s, scaling by 0.901 -> body 1.132 m/s, wheels 1.064/1.200 (R=5.82m preserved)
+2026-09-13 14:31:18,092 - INFO - 2026-09-13 14:31:18 Turn: LEFT, R: 5.82m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,092 - INFO - 2026-09-13 14:31:18 left_actuator_position: 520 (counts) from v_L 1.064 m/s
+2026-09-13 14:31:18,092 - INFO - 2026-09-13 14:31:18 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:18,112 - INFO - Sent actuator positions to RoboClaw → M1 (left): 520, M2 (right): 420 (counts)
+2026-09-13 14:31:18,112 - INFO - 2026-09-13 14:31:18 APPLY → left_pos: 520, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,112 - INFO - 2026-09-13 14:31:18 Path tracking needs correction: heading_ok=False (alpha=20.3deg), distance_ok=False (cross=2.070m)
+2026-09-13 14:31:18,288 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] current_turn_radius: 7.08m
+2026-09-13 14:31:18,288 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:18,288 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] estimated left/right wheel speeds: 1.438, 1.587 m/s
+2026-09-13 14:31:18,296 - INFO - 2026-09-13 14:31:18 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:18,296 - INFO - 2026-09-13 14:31:18 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=1.79m alpha=-19.3° target=(0.01,2.00) R=5.69 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:18,296 - INFO - 2026-09-13 14:31:18 [SPEED] wheel ceiling: max wheel 1.334 > 1.20 m/s, scaling by 0.900 -> body 1.130 m/s, wheels 1.061/1.200 (R=5.69m preserved)
+2026-09-13 14:31:18,296 - INFO - 2026-09-13 14:31:18 Turn: LEFT, R: 5.69m, v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,296 - INFO - 2026-09-13 14:31:18 left_actuator_position: 522 (counts) from v_L 1.061 m/s
+2026-09-13 14:31:18,296 - INFO - 2026-09-13 14:31:18 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:18,319 - INFO - Sent actuator positions to RoboClaw → M1 (left): 522, M2 (right): 420 (counts)
+2026-09-13 14:31:18,319 - INFO - 2026-09-13 14:31:18 APPLY → left_pos: 522, right_pos: 420 (counts), v_L: 1.06 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,319 - INFO - 2026-09-13 14:31:18 Path tracking needs correction: heading_ok=False (alpha=19.3deg), distance_ok=False (cross=1.787m)
+2026-09-13 14:31:18,493 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] current_turn_radius: 3.60m
+2026-09-13 14:31:18,493 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:18,493 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] estimated left/right wheel speeds: 1.336, 1.624 m/s
+2026-09-13 14:31:18,496 - INFO - 2026-09-13 14:31:18 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:18,496 - INFO - 2026-09-13 14:31:18 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=1.45m alpha=-15.8° target=(0.01,2.00) R=6.30 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:18,496 - INFO - 2026-09-13 14:31:18 [SPEED] wheel ceiling: max wheel 1.326 > 1.20 m/s, scaling by 0.905 -> body 1.137 m/s, wheels 1.074/1.200 (R=6.30m preserved)
+2026-09-13 14:31:18,496 - INFO - 2026-09-13 14:31:18 Turn: LEFT, R: 6.30m, v_L: 1.07 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,496 - INFO - 2026-09-13 14:31:18 left_actuator_position: 513 (counts) from v_L 1.074 m/s
+2026-09-13 14:31:18,496 - INFO - 2026-09-13 14:31:18 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:18,513 - INFO - Sent actuator positions to RoboClaw → M1 (left): 513, M2 (right): 420 (counts)
+2026-09-13 14:31:18,513 - INFO - 2026-09-13 14:31:18 APPLY → left_pos: 513, right_pos: 420 (counts), v_L: 1.07 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,513 - INFO - 2026-09-13 14:31:18 Path tracking needs correction: heading_ok=False (alpha=15.8deg), distance_ok=False (cross=1.454m)
+2026-09-13 14:31:18,696 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] current_turn_radius: 4.44m
+2026-09-13 14:31:18,696 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:18,696 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] estimated left/right wheel speeds: 1.565, 1.833 m/s
+2026-09-13 14:31:18,699 - INFO - 2026-09-13 14:31:18 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:18,699 - INFO - 2026-09-13 14:31:18 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=1.12m alpha=-13.0° target=(0.01,2.00) R=6.91 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:18,699 - INFO - 2026-09-13 14:31:18 [SPEED] wheel ceiling: max wheel 1.320 > 1.20 m/s, scaling by 0.909 -> body 1.142 m/s, wheels 1.084/1.200 (R=6.91m preserved)
+2026-09-13 14:31:18,699 - INFO - 2026-09-13 14:31:18 Turn: LEFT, R: 6.91m, v_L: 1.08 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,699 - INFO - 2026-09-13 14:31:18 left_actuator_position: 504 (counts) from v_L 1.084 m/s
+2026-09-13 14:31:18,700 - INFO - 2026-09-13 14:31:18 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:18,716 - INFO - Sent actuator positions to RoboClaw → M1 (left): 504, M2 (right): 420 (counts)
+2026-09-13 14:31:18,716 - INFO - 2026-09-13 14:31:18 APPLY → left_pos: 504, right_pos: 420 (counts), v_L: 1.08 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,716 - INFO - 2026-09-13 14:31:18 Path tracking needs correction: heading_ok=False (alpha=13.0deg), distance_ok=False (cross=1.124m)
+2026-09-13 14:31:18,887 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] current_turn_radius: 4.08m
+2026-09-13 14:31:18,887 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:18,887 - INFO - 2026-09-13 14:31:18 [3.4 OBSERVED] estimated left/right wheel speeds: 1.424, 1.691 m/s
+2026-09-13 14:31:18,889 - INFO - 2026-09-13 14:31:18 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:18,889 - INFO - 2026-09-13 14:31:18 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=0.82m alpha=-10.3° target=(0.01,2.00) R=7.91 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:18,889 - INFO - 2026-09-13 14:31:18 [SPEED] wheel ceiling: max wheel 1.312 > 1.20 m/s, scaling by 0.915 -> body 1.149 m/s, wheels 1.098/1.200 (R=7.91m preserved)
+2026-09-13 14:31:18,889 - INFO - 2026-09-13 14:31:18 Turn: LEFT, R: 7.91m, v_L: 1.10 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,889 - INFO - 2026-09-13 14:31:18 left_actuator_position: 494 (counts) from v_L 1.098 m/s
+2026-09-13 14:31:18,889 - INFO - 2026-09-13 14:31:18 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:18,910 - INFO - Sent actuator positions to RoboClaw → M1 (left): 494, M2 (right): 420 (counts)
+2026-09-13 14:31:18,910 - INFO - 2026-09-13 14:31:18 APPLY → left_pos: 494, right_pos: 420 (counts), v_L: 1.10 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:18,910 - INFO - 2026-09-13 14:31:18 Path tracking needs correction: heading_ok=False (alpha=10.3deg), distance_ok=False (cross=0.819m)
+2026-09-13 14:31:19,099 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] current_turn_radius: 6.50m
+2026-09-13 14:31:19,099 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:19,100 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] estimated left/right wheel speeds: 1.436, 1.599 m/s
+2026-09-13 14:31:19,105 - INFO - 2026-09-13 14:31:19 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:19,105 - INFO - 2026-09-13 14:31:19 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=0.52m alpha=-9.2° target=(0.01,2.00) R=7.90 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:19,105 - INFO - 2026-09-13 14:31:19 [SPEED] wheel ceiling: max wheel 1.312 > 1.20 m/s, scaling by 0.915 -> body 1.149 m/s, wheels 1.098/1.200 (R=7.90m preserved)
+2026-09-13 14:31:19,105 - INFO - 2026-09-13 14:31:19 Turn: LEFT, R: 7.90m, v_L: 1.10 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,105 - INFO - 2026-09-13 14:31:19 left_actuator_position: 494 (counts) from v_L 1.098 m/s
+2026-09-13 14:31:19,105 - INFO - 2026-09-13 14:31:19 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:19,126 - INFO - Sent actuator positions to RoboClaw → M1 (left): 494, M2 (right): 420 (counts)
+2026-09-13 14:31:19,126 - INFO - 2026-09-13 14:31:19 APPLY → left_pos: 494, right_pos: 420 (counts), v_L: 1.10 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,126 - INFO - 2026-09-13 14:31:19 Path tracking needs correction: heading_ok=True (alpha=9.2deg), distance_ok=False (cross=0.518m)
+2026-09-13 14:31:19,288 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] current_turn_radius: 5.61m
+2026-09-13 14:31:19,288 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:19,288 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] estimated left/right wheel speeds: 1.485, 1.682 m/s
+2026-09-13 14:31:19,292 - INFO - 2026-09-13 14:31:19 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:19,292 - INFO - 2026-09-13 14:31:19 [FOLLOW] TRACK: progress=0.00m/37.2m seg=0 cross=0.19m alpha=-6.8° target=(0.01,2.00) R=9.17 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:19,292 - INFO - 2026-09-13 14:31:19 [SPEED] wheel ceiling: max wheel 1.304 > 1.20 m/s, scaling by 0.920 -> body 1.156 m/s, wheels 1.112/1.200 (R=9.17m preserved)
+2026-09-13 14:31:19,292 - INFO - 2026-09-13 14:31:19 Turn: LEFT, R: 9.17m, v_L: 1.11 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,293 - INFO - 2026-09-13 14:31:19 left_actuator_position: 483 (counts) from v_L 1.112 m/s
+2026-09-13 14:31:19,293 - INFO - 2026-09-13 14:31:19 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:19,315 - INFO - Sent actuator positions to RoboClaw → M1 (left): 483, M2 (right): 420 (counts)
+2026-09-13 14:31:19,315 - INFO - 2026-09-13 14:31:19 APPLY → left_pos: 483, right_pos: 420 (counts), v_L: 1.11 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,315 - INFO - 2026-09-13 14:31:19 Path tracking GOOD: alpha 6.8deg, cross-track 0.187m
+2026-09-13 14:31:19,496 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] current_turn_radius: 4.60m
+2026-09-13 14:31:19,496 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:19,496 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] estimated left/right wheel speeds: 1.416, 1.649 m/s
+2026-09-13 14:31:19,499 - INFO - 2026-09-13 14:31:19 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:19,499 - INFO - 2026-09-13 14:31:19 [FOLLOW] TRACK: progress=0.13m/37.2m seg=0 cross=0.10m alpha=-5.0° target=(0.01,2.13) R=11.49 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:19,499 - INFO - 2026-09-13 14:31:19 [SPEED] wheel ceiling: max wheel 1.295 > 1.20 m/s, scaling by 0.927 -> body 1.165 m/s, wheels 1.129/1.200 (R=11.49m preserved)
+2026-09-13 14:31:19,499 - INFO - 2026-09-13 14:31:19 Turn: LEFT, R: 11.49m, v_L: 1.13 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,499 - INFO - 2026-09-13 14:31:19 left_actuator_position: 470 (counts) from v_L 1.129 m/s
+2026-09-13 14:31:19,499 - INFO - 2026-09-13 14:31:19 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:19,516 - INFO - Sent actuator positions to RoboClaw → M1 (left): 470, M2 (right): 420 (counts)
+2026-09-13 14:31:19,516 - INFO - 2026-09-13 14:31:19 APPLY → left_pos: 470, right_pos: 420 (counts), v_L: 1.13 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,516 - INFO - 2026-09-13 14:31:19 Path tracking GOOD: alpha 5.0deg, cross-track 0.097m
+2026-09-13 14:31:19,691 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] current_turn_radius: 6.23m
+2026-09-13 14:31:19,691 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:19,692 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] estimated left/right wheel speeds: 1.421, 1.590 m/s
+2026-09-13 14:31:19,696 - INFO - 2026-09-13 14:31:19 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:19,696 - INFO - 2026-09-13 14:31:19 [FOLLOW] TRACK: progress=0.41m/37.2m seg=1 cross=0.09m alpha=-2.3° target=(0.01,2.41) R=24.87 LEFT v=1.26 dwell=0.0s
+2026-09-13 14:31:19,696 - INFO - 2026-09-13 14:31:19 [SPEED] wheel ceiling: max wheel 1.274 > 1.20 m/s, scaling by 0.942 -> body 1.183 m/s, wheels 1.167/1.200 (R=24.87m preserved)
+2026-09-13 14:31:19,696 - INFO - 2026-09-13 14:31:19 Turn: LEFT, R: 24.87m, v_L: 1.17 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,696 - INFO - 2026-09-13 14:31:19 left_actuator_position: 441 (counts) from v_L 1.167 m/s
+2026-09-13 14:31:19,696 - INFO - 2026-09-13 14:31:19 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:19,716 - INFO - Sent actuator positions to RoboClaw → M1 (left): 441, M2 (right): 420 (counts)
+2026-09-13 14:31:19,716 - INFO - 2026-09-13 14:31:19 APPLY → left_pos: 441, right_pos: 420 (counts), v_L: 1.17 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,716 - INFO - 2026-09-13 14:31:19 Path tracking GOOD: alpha 2.3deg, cross-track 0.088m
+2026-09-13 14:31:19,886 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] current_turn_radius: 4.69m
+2026-09-13 14:31:19,886 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:19,886 - INFO - 2026-09-13 14:31:19 [3.4 OBSERVED] estimated left/right wheel speeds: 1.769, 2.054 m/s
+2026-09-13 14:31:19,889 - INFO - 2026-09-13 14:31:19 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:19,890 - INFO - 2026-09-13 14:31:19 [FOLLOW] TRACK: progress=0.78m/37.2m seg=1 cross=0.12m alpha=1.3° target=(0.01,2.78) R=inf STRAIGHT v=1.26 dwell=0.0s
+2026-09-13 14:31:19,890 - INFO - 2026-09-13 14:31:19 [SPEED] wheel ceiling: max wheel 1.256 > 1.20 m/s, scaling by 0.955 -> body 1.200 m/s, wheels 1.200/1.200 (R=infm preserved)
+2026-09-13 14:31:19,890 - INFO - 2026-09-13 14:31:19 Turn: STRAIGHT, R: infm, v_L: 1.20 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,890 - INFO - 2026-09-13 14:31:19 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:19,890 - INFO - 2026-09-13 14:31:19 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:19,912 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 420 (counts)
+2026-09-13 14:31:19,912 - INFO - 2026-09-13 14:31:19 APPLY → left_pos: 420, right_pos: 420 (counts), v_L: 1.20 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:19,912 - INFO - 2026-09-13 14:31:19 Path tracking GOOD: alpha 1.3deg, cross-track 0.117m
+2026-09-13 14:31:20,097 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] current_turn_radius: 8.94m
+2026-09-13 14:31:20,097 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:20,097 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] estimated left/right wheel speeds: 1.615, 1.747 m/s
+2026-09-13 14:31:20,099 - INFO - 2026-09-13 14:31:20 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:20,099 - INFO - 2026-09-13 14:31:20 [FOLLOW] TRACK: progress=1.11m/37.2m seg=1 cross=0.09m alpha=3.8° target=(-0.01,3.11) R=14.92 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:31:20,099 - INFO - 2026-09-13 14:31:20 [SPEED] wheel ceiling: max wheel 1.286 > 1.20 m/s, scaling by 0.933 -> body 1.172 m/s, wheels 1.200/1.145 (R=14.92m preserved)
+2026-09-13 14:31:20,099 - INFO - 2026-09-13 14:31:20 Turn: RIGHT, R: 14.92m, v_L: 1.20 m/s, v_R: 1.14 m/s
+2026-09-13 14:31:20,099 - INFO - 2026-09-13 14:31:20 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:20,100 - INFO - 2026-09-13 14:31:20 right_actuator_position: 458 (counts) from v_R 1.145 m/s
+2026-09-13 14:31:20,120 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 458 (counts)
+2026-09-13 14:31:20,120 - INFO - 2026-09-13 14:31:20 APPLY → left_pos: 420, right_pos: 458 (counts), v_L: 1.20 m/s, v_R: 1.14 m/s
+2026-09-13 14:31:20,120 - INFO - 2026-09-13 14:31:20 Path tracking GOOD: alpha 3.8deg, cross-track 0.088m
+2026-09-13 14:31:20,288 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] current_turn_radius: 5.96m
+2026-09-13 14:31:20,288 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:20,288 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] estimated left/right wheel speeds: 1.573, 1.769 m/s
+2026-09-13 14:31:20,291 - INFO - 2026-09-13 14:31:20 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:20,291 - INFO - 2026-09-13 14:31:20 [FOLLOW] TRACK: progress=1.44m/37.2m seg=2 cross=0.01m alpha=8.5° target=(-0.03,3.44) R=6.78 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:31:20,291 - INFO - 2026-09-13 14:31:20 [SPEED] wheel ceiling: max wheel 1.321 > 1.20 m/s, scaling by 0.908 -> body 1.141 m/s, wheels 1.200/1.082 (R=6.78m preserved)
+2026-09-13 14:31:20,291 - INFO - 2026-09-13 14:31:20 Turn: RIGHT, R: 6.78m, v_L: 1.20 m/s, v_R: 1.08 m/s
+2026-09-13 14:31:20,292 - INFO - 2026-09-13 14:31:20 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:20,292 - INFO - 2026-09-13 14:31:20 right_actuator_position: 506 (counts) from v_R 1.082 m/s
+2026-09-13 14:31:20,310 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 506 (counts)
+2026-09-13 14:31:20,310 - INFO - 2026-09-13 14:31:20 APPLY → left_pos: 420, right_pos: 506 (counts), v_L: 1.20 m/s, v_R: 1.08 m/s
+2026-09-13 14:31:20,310 - INFO - 2026-09-13 14:31:20 Path tracking GOOD: alpha 8.5deg, cross-track 0.015m
+2026-09-13 14:31:20,489 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] current_turn_radius: 22.83m
+2026-09-13 14:31:20,489 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:20,489 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] estimated left/right wheel speeds: 1.326, 1.367 m/s
+2026-09-13 14:31:20,495 - INFO - 2026-09-13 14:31:20 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:20,495 - INFO - 2026-09-13 14:31:20 [FOLLOW] TRACK: progress=1.74m/37.2m seg=2 cross=0.00m alpha=9.1° target=(-0.04,3.74) R=6.32 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:31:20,495 - INFO - 2026-09-13 14:31:20 [SPEED] wheel ceiling: max wheel 1.326 > 1.20 m/s, scaling by 0.905 -> body 1.137 m/s, wheels 1.200/1.074 (R=6.32m preserved)
+2026-09-13 14:31:20,496 - INFO - 2026-09-13 14:31:20 Turn: RIGHT, R: 6.32m, v_L: 1.20 m/s, v_R: 1.07 m/s
+2026-09-13 14:31:20,496 - INFO - 2026-09-13 14:31:20 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:20,496 - INFO - 2026-09-13 14:31:20 right_actuator_position: 512 (counts) from v_R 1.074 m/s
+2026-09-13 14:31:20,513 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 512 (counts)
+2026-09-13 14:31:20,513 - INFO - 2026-09-13 14:31:20 APPLY → left_pos: 420, right_pos: 512 (counts), v_L: 1.20 m/s, v_R: 1.07 m/s
+2026-09-13 14:31:20,513 - INFO - 2026-09-13 14:31:20 Path tracking GOOD: alpha 9.1deg, cross-track 0.000m
+2026-09-13 14:31:20,691 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] current_turn_radius: 41.70m
+2026-09-13 14:31:20,691 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:20,691 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] estimated left/right wheel speeds: 1.441, 1.465 m/s
+2026-09-13 14:31:20,698 - INFO - 2026-09-13 14:31:20 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:20,698 - INFO - 2026-09-13 14:31:20 [FOLLOW] TRACK: progress=2.00m/37.2m seg=2 cross=0.07m alpha=11.2° target=(-0.06,4.00) R=5.15 RIGHT v=1.26 dwell=0.0s
+2026-09-13 14:31:20,698 - INFO - 2026-09-13 14:31:20 [SPEED] wheel ceiling: max wheel 1.342 > 1.20 m/s, scaling by 0.894 -> body 1.124 m/s, wheels 1.200/1.047 (R=5.15m preserved)
+2026-09-13 14:31:20,698 - INFO - 2026-09-13 14:31:20 Turn: RIGHT, R: 5.15m, v_L: 1.20 m/s, v_R: 1.05 m/s
+2026-09-13 14:31:20,698 - INFO - 2026-09-13 14:31:20 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:20,698 - INFO - 2026-09-13 14:31:20 right_actuator_position: 533 (counts) from v_R 1.047 m/s
+2026-09-13 14:31:20,716 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 533 (counts)
+2026-09-13 14:31:20,716 - INFO - 2026-09-13 14:31:20 APPLY → left_pos: 420, right_pos: 533 (counts), v_L: 1.20 m/s, v_R: 1.05 m/s
+2026-09-13 14:31:20,717 - INFO - 2026-09-13 14:31:20 Path tracking needs correction: heading_ok=False (alpha=11.2deg), distance_ok=True (cross=0.073m)
+2026-09-13 14:31:20,893 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] current_turn_radius: 15.69m
+2026-09-13 14:31:20,893 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:20,893 - INFO - 2026-09-13 14:31:20 [3.4 OBSERVED] estimated left/right wheel speeds: 1.475, 1.542 m/s
+2026-09-13 14:31:20,895 - INFO - 2026-09-13 14:31:20 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:20,896 - INFO - 2026-09-13 14:31:20 [FOLLOW] TRACK: progress=2.28m/37.2m seg=2 cross=0.19m alpha=15.2° target=(-0.07,4.27) R=3.81 RIGHT v=1.25 dwell=0.0s
+2026-09-13 14:31:20,896 - INFO - 2026-09-13 14:31:20 [SPEED] wheel ceiling: max wheel 1.362 > 1.20 m/s, scaling by 0.881 -> body 1.099 m/s, wheels 1.200/0.998 (R=3.81m preserved)
+2026-09-13 14:31:20,896 - INFO - 2026-09-13 14:31:20 Turn: RIGHT, R: 3.81m, v_L: 1.20 m/s, v_R: 1.00 m/s
+2026-09-13 14:31:20,896 - INFO - 2026-09-13 14:31:20 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:20,896 - INFO - 2026-09-13 14:31:20 right_actuator_position: 571 (counts) from v_R 0.998 m/s
+2026-09-13 14:31:20,911 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 571 (counts)
+2026-09-13 14:31:20,911 - INFO - 2026-09-13 14:31:20 APPLY → left_pos: 420, right_pos: 571 (counts), v_L: 1.20 m/s, v_R: 1.00 m/s
+2026-09-13 14:31:20,911 - INFO - 2026-09-13 14:31:20 Path tracking needs correction: heading_ok=False (alpha=15.2deg), distance_ok=True (cross=0.191m)
+2026-09-13 14:31:21,093 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] current_turn_radius: 8.22m
+2026-09-13 14:31:21,093 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:21,093 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] estimated left/right wheel speeds: 1.539, 1.676 m/s
+2026-09-13 14:31:21,098 - INFO - 2026-09-13 14:31:21 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:21,098 - INFO - 2026-09-13 14:31:21 [FOLLOW] TRACK: progress=2.59m/37.2m seg=2 cross=0.22m alpha=18.0° target=(-0.08,4.59) R=3.23 RIGHT v=1.25 dwell=0.0s
+2026-09-13 14:31:21,098 - INFO - 2026-09-13 14:31:21 [SPEED] wheel ceiling: max wheel 1.382 > 1.20 m/s, scaling by 0.868 -> body 1.083 m/s, wheels 1.200/0.965 (R=3.23m preserved)
+2026-09-13 14:31:21,098 - INFO - 2026-09-13 14:31:21 Turn: RIGHT, R: 3.23m, v_L: 1.20 m/s, v_R: 0.97 m/s
+2026-09-13 14:31:21,098 - INFO - 2026-09-13 14:31:21 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:21,099 - INFO - 2026-09-13 14:31:21 right_actuator_position: 596 (counts) from v_R 0.965 m/s
+2026-09-13 14:31:21,119 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 596 (counts)
+2026-09-13 14:31:21,119 - INFO - 2026-09-13 14:31:21 APPLY → left_pos: 420, right_pos: 596 (counts), v_L: 1.20 m/s, v_R: 0.97 m/s
+2026-09-13 14:31:21,119 - INFO - 2026-09-13 14:31:21 Path tracking needs correction: heading_ok=False (alpha=18.0deg), distance_ok=True (cross=0.220m)
+2026-09-13 14:31:21,288 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] current_turn_radius: 10.64m
+2026-09-13 14:31:21,288 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:21,288 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] estimated left/right wheel speeds: 1.541, 1.646 m/s
+2026-09-13 14:31:21,294 - INFO - 2026-09-13 14:31:21 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:21,294 - INFO - 2026-09-13 14:31:21 [FOLLOW] TRACK: progress=2.90m/37.2m seg=3 cross=0.31m alpha=22.3° target=(-0.09,4.90) R=2.67 RIGHT v=1.25 dwell=0.0s
+2026-09-13 14:31:21,294 - INFO - 2026-09-13 14:31:21 [SPEED] wheel ceiling: max wheel 1.411 > 1.20 m/s, scaling by 0.851 -> body 1.061 m/s, wheels 1.200/0.922 (R=2.67m preserved)
+2026-09-13 14:31:21,294 - INFO - 2026-09-13 14:31:21 Turn: RIGHT, R: 2.67m, v_L: 1.20 m/s, v_R: 0.92 m/s
+2026-09-13 14:31:21,295 - INFO - 2026-09-13 14:31:21 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:21,295 - INFO - 2026-09-13 14:31:21 right_actuator_position: 630 (counts) from v_R 0.922 m/s
+2026-09-13 14:31:21,314 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 630 (counts)
+2026-09-13 14:31:21,314 - INFO - 2026-09-13 14:31:21 APPLY → left_pos: 420, right_pos: 630 (counts), v_L: 1.20 m/s, v_R: 0.92 m/s
+2026-09-13 14:31:21,314 - INFO - 2026-09-13 14:31:21 Path tracking needs correction: heading_ok=False (alpha=22.3deg), distance_ok=False (cross=0.312m)
+2026-09-13 14:31:21,489 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] current_turn_radius: 83.58m
+2026-09-13 14:31:21,489 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:21,489 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] estimated left/right wheel speeds: 1.723, 1.708 m/s
+2026-09-13 14:31:21,495 - INFO - 2026-09-13 14:31:21 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:21,496 - INFO - 2026-09-13 14:31:21 [FOLLOW] TRACK: progress=3.22m/37.2m seg=3 cross=0.37m alpha=23.9° target=(-0.10,5.22) R=2.52 RIGHT v=1.25 dwell=0.0s
+2026-09-13 14:31:21,496 - INFO - 2026-09-13 14:31:21 [SPEED] wheel ceiling: max wheel 1.421 > 1.20 m/s, scaling by 0.845 -> body 1.053 m/s, wheels 1.200/0.907 (R=2.52m preserved)
+2026-09-13 14:31:21,496 - INFO - 2026-09-13 14:31:21 Turn: RIGHT, R: 2.52m, v_L: 1.20 m/s, v_R: 0.91 m/s
+2026-09-13 14:31:21,496 - INFO - 2026-09-13 14:31:21 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:21,496 - INFO - 2026-09-13 14:31:21 right_actuator_position: 641 (counts) from v_R 0.907 m/s
+2026-09-13 14:31:21,521 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 641 (counts)
+2026-09-13 14:31:21,521 - INFO - 2026-09-13 14:31:21 APPLY → left_pos: 420, right_pos: 641 (counts), v_L: 1.20 m/s, v_R: 0.91 m/s
+2026-09-13 14:31:21,522 - INFO - 2026-09-13 14:31:21 Path tracking needs correction: heading_ok=False (alpha=23.9deg), distance_ok=False (cross=0.367m)
+2026-09-13 14:31:21,683 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] current_turn_radius: 149.50m
+2026-09-13 14:31:21,683 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:21,683 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] estimated left/right wheel speeds: 1.560, 1.567 m/s
+2026-09-13 14:31:21,685 - INFO - 2026-09-13 14:31:21 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:21,685 - INFO - 2026-09-13 14:31:21 [FOLLOW] TRACK: progress=3.52m/37.2m seg=3 cross=0.42m alpha=25.8° target=(-0.11,5.52) R=2.36 RIGHT v=1.25 dwell=0.0s
+2026-09-13 14:31:21,685 - INFO - 2026-09-13 14:31:21 [SPEED] wheel ceiling: max wheel 1.432 > 1.20 m/s, scaling by 0.838 -> body 1.045 m/s, wheels 1.200/0.890 (R=2.36m preserved)
+2026-09-13 14:31:21,685 - INFO - 2026-09-13 14:31:21 Turn: RIGHT, R: 2.36m, v_L: 1.20 m/s, v_R: 0.89 m/s
+2026-09-13 14:31:21,685 - INFO - 2026-09-13 14:31:21 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:21,686 - INFO - 2026-09-13 14:31:21 right_actuator_position: 654 (counts) from v_R 0.890 m/s
+2026-09-13 14:31:21,704 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 654 (counts)
+2026-09-13 14:31:21,704 - INFO - 2026-09-13 14:31:21 APPLY → left_pos: 420, right_pos: 654 (counts), v_L: 1.20 m/s, v_R: 0.89 m/s
+2026-09-13 14:31:21,704 - INFO - 2026-09-13 14:31:21 Path tracking needs correction: heading_ok=False (alpha=25.8deg), distance_ok=False (cross=0.423m)
+2026-09-13 14:31:21,892 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] current_turn_radius: 32.51m
+2026-09-13 14:31:21,892 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:21,892 - INFO - 2026-09-13 14:31:21 [3.4 OBSERVED] estimated left/right wheel speeds: 1.634, 1.670 m/s
+2026-09-13 14:31:21,895 - INFO - 2026-09-13 14:31:21 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:21,895 - INFO - 2026-09-13 14:31:21 [FOLLOW] TRACK: progress=3.86m/37.2m seg=3 cross=0.49m alpha=28.5° target=(-0.12,5.86) R=2.17 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:21,895 - INFO - 2026-09-13 14:31:21 [SPEED] wheel ceiling: max wheel 1.660 > 1.20 m/s, scaling by 0.723 -> body 1.033 m/s, wheels 1.200/0.866 (R=2.17m preserved)
+2026-09-13 14:31:21,895 - INFO - 2026-09-13 14:31:21 Turn: RIGHT, R: 2.17m, v_L: 1.20 m/s, v_R: 0.87 m/s
+2026-09-13 14:31:21,895 - INFO - 2026-09-13 14:31:21 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:21,895 - INFO - 2026-09-13 14:31:21 right_actuator_position: 672 (counts) from v_R 0.866 m/s
+2026-09-13 14:31:21,915 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 672 (counts)
+2026-09-13 14:31:21,915 - INFO - 2026-09-13 14:31:21 APPLY → left_pos: 420, right_pos: 672 (counts), v_L: 1.20 m/s, v_R: 0.87 m/s
+2026-09-13 14:31:21,916 - INFO - 2026-09-13 14:31:21 Path tracking needs correction: heading_ok=False (alpha=28.5deg), distance_ok=False (cross=0.492m)
+2026-09-13 14:31:22,108 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] current_turn_radius: 40.08m
+2026-09-13 14:31:22,108 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:22,108 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] estimated left/right wheel speeds: 1.423, 1.398 m/s
+2026-09-13 14:31:22,111 - INFO - 2026-09-13 14:31:22 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:22,111 - INFO - 2026-09-13 14:31:22 [FOLLOW] TRACK: progress=4.14m/37.2m seg=3 cross=0.56m alpha=30.2° target=(-0.13,6.14) R=2.08 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:22,111 - INFO - 2026-09-13 14:31:22 [SPEED] wheel ceiling: max wheel 1.670 > 1.20 m/s, scaling by 0.719 -> body 1.027 m/s, wheels 1.200/0.854 (R=2.08m preserved)
+2026-09-13 14:31:22,112 - INFO - 2026-09-13 14:31:22 Turn: RIGHT, R: 2.08m, v_L: 1.20 m/s, v_R: 0.85 m/s
+2026-09-13 14:31:22,112 - INFO - 2026-09-13 14:31:22 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:22,112 - INFO - 2026-09-13 14:31:22 right_actuator_position: 681 (counts) from v_R 0.854 m/s
+2026-09-13 14:31:22,125 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 681 (counts)
+2026-09-13 14:31:22,125 - INFO - 2026-09-13 14:31:22 APPLY → left_pos: 420, right_pos: 681 (counts), v_L: 1.20 m/s, v_R: 0.85 m/s
+2026-09-13 14:31:22,125 - INFO - 2026-09-13 14:31:22 Path tracking needs correction: heading_ok=False (alpha=30.2deg), distance_ok=False (cross=0.564m)
+2026-09-13 14:31:22,303 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] current_turn_radius: 15.67m
+2026-09-13 14:31:22,303 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:22,303 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] estimated left/right wheel speeds: 1.664, 1.591 m/s
+2026-09-13 14:31:22,305 - INFO - 2026-09-13 14:31:22 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:22,305 - INFO - 2026-09-13 14:31:22 [SPEED] tight-turn cap: R=1.99m -> 0.994 m/s
+2026-09-13 14:31:22,305 - INFO - 2026-09-13 14:31:22 [FOLLOW] TRACK: progress=4.42m/37.2m seg=4 cross=0.67m alpha=32.0° target=(-0.13,6.42) R=1.99 RIGHT v=0.99 dwell=0.0s
+2026-09-13 14:31:22,305 - INFO - 2026-09-13 14:31:22 Turn: RIGHT, R: 1.99m, v_L: 1.17 m/s, v_R: 0.82 m/s
+2026-09-13 14:31:22,306 - INFO - 2026-09-13 14:31:22 left_actuator_position: 439 (counts) from v_L 1.169 m/s
+2026-09-13 14:31:22,306 - INFO - 2026-09-13 14:31:22 right_actuator_position: 708 (counts) from v_R 0.819 m/s
+2026-09-13 14:31:22,318 - INFO - Sent actuator positions to RoboClaw → M1 (left): 439, M2 (right): 708 (counts)
+2026-09-13 14:31:22,318 - INFO - 2026-09-13 14:31:22 APPLY → left_pos: 439, right_pos: 708 (counts), v_L: 1.17 m/s, v_R: 0.82 m/s
+2026-09-13 14:31:22,318 - INFO - 2026-09-13 14:31:22 Path tracking needs correction: heading_ok=False (alpha=32.0deg), distance_ok=False (cross=0.670m)
+2026-09-13 14:31:22,493 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] current_turn_radius: 9.69m
+2026-09-13 14:31:22,493 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:22,493 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] estimated left/right wheel speeds: 1.608, 1.496 m/s
+2026-09-13 14:31:22,495 - INFO - 2026-09-13 14:31:22 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:22,495 - INFO - 2026-09-13 14:31:22 [FOLLOW] TRACK: progress=4.72m/37.2m seg=4 cross=0.72m alpha=31.6° target=(-0.14,6.72) R=2.03 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:22,495 - INFO - 2026-09-13 14:31:22 [SPEED] wheel ceiling: max wheel 1.675 > 1.20 m/s, scaling by 0.716 -> body 1.024 m/s, wheels 1.200/0.847 (R=2.03m preserved)
+2026-09-13 14:31:22,495 - INFO - 2026-09-13 14:31:22 Turn: RIGHT, R: 2.03m, v_L: 1.20 m/s, v_R: 0.85 m/s
+2026-09-13 14:31:22,495 - INFO - 2026-09-13 14:31:22 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:22,496 - INFO - 2026-09-13 14:31:22 right_actuator_position: 687 (counts) from v_R 0.847 m/s
+2026-09-13 14:31:22,508 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 687 (counts)
+2026-09-13 14:31:22,508 - INFO - 2026-09-13 14:31:22 APPLY → left_pos: 420, right_pos: 687 (counts), v_L: 1.20 m/s, v_R: 0.85 m/s
+2026-09-13 14:31:22,508 - INFO - 2026-09-13 14:31:22 Path tracking needs correction: heading_ok=False (alpha=31.6deg), distance_ok=False (cross=0.720m)
+2026-09-13 14:31:22,694 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] current_turn_radius: 4.15m
+2026-09-13 14:31:22,694 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:22,694 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] estimated left/right wheel speeds: 1.527, 1.289 m/s
+2026-09-13 14:31:22,697 - INFO - 2026-09-13 14:31:22 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:22,697 - INFO - 2026-09-13 14:31:22 [FOLLOW] TRACK: progress=5.00m/37.2m seg=4 cross=0.76m alpha=28.6° target=(-0.15,7.00) R=2.24 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:22,697 - INFO - 2026-09-13 14:31:22 [SPEED] wheel ceiling: max wheel 1.653 > 1.20 m/s, scaling by 0.726 -> body 1.038 m/s, wheels 1.200/0.875 (R=2.24m preserved)
+2026-09-13 14:31:22,697 - INFO - 2026-09-13 14:31:22 Turn: RIGHT, R: 2.24m, v_L: 1.20 m/s, v_R: 0.88 m/s
+2026-09-13 14:31:22,697 - INFO - 2026-09-13 14:31:22 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:22,698 - INFO - 2026-09-13 14:31:22 right_actuator_position: 665 (counts) from v_R 0.875 m/s
+2026-09-13 14:31:22,709 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 665 (counts)
+2026-09-13 14:31:22,709 - INFO - 2026-09-13 14:31:22 APPLY → left_pos: 420, right_pos: 665 (counts), v_L: 1.20 m/s, v_R: 0.88 m/s
+2026-09-13 14:31:22,709 - INFO - 2026-09-13 14:31:22 Path tracking needs correction: heading_ok=False (alpha=28.6deg), distance_ok=False (cross=0.756m)
+2026-09-13 14:31:22,897 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] current_turn_radius: 11.34m
+2026-09-13 14:31:22,897 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:22,897 - INFO - 2026-09-13 14:31:22 [3.4 OBSERVED] estimated left/right wheel speeds: 1.570, 1.476 m/s
+2026-09-13 14:31:22,900 - INFO - 2026-09-13 14:31:22 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:22,900 - INFO - 2026-09-13 14:31:22 [FOLLOW] TRACK: progress=5.30m/37.2m seg=4 cross=0.84m alpha=29.0° target=(-0.16,7.29) R=2.24 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:22,900 - INFO - 2026-09-13 14:31:22 [SPEED] wheel ceiling: max wheel 1.653 > 1.20 m/s, scaling by 0.726 -> body 1.038 m/s, wheels 1.200/0.875 (R=2.24m preserved)
+2026-09-13 14:31:22,900 - INFO - 2026-09-13 14:31:22 Turn: RIGHT, R: 2.24m, v_L: 1.20 m/s, v_R: 0.88 m/s
+2026-09-13 14:31:22,900 - INFO - 2026-09-13 14:31:22 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:22,901 - INFO - 2026-09-13 14:31:22 right_actuator_position: 665 (counts) from v_R 0.875 m/s
+2026-09-13 14:31:22,914 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 665 (counts)
+2026-09-13 14:31:22,914 - INFO - 2026-09-13 14:31:22 APPLY → left_pos: 420, right_pos: 665 (counts), v_L: 1.20 m/s, v_R: 0.88 m/s
+2026-09-13 14:31:22,914 - INFO - 2026-09-13 14:31:22 Path tracking needs correction: heading_ok=False (alpha=29.0deg), distance_ok=False (cross=0.836m)
+2026-09-13 14:31:23,103 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] current_turn_radius: 5.40m
+2026-09-13 14:31:23,103 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:23,103 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] estimated left/right wheel speeds: 1.466, 1.288 m/s
+2026-09-13 14:31:23,107 - INFO - 2026-09-13 14:31:23 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:23,107 - INFO - 2026-09-13 14:31:23 [FOLLOW] TRACK: progress=5.58m/37.2m seg=4 cross=0.83m alpha=25.9° target=(-0.16,7.57) R=2.48 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:23,107 - INFO - 2026-09-13 14:31:23 [SPEED] wheel ceiling: max wheel 1.630 > 1.20 m/s, scaling by 0.736 -> body 1.052 m/s, wheels 1.200/0.904 (R=2.48m preserved)
+2026-09-13 14:31:23,107 - INFO - 2026-09-13 14:31:23 Turn: RIGHT, R: 2.48m, v_L: 1.20 m/s, v_R: 0.90 m/s
+2026-09-13 14:31:23,108 - INFO - 2026-09-13 14:31:23 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:23,108 - INFO - 2026-09-13 14:31:23 right_actuator_position: 643 (counts) from v_R 0.904 m/s
+2026-09-13 14:31:23,119 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 643 (counts)
+2026-09-13 14:31:23,119 - INFO - 2026-09-13 14:31:23 APPLY → left_pos: 420, right_pos: 643 (counts), v_L: 1.20 m/s, v_R: 0.90 m/s
+2026-09-13 14:31:23,119 - INFO - 2026-09-13 14:31:23 Path tracking needs correction: heading_ok=False (alpha=25.9deg), distance_ok=False (cross=0.828m)
+2026-09-13 14:31:23,296 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] current_turn_radius: 4.50m
+2026-09-13 14:31:23,296 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:23,296 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] estimated left/right wheel speeds: 1.485, 1.271 m/s
+2026-09-13 14:31:23,298 - INFO - 2026-09-13 14:31:23 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:23,298 - INFO - 2026-09-13 14:31:23 [FOLLOW] TRACK: progress=5.85m/37.2m seg=5 cross=0.85m alpha=23.1° target=(-0.17,7.85) R=2.77 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:23,298 - INFO - 2026-09-13 14:31:23 [SPEED] wheel ceiling: max wheel 1.610 > 1.20 m/s, scaling by 0.746 -> body 1.065 m/s, wheels 1.200/0.931 (R=2.77m preserved)
+2026-09-13 14:31:23,298 - INFO - 2026-09-13 14:31:23 Turn: RIGHT, R: 2.77m, v_L: 1.20 m/s, v_R: 0.93 m/s
+2026-09-13 14:31:23,298 - INFO - 2026-09-13 14:31:23 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:23,299 - INFO - 2026-09-13 14:31:23 right_actuator_position: 622 (counts) from v_R 0.931 m/s
+2026-09-13 14:31:23,311 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 622 (counts)
+2026-09-13 14:31:23,311 - INFO - 2026-09-13 14:31:23 APPLY → left_pos: 420, right_pos: 622 (counts), v_L: 1.20 m/s, v_R: 0.93 m/s
+2026-09-13 14:31:23,311 - INFO - 2026-09-13 14:31:23 Path tracking needs correction: heading_ok=False (alpha=23.1deg), distance_ok=False (cross=0.850m)
+2026-09-13 14:31:23,489 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] current_turn_radius: 7.41m
+2026-09-13 14:31:23,489 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:23,489 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] estimated left/right wheel speeds: 1.435, 1.306 m/s
+2026-09-13 14:31:23,491 - INFO - 2026-09-13 14:31:23 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:23,491 - INFO - 2026-09-13 14:31:23 [FOLLOW] TRACK: progress=6.13m/37.2m seg=5 cross=0.86m alpha=21.4° target=(-0.17,8.13) R=2.99 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:23,491 - INFO - 2026-09-13 14:31:23 [SPEED] wheel ceiling: max wheel 1.596 > 1.20 m/s, scaling by 0.752 -> body 1.074 m/s, wheels 1.200/0.949 (R=2.99m preserved)
+2026-09-13 14:31:23,491 - INFO - 2026-09-13 14:31:23 Turn: RIGHT, R: 2.99m, v_L: 1.20 m/s, v_R: 0.95 m/s
+2026-09-13 14:31:23,491 - INFO - 2026-09-13 14:31:23 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:23,491 - INFO - 2026-09-13 14:31:23 right_actuator_position: 609 (counts) from v_R 0.949 m/s
+2026-09-13 14:31:23,504 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 609 (counts)
+2026-09-13 14:31:23,504 - INFO - 2026-09-13 14:31:23 APPLY → left_pos: 420, right_pos: 609 (counts), v_L: 1.20 m/s, v_R: 0.95 m/s
+2026-09-13 14:31:23,504 - INFO - 2026-09-13 14:31:23 Path tracking needs correction: heading_ok=False (alpha=21.4deg), distance_ok=False (cross=0.857m)
+2026-09-13 14:31:23,694 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] current_turn_radius: 5.61m
+2026-09-13 14:31:23,694 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:23,694 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] estimated left/right wheel speeds: 1.568, 1.383 m/s
+2026-09-13 14:31:23,698 - INFO - 2026-09-13 14:31:23 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:23,698 - INFO - 2026-09-13 14:31:23 [FOLLOW] TRACK: progress=6.43m/37.2m seg=5 cross=0.82m alpha=17.5° target=(-0.17,8.42) R=3.61 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:23,698 - INFO - 2026-09-13 14:31:23 [SPEED] wheel ceiling: max wheel 1.568 > 1.20 m/s, scaling by 0.765 -> body 1.094 m/s, wheels 1.200/0.988 (R=3.61m preserved)
+2026-09-13 14:31:23,698 - INFO - 2026-09-13 14:31:23 Turn: RIGHT, R: 3.61m, v_L: 1.20 m/s, v_R: 0.99 m/s
+2026-09-13 14:31:23,698 - INFO - 2026-09-13 14:31:23 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:23,699 - INFO - 2026-09-13 14:31:23 right_actuator_position: 579 (counts) from v_R 0.988 m/s
+2026-09-13 14:31:23,711 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 579 (counts)
+2026-09-13 14:31:23,711 - INFO - 2026-09-13 14:31:23 APPLY → left_pos: 420, right_pos: 579 (counts), v_L: 1.20 m/s, v_R: 0.99 m/s
+2026-09-13 14:31:23,711 - INFO - 2026-09-13 14:31:23 Path tracking needs correction: heading_ok=False (alpha=17.5deg), distance_ok=False (cross=0.820m)
+2026-09-13 14:31:23,895 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] current_turn_radius: 5.91m
+2026-09-13 14:31:23,895 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:23,895 - INFO - 2026-09-13 14:31:23 [3.4 OBSERVED] estimated left/right wheel speeds: 1.675, 1.488 m/s
+2026-09-13 14:31:23,897 - INFO - 2026-09-13 14:31:23 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:23,897 - INFO - 2026-09-13 14:31:23 [FOLLOW] TRACK: progress=6.72m/37.2m seg=5 cross=0.80m alpha=14.0° target=(-0.17,8.72) R=4.48 RIGHT v=1.43 dwell=0.0s
+2026-09-13 14:31:23,898 - INFO - 2026-09-13 14:31:23 [SPEED] wheel ceiling: max wheel 1.541 > 1.20 m/s, scaling by 0.779 -> body 1.113 m/s, wheels 1.200/1.026 (R=4.48m preserved)
+2026-09-13 14:31:23,898 - INFO - 2026-09-13 14:31:23 Turn: RIGHT, R: 4.48m, v_L: 1.20 m/s, v_R: 1.03 m/s
+2026-09-13 14:31:23,898 - INFO - 2026-09-13 14:31:23 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:23,898 - INFO - 2026-09-13 14:31:23 right_actuator_position: 549 (counts) from v_R 1.026 m/s
+2026-09-13 14:31:23,910 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 549 (counts)
+2026-09-13 14:31:23,910 - INFO - 2026-09-13 14:31:23 APPLY → left_pos: 420, right_pos: 549 (counts), v_L: 1.20 m/s, v_R: 1.03 m/s
+2026-09-13 14:31:23,911 - INFO - 2026-09-13 14:31:23 Path tracking needs correction: heading_ok=False (alpha=14.0deg), distance_ok=False (cross=0.797m)
+2026-09-13 14:31:24,109 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] current_turn_radius: 4.51m
+2026-09-13 14:31:24,109 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:24,109 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] estimated left/right wheel speeds: 1.726, 1.477 m/s
+2026-09-13 14:31:24,111 - INFO - 2026-09-13 14:31:24 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:24,111 - INFO - 2026-09-13 14:31:24 [FOLLOW] TRACK: progress=7.03m/37.2m seg=5 cross=0.71m alpha=7.7° target=(-0.18,9.03) R=7.94 RIGHT v=1.22 dwell=0.0s
+2026-09-13 14:31:24,111 - INFO - 2026-09-13 14:31:24 [SPEED] wheel ceiling: max wheel 1.273 > 1.20 m/s, scaling by 0.942 -> body 1.149 m/s, wheels 1.200/1.099 (R=7.94m preserved)
+2026-09-13 14:31:24,111 - INFO - 2026-09-13 14:31:24 Turn: RIGHT, R: 7.94m, v_L: 1.20 m/s, v_R: 1.10 m/s
+2026-09-13 14:31:24,111 - INFO - 2026-09-13 14:31:24 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:24,111 - INFO - 2026-09-13 14:31:24 right_actuator_position: 493 (counts) from v_R 1.099 m/s
+2026-09-13 14:31:24,124 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 493 (counts)
+2026-09-13 14:31:24,124 - INFO - 2026-09-13 14:31:24 APPLY → left_pos: 420, right_pos: 493 (counts), v_L: 1.20 m/s, v_R: 1.10 m/s
+2026-09-13 14:31:24,124 - INFO - 2026-09-13 14:31:24 Path tracking needs correction: heading_ok=True (alpha=7.7deg), distance_ok=False (cross=0.715m)
+2026-09-13 14:31:24,294 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] current_turn_radius: 4.20m
+2026-09-13 14:31:24,294 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:24,294 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] estimated left/right wheel speeds: 1.626, 1.376 m/s
+2026-09-13 14:31:24,297 - INFO - 2026-09-13 14:31:24 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:24,297 - INFO - 2026-09-13 14:31:24 [FOLLOW] TRACK: progress=7.35m/37.2m seg=5 cross=0.65m alpha=2.3° target=(-0.18,9.34) R=25.85 RIGHT v=1.22 dwell=0.0s
+2026-09-13 14:31:24,297 - INFO - 2026-09-13 14:31:24 [SPEED] wheel ceiling: max wheel 1.236 > 1.20 m/s, scaling by 0.971 -> body 1.184 m/s, wheels 1.200/1.168 (R=25.85m preserved)
+2026-09-13 14:31:24,298 - INFO - 2026-09-13 14:31:24 Turn: RIGHT, R: 25.85m, v_L: 1.20 m/s, v_R: 1.17 m/s
+2026-09-13 14:31:24,298 - INFO - 2026-09-13 14:31:24 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:24,298 - INFO - 2026-09-13 14:31:24 right_actuator_position: 440 (counts) from v_R 1.168 m/s
+2026-09-13 14:31:24,311 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 440 (counts)
+2026-09-13 14:31:24,311 - INFO - 2026-09-13 14:31:24 APPLY → left_pos: 420, right_pos: 440 (counts), v_L: 1.20 m/s, v_R: 1.17 m/s
+2026-09-13 14:31:24,311 - INFO - 2026-09-13 14:31:24 Path tracking needs correction: heading_ok=True (alpha=2.3deg), distance_ok=False (cross=0.648m)
+2026-09-13 14:31:24,491 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] current_turn_radius: 4.46m
+2026-09-13 14:31:24,491 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:24,491 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] estimated left/right wheel speeds: 1.452, 1.241 m/s
+2026-09-13 14:31:24,494 - INFO - 2026-09-13 14:31:24 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:24,494 - INFO - 2026-09-13 14:31:24 [FOLLOW] TRACK: progress=7.59m/37.2m seg=6 cross=0.60m alpha=-2.2° target=(-0.18,9.59) R=27.33 LEFT v=1.22 dwell=0.0s
+2026-09-13 14:31:24,494 - INFO - 2026-09-13 14:31:24 [SPEED] wheel ceiling: max wheel 1.235 > 1.20 m/s, scaling by 0.972 -> body 1.185 m/s, wheels 1.170/1.200 (R=27.33m preserved)
+2026-09-13 14:31:24,494 - INFO - 2026-09-13 14:31:24 Turn: LEFT, R: 27.33m, v_L: 1.17 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:24,494 - INFO - 2026-09-13 14:31:24 left_actuator_position: 439 (counts) from v_L 1.170 m/s
+2026-09-13 14:31:24,495 - INFO - 2026-09-13 14:31:24 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:24,507 - INFO - Sent actuator positions to RoboClaw → M1 (left): 439, M2 (right): 420 (counts)
+2026-09-13 14:31:24,507 - INFO - 2026-09-13 14:31:24 APPLY → left_pos: 439, right_pos: 420 (counts), v_L: 1.17 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:24,507 - INFO - 2026-09-13 14:31:24 Path tracking needs correction: heading_ok=True (alpha=2.2deg), distance_ok=False (cross=0.599m)
+2026-09-13 14:31:24,637 - INFO - HEARTBEAT: Loop running, last GPS data 0.1s ago
+2026-09-13 14:31:24,691 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] current_turn_radius: 3.41m
+2026-09-13 14:31:24,691 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:24,691 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] estimated left/right wheel speeds: 1.628, 1.326 m/s
+2026-09-13 14:31:24,694 - INFO - 2026-09-13 14:31:24 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:24,694 - INFO - 2026-09-13 14:31:24 [FOLLOW] TRACK: progress=7.85m/37.2m seg=6 cross=0.54m alpha=-8.8° target=(-0.19,9.85) R=6.78 LEFT v=1.22 dwell=0.0s
+2026-09-13 14:31:24,694 - INFO - 2026-09-13 14:31:24 [SPEED] wheel ceiling: max wheel 1.282 > 1.20 m/s, scaling by 0.936 -> body 1.141 m/s, wheels 1.082/1.200 (R=6.78m preserved)
+2026-09-13 14:31:24,694 - INFO - 2026-09-13 14:31:24 Turn: LEFT, R: 6.78m, v_L: 1.08 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:24,694 - INFO - 2026-09-13 14:31:24 left_actuator_position: 506 (counts) from v_L 1.082 m/s
+2026-09-13 14:31:24,695 - INFO - 2026-09-13 14:31:24 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:24,707 - INFO - Sent actuator positions to RoboClaw → M1 (left): 506, M2 (right): 420 (counts)
+2026-09-13 14:31:24,707 - INFO - 2026-09-13 14:31:24 APPLY → left_pos: 506, right_pos: 420 (counts), v_L: 1.08 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:24,707 - INFO - 2026-09-13 14:31:24 Path tracking needs correction: heading_ok=True (alpha=8.8deg), distance_ok=False (cross=0.538m)
+2026-09-13 14:31:24,892 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] current_turn_radius: 5.12m
+2026-09-13 14:31:24,892 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:24,892 - INFO - 2026-09-13 14:31:24 [3.4 OBSERVED] estimated left/right wheel speeds: 1.310, 1.143 m/s
+2026-09-13 14:31:24,894 - INFO - 2026-09-13 14:31:24 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:24,894 - INFO - 2026-09-13 14:31:24 [FOLLOW] TRACK: progress=8.09m/37.2m seg=6 cross=0.42m alpha=-14.8° target=(-0.19,10.09) R=4.00 LEFT v=1.22 dwell=0.0s
+2026-09-13 14:31:24,894 - INFO - 2026-09-13 14:31:24 [SPEED] wheel ceiling: max wheel 1.326 > 1.20 m/s, scaling by 0.905 -> body 1.104 m/s, wheels 1.007/1.200 (R=4.00m preserved)
+2026-09-13 14:31:24,895 - INFO - 2026-09-13 14:31:24 Turn: LEFT, R: 4.00m, v_L: 1.01 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:24,895 - INFO - 2026-09-13 14:31:24 left_actuator_position: 564 (counts) from v_L 1.007 m/s
+2026-09-13 14:31:24,895 - INFO - 2026-09-13 14:31:24 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:24,907 - INFO - Sent actuator positions to RoboClaw → M1 (left): 564, M2 (right): 420 (counts)
+2026-09-13 14:31:24,907 - INFO - 2026-09-13 14:31:24 APPLY → left_pos: 564, right_pos: 420 (counts), v_L: 1.01 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:24,907 - INFO - 2026-09-13 14:31:24 Path tracking needs correction: heading_ok=False (alpha=14.8deg), distance_ok=False (cross=0.418m)
+2026-09-13 14:31:25,103 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] current_turn_radius: 7.34m
+2026-09-13 14:31:25,103 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:25,103 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] estimated left/right wheel speeds: 1.739, 1.581 m/s
+2026-09-13 14:31:25,106 - INFO - 2026-09-13 14:31:25 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:25,106 - INFO - 2026-09-13 14:31:25 [FOLLOW] TRACK: progress=8.41m/37.2m seg=6 cross=0.33m alpha=-20.0° target=(-0.19,10.40) R=2.96 LEFT v=1.15 dwell=0.0s
+2026-09-13 14:31:25,106 - INFO - 2026-09-13 14:31:25 [SPEED] wheel ceiling: max wheel 1.288 > 1.20 m/s, scaling by 0.931 -> body 1.073 m/s, wheels 0.946/1.200 (R=2.96m preserved)
+2026-09-13 14:31:25,106 - INFO - 2026-09-13 14:31:25 Turn: LEFT, R: 2.96m, v_L: 0.95 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:25,106 - INFO - 2026-09-13 14:31:25 left_actuator_position: 610 (counts) from v_L 0.946 m/s
+2026-09-13 14:31:25,107 - INFO - 2026-09-13 14:31:25 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:25,120 - INFO - Sent actuator positions to RoboClaw → M1 (left): 610, M2 (right): 420 (counts)
+2026-09-13 14:31:25,120 - INFO - 2026-09-13 14:31:25 APPLY → left_pos: 610, right_pos: 420 (counts), v_L: 0.95 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:25,121 - INFO - 2026-09-13 14:31:25 Path tracking needs correction: heading_ok=False (alpha=20.0deg), distance_ok=False (cross=0.327m)
+2026-09-13 14:31:25,294 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] current_turn_radius: 31.47m
+2026-09-13 14:31:25,294 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:25,294 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] estimated left/right wheel speeds: 1.803, 1.764 m/s
+2026-09-13 14:31:25,297 - INFO - 2026-09-13 14:31:25 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:25,297 - INFO - 2026-09-13 14:31:25 [FOLLOW] TRACK: progress=8.70m/37.2m seg=6 cross=0.16m alpha=-25.2° target=(-0.19,10.70) R=2.36 LEFT v=1.15 dwell=0.0s
+2026-09-13 14:31:25,297 - INFO - 2026-09-13 14:31:25 [SPEED] wheel ceiling: max wheel 1.323 > 1.20 m/s, scaling by 0.907 -> body 1.045 m/s, wheels 0.890/1.200 (R=2.36m preserved)
+2026-09-13 14:31:25,297 - INFO - 2026-09-13 14:31:25 Turn: LEFT, R: 2.36m, v_L: 0.89 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:25,298 - INFO - 2026-09-13 14:31:25 left_actuator_position: 654 (counts) from v_L 0.890 m/s
+2026-09-13 14:31:25,298 - INFO - 2026-09-13 14:31:25 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:25,311 - INFO - Sent actuator positions to RoboClaw → M1 (left): 654, M2 (right): 420 (counts)
+2026-09-13 14:31:25,311 - INFO - 2026-09-13 14:31:25 APPLY → left_pos: 654, right_pos: 420 (counts), v_L: 0.89 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:25,311 - INFO - 2026-09-13 14:31:25 Path tracking needs correction: heading_ok=False (alpha=25.2deg), distance_ok=True (cross=0.163m)
+2026-09-13 14:31:25,504 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] current_turn_radius: 142.81m
+2026-09-13 14:31:25,504 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:25,504 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] estimated left/right wheel speeds: 1.476, 1.469 m/s
+2026-09-13 14:31:25,507 - INFO - 2026-09-13 14:31:25 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:25,507 - INFO - 2026-09-13 14:31:25 [FOLLOW] TRACK: progress=8.98m/37.2m seg=7 cross=0.03m alpha=-29.1° target=(-0.19,10.97) R=2.06 LEFT v=1.15 dwell=0.0s
+2026-09-13 14:31:25,507 - INFO - 2026-09-13 14:31:25 [SPEED] wheel ceiling: max wheel 1.348 > 1.20 m/s, scaling by 0.890 -> body 1.026 m/s, wheels 0.851/1.200 (R=2.06m preserved)
+2026-09-13 14:31:25,507 - INFO - 2026-09-13 14:31:25 Turn: LEFT, R: 2.06m, v_L: 0.85 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:25,507 - INFO - 2026-09-13 14:31:25 left_actuator_position: 684 (counts) from v_L 0.851 m/s
+2026-09-13 14:31:25,508 - INFO - 2026-09-13 14:31:25 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:25,521 - INFO - Sent actuator positions to RoboClaw → M1 (left): 684, M2 (right): 420 (counts)
+2026-09-13 14:31:25,521 - INFO - 2026-09-13 14:31:25 APPLY → left_pos: 684, right_pos: 420 (counts), v_L: 0.85 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:25,521 - INFO - 2026-09-13 14:31:25 Path tracking needs correction: heading_ok=False (alpha=29.1deg), distance_ok=True (cross=0.028m)
+2026-09-13 14:31:25,706 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] current_turn_radius: 13.34m
+2026-09-13 14:31:25,706 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:25,706 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] estimated left/right wheel speeds: 1.522, 1.604 m/s
+2026-09-13 14:31:25,710 - INFO - 2026-09-13 14:31:25 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:25,710 - INFO - 2026-09-13 14:31:25 [SPEED] tight-turn cap: R=1.92m -> 0.959 m/s
+2026-09-13 14:31:25,710 - INFO - 2026-09-13 14:31:25 [FOLLOW] TRACK: progress=9.27m/37.2m seg=7 cross=0.11m alpha=-31.5° target=(-0.19,11.27) R=1.92 LEFT v=0.96 dwell=0.0s
+2026-09-13 14:31:25,711 - INFO - 2026-09-13 14:31:25 Turn: LEFT, R: 1.92m, v_L: 0.78 m/s, v_R: 1.13 m/s
+2026-09-13 14:31:25,711 - INFO - 2026-09-13 14:31:25 left_actuator_position: 736 (counts) from v_L 0.784 m/s
+2026-09-13 14:31:25,711 - INFO - 2026-09-13 14:31:25 right_actuator_position: 467 (counts) from v_R 1.134 m/s
+2026-09-13 14:31:25,724 - INFO - Sent actuator positions to RoboClaw → M1 (left): 736, M2 (right): 467 (counts)
+2026-09-13 14:31:25,724 - INFO - 2026-09-13 14:31:25 APPLY → left_pos: 736, right_pos: 467 (counts), v_L: 0.78 m/s, v_R: 1.13 m/s
+2026-09-13 14:31:25,725 - INFO - 2026-09-13 14:31:25 Path tracking needs correction: heading_ok=False (alpha=31.5deg), distance_ok=True (cross=0.107m)
+2026-09-13 14:31:25,898 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] current_turn_radius: 5.76m
+2026-09-13 14:31:25,898 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:25,898 - INFO - 2026-09-13 14:31:25 [3.4 OBSERVED] estimated left/right wheel speeds: 1.479, 1.670 m/s
+2026-09-13 14:31:25,900 - INFO - 2026-09-13 14:31:25 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:25,900 - INFO - 2026-09-13 14:31:25 [SPEED] tight-turn cap: R=1.89m -> 0.944 m/s
+2026-09-13 14:31:25,900 - INFO - 2026-09-13 14:31:25 [FOLLOW] TRACK: progress=9.55m/37.2m seg=7 cross=0.24m alpha=-32.2° target=(-0.19,11.54) R=1.89 LEFT v=0.94 dwell=0.0s
+2026-09-13 14:31:25,901 - INFO - 2026-09-13 14:31:25 Turn: LEFT, R: 1.89m, v_L: 0.77 m/s, v_R: 1.12 m/s
+2026-09-13 14:31:25,901 - INFO - 2026-09-13 14:31:25 left_actuator_position: 747 (counts) from v_L 0.769 m/s
+2026-09-13 14:31:25,901 - INFO - 2026-09-13 14:31:25 right_actuator_position: 478 (counts) from v_R 1.119 m/s
+2026-09-13 14:31:25,914 - INFO - Sent actuator positions to RoboClaw → M1 (left): 747, M2 (right): 478 (counts)
+2026-09-13 14:31:25,914 - INFO - 2026-09-13 14:31:25 APPLY → left_pos: 747, right_pos: 478 (counts), v_L: 0.77 m/s, v_R: 1.12 m/s
+2026-09-13 14:31:25,914 - INFO - 2026-09-13 14:31:25 Path tracking needs correction: heading_ok=False (alpha=32.2deg), distance_ok=True (cross=0.242m)
+2026-09-13 14:31:26,106 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] current_turn_radius: 2.70m
+2026-09-13 14:31:26,106 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:26,106 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] estimated left/right wheel speeds: 1.274, 1.654 m/s
+2026-09-13 14:31:26,108 - INFO - 2026-09-13 14:31:26 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:26,108 - INFO - 2026-09-13 14:31:26 [FOLLOW] TRACK: progress=9.82m/37.2m seg=7 cross=0.35m alpha=-27.8° target=(-0.16,11.82) R=2.17 LEFT v=1.09 dwell=0.0s
+2026-09-13 14:31:26,108 - INFO - 2026-09-13 14:31:26 [SPEED] wheel ceiling: max wheel 1.270 > 1.20 m/s, scaling by 0.945 -> body 1.033 m/s, wheels 0.866/1.200 (R=2.17m preserved)
+2026-09-13 14:31:26,108 - INFO - 2026-09-13 14:31:26 Turn: LEFT, R: 2.17m, v_L: 0.87 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:26,109 - INFO - 2026-09-13 14:31:26 left_actuator_position: 672 (counts) from v_L 0.866 m/s
+2026-09-13 14:31:26,109 - INFO - 2026-09-13 14:31:26 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:26,120 - INFO - Sent actuator positions to RoboClaw → M1 (left): 672, M2 (right): 420 (counts)
+2026-09-13 14:31:26,120 - INFO - 2026-09-13 14:31:26 APPLY → left_pos: 672, right_pos: 420 (counts), v_L: 0.87 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:26,120 - INFO - 2026-09-13 14:31:26 Path tracking needs correction: heading_ok=False (alpha=27.8deg), distance_ok=False (cross=0.347m)
+2026-09-13 14:31:26,303 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] current_turn_radius: 2.38m
+2026-09-13 14:31:26,303 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:26,303 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] estimated left/right wheel speeds: 1.019, 1.369 m/s
+2026-09-13 14:31:26,307 - INFO - 2026-09-13 14:31:26 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:26,307 - INFO - 2026-09-13 14:31:26 [FOLLOW] TRACK: progress=10.04m/37.2m seg=7 cross=0.48m alpha=-24.4° target=(-0.11,12.03) R=2.45 LEFT v=1.09 dwell=0.0s
+2026-09-13 14:31:26,307 - INFO - 2026-09-13 14:31:26 [SPEED] wheel ceiling: max wheel 1.250 > 1.20 m/s, scaling by 0.960 -> body 1.050 m/s, wheels 0.900/1.200 (R=2.45m preserved)
+2026-09-13 14:31:26,307 - INFO - 2026-09-13 14:31:26 Turn: LEFT, R: 2.45m, v_L: 0.90 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:26,308 - INFO - 2026-09-13 14:31:26 left_actuator_position: 646 (counts) from v_L 0.900 m/s
+2026-09-13 14:31:26,308 - INFO - 2026-09-13 14:31:26 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:26,320 - INFO - Sent actuator positions to RoboClaw → M1 (left): 646, M2 (right): 420 (counts)
+2026-09-13 14:31:26,320 - INFO - 2026-09-13 14:31:26 APPLY → left_pos: 646, right_pos: 420 (counts), v_L: 0.90 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:26,320 - INFO - 2026-09-13 14:31:26 Path tracking needs correction: heading_ok=False (alpha=24.4deg), distance_ok=False (cross=0.482m)
+2026-09-13 14:31:26,499 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] current_turn_radius: 2.30m
+2026-09-13 14:31:26,499 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:26,499 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] estimated left/right wheel speeds: 1.088, 1.478 m/s
+2026-09-13 14:31:26,502 - INFO - 2026-09-13 14:31:26 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:26,502 - INFO - 2026-09-13 14:31:26 [FOLLOW] TRACK: progress=10.31m/37.2m seg=8 cross=0.54m alpha=-18.2° target=(-0.05,12.29) R=3.24 LEFT v=1.09 dwell=0.0s
+2026-09-13 14:31:26,503 - INFO - 2026-09-13 14:31:26 [SPEED] wheel ceiling: max wheel 1.212 > 1.20 m/s, scaling by 0.990 -> body 1.083 m/s, wheels 0.966/1.200 (R=3.24m preserved)
+2026-09-13 14:31:26,503 - INFO - 2026-09-13 14:31:26 Turn: LEFT, R: 3.24m, v_L: 0.97 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:26,503 - INFO - 2026-09-13 14:31:26 left_actuator_position: 595 (counts) from v_L 0.966 m/s
+2026-09-13 14:31:26,503 - INFO - 2026-09-13 14:31:26 right_actuator_position: 420 (counts) from v_R 1.200 m/s
+2026-09-13 14:31:26,516 - INFO - Sent actuator positions to RoboClaw → M1 (left): 595, M2 (right): 420 (counts)
+2026-09-13 14:31:26,516 - INFO - 2026-09-13 14:31:26 APPLY → left_pos: 595, right_pos: 420 (counts), v_L: 0.97 m/s, v_R: 1.20 m/s
+2026-09-13 14:31:26,517 - INFO - 2026-09-13 14:31:26 Path tracking needs correction: heading_ok=False (alpha=18.2deg), distance_ok=False (cross=0.542m)
+2026-09-13 14:31:26,697 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] current_turn_radius: 2.33m
+2026-09-13 14:31:26,697 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:26,697 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] estimated left/right wheel speeds: 1.138, 1.541 m/s
+2026-09-13 14:31:26,700 - INFO - 2026-09-13 14:31:26 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:26,700 - INFO - 2026-09-13 14:31:26 [FOLLOW] TRACK: progress=10.57m/37.2m seg=8 cross=0.59m alpha=-11.3° target=(0.01,12.54) R=5.14 LEFT v=1.09 dwell=0.0s
+2026-09-13 14:31:26,700 - INFO - 2026-09-13 14:31:26 Turn: LEFT, R: 5.14m, v_L: 1.02 m/s, v_R: 1.17 m/s
+2026-09-13 14:31:26,700 - INFO - 2026-09-13 14:31:26 left_actuator_position: 555 (counts) from v_L 1.019 m/s
+2026-09-13 14:31:26,701 - INFO - 2026-09-13 14:31:26 right_actuator_position: 440 (counts) from v_R 1.168 m/s
+2026-09-13 14:31:26,713 - INFO - Sent actuator positions to RoboClaw → M1 (left): 555, M2 (right): 440 (counts)
+2026-09-13 14:31:26,713 - INFO - 2026-09-13 14:31:26 APPLY → left_pos: 555, right_pos: 440 (counts), v_L: 1.02 m/s, v_R: 1.17 m/s
+2026-09-13 14:31:26,713 - INFO - 2026-09-13 14:31:26 Path tracking needs correction: heading_ok=False (alpha=11.3deg), distance_ok=False (cross=0.586m)
+2026-09-13 14:31:26,903 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] current_turn_radius: 2.46m
+2026-09-13 14:31:26,903 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:26,903 - INFO - 2026-09-13 14:31:26 [3.4 OBSERVED] estimated left/right wheel speeds: 1.293, 1.721 m/s
+2026-09-13 14:31:26,906 - INFO - 2026-09-13 14:31:26 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:26,907 - INFO - 2026-09-13 14:31:26 [FOLLOW] TRACK: progress=10.86m/37.2m seg=8 cross=0.63m alpha=-2.6° target=(0.11,12.81) R=21.69 LEFT v=1.08 dwell=0.0s
+2026-09-13 14:31:26,907 - INFO - 2026-09-13 14:31:26 Turn: LEFT, R: 21.69m, v_L: 1.06 m/s, v_R: 1.10 m/s
+2026-09-13 14:31:26,907 - INFO - 2026-09-13 14:31:26 left_actuator_position: 520 (counts) from v_L 1.064 m/s
+2026-09-13 14:31:26,907 - INFO - 2026-09-13 14:31:26 right_actuator_position: 494 (counts) from v_R 1.098 m/s
+2026-09-13 14:31:26,920 - INFO - Sent actuator positions to RoboClaw → M1 (left): 520, M2 (right): 494 (counts)
+2026-09-13 14:31:26,920 - INFO - 2026-09-13 14:31:26 APPLY → left_pos: 520, right_pos: 494 (counts), v_L: 1.06 m/s, v_R: 1.10 m/s
+2026-09-13 14:31:26,920 - INFO - 2026-09-13 14:31:26 Path tracking needs correction: heading_ok=True (alpha=2.6deg), distance_ok=False (cross=0.630m)
+2026-09-13 14:31:27,103 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] current_turn_radius: 2.63m
+2026-09-13 14:31:27,103 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:27,104 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] estimated left/right wheel speeds: 1.292, 1.688 m/s
+2026-09-13 14:31:27,106 - INFO - 2026-09-13 14:31:27 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:27,107 - INFO - 2026-09-13 14:31:27 [FOLLOW] TRACK: progress=11.16m/37.2m seg=8 cross=0.59m alpha=11.5° target=(0.33,13.00) R=4.64 RIGHT v=1.08 dwell=0.0s
+2026-09-13 14:31:27,107 - INFO - 2026-09-13 14:31:27 Turn: RIGHT, R: 4.64m, v_L: 1.16 m/s, v_R: 1.00 m/s
+2026-09-13 14:31:27,107 - INFO - 2026-09-13 14:31:27 left_actuator_position: 444 (counts) from v_L 1.162 m/s
+2026-09-13 14:31:27,107 - INFO - 2026-09-13 14:31:27 right_actuator_position: 570 (counts) from v_R 0.999 m/s
+2026-09-13 14:31:27,120 - INFO - Sent actuator positions to RoboClaw → M1 (left): 444, M2 (right): 570 (counts)
+2026-09-13 14:31:27,120 - INFO - 2026-09-13 14:31:27 APPLY → left_pos: 444, right_pos: 570 (counts), v_L: 1.16 m/s, v_R: 1.00 m/s
+2026-09-13 14:31:27,120 - INFO - 2026-09-13 14:31:27 Path tracking needs correction: heading_ok=False (alpha=11.5deg), distance_ok=False (cross=0.586m)
+2026-09-13 14:31:27,297 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] current_turn_radius: 3.48m
+2026-09-13 14:31:27,297 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:27,297 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] estimated left/right wheel speeds: 1.273, 1.558 m/s
+2026-09-13 14:31:27,300 - INFO - 2026-09-13 14:31:27 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:27,300 - INFO - 2026-09-13 14:31:27 [FOLLOW] TRACK: progress=11.44m/37.2m seg=8 cross=0.53m alpha=24.6° target=(0.54,13.19) R=2.12 RIGHT v=1.08 dwell=0.0s
+2026-09-13 14:31:27,300 - INFO - 2026-09-13 14:31:27 [SPEED] wheel ceiling: max wheel 1.259 > 1.20 m/s, scaling by 0.953 -> body 1.030 m/s, wheels 1.200/0.860 (R=2.12m preserved)
+2026-09-13 14:31:27,300 - INFO - 2026-09-13 14:31:27 Turn: RIGHT, R: 2.12m, v_L: 1.20 m/s, v_R: 0.86 m/s
+2026-09-13 14:31:27,301 - INFO - 2026-09-13 14:31:27 left_actuator_position: 420 (counts) from v_L 1.200 m/s
+2026-09-13 14:31:27,301 - INFO - 2026-09-13 14:31:27 right_actuator_position: 677 (counts) from v_R 0.860 m/s
+2026-09-13 14:31:27,313 - INFO - Sent actuator positions to RoboClaw → M1 (left): 420, M2 (right): 677 (counts)
+2026-09-13 14:31:27,313 - INFO - 2026-09-13 14:31:27 APPLY → left_pos: 420, right_pos: 677 (counts), v_L: 1.20 m/s, v_R: 0.86 m/s
+2026-09-13 14:31:27,313 - INFO - 2026-09-13 14:31:27 Path tracking needs correction: heading_ok=False (alpha=24.6deg), distance_ok=False (cross=0.528m)
+2026-09-13 14:31:27,498 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] current_turn_radius: 3.11m
+2026-09-13 14:31:27,498 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:27,499 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] estimated left/right wheel speeds: 1.300, 1.629 m/s
+2026-09-13 14:31:27,500 - INFO - 2026-09-13 14:31:27 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:27,500 - INFO - 2026-09-13 14:31:27 [SPEED] tight-turn cap: R=1.35m -> 0.673 m/s
+2026-09-13 14:31:27,500 - INFO - 2026-09-13 14:31:27 [FOLLOW] TRACK: progress=11.80m/37.2m seg=9 cross=0.39m alpha=42.6° target=(0.82,13.43) R=1.35 RIGHT v=0.67 dwell=0.0s
+2026-09-13 14:31:27,501 - INFO - 2026-09-13 14:31:27 Turn: RIGHT, R: 1.35m, v_L: 0.85 m/s, v_R: 0.50 m/s
+2026-09-13 14:31:27,501 - INFO - 2026-09-13 14:31:27 left_actuator_position: 686 (counts) from v_L 0.848 m/s
+2026-09-13 14:31:27,501 - INFO - 2026-09-13 14:31:27 right_actuator_position: 955 (counts) from v_R 0.498 m/s
+2026-09-13 14:31:27,513 - INFO - Sent actuator positions to RoboClaw → M1 (left): 686, M2 (right): 955 (counts)
+2026-09-13 14:31:27,513 - INFO - 2026-09-13 14:31:27 APPLY → left_pos: 686, right_pos: 955 (counts), v_L: 0.85 m/s, v_R: 0.50 m/s
+2026-09-13 14:31:27,513 - INFO - 2026-09-13 14:31:27 Path tracking needs correction: heading_ok=False (alpha=42.6deg), distance_ok=False (cross=0.392m)
+2026-09-13 14:31:27,695 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] current_turn_radius: 2.40m
+2026-09-13 14:31:27,695 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:27,695 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] estimated left/right wheel speeds: 1.224, 1.642 m/s
+2026-09-13 14:31:27,697 - INFO - 2026-09-13 14:31:27 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:27,697 - INFO - 2026-09-13 14:31:27 [SPEED] tight-turn cap: R=1.07m -> 0.536 m/s
+2026-09-13 14:31:27,697 - INFO - 2026-09-13 14:31:27 [FOLLOW] TRACK: progress=12.03m/37.2m seg=9 cross=0.22m alpha=58.9° target=(0.99,13.58) R=1.07 RIGHT v=0.54 dwell=0.0s
+2026-09-13 14:31:27,698 - INFO - 2026-09-13 14:31:27 Turn: RIGHT, R: 1.07m, v_L: 0.71 m/s, v_R: 0.36 m/s
+2026-09-13 14:31:27,698 - INFO - 2026-09-13 14:31:27 left_actuator_position: 791 (counts) from v_L 0.711 m/s
+2026-09-13 14:31:27,698 - INFO - 2026-09-13 14:31:27 right_actuator_position: 1061 (counts) from v_R 0.361 m/s
+2026-09-13 14:31:27,712 - INFO - Sent actuator positions to RoboClaw → M1 (left): 791, M2 (right): 1061 (counts)
+2026-09-13 14:31:27,712 - INFO - 2026-09-13 14:31:27 APPLY → left_pos: 791, right_pos: 1061 (counts), v_L: 0.71 m/s, v_R: 0.36 m/s
+2026-09-13 14:31:27,712 - INFO - 2026-09-13 14:31:27 Path tracking needs correction: heading_ok=False (alpha=58.9deg), distance_ok=True (cross=0.220m)
+2026-09-13 14:31:27,891 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] current_turn_radius: 9.93m
+2026-09-13 14:31:27,892 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:27,892 - INFO - 2026-09-13 14:31:27 [3.4 OBSERVED] estimated left/right wheel speeds: 1.568, 1.682 m/s
+2026-09-13 14:31:27,893 - INFO - 2026-09-13 14:31:27 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:27,893 - INFO - 2026-09-13 14:31:27 [SPEED] tight-turn cap: R=1.00m -> 0.501 m/s
+2026-09-13 14:31:27,894 - INFO - 2026-09-13 14:31:27 [FOLLOW] TRACK: progress=12.25m/37.2m seg=9 cross=0.01m alpha=72.2° target=(1.17,13.68) R=1.00 RIGHT v=0.50 dwell=0.0s
+2026-09-13 14:31:27,894 - INFO - 2026-09-13 14:31:27 Turn: RIGHT, R: 1.00m, v_L: 0.68 m/s, v_R: 0.33 m/s
+2026-09-13 14:31:27,894 - INFO - 2026-09-13 14:31:27 left_actuator_position: 819 (counts) from v_L 0.676 m/s
+2026-09-13 14:31:27,894 - INFO - 2026-09-13 14:31:27 right_actuator_position: 1088 (counts) from v_R 0.326 m/s
+2026-09-13 14:31:27,909 - INFO - Sent actuator positions to RoboClaw → M1 (left): 819, M2 (right): 1088 (counts)
+2026-09-13 14:31:27,909 - INFO - 2026-09-13 14:31:27 APPLY → left_pos: 819, right_pos: 1088 (counts), v_L: 0.68 m/s, v_R: 0.33 m/s
+2026-09-13 14:31:27,909 - INFO - 2026-09-13 14:31:27 Path tracking needs correction: heading_ok=False (alpha=72.2deg), distance_ok=True (cross=0.005m)
+2026-09-13 14:31:28,113 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] current_turn_radius: 45.63m
+2026-09-13 14:31:28,114 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] turn_direction: LEFT
+2026-09-13 14:31:28,114 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] estimated left/right wheel speeds: 1.405, 1.427 m/s
+2026-09-13 14:31:28,116 - INFO - 2026-09-13 14:31:28 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:28,116 - INFO - 2026-09-13 14:31:28 [SPEED] tight-turn cap: R=1.03m -> 0.515 m/s
+2026-09-13 14:31:28,117 - INFO - 2026-09-13 14:31:28 [FOLLOW] TRACK: progress=12.42m/37.2m seg=9 cross=0.22m alpha=82.5° target=(1.33,13.76) R=1.03 RIGHT v=0.52 dwell=0.0s
+2026-09-13 14:31:28,117 - INFO - 2026-09-13 14:31:28 Turn: RIGHT, R: 1.03m, v_L: 0.69 m/s, v_R: 0.34 m/s
+2026-09-13 14:31:28,117 - INFO - 2026-09-13 14:31:28 left_actuator_position: 808 (counts) from v_L 0.690 m/s
+2026-09-13 14:31:28,117 - INFO - 2026-09-13 14:31:28 right_actuator_position: 1077 (counts) from v_R 0.340 m/s
+2026-09-13 14:31:28,133 - INFO - Sent actuator positions to RoboClaw → M1 (left): 808, M2 (right): 1077 (counts)
+2026-09-13 14:31:28,133 - INFO - 2026-09-13 14:31:28 APPLY → left_pos: 808, right_pos: 1077 (counts), v_L: 0.69 m/s, v_R: 0.34 m/s
+2026-09-13 14:31:28,133 - INFO - 2026-09-13 14:31:28 Path tracking needs correction: heading_ok=False (alpha=82.5deg), distance_ok=True (cross=0.216m)
+2026-09-13 14:31:28,296 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] current_turn_radius: 19.79m
+2026-09-13 14:31:28,297 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:28,297 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] estimated left/right wheel speeds: 1.038, 1.002 m/s
+2026-09-13 14:31:28,299 - INFO - 2026-09-13 14:31:28 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:28,299 - INFO - 2026-09-13 14:31:28 [SPEED] tight-turn cap: R=1.10m -> 0.548 m/s
+2026-09-13 14:31:28,300 - INFO - 2026-09-13 14:31:28 [FOLLOW] TRACK: progress=12.53m/37.2m seg=9 cross=0.41m alpha=88.4° target=(1.43,13.81) R=1.10 RIGHT v=0.55 dwell=0.0s
+2026-09-13 14:31:28,300 - INFO - 2026-09-13 14:31:28 Turn: RIGHT, R: 1.10m, v_L: 0.72 m/s, v_R: 0.37 m/s
+2026-09-13 14:31:28,300 - INFO - 2026-09-13 14:31:28 left_actuator_position: 782 (counts) from v_L 0.723 m/s
+2026-09-13 14:31:28,300 - INFO - 2026-09-13 14:31:28 right_actuator_position: 1052 (counts) from v_R 0.373 m/s
+2026-09-13 14:31:28,313 - INFO - Sent actuator positions to RoboClaw → M1 (left): 782, M2 (right): 1052 (counts)
+2026-09-13 14:31:28,313 - INFO - 2026-09-13 14:31:28 APPLY → left_pos: 782, right_pos: 1052 (counts), v_L: 0.72 m/s, v_R: 0.37 m/s
+2026-09-13 14:31:28,313 - INFO - 2026-09-13 14:31:28 Path tracking needs correction: heading_ok=False (alpha=88.4deg), distance_ok=False (cross=0.406m)
+2026-09-13 14:31:28,497 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] current_turn_radius: 17.23m
+2026-09-13 14:31:28,498 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:28,498 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] estimated left/right wheel speeds: 0.934, 0.897 m/s
+2026-09-13 14:31:28,499 - INFO - 2026-09-13 14:31:28 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:28,499 - INFO - 2026-09-13 14:31:28 [SPEED] tight-turn cap: R=1.16m -> 0.578 m/s
+2026-09-13 14:31:28,500 - INFO - 2026-09-13 14:31:28 [FOLLOW] TRACK: progress=12.68m/37.2m seg=9 cross=0.51m alpha=92.8° target=(1.56,13.87) R=1.16 RIGHT v=0.58 dwell=0.0s
+2026-09-13 14:31:28,500 - INFO - 2026-09-13 14:31:28 Turn: RIGHT, R: 1.16m, v_L: 0.75 m/s, v_R: 0.40 m/s
+2026-09-13 14:31:28,500 - INFO - 2026-09-13 14:31:28 left_actuator_position: 759 (counts) from v_L 0.753 m/s
+2026-09-13 14:31:28,500 - INFO - 2026-09-13 14:31:28 right_actuator_position: 1028 (counts) from v_R 0.403 m/s
+2026-09-13 14:31:28,513 - INFO - Sent actuator positions to RoboClaw → M1 (left): 759, M2 (right): 1028 (counts)
+2026-09-13 14:31:28,513 - INFO - 2026-09-13 14:31:28 APPLY → left_pos: 759, right_pos: 1028 (counts), v_L: 0.75 m/s, v_R: 0.40 m/s
+2026-09-13 14:31:28,513 - INFO - 2026-09-13 14:31:28 Path tracking needs correction: heading_ok=False (alpha=92.8deg), distance_ok=False (cross=0.514m)
+2026-09-13 14:31:28,700 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] current_turn_radius: 4.18m
+2026-09-13 14:31:28,701 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:28,701 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] estimated left/right wheel speeds: 0.828, 0.700 m/s
+2026-09-13 14:31:28,703 - INFO - 2026-09-13 14:31:28 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:28,703 - INFO - 2026-09-13 14:31:28 [SPEED] tight-turn cap: R=1.21m -> 0.603 m/s
+2026-09-13 14:31:28,703 - INFO - 2026-09-13 14:31:28 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=0.59m alpha=94.0° target=(1.67,13.92) R=1.21 RIGHT v=0.60 dwell=0.0s
+2026-09-13 14:31:28,703 - INFO - 2026-09-13 14:31:28 Turn: RIGHT, R: 1.21m, v_L: 0.78 m/s, v_R: 0.43 m/s
+2026-09-13 14:31:28,704 - INFO - 2026-09-13 14:31:28 left_actuator_position: 740 (counts) from v_L 0.778 m/s
+2026-09-13 14:31:28,704 - INFO - 2026-09-13 14:31:28 right_actuator_position: 1010 (counts) from v_R 0.428 m/s
+2026-09-13 14:31:28,716 - INFO - Sent actuator positions to RoboClaw → M1 (left): 740, M2 (right): 1010 (counts)
+2026-09-13 14:31:28,716 - INFO - 2026-09-13 14:31:28 APPLY → left_pos: 740, right_pos: 1010 (counts), v_L: 0.78 m/s, v_R: 0.43 m/s
+2026-09-13 14:31:28,716 - INFO - 2026-09-13 14:31:28 Path tracking needs correction: heading_ok=False (alpha=94.0deg), distance_ok=False (cross=0.586m)
+2026-09-13 14:31:28,902 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] current_turn_radius: 5.05m
+2026-09-13 14:31:28,903 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:28,903 - INFO - 2026-09-13 14:31:28 [3.4 OBSERVED] estimated left/right wheel speeds: 0.645, 0.561 m/s
+2026-09-13 14:31:28,905 - INFO - 2026-09-13 14:31:28 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:28,905 - INFO - 2026-09-13 14:31:28 [SPEED] tight-turn cap: R=1.22m -> 0.610 m/s
+2026-09-13 14:31:28,906 - INFO - 2026-09-13 14:31:28 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=0.68m alpha=95.3° target=(1.67,13.92) R=1.22 RIGHT v=0.61 dwell=0.0s
+2026-09-13 14:31:28,906 - INFO - 2026-09-13 14:31:28 Turn: RIGHT, R: 1.22m, v_L: 0.79 m/s, v_R: 0.44 m/s
+2026-09-13 14:31:28,906 - INFO - 2026-09-13 14:31:28 left_actuator_position: 734 (counts) from v_L 0.785 m/s
+2026-09-13 14:31:28,906 - INFO - 2026-09-13 14:31:28 right_actuator_position: 1004 (counts) from v_R 0.435 m/s
+2026-09-13 14:31:28,917 - INFO - Sent actuator positions to RoboClaw → M1 (left): 734, M2 (right): 1004 (counts)
+2026-09-13 14:31:28,917 - INFO - 2026-09-13 14:31:28 APPLY → left_pos: 734, right_pos: 1004 (counts), v_L: 0.79 m/s, v_R: 0.44 m/s
+2026-09-13 14:31:28,917 - INFO - 2026-09-13 14:31:28 Path tracking needs correction: heading_ok=False (alpha=95.3deg), distance_ok=False (cross=0.682m)
+2026-09-13 14:31:29,111 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] current_turn_radius: 2.01m
+2026-09-13 14:31:29,112 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:29,112 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] estimated left/right wheel speeds: 0.543, 0.382 m/s
+2026-09-13 14:31:29,113 - INFO - 2026-09-13 14:31:29 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:29,113 - INFO - 2026-09-13 14:31:29 [SPEED] tight-turn cap: R=1.23m -> 0.616 m/s
+2026-09-13 14:31:29,114 - INFO - 2026-09-13 14:31:29 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=0.77m alpha=95.1° target=(1.67,13.92) R=1.23 RIGHT v=0.62 dwell=0.0s
+2026-09-13 14:31:29,114 - INFO - 2026-09-13 14:31:29 Turn: RIGHT, R: 1.23m, v_L: 0.79 m/s, v_R: 0.44 m/s
+2026-09-13 14:31:29,114 - INFO - 2026-09-13 14:31:29 left_actuator_position: 730 (counts) from v_L 0.791 m/s
+2026-09-13 14:31:29,114 - INFO - 2026-09-13 14:31:29 right_actuator_position: 1000 (counts) from v_R 0.441 m/s
+2026-09-13 14:31:29,126 - INFO - Sent actuator positions to RoboClaw → M1 (left): 730, M2 (right): 1000 (counts)
+2026-09-13 14:31:29,126 - INFO - 2026-09-13 14:31:29 APPLY → left_pos: 730, right_pos: 1000 (counts), v_L: 0.79 m/s, v_R: 0.44 m/s
+2026-09-13 14:31:29,126 - INFO - 2026-09-13 14:31:29 Path tracking needs correction: heading_ok=False (alpha=95.1deg), distance_ok=False (cross=0.771m)
+2026-09-13 14:31:29,300 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] current_turn_radius: 1.76m
+2026-09-13 14:31:29,301 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:29,301 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] estimated left/right wheel speeds: 0.639, 0.427 m/s
+2026-09-13 14:31:29,302 - INFO - 2026-09-13 14:31:29 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:29,303 - INFO - 2026-09-13 14:31:29 [SPEED] tight-turn cap: R=1.24m -> 0.619 m/s
+2026-09-13 14:31:29,303 - INFO - 2026-09-13 14:31:29 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=0.85m alpha=94.2° target=(1.67,13.92) R=1.24 RIGHT v=0.62 dwell=0.0s
+2026-09-13 14:31:29,303 - INFO - 2026-09-13 14:31:29 Turn: RIGHT, R: 1.24m, v_L: 0.79 m/s, v_R: 0.44 m/s
+2026-09-13 14:31:29,303 - INFO - 2026-09-13 14:31:29 left_actuator_position: 728 (counts) from v_L 0.794 m/s
+2026-09-13 14:31:29,303 - INFO - 2026-09-13 14:31:29 right_actuator_position: 997 (counts) from v_R 0.444 m/s
+2026-09-13 14:31:29,316 - INFO - Sent actuator positions to RoboClaw → M1 (left): 728, M2 (right): 997 (counts)
+2026-09-13 14:31:29,316 - INFO - 2026-09-13 14:31:29 APPLY → left_pos: 728, right_pos: 997 (counts), v_L: 0.79 m/s, v_R: 0.44 m/s
+2026-09-13 14:31:29,317 - INFO - 2026-09-13 14:31:29 Path tracking needs correction: heading_ok=False (alpha=94.2deg), distance_ok=False (cross=0.851m)
+2026-09-13 14:31:29,495 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] current_turn_radius: 1.53m
+2026-09-13 14:31:29,495 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:29,495 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] estimated left/right wheel speeds: 0.603, 0.378 m/s
+2026-09-13 14:31:29,498 - INFO - 2026-09-13 14:31:29 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:29,498 - INFO - 2026-09-13 14:31:29 [SPEED] tight-turn cap: R=1.25m -> 0.627 m/s
+2026-09-13 14:31:29,499 - INFO - 2026-09-13 14:31:29 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=0.94m alpha=92.6° target=(1.67,13.92) R=1.25 RIGHT v=0.63 dwell=0.0s
+2026-09-13 14:31:29,499 - INFO - 2026-09-13 14:31:29 Turn: RIGHT, R: 1.25m, v_L: 0.80 m/s, v_R: 0.45 m/s
+2026-09-13 14:31:29,499 - INFO - 2026-09-13 14:31:29 left_actuator_position: 721 (counts) from v_L 0.802 m/s
+2026-09-13 14:31:29,499 - INFO - 2026-09-13 14:31:29 right_actuator_position: 990 (counts) from v_R 0.452 m/s
+2026-09-13 14:31:29,512 - INFO - Sent actuator positions to RoboClaw → M1 (left): 721, M2 (right): 990 (counts)
+2026-09-13 14:31:29,512 - INFO - 2026-09-13 14:31:29 APPLY → left_pos: 721, right_pos: 990 (counts), v_L: 0.80 m/s, v_R: 0.45 m/s
+2026-09-13 14:31:29,512 - INFO - 2026-09-13 14:31:29 Path tracking needs correction: heading_ok=False (alpha=92.6deg), distance_ok=False (cross=0.939m)
+2026-09-13 14:31:29,702 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] current_turn_radius: 3.21m
+2026-09-13 14:31:29,703 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:29,703 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] estimated left/right wheel speeds: 0.542, 0.435 m/s
+2026-09-13 14:31:29,706 - INFO - 2026-09-13 14:31:29 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:29,706 - INFO - 2026-09-13 14:31:29 [SPEED] tight-turn cap: R=1.26m -> 0.632 m/s
+2026-09-13 14:31:29,706 - INFO - 2026-09-13 14:31:29 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=1.03m alpha=93.1° target=(1.67,13.92) R=1.26 RIGHT v=0.63 dwell=0.0s
+2026-09-13 14:31:29,707 - INFO - 2026-09-13 14:31:29 Turn: RIGHT, R: 1.26m, v_L: 0.81 m/s, v_R: 0.46 m/s
+2026-09-13 14:31:29,707 - INFO - 2026-09-13 14:31:29 left_actuator_position: 717 (counts) from v_L 0.807 m/s
+2026-09-13 14:31:29,707 - INFO - 2026-09-13 14:31:29 right_actuator_position: 987 (counts) from v_R 0.457 m/s
+2026-09-13 14:31:29,719 - INFO - Sent actuator positions to RoboClaw → M1 (left): 717, M2 (right): 987 (counts)
+2026-09-13 14:31:29,719 - INFO - 2026-09-13 14:31:29 APPLY → left_pos: 717, right_pos: 987 (counts), v_L: 0.81 m/s, v_R: 0.46 m/s
+2026-09-13 14:31:29,719 - INFO - 2026-09-13 14:31:29 Path tracking needs correction: heading_ok=False (alpha=93.1deg), distance_ok=False (cross=1.026m)
+2026-09-13 14:31:29,904 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] current_turn_radius: 3.51m
+2026-09-13 14:31:29,904 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:29,904 - INFO - 2026-09-13 14:31:29 [3.4 OBSERVED] estimated left/right wheel speeds: 0.591, 0.484 m/s
+2026-09-13 14:31:29,906 - INFO - 2026-09-13 14:31:29 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:29,906 - INFO - 2026-09-13 14:31:29 [SPEED] tight-turn cap: R=1.28m -> 0.638 m/s
+2026-09-13 14:31:29,906 - INFO - 2026-09-13 14:31:29 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=1.11m alpha=93.6° target=(1.67,13.92) R=1.28 RIGHT v=0.64 dwell=0.0s
+2026-09-13 14:31:29,907 - INFO - 2026-09-13 14:31:29 Turn: RIGHT, R: 1.28m, v_L: 0.81 m/s, v_R: 0.46 m/s
+2026-09-13 14:31:29,907 - INFO - 2026-09-13 14:31:29 left_actuator_position: 713 (counts) from v_L 0.813 m/s
+2026-09-13 14:31:29,907 - INFO - 2026-09-13 14:31:29 right_actuator_position: 982 (counts) from v_R 0.463 m/s
+2026-09-13 14:31:29,919 - INFO - Sent actuator positions to RoboClaw → M1 (left): 713, M2 (right): 982 (counts)
+2026-09-13 14:31:29,919 - INFO - 2026-09-13 14:31:29 APPLY → left_pos: 713, right_pos: 982 (counts), v_L: 0.81 m/s, v_R: 0.46 m/s
+2026-09-13 14:31:29,919 - INFO - 2026-09-13 14:31:29 Path tracking needs correction: heading_ok=False (alpha=93.6deg), distance_ok=False (cross=1.115m)
+2026-09-13 14:31:30,118 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] current_turn_radius: 1.84m
+2026-09-13 14:31:30,119 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:30,119 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] estimated left/right wheel speeds: 0.569, 0.387 m/s
+2026-09-13 14:31:30,121 - INFO - 2026-09-13 14:31:30 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:30,121 - INFO - 2026-09-13 14:31:30 [SPEED] tight-turn cap: R=1.29m -> 0.644 m/s
+2026-09-13 14:31:30,122 - INFO - 2026-09-13 14:31:30 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=1.22m alpha=93.0° target=(1.67,13.92) R=1.29 RIGHT v=0.64 dwell=0.0s
+2026-09-13 14:31:30,122 - INFO - 2026-09-13 14:31:30 Turn: RIGHT, R: 1.29m, v_L: 0.82 m/s, v_R: 0.47 m/s
+2026-09-13 14:31:30,122 - INFO - 2026-09-13 14:31:30 left_actuator_position: 708 (counts) from v_L 0.819 m/s
+2026-09-13 14:31:30,122 - INFO - 2026-09-13 14:31:30 right_actuator_position: 977 (counts) from v_R 0.469 m/s
+2026-09-13 14:31:30,135 - INFO - Sent actuator positions to RoboClaw → M1 (left): 708, M2 (right): 977 (counts)
+2026-09-13 14:31:30,135 - INFO - 2026-09-13 14:31:30 APPLY → left_pos: 708, right_pos: 977 (counts), v_L: 0.82 m/s, v_R: 0.47 m/s
+2026-09-13 14:31:30,136 - INFO - 2026-09-13 14:31:30 Path tracking needs correction: heading_ok=False (alpha=93.0deg), distance_ok=False (cross=1.218m)
+2026-09-13 14:31:30,311 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] current_turn_radius: 2.21m
+2026-09-13 14:31:30,311 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:30,311 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] estimated left/right wheel speeds: 0.676, 0.491 m/s
+2026-09-13 14:31:30,315 - INFO - 2026-09-13 14:31:30 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:30,315 - INFO - 2026-09-13 14:31:30 [SPEED] tight-turn cap: R=1.30m -> 0.652 m/s
+2026-09-13 14:31:30,315 - INFO - 2026-09-13 14:31:30 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=1.31m alpha=92.2° target=(1.67,13.92) R=1.30 RIGHT v=0.65 dwell=0.0s
+2026-09-13 14:31:30,316 - INFO - 2026-09-13 14:31:30 Turn: RIGHT, R: 1.30m, v_L: 0.83 m/s, v_R: 0.48 m/s
+2026-09-13 14:31:30,316 - INFO - 2026-09-13 14:31:30 left_actuator_position: 702 (counts) from v_L 0.827 m/s
+2026-09-13 14:31:30,316 - INFO - 2026-09-13 14:31:30 right_actuator_position: 971 (counts) from v_R 0.477 m/s
+2026-09-13 14:31:30,329 - INFO - Sent actuator positions to RoboClaw → M1 (left): 702, M2 (right): 971 (counts)
+2026-09-13 14:31:30,329 - INFO - 2026-09-13 14:31:30 APPLY → left_pos: 702, right_pos: 971 (counts), v_L: 0.83 m/s, v_R: 0.48 m/s
+2026-09-13 14:31:30,330 - INFO - 2026-09-13 14:31:30 Path tracking needs correction: heading_ok=False (alpha=92.2deg), distance_ok=False (cross=1.312m)
+2026-09-13 14:31:30,505 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] current_turn_radius: 1.92m
+2026-09-13 14:31:30,506 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:30,506 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] estimated left/right wheel speeds: 0.661, 0.457 m/s
+2026-09-13 14:31:30,509 - INFO - 2026-09-13 14:31:30 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:30,509 - INFO - 2026-09-13 14:31:30 [SPEED] tight-turn cap: R=1.31m -> 0.654 m/s
+2026-09-13 14:31:30,509 - INFO - 2026-09-13 14:31:30 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=1.40m alpha=91.4° target=(1.67,13.92) R=1.31 RIGHT v=0.65 dwell=0.0s
+2026-09-13 14:31:30,510 - INFO - 2026-09-13 14:31:30 Turn: RIGHT, R: 1.31m, v_L: 0.83 m/s, v_R: 0.48 m/s
+2026-09-13 14:31:30,510 - INFO - 2026-09-13 14:31:30 left_actuator_position: 701 (counts) from v_L 0.829 m/s
+2026-09-13 14:31:30,510 - INFO - 2026-09-13 14:31:30 right_actuator_position: 970 (counts) from v_R 0.479 m/s
+2026-09-13 14:31:30,522 - INFO - Sent actuator positions to RoboClaw → M1 (left): 701, M2 (right): 970 (counts)
+2026-09-13 14:31:30,522 - INFO - 2026-09-13 14:31:30 APPLY → left_pos: 701, right_pos: 970 (counts), v_L: 0.83 m/s, v_R: 0.48 m/s
+2026-09-13 14:31:30,522 - INFO - 2026-09-13 14:31:30 Path tracking needs correction: heading_ok=False (alpha=91.4deg), distance_ok=False (cross=1.398m)
+2026-09-13 14:31:30,723 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] current_turn_radius: 1.60m
+2026-09-13 14:31:30,724 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:30,724 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] estimated left/right wheel speeds: 0.658, 0.422 m/s
+2026-09-13 14:31:30,725 - INFO - 2026-09-13 14:31:30 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:30,725 - INFO - 2026-09-13 14:31:30 [SPEED] tight-turn cap: R=1.32m -> 0.660 m/s
+2026-09-13 14:31:30,726 - INFO - 2026-09-13 14:31:30 [FOLLOW] TRACK: progress=12.80m/37.2m seg=9 cross=1.48m alpha=89.3° target=(1.67,13.92) R=1.32 RIGHT v=0.66 dwell=0.0s
+2026-09-13 14:31:30,726 - INFO - 2026-09-13 14:31:30 Turn: RIGHT, R: 1.32m, v_L: 0.83 m/s, v_R: 0.48 m/s
+2026-09-13 14:31:30,726 - INFO - 2026-09-13 14:31:30 left_actuator_position: 696 (counts) from v_L 0.835 m/s
+2026-09-13 14:31:30,726 - INFO - 2026-09-13 14:31:30 right_actuator_position: 966 (counts) from v_R 0.485 m/s
+2026-09-13 14:31:30,739 - INFO - Sent actuator positions to RoboClaw → M1 (left): 696, M2 (right): 966 (counts)
+2026-09-13 14:31:30,739 - INFO - 2026-09-13 14:31:30 APPLY → left_pos: 696, right_pos: 966 (counts), v_L: 0.83 m/s, v_R: 0.48 m/s
+2026-09-13 14:31:30,739 - INFO - 2026-09-13 14:31:30 Path tracking needs correction: heading_ok=False (alpha=89.3deg), distance_ok=False (cross=1.485m)
+2026-09-13 14:31:30,912 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] current_turn_radius: 1.99m
+2026-09-13 14:31:30,912 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:30,912 - INFO - 2026-09-13 14:31:30 [3.4 OBSERVED] estimated left/right wheel speeds: 0.639, 0.448 m/s
+2026-09-13 14:31:30,914 - INFO - 2026-09-13 14:31:30 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:30,914 - INFO - 2026-09-13 14:31:30 [SPEED] tight-turn cap: R=1.33m -> 0.663 m/s
+2026-09-13 14:31:30,914 - INFO - 2026-09-13 14:31:30 [FOLLOW] TRACK: progress=12.80m/37.2m seg=10 cross=1.58m alpha=88.7° target=(1.67,13.92) R=1.33 RIGHT v=0.66 dwell=0.0s
+2026-09-13 14:31:30,915 - INFO - 2026-09-13 14:31:30 Turn: RIGHT, R: 1.33m, v_L: 0.84 m/s, v_R: 0.49 m/s
+2026-09-13 14:31:30,915 - INFO - 2026-09-13 14:31:30 left_actuator_position: 694 (counts) from v_L 0.838 m/s
+2026-09-13 14:31:30,915 - INFO - 2026-09-13 14:31:30 right_actuator_position: 963 (counts) from v_R 0.488 m/s
+2026-09-13 14:31:30,926 - INFO - Sent actuator positions to RoboClaw → M1 (left): 694, M2 (right): 963 (counts)
+2026-09-13 14:31:30,926 - INFO - 2026-09-13 14:31:30 APPLY → left_pos: 694, right_pos: 963 (counts), v_L: 0.84 m/s, v_R: 0.49 m/s
+2026-09-13 14:31:30,926 - INFO - 2026-09-13 14:31:30 Path tracking needs correction: heading_ok=False (alpha=88.7deg), distance_ok=False (cross=1.576m)
+2026-09-13 14:31:31,116 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] current_turn_radius: 2.25m
+2026-09-13 14:31:31,116 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:31,116 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] estimated left/right wheel speeds: 0.767, 0.561 m/s
+2026-09-13 14:31:31,118 - INFO - 2026-09-13 14:31:31 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:31,119 - INFO - 2026-09-13 14:31:31 [SPEED] tight-turn cap: R=1.37m -> 0.685 m/s
+2026-09-13 14:31:31,119 - INFO - 2026-09-13 14:31:31 [FOLLOW] TRACK: progress=12.87m/37.2m seg=10 cross=1.68m alpha=87.3° target=(1.74,13.95) R=1.37 RIGHT v=0.69 dwell=0.0s
+2026-09-13 14:31:31,119 - INFO - 2026-09-13 14:31:31 Turn: RIGHT, R: 1.37m, v_L: 0.86 m/s, v_R: 0.51 m/s
+2026-09-13 14:31:31,119 - INFO - 2026-09-13 14:31:31 left_actuator_position: 677 (counts) from v_L 0.860 m/s
+2026-09-13 14:31:31,119 - INFO - 2026-09-13 14:31:31 right_actuator_position: 946 (counts) from v_R 0.510 m/s
+2026-09-13 14:31:31,132 - INFO - Sent actuator positions to RoboClaw → M1 (left): 677, M2 (right): 946 (counts)
+2026-09-13 14:31:31,132 - INFO - 2026-09-13 14:31:31 APPLY → left_pos: 677, right_pos: 946 (counts), v_L: 0.86 m/s, v_R: 0.51 m/s
+2026-09-13 14:31:31,133 - INFO - 2026-09-13 14:31:31 Path tracking needs correction: heading_ok=False (alpha=87.3deg), distance_ok=False (cross=1.683m)
+2026-09-13 14:31:31,306 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] current_turn_radius: 1.68m
+2026-09-13 14:31:31,306 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:31,306 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] estimated left/right wheel speeds: 0.673, 0.440 m/s
+2026-09-13 14:31:31,308 - INFO - 2026-09-13 14:31:31 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:31,308 - INFO - 2026-09-13 14:31:31 [SPEED] tight-turn cap: R=1.41m -> 0.706 m/s
+2026-09-13 14:31:31,309 - INFO - 2026-09-13 14:31:31 [FOLLOW] TRACK: progress=12.97m/37.2m seg=10 cross=1.77m alpha=85.4° target=(1.83,13.99) R=1.41 RIGHT v=0.71 dwell=0.0s
+2026-09-13 14:31:31,309 - INFO - 2026-09-13 14:31:31 Turn: RIGHT, R: 1.41m, v_L: 0.88 m/s, v_R: 0.53 m/s
+2026-09-13 14:31:31,309 - INFO - 2026-09-13 14:31:31 left_actuator_position: 661 (counts) from v_L 0.881 m/s
+2026-09-13 14:31:31,309 - INFO - 2026-09-13 14:31:31 right_actuator_position: 930 (counts) from v_R 0.531 m/s
+2026-09-13 14:31:31,324 - INFO - Sent actuator positions to RoboClaw → M1 (left): 661, M2 (right): 930 (counts)
+2026-09-13 14:31:31,324 - INFO - 2026-09-13 14:31:31 APPLY → left_pos: 661, right_pos: 930 (counts), v_L: 0.88 m/s, v_R: 0.53 m/s
+2026-09-13 14:31:31,324 - INFO - 2026-09-13 14:31:31 Path tracking needs correction: heading_ok=False (alpha=85.4deg), distance_ok=False (cross=1.771m)
+2026-09-13 14:31:31,499 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] current_turn_radius: 1.29m
+2026-09-13 14:31:31,499 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:31,499 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] estimated left/right wheel speeds: 0.736, 0.421 m/s
+2026-09-13 14:31:31,501 - INFO - 2026-09-13 14:31:31 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:31,502 - INFO - 2026-09-13 14:31:31 [SPEED] tight-turn cap: R=1.46m -> 0.728 m/s
+2026-09-13 14:31:31,502 - INFO - 2026-09-13 14:31:31 [FOLLOW] TRACK: progress=13.05m/37.2m seg=10 cross=1.84m alpha=81.8° target=(1.90,14.03) R=1.46 RIGHT v=0.73 dwell=0.0s
+2026-09-13 14:31:31,502 - INFO - 2026-09-13 14:31:31 Turn: RIGHT, R: 1.46m, v_L: 0.90 m/s, v_R: 0.55 m/s
+2026-09-13 14:31:31,502 - INFO - 2026-09-13 14:31:31 left_actuator_position: 644 (counts) from v_L 0.903 m/s
+2026-09-13 14:31:31,502 - INFO - 2026-09-13 14:31:31 right_actuator_position: 913 (counts) from v_R 0.553 m/s
+2026-09-13 14:31:31,515 - INFO - Sent actuator positions to RoboClaw → M1 (left): 644, M2 (right): 913 (counts)
+2026-09-13 14:31:31,515 - INFO - 2026-09-13 14:31:31 APPLY → left_pos: 644, right_pos: 913 (counts), v_L: 0.90 m/s, v_R: 0.55 m/s
+2026-09-13 14:31:31,515 - INFO - 2026-09-13 14:31:31 Path tracking needs correction: heading_ok=False (alpha=81.8deg), distance_ok=False (cross=1.844m)
+2026-09-13 14:31:31,700 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] current_turn_radius: 1.34m
+2026-09-13 14:31:31,701 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:31,701 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] estimated left/right wheel speeds: 0.800, 0.469 m/s
+2026-09-13 14:31:31,704 - INFO - 2026-09-13 14:31:31 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:31,704 - INFO - 2026-09-13 14:31:31 [SPEED] tight-turn cap: R=1.51m -> 0.754 m/s
+2026-09-13 14:31:31,705 - INFO - 2026-09-13 14:31:31 [FOLLOW] TRACK: progress=13.16m/37.2m seg=10 cross=1.90m alpha=77.5° target=(2.00,14.07) R=1.51 RIGHT v=0.75 dwell=0.0s
+2026-09-13 14:31:31,705 - INFO - 2026-09-13 14:31:31 Turn: RIGHT, R: 1.51m, v_L: 0.93 m/s, v_R: 0.58 m/s
+2026-09-13 14:31:31,705 - INFO - 2026-09-13 14:31:31 left_actuator_position: 624 (counts) from v_L 0.929 m/s
+2026-09-13 14:31:31,705 - INFO - 2026-09-13 14:31:31 right_actuator_position: 893 (counts) from v_R 0.579 m/s
+2026-09-13 14:31:31,718 - INFO - Sent actuator positions to RoboClaw → M1 (left): 624, M2 (right): 893 (counts)
+2026-09-13 14:31:31,718 - INFO - 2026-09-13 14:31:31 APPLY → left_pos: 624, right_pos: 893 (counts), v_L: 0.93 m/s, v_R: 0.58 m/s
+2026-09-13 14:31:31,718 - INFO - 2026-09-13 14:31:31 Path tracking needs correction: heading_ok=False (alpha=77.5deg), distance_ok=False (cross=1.899m)
+2026-09-13 14:31:31,899 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] current_turn_radius: 1.44m
+2026-09-13 14:31:31,900 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:31,900 - INFO - 2026-09-13 14:31:31 [3.4 OBSERVED] estimated left/right wheel speeds: 0.829, 0.504 m/s
+2026-09-13 14:31:31,901 - INFO - 2026-09-13 14:31:31 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:31,902 - INFO - 2026-09-13 14:31:31 [SPEED] tight-turn cap: R=1.57m -> 0.787 m/s
+2026-09-13 14:31:31,902 - INFO - 2026-09-13 14:31:31 [FOLLOW] TRACK: progress=13.27m/37.2m seg=10 cross=1.98m alpha=73.7° target=(2.10,14.12) R=1.57 RIGHT v=0.79 dwell=0.0s
+2026-09-13 14:31:31,902 - INFO - 2026-09-13 14:31:31 Turn: RIGHT, R: 1.57m, v_L: 0.96 m/s, v_R: 0.61 m/s
+2026-09-13 14:31:31,902 - INFO - 2026-09-13 14:31:31 left_actuator_position: 598 (counts) from v_L 0.962 m/s
+2026-09-13 14:31:31,902 - INFO - 2026-09-13 14:31:31 right_actuator_position: 868 (counts) from v_R 0.612 m/s
+2026-09-13 14:31:31,915 - INFO - Sent actuator positions to RoboClaw → M1 (left): 598, M2 (right): 868 (counts)
+2026-09-13 14:31:31,915 - INFO - 2026-09-13 14:31:31 APPLY → left_pos: 598, right_pos: 868 (counts), v_L: 0.96 m/s, v_R: 0.61 m/s
+2026-09-13 14:31:31,915 - INFO - 2026-09-13 14:31:31 Path tracking needs correction: heading_ok=False (alpha=73.7deg), distance_ok=False (cross=1.977m)
+2026-09-13 14:31:32,096 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] current_turn_radius: 1.78m
+2026-09-13 14:31:32,097 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:32,097 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] estimated left/right wheel speeds: 0.853, 0.573 m/s
+2026-09-13 14:31:32,098 - INFO - 2026-09-13 14:31:32 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:32,099 - INFO - 2026-09-13 14:31:32 [SPEED] tight-turn cap: R=1.64m -> 0.822 m/s
+2026-09-13 14:31:32,099 - INFO - 2026-09-13 14:31:32 [FOLLOW] TRACK: progress=13.38m/37.2m seg=10 cross=2.04m alpha=70.4° target=(2.20,14.17) R=1.64 RIGHT v=0.82 dwell=0.0s
+2026-09-13 14:31:32,099 - INFO - 2026-09-13 14:31:32 Turn: RIGHT, R: 1.64m, v_L: 1.00 m/s, v_R: 0.65 m/s
+2026-09-13 14:31:32,099 - INFO - 2026-09-13 14:31:32 left_actuator_position: 572 (counts) from v_L 0.997 m/s
+2026-09-13 14:31:32,099 - INFO - 2026-09-13 14:31:32 right_actuator_position: 841 (counts) from v_R 0.647 m/s
+2026-09-13 14:31:32,111 - INFO - Sent actuator positions to RoboClaw → M1 (left): 572, M2 (right): 841 (counts)
+2026-09-13 14:31:32,111 - INFO - 2026-09-13 14:31:32 APPLY → left_pos: 572, right_pos: 841 (counts), v_L: 1.00 m/s, v_R: 0.65 m/s
+2026-09-13 14:31:32,112 - INFO - 2026-09-13 14:31:32 Path tracking needs correction: heading_ok=False (alpha=70.4deg), distance_ok=False (cross=2.045m)
+2026-09-13 14:31:32,293 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] current_turn_radius: 1.28m
+2026-09-13 14:31:32,293 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:32,293 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] estimated left/right wheel speeds: 0.930, 0.531 m/s
+2026-09-13 14:31:32,295 - INFO - 2026-09-13 14:31:32 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:32,295 - INFO - 2026-09-13 14:31:32 [SPEED] tight-turn cap: R=1.75m -> 0.874 m/s
+2026-09-13 14:31:32,296 - INFO - 2026-09-13 14:31:32 [FOLLOW] TRACK: progress=13.54m/37.2m seg=10 cross=2.11m alpha=65.5° target=(2.34,14.22) R=1.75 RIGHT v=0.87 dwell=0.0s
+2026-09-13 14:31:32,296 - INFO - 2026-09-13 14:31:32 Turn: RIGHT, R: 1.75m, v_L: 1.05 m/s, v_R: 0.70 m/s
+2026-09-13 14:31:32,296 - INFO - 2026-09-13 14:31:32 left_actuator_position: 531 (counts) from v_L 1.049 m/s
+2026-09-13 14:31:32,296 - INFO - 2026-09-13 14:31:32 right_actuator_position: 801 (counts) from v_R 0.699 m/s
+2026-09-13 14:31:32,308 - INFO - Sent actuator positions to RoboClaw → M1 (left): 531, M2 (right): 801 (counts)
+2026-09-13 14:31:32,308 - INFO - 2026-09-13 14:31:32 APPLY → left_pos: 531, right_pos: 801 (counts), v_L: 1.05 m/s, v_R: 0.70 m/s
+2026-09-13 14:31:32,309 - INFO - 2026-09-13 14:31:32 Path tracking needs correction: heading_ok=False (alpha=65.5deg), distance_ok=False (cross=2.108m)
+2026-09-13 14:31:32,494 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] current_turn_radius: 1.75m
+2026-09-13 14:31:32,494 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:32,494 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] estimated left/right wheel speeds: 1.052, 0.700 m/s
+2026-09-13 14:31:32,497 - INFO - 2026-09-13 14:31:32 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:32,498 - INFO - 2026-09-13 14:31:32 [SPEED] tight-turn cap: R=1.87m -> 0.933 m/s
+2026-09-13 14:31:32,498 - INFO - 2026-09-13 14:31:32 [FOLLOW] TRACK: progress=13.70m/37.2m seg=10 cross=2.16m alpha=61.3° target=(2.50,14.26) R=1.87 RIGHT v=0.93 dwell=0.0s
+2026-09-13 14:31:32,498 - INFO - 2026-09-13 14:31:32 Turn: RIGHT, R: 1.87m, v_L: 1.11 m/s, v_R: 0.76 m/s
+2026-09-13 14:31:32,498 - INFO - 2026-09-13 14:31:32 left_actuator_position: 486 (counts) from v_L 1.108 m/s
+2026-09-13 14:31:32,498 - INFO - 2026-09-13 14:31:32 right_actuator_position: 755 (counts) from v_R 0.758 m/s
+2026-09-13 14:31:32,510 - INFO - Sent actuator positions to RoboClaw → M1 (left): 486, M2 (right): 755 (counts)
+2026-09-13 14:31:32,510 - INFO - 2026-09-13 14:31:32 APPLY → left_pos: 486, right_pos: 755 (counts), v_L: 1.11 m/s, v_R: 0.76 m/s
+2026-09-13 14:31:32,511 - INFO - 2026-09-13 14:31:32 Path tracking needs correction: heading_ok=False (alpha=61.3deg), distance_ok=False (cross=2.161m)
+2026-09-13 14:31:32,690 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] current_turn_radius: 2.08m
+2026-09-13 14:31:32,691 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:32,691 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] estimated left/right wheel speeds: 1.041, 0.741 m/s
+2026-09-13 14:31:32,693 - INFO - 2026-09-13 14:31:32 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:32,694 - INFO - 2026-09-13 14:31:32 [SPEED] tight-turn cap: R=1.98m -> 0.992 m/s
+2026-09-13 14:31:32,694 - INFO - 2026-09-13 14:31:32 [FOLLOW] TRACK: progress=13.88m/37.2m seg=10 cross=2.20m alpha=58.0° target=(2.67,14.30) R=1.98 RIGHT v=0.99 dwell=0.0s
+2026-09-13 14:31:32,694 - INFO - 2026-09-13 14:31:32 Turn: RIGHT, R: 1.98m, v_L: 1.17 m/s, v_R: 0.82 m/s
+2026-09-13 14:31:32,694 - INFO - 2026-09-13 14:31:32 left_actuator_position: 441 (counts) from v_L 1.167 m/s
+2026-09-13 14:31:32,694 - INFO - 2026-09-13 14:31:32 right_actuator_position: 710 (counts) from v_R 0.817 m/s
+2026-09-13 14:31:32,708 - INFO - Sent actuator positions to RoboClaw → M1 (left): 441, M2 (right): 710 (counts)
+2026-09-13 14:31:32,708 - INFO - 2026-09-13 14:31:32 APPLY → left_pos: 441, right_pos: 710 (counts), v_L: 1.17 m/s, v_R: 0.82 m/s
+2026-09-13 14:31:32,709 - INFO - 2026-09-13 14:31:32 Path tracking needs correction: heading_ok=False (alpha=58.0deg), distance_ok=False (cross=2.204m)
+2026-09-13 14:31:32,892 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] current_turn_radius: 2.09m
+2026-09-13 14:31:32,892 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] turn_direction: RIGHT
+2026-09-13 14:31:32,892 - INFO - 2026-09-13 14:31:32 [3.4 OBSERVED] estimated left/right wheel speeds: 1.020, 0.728 m/s
+2026-09-13 14:31:32,894 - INFO - 2026-09-13 14:31:32 [STATE] Current state: FOLLOWING_PATH
+2026-09-13 14:31:32,894 - ERROR - 2026-09-13 14:31:32 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 14.05m, cross-track 2.25m)
+2026-09-13 14:31:32,907 - INFO - Actuators commanded to neutral (1100) -- Follower safety abort
+2026-09-13 14:31:32,923 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-09-13 14:31:34,303 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-09-13 14:31:34,303 - INFO - GREEN_LED GPIO cleaned up successfully
