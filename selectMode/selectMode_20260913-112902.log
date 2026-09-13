@@ -6,3 +6,13 @@
 2026-09-13 11:29:03,159 - INFO - Starting main function
 2026-09-13 11:29:03,159 - INFO - Waiting for user input...
 2026-09-13 11:29:03,163 - INFO - Background GPS heading capture started
+2026-09-13 11:31:12,404 - INFO - Inactivity timeout reached. Restarting menu.
+2026-09-13 11:31:12,426 - INFO - Background GPS port closed
+2026-09-13 11:31:12,427 - WARNING - No valid heading captured to persist
+2026-09-13 11:31:12,427 - INFO - Waiting for user input...
+2026-09-13 11:31:12,429 - INFO - Background GPS heading capture started
+2026-09-13 11:33:12,467 - INFO - Inactivity timeout reached. Restarting menu.
+2026-09-13 11:33:12,487 - INFO - Background GPS port closed
+2026-09-13 11:33:12,488 - WARNING - No valid heading captured to persist
+2026-09-13 11:33:12,488 - INFO - Waiting for user input...
+2026-09-13 11:33:12,489 - INFO - Background GPS heading capture started
