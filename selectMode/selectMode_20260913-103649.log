@@ -1,0 +1,8 @@
+2026-09-13 10:36:49,598 - INFO - Constants module loaded successfully
+2026-09-13 10:36:49,605 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13 10:36:49,922 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-09-13 10:36:50,226 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-09-13 10:36:50,226 - INFO - Application started
+2026-09-13 10:36:50,226 - INFO - Starting main function
+2026-09-13 10:36:50,226 - INFO - Waiting for user input...
+2026-09-13 10:36:50,231 - INFO - Background GPS heading capture started
