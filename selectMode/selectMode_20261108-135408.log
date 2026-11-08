@@ -6,3 +6,20 @@
 2026-11-08 13:54:09,480 - INFO - Starting main function
 2026-11-08 13:54:09,480 - INFO - Waiting for user input...
 2026-11-08 13:54:09,485 - INFO - Background GPS heading capture started
+2026-11-08 13:55:16,308 - INFO - Background GPS port closed
+2026-11-08 13:55:18,222 - INFO - Persisted heading 64.2° (accuracy: 1.0°) captured at 2026-11-08 13:55:16
+2026-11-08 13:55:19,223 - INFO - User selected mode: B
+2026-11-08 13:55:19,223 - INFO - Mode B selected
+2026-11-08 13:55:19,223 - INFO - Enter a 2-digit combination
+2026-11-08 13:55:19,674 - INFO - Digit entered: 5
+2026-11-08 13:55:19,685 - INFO - Digit entered: 5
+2026-11-08 13:55:19,685 - INFO - Combination entered: 55
+2026-11-08 13:55:19,685 - INFO - File with ID 55 found in Record/Data
+2026-11-08 13:55:25,690 - INFO - Deployed version:  @ 
+2026-11-08 13:55:25,692 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-11-08 13:55:34,202 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-11-08 13:55:34,270 - INFO - Closed GPS port after configuration
+2026-11-08 13:55:34,285 - INFO - Triggering readRecordedRun with combination: 55
+2026-11-08 13:55:57,945 - INFO - Subprocess exited with code: 0
+2026-11-08 13:55:58,992 - INFO - Waiting for user input...
+2026-11-08 13:55:59,063 - INFO - Background GPS heading capture started
