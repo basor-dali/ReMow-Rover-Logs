@@ -4,3 +4,37 @@
 2026-09-13 14:37:00,912 - INFO - Starting main function
 2026-09-13 14:37:00,913 - INFO - Waiting for user input...
 2026-09-13 14:37:00,917 - INFO - Background GPS heading capture started
+2026-11-08 11:19:39,748 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-08 11:19:39,828 - INFO - Background GPS port closed
+2026-11-08 11:19:39,828 - WARNING - No valid heading captured to persist
+2026-11-08 11:19:39,828 - INFO - Waiting for user input...
+2026-11-08 11:19:39,829 - INFO - Background GPS heading capture started
+2026-11-08 11:21:39,836 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-08 11:21:40,004 - INFO - Background GPS port closed
+2026-11-08 11:21:40,004 - WARNING - No valid heading captured to persist
+2026-11-08 11:21:40,005 - INFO - Waiting for user input...
+2026-11-08 11:21:40,007 - INFO - Background GPS heading capture started
+2026-11-08 11:23:40,121 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-08 11:23:40,237 - INFO - Background GPS port closed
+2026-11-08 11:23:40,237 - WARNING - No valid heading captured to persist
+2026-11-08 11:23:40,237 - INFO - Waiting for user input...
+2026-11-08 11:23:40,239 - INFO - Background GPS heading capture started
+2026-11-08 11:25:40,250 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-08 11:25:40,256 - INFO - Background GPS port closed
+2026-11-08 11:25:40,256 - WARNING - No valid heading captured to persist
+2026-11-08 11:25:40,256 - INFO - Waiting for user input...
+2026-11-08 11:25:40,258 - INFO - Background GPS heading capture started
+2026-11-08 11:26:09,046 - INFO - Background GPS port closed
+2026-11-08 11:26:09,046 - WARNING - No valid heading captured to persist
+2026-11-08 11:26:10,048 - INFO - User selected mode: B
+2026-11-08 11:26:10,048 - INFO - Mode B selected
+2026-11-08 11:26:10,048 - INFO - Enter a 2-digit combination
+2026-11-08 11:26:10,720 - INFO - Digit entered: 5
+2026-11-08 11:26:10,730 - INFO - Digit entered: 5
+2026-11-08 11:26:10,730 - INFO - Combination entered: 55
+2026-11-08 11:26:10,730 - INFO - File with ID 55 found in Record/Data
+2026-11-08 11:26:16,736 - INFO - Deployed version:  @ 
+2026-11-08 11:26:16,738 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-11-08 11:26:25,248 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-11-08 11:26:25,289 - INFO - Closed GPS port after configuration
+2026-11-08 11:26:25,304 - INFO - Triggering readRecordedRun with combination: 55

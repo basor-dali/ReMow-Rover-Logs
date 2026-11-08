@@ -590,3 +590,10 @@ Fast-forward
  constants.py                         |  56 ++++++---
  8 files changed, 442 insertions(+), 202 deletions(-)
 [2026-09-13T14:37:01-05:00] pull OK -- following branch main, was 9e3d628, now 331aa27
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   bb81ed3..7a23108  main -> main
+[2026-11-08T11:25:50-06:00] safe_pull start
+[2026-11-08T11:25:51-06:00] deploy ref: main
+[2026-11-08T11:25:52-06:00] local tracked-file changes present -- SKIPPING pull.
+[2026-11-08T11:25:52-06:00] Commit, revert, or stash them by hand. Nothing discarded.
+ M constants.py
