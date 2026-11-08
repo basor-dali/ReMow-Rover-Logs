@@ -6,3 +6,20 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 [2026-11-08T13:55:42-06:00] safe_pull start
 [2026-11-08T13:55:43-06:00] deploy ref: main
 [2026-11-08T13:55:49-06:00] already at pinned commit 60ed4e3 (main)
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   8e2b909..6266485  main -> main
+[2026-11-08T14:50:07-06:00] safe_pull start
+[2026-11-08T14:50:08-06:00] deploy ref: main
+From github.com:basor-dali/ReMow-Rover-Tests
+   60ed4e3..099b0e8  main                 -> origin/main
+ * [new branch]      Claude-magic         -> origin/Claude-magic
+ * [new branch]      fix/turn-feasibility -> origin/fix/turn-feasibility
+Updating 60ed4e3..099b0e8
+Fast-forward
+ Repeat/pathModel.py                 |  11 +-
+ Repeat/readRecordedRun.py           | 193 +++++++++++++++++++++++++++++++--
+ Repeat/test_path_follower.py        |  65 +++++++++++
+ Repeat/test_tight_turn_speed_cap.py | 211 +++++++++++++++++++++++++++++++++---
+ constants.py                        |  83 +++++++++++++-
+ 5 files changed, 535 insertions(+), 28 deletions(-)
+[2026-11-08T14:50:15-06:00] pull OK -- following branch main, was 60ed4e3, now 099b0e8
