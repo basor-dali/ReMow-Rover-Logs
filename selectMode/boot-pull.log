@@ -632,3 +632,15 @@ To github.com:basor-dali/ReMow-Rover-Logs.git
 [2026-11-08T13:21:14-06:00] local tracked-file changes present -- SKIPPING pull.
 [2026-11-08T13:21:14-06:00] Commit, revert, or stash them by hand. Nothing discarded.
  M constants.py
+To github.com:basor-dali/ReMow-Rover-Logs.git
+   7dd6909..6196c3d  main -> main
+[2026-11-08T13:24:17-06:00] safe_pull start
+[2026-11-08T13:24:17-06:00] deploy ref: main
+[2026-11-08T13:24:17-06:00] local tracked-file changes present -- SKIPPING pull.
+[2026-11-08T13:24:17-06:00] Commit, revert, or stash them by hand. Nothing discarded.
+ M Repeat/readRecordedRun.py
+ M Repeat/test_actuator_lag_limiter.py
+ M Repeat/test_july5_regression.py
+ M Repeat/test_navigation_geometry.py
+ M Repeat/test_tight_turn_speed_cap.py
+ M constants.py
