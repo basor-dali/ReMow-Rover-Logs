@@ -1,0 +1,936 @@
+2026-08-30T13:03:58-0500 raspberrypi rc.local[1233]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-08-30T13:03:58-0500 raspberrypi rc.local[1233]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-30T13:12:03-0500 raspberrypi rc.local[2170]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-08-30T13:12:03-0500 raspberrypi rc.local[2170]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,292 - WARNING - guidance config: minimum_path_turn_radius (0.1) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,292 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,305 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,305 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,306 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,306 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,651 - WARNING - 2026-08-30 13:12:04 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=4.72m (limit infm), heading=37.3°, target_progress=0.00m, target=(0.00,0.00), alpha=-4.4°
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,651 - WARNING - 2026-08-30 13:12:04 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,652 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,722 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:04-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:04,909 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:05-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:05,136 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:05-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:05,326 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:05-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:05,546 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:07-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:07,925 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:08-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:08,151 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:08-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:08,328 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:08-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:08,521 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:08-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:08,729 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:08-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:08,932 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:11-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:11,340 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:11-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:11,554 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:16-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:16,130 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:16-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:16,311 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:16-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:16,514 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:12:21-0500 raspberrypi rc.local[2170]: 2026-08-30 13:12:21,533 - ERROR - 2026-08-30 13:12:21 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 0.07m, cross-track 1.96m)
+2026-08-30T13:12:22-0500 raspberrypi rc.local[2170]: Serial loop finished.
+2026-08-30T13:45:33-0500 raspberrypi rc.local[1258]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-08-30T13:45:33-0500 raspberrypi rc.local[1258]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-30T13:47:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:47:34,044 - WARNING - No valid heading captured to persist
+2026-08-30T13:47:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:47:34,044 - WARNING - No valid heading captured to persist
+2026-08-30T13:49:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:49:34,250 - WARNING - No valid heading captured to persist
+2026-08-30T13:49:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:49:34,250 - WARNING - No valid heading captured to persist
+2026-08-30T13:51:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:51:34,446 - WARNING - No valid heading captured to persist
+2026-08-30T13:51:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:51:34,446 - WARNING - No valid heading captured to persist
+2026-08-30T13:53:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:53:34,651 - WARNING - No valid heading captured to persist
+2026-08-30T13:53:34-0500 raspberrypi rc.local[1258]: 2026-08-30 13:53:34,651 - WARNING - No valid heading captured to persist
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:53,806 - WARNING - guidance config: minimum_path_turn_radius (0.1) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:53,806 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:53,820 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:53,821 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:53,821 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-08-30T13:54:53-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:53,821 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,060 - WARNING - 2026-08-30 13:54:54 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=4.74m (limit infm), heading=47.9°, target_progress=0.00m, target=(0.00,0.00), alpha=-12.2°
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,060 - WARNING - 2026-08-30 13:54:54 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,060 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,154 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,337 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,531 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,718 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:54-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:54,940 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:55-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:55,147 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:55-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:55,347 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:55-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:55,527 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:57-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:57,536 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:57-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:57,743 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:57-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:57,939 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:54:58-0500 raspberrypi rc.local[3078]: 2026-08-30 13:54:58,166 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:55:01-0500 raspberrypi rc.local[3078]: 2026-08-30 13:55:01,924 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:55:02-0500 raspberrypi rc.local[3078]: 2026-08-30 13:55:02,147 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:55:02-0500 raspberrypi rc.local[3078]: 2026-08-30 13:55:02,327 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-08-30T13:55:08-0500 raspberrypi rc.local[3078]: 2026-08-30 13:55:08,131 - ERROR - 2026-08-30 13:55:08 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 1.37m, cross-track 2.10m)
+2026-08-30T13:55:09-0500 raspberrypi rc.local[3078]: Serial loop finished.
+2026-08-30T14:12:01-0500 raspberrypi rc.local[1252]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-08-30T14:12:01-0500 raspberrypi rc.local[1252]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T09:56:23-0500 raspberrypi rc.local[1252]: 2026-09-06 09:56:23,744 - WARNING - No valid heading captured to persist
+2026-09-06T09:56:23-0500 raspberrypi rc.local[1252]: 2026-09-06 09:56:23,744 - WARNING - No valid heading captured to persist
+2026-09-06T09:58:23-0500 raspberrypi rc.local[1252]: 2026-09-06 09:58:23,749 - WARNING - No valid heading captured to persist
+2026-09-06T09:58:23-0500 raspberrypi rc.local[1252]: 2026-09-06 09:58:23,749 - WARNING - No valid heading captured to persist
+2026-09-06T09:59:59-0500 raspberrypi rc.local[3127]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T09:59:59-0500 raspberrypi rc.local[3127]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,394 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,394 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,408 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,408 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,408 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,408 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,831 - WARNING - 2026-09-06 10:00:00 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=4.94m (limit infm), heading=85.5°, target_progress=0.00m, target=(0.00,0.00), alpha=-46.9°
+2026-09-06T10:00:00-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:00,831 - WARNING - 2026-09-06 10:00:00 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-06T10:00:02-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:02,118 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:02-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:02,288 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:02-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:02,498 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:02-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:02,698 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:02-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:02,898 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:03-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:03,098 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:03-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:03,293 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:03-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:03,490 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:03-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:03,698 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:19-0500 raspberrypi rc.local[3127]: 2026-09-06 10:00:19,287 - ERROR - 2026-09-06 10:00:19 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 0.00m, cross-track 1.44m)
+2026-09-06T10:00:19-0500 raspberrypi rc.local[3127]: Serial loop finished.
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:47,841 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:47,842 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:47,863 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:47,863 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:47,863 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06T10:00:47-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:47,863 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06T10:00:48-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:48,243 - WARNING - 2026-09-06 10:00:48 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=1.30m (limit infm), heading=20.6°, target_progress=0.00m, target=(0.00,0.00), alpha=4.1°
+2026-09-06T10:00:48-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:48,243 - WARNING - 2026-09-06 10:00:48 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-06T10:00:50-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:50,306 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:50-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:50,514 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:50-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:50,700 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:53-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:53,503 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:53-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:53,705 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:53-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:53,902 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:54-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:54,113 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:00:57-0500 raspberrypi rc.local[3139]: 2026-09-06 10:00:57,111 - ERROR - 2026-09-06 10:00:57 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 0.00m, cross-track 0.82m)
+2026-09-06T10:00:57-0500 raspberrypi rc.local[3139]: Serial loop finished.
+2026-09-06T10:20:20-0500 raspberrypi rc.local[1625]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T10:20:20-0500 raspberrypi rc.local[1625]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T10:20:39-0500 raspberrypi rc.local[1707]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T10:20:39-0500 raspberrypi rc.local[1707]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,296 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,296 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,310 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,310 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,310 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,310 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,605 - WARNING - 2026-09-06 10:20:40 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=4.91m (limit infm), heading=58.5°, target_progress=0.00m, target=(0.00,0.00), alpha=-19.1°
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,605 - WARNING - 2026-09-06 10:20:40 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,605 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,791 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:40-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:40,994 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:41-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:41,199 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:41-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:41,396 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:41-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:41,608 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:41-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:41,797 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:41-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:41,997 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:42-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:42,200 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:42-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:42,399 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:42-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:42,609 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:20:42-0500 raspberrypi rc.local[1707]: 2026-09-06 10:20:42,793 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:22:14-0500 raspberrypi rc.local[1707]: 2026-09-06 10:22:14,045 - WARNING - Epoch timeout (84.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-09-06T10:22:14-0500 raspberrypi rc.local[1707]: 2026-09-06 10:22:14,059 - ERROR - 2026-09-06 10:22:14 GNSS ABORT (incomplete epochs): GNRMC status=None (need 'A'); relPosValid=0; carrSoln=None (need 2 = RTK Fixed); relPosHeadingValid=0; no valid GNSS epoch for 84.7s (abort after 30s)
+2026-09-06T10:22:14-0500 raspberrypi rc.local[1707]: Serial loop finished.
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,645 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,646 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,666 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,666 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,666 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,666 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,919 - WARNING - 2026-09-06 10:23:29 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=5.47m (limit infm), heading=72.1°, target_progress=0.00m, target=(0.00,0.00), alpha=-26.2°
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,919 - WARNING - 2026-09-06 10:23:29 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-06T10:23:29-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:29,919 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:30-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:30,136 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:30-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:30,316 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:30-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:30,512 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:30-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:30,707 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:30-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:30,923 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:31-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:31,121 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:31-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:31,329 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:31-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:31,513 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:31-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:31,717 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:31-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:31,917 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:34-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:34,130 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:34-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:34,316 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:34-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:34,520 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:34-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:34,723 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:34-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:34,917 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:35-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:35,117 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:35-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:35,313 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:35-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:35,517 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:35-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:35,716 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:35-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:35,917 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:42-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:42,518 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:42-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:42,719 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:42-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:42,916 - ERROR - 2026-09-06 10:23:42 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 2.70m, cross-track 1.66m)
+2026-09-06T10:23:44-0500 raspberrypi rc.local[2137]: Serial loop finished.
+2026-09-06T10:26:22-0500 raspberrypi rc.local[1575]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T10:26:22-0500 raspberrypi rc.local[1575]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T11:23:31-0500 raspberrypi rc.local[1575]: 2026-09-06 11:23:31,020 - WARNING - No valid heading captured to persist
+2026-09-06T11:23:31-0500 raspberrypi rc.local[1575]: 2026-09-06 11:23:31,020 - WARNING - No valid heading captured to persist
+2026-09-06T11:25:31-0500 raspberrypi rc.local[1575]: 2026-09-06 11:25:31,203 - WARNING - No valid heading captured to persist
+2026-09-06T11:25:31-0500 raspberrypi rc.local[1575]: 2026-09-06 11:25:31,203 - WARNING - No valid heading captured to persist
+2026-09-06T11:25:50-0500 raspberrypi rc.local[1575]: 2026-09-06 11:25:50,396 - WARNING - No valid heading captured to persist
+2026-09-06T11:25:50-0500 raspberrypi rc.local[1575]: 2026-09-06 11:25:50,396 - WARNING - No valid heading captured to persist
+2026-09-06T11:26:07-0500 raspberrypi rc.local[3716]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T11:26:07-0500 raspberrypi rc.local[3716]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T11:26:08-0500 raspberrypi rc.local[3716]: 2026-09-06 11:26:08,078 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06T11:26:08-0500 raspberrypi rc.local[3716]: 2026-09-06 11:26:08,078 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06T11:26:08-0500 raspberrypi rc.local[3716]: 2026-09-06 11:26:08,093 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06T11:26:08-0500 raspberrypi rc.local[3716]: 2026-09-06 11:26:08,093 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06T11:26:08-0500 raspberrypi rc.local[3716]: 2026-09-06 11:26:08,093 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06T11:26:08-0500 raspberrypi rc.local[3716]: 2026-09-06 11:26:08,093 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06T11:26:14-0500 raspberrypi rc.local[3716]: Serial loop finished.
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:22,889 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:22,889 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:22,912 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:22,912 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:22,912 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-06T11:27:22-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:22,912 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-06T11:27:23-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:23,245 - WARNING - 2026-09-06 11:27:23 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=5.55m (limit infm), heading=80.7°, target_progress=0.00m, target=(0.00,0.00), alpha=-35.8°
+2026-09-06T11:27:23-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:23,245 - WARNING - 2026-09-06 11:27:23 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-06T11:27:23-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:23,245 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:23-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:23,466 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:23-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:23,653 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:23-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:23,858 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:24-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:24,060 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:24-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:24,248 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:24-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:24,452 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:24-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:24,659 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:24-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:24,863 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:25-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:25,053 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:25-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:25,260 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:25-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:25,471 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:25-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:25,654 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:25-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:25,852 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:35-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:35,486 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:35-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:35,879 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:36-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:36,092 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:36-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:36,273 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:36-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:36,470 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:36-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:36,674 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:36-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:36,885 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:39-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:39,676 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:39-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:39,889 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:40-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:40,100 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:40-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:40,280 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:40-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:40,477 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T11:27:45-0500 raspberrypi rc.local[3752]: 2026-09-06 11:27:45,288 - ERROR - 2026-09-06 11:27:45 [FOLLOW] SAFETY ABORT: off-track 2.84m > 2.0m for 15 epochs
+2026-09-06T11:27:45-0500 raspberrypi rc.local[3752]: Serial loop finished.
+2026-09-06T11:29:42-0500 raspberrypi rc.local[1251]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-06T11:29:42-0500 raspberrypi rc.local[1251]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T10:29:31-0500 raspberrypi rc.local[1251]: 2026-09-13 10:29:31,833 - WARNING - No valid heading captured to persist
+2026-09-13T10:29:31-0500 raspberrypi rc.local[1251]: 2026-09-13 10:29:31,833 - WARNING - No valid heading captured to persist
+2026-09-13T10:31:23-0500 raspberrypi rc.local[1225]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T10:31:23-0500 raspberrypi rc.local[1225]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T10:33:24-0500 raspberrypi rc.local[1225]: 2026-09-13 10:33:24,623 - WARNING - No valid heading captured to persist
+2026-09-13T10:33:24-0500 raspberrypi rc.local[1225]: 2026-09-13 10:33:24,623 - WARNING - No valid heading captured to persist
+2026-09-13T10:35:24-0500 raspberrypi rc.local[1225]: 2026-09-13 10:35:24,831 - WARNING - No valid heading captured to persist
+2026-09-13T10:35:24-0500 raspberrypi rc.local[1225]: 2026-09-13 10:35:24,831 - WARNING - No valid heading captured to persist
+2026-09-13T10:36:34-0500 raspberrypi rc.local[2111]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T10:36:34-0500 raspberrypi rc.local[2111]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,138 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,138 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,151 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,151 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,151 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,152 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T10:36:41-0500 raspberrypi rc.local[2111]: Serial loop finished.
+2026-09-13T10:42:08-0500 raspberrypi rc.local[1637]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T10:42:08-0500 raspberrypi rc.local[1637]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T10:44:08-0500 raspberrypi rc.local[1637]: 2026-09-13 10:44:08,838 - WARNING - No valid heading captured to persist
+2026-09-13T10:44:08-0500 raspberrypi rc.local[1637]: 2026-09-13 10:44:08,838 - WARNING - No valid heading captured to persist
+2026-09-13T11:25:59-0500 raspberrypi rc.local[1585]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T11:25:59-0500 raspberrypi rc.local[1585]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T11:27:22-0500 raspberrypi rc.local[2123]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T11:27:22-0500 raspberrypi rc.local[2123]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,084 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,084 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,098 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,098 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,098 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,098 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,318 - WARNING - 2026-09-13 11:27:23 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=3.12m (limit infm), heading=73.9°, target_progress=0.00m, target=(0.00,0.00), alpha=-54.4°
+2026-09-13T11:27:23-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:23,318 - WARNING - 2026-09-13 11:27:23 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T11:27:25-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:25,500 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:27:27-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:27,113 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:27:27-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:27,313 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:27:28-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:28,299 - ERROR - 2026-09-13 11:27:28 HEADING INTEGRITY ABORT: reported heading 86.7° vs course-over-ground 243.1° disagree by >90° for 5 consecutive moving samples — heading reversed/untrusted, STOPPING
+2026-09-13T11:27:28-0500 raspberrypi rc.local[2123]: 2026-09-13 11:27:28,299 - ERROR - Check antenna order / power-cycle the GPS pair and verify heading matches the direction the mower physically faces before rerunning.
+2026-09-13T11:27:29-0500 raspberrypi rc.local[2123]: Serial loop finished.
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,445 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,445 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,459 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,459 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,459 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,459 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,742 - WARNING - 2026-09-13 11:28:32 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=3.92m (limit infm), heading=66.7°, target_progress=0.00m, target=(0.00,0.00), alpha=-39.3°
+2026-09-13T11:28:32-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:32,742 - WARNING - 2026-09-13 11:28:32 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T11:28:42-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:42,721 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:47-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:47,517 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:47-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:47,723 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:47-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:47,924 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:48-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:48,510 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:48-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:48,730 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:48-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:48,904 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:49-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:49,118 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:49-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:49,313 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:49-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:49,513 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:49-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:49,713 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:49-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:49,923 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:50-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:50,134 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:50-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:50,317 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:50-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:50,514 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:50-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:50,730 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:50-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:50,924 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:51-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:51,134 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:51-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:51,330 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:51-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:51,526 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:51-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:51,723 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:51-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:51,936 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,156 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,330 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,529 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,746 - ERROR - 2026-09-13 11:28:52 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 7.44m, cross-track 0.05m)
+2026-09-13T11:28:54-0500 raspberrypi rc.local[2135]: Serial loop finished.
+2026-09-13T11:29:02-0500 raspberrypi rc.local[1377]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T11:29:02-0500 raspberrypi rc.local[1377]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T11:31:12-0500 raspberrypi rc.local[1377]: 2026-09-13 11:31:12,427 - WARNING - No valid heading captured to persist
+2026-09-13T11:31:12-0500 raspberrypi rc.local[1377]: 2026-09-13 11:31:12,427 - WARNING - No valid heading captured to persist
+2026-09-13T11:33:12-0500 raspberrypi rc.local[1377]: 2026-09-13 11:33:12,488 - WARNING - No valid heading captured to persist
+2026-09-13T11:33:12-0500 raspberrypi rc.local[1377]: 2026-09-13 11:33:12,488 - WARNING - No valid heading captured to persist
+2026-09-13T11:34:11-0500 raspberrypi rc.local[1256]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T11:34:11-0500 raspberrypi rc.local[1256]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T13:20:23-0500 raspberrypi rc.local[1256]: 2026-09-13 13:20:23,225 - WARNING - No valid heading captured to persist
+2026-09-13T13:20:23-0500 raspberrypi rc.local[1256]: 2026-09-13 13:20:23,225 - WARNING - No valid heading captured to persist
+2026-09-13T13:22:23-0500 raspberrypi rc.local[1256]: 2026-09-13 13:22:23,424 - WARNING - No valid heading captured to persist
+2026-09-13T13:22:23-0500 raspberrypi rc.local[1256]: 2026-09-13 13:22:23,424 - WARNING - No valid heading captured to persist
+2026-09-13T13:22:23-0500 raspberrypi rc.local[1336]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T13:22:23-0500 raspberrypi rc.local[1336]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:02,572 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:02,588 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:02,588 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:02,588 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T13:25:02-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:02,588 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T13:25:10-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:10,839 - WARNING - Epoch timeout (8.3s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-09-13T13:25:11-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:11,044 - WARNING - 2026-09-13 13:25:11 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=2.73m (limit infm), heading=15.2°, target_progress=2.00m, target=(0.01,2.00), alpha=29.5°
+2026-09-13T13:25:11-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:11,044 - WARNING - 2026-09-13 13:25:11 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T13:25:15-0500 raspberrypi rc.local[2129]: 2026-09-13 13:25:15,907 - ERROR - 2026-09-13 13:25:15 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 0.00m, cross-track 2.71m)
+2026-09-13T13:25:15-0500 raspberrypi rc.local[2129]: Serial loop finished.
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:39,914 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:39,931 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:39,931 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:39,931 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T13:25:39-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:39,931 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T13:25:40-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:40,139 - WARNING - 2026-09-13 13:25:40 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=2.68m (limit infm), heading=15.4°, target_progress=2.00m, target=(0.01,2.00), alpha=19.9°
+2026-09-13T13:25:40-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:40,139 - WARNING - 2026-09-13 13:25:40 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T13:25:45-0500 raspberrypi rc.local[2146]: 2026-09-13 13:25:45,153 - ERROR - 2026-09-13 13:25:45 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 0.00m, cross-track 2.83m)
+2026-09-13T13:25:45-0500 raspberrypi rc.local[2146]: Serial loop finished.
+2026-09-13T13:27:44-0500 raspberrypi rc.local[1282]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T13:27:44-0500 raspberrypi rc.local[1282]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T14:28:38-0500 raspberrypi rc.local[1236]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T14:28:38-0500 raspberrypi rc.local[1236]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T14:29:54-0500 raspberrypi rc.local[1236]: 2026-09-13 14:29:54,623 - WARNING - No valid heading captured to persist
+2026-09-13T14:29:54-0500 raspberrypi rc.local[1236]: 2026-09-13 14:29:54,623 - WARNING - No valid heading captured to persist
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,407 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,419 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,419 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,419 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,419 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,668 - WARNING - 2026-09-13 14:30:12 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=2.55m (limit infm), heading=6.1°, target_progress=2.00m, target=(0.01,2.00), alpha=37.8°
+2026-09-13T14:30:12-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:12,668 - WARNING - 2026-09-13 14:30:12 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T14:30:14-0500 raspberrypi rc.local[2117]: 2026-09-13 14:30:14,666 - WARNING - 2026-09-13 14:30:14 GNSS invalid - holding neutral: carrSoln=1 (need 2 = RTK Fixed)
+2026-09-13T14:30:28-0500 raspberrypi rc.local[2117]: Serial loop finished.
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,508 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,524 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,524 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,524 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,524 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,840 - WARNING - 2026-09-13 14:31:14 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=5.04m (limit infm), heading=68.6°, target_progress=2.00m, target=(0.01,2.00), alpha=-42.9°
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,840 - WARNING - 2026-09-13 14:31:14 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T14:31:32-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:32,894 - ERROR - 2026-09-13 14:31:32 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 14.05m, cross-track 2.25m)
+2026-09-13T14:31:34-0500 raspberrypi rc.local[2129]: Serial loop finished.
+2026-09-13T14:31:28-0500 raspberrypi rc.local[1406]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T14:31:28-0500 raspberrypi rc.local[1406]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:05,585 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:05,598 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:05,598 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a pure_pursuit TRACK test.
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:05,598 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-09-13T14:33:05-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:05,598 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-09-13T14:33:44-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:44,293 - WARNING - Epoch timeout (38.8s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-09-13T14:33:44-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:44,495 - WARNING - 2026-09-13 14:33:44 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=4.35m (limit infm), heading=72.0°, target_progress=2.00m, target=(0.01,2.00), alpha=-45.0°
+2026-09-13T14:33:44-0500 raspberrypi rc.local[2133]: 2026-09-13 14:33:44,495 - WARNING - 2026-09-13 14:33:44 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-09-13T14:34:14-0500 raspberrypi rc.local[2133]: Serial loop finished.
+2026-11-08T11:25:54-0600 raspberrypi rc.local[1235]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:25:54-0600 raspberrypi rc.local[1235]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:25:54-0600 raspberrypi rc.local[1235]: 2026-11-08 11:25:54,922 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:25:54-0600 raspberrypi rc.local[1235]: 2026-11-08 11:25:54,922 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:27:55-0600 raspberrypi rc.local[1235]: 2026-11-08 11:27:55,176 - WARNING - No valid heading captured to persist
+2026-11-08T11:27:55-0600 raspberrypi rc.local[1235]: 2026-11-08 11:27:55,176 - WARNING - No valid heading captured to persist
+2026-11-08T11:29:55-0600 raspberrypi rc.local[1235]: 2026-11-08 11:29:55,379 - WARNING - No valid heading captured to persist
+2026-11-08T11:29:55-0600 raspberrypi rc.local[1235]: 2026-11-08 11:29:55,379 - WARNING - No valid heading captured to persist
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,538 - ERROR - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,643 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,643 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,643 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,643 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,643 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-08T11:30:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:30:58,643 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-08T11:31:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:31:58,786 - ERROR - GPS RTK fix not achieved within 60.0s — ABORTING
+2026-11-08T11:31:58-0600 raspberrypi rc.local[2110]: 2026-11-08 11:31:58,786 - ERROR - Check: UART2 wire (MB→Rover), SiK radio link, Moving Base power
+2026-11-08T11:31:59-0600 raspberrypi rc.local[2110]: 2026-11-08 11:31:59,788 - CRITICAL - Shutdown: neutral command FAILED (Repeat exit - returning to neutral). Use the physical interlock.
+2026-11-08T11:31:59-0600 raspberrypi rc.local[2110]: 2026-11-08 11:31:59,788 - CRITICAL - MOWER MAY STILL BE MOVING - software could not confirm neutral. Use the physical ignition-kill / blade-clutch interlock. See docs/SAFETY_INTERLOCKS.md.
+2026-11-08T11:31:59-0600 raspberrypi rc.local[2110]: Serial loop finished.
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,883 - ERROR - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,938 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,938 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,938 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,938 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,938 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,939 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-08T11:32:43-0600 raspberrypi rc.local[1236]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:32:43-0600 raspberrypi rc.local[1236]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:32:43-0600 raspberrypi rc.local[1236]: 2026-11-08 11:32:43,283 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:32:43-0600 raspberrypi rc.local[1236]: 2026-11-08 11:32:43,283 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,399 - ERROR - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,490 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,491 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,491 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,491 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,491 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-08T11:33:56-0600 raspberrypi rc.local[2109]: 2026-11-08 11:33:56,491 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-08T11:34:00-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:00,485 - WARNING - Epoch timeout (4.1s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-08T11:34:00-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:00,691 - WARNING - 2026-11-08 11:34:00 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 40.7m (remaining 40.7m), cross=2.77m (limit infm), heading=46.4°, target_progress=4.09m, target=(0.35,4.07), alpha=-11.9°
+2026-11-08T11:34:00-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:00,692 - WARNING - 2026-11-08 11:34:00 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-11-08T11:34:00-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:00,692 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:00-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:00,887 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:01-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:01,091 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:01-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:01,284 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:01-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:01,486 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:01-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:01,686 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:01-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:01,886 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:02-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:02,096 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:02-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:02,286 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:02-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:02,484 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:02-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:02,685 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:02-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:02,879 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:03-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:03,093 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:03-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:03,284 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:03-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:03,490 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:03-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:03,689 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:03-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:03,891 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:04-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:04,096 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:04-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:04,290 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:04-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:04,490 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:04-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:04,685 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:04-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:04,891 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:05-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:05,099 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:05-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:05,291 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:05-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:05,490 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:05-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:05,691 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:05-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:05,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:06-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:06,100 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:06-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:06,292 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:06-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:06,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:06-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:06,690 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:06-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:06,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:07-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:07,097 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:07-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:07,288 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:07-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:07,493 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:07-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:07,692 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:07-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:07,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:08-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:08,099 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:08-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:08,296 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:08-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:08,493 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:08-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:08,694 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:08-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:08,896 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:09-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:09,091 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:09-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:09,297 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:09-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:09,499 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:09-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:09,701 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:09-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:09,904 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:10-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:10,105 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:10-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:10,302 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:10-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:10,510 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:10-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:10,708 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:10-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:10,882 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:11-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:11,102 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:11-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:11,295 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:11-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:11,489 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:11-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:11,689 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:11-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:11,888 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:12-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:12,097 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:12-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:12,288 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:12-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:12,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:12-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:12,680 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:12-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:12,886 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:13-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:13,093 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:13-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:13,284 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:13-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:13,485 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:13-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:13,685 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:13-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:13,887 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:14-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:14,092 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:14-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:14,291 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:14-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:14,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:14-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:14,693 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:14-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:14,891 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:15-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:15,098 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:15-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:15,292 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:15-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:15,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:15-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:15,691 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:15-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:15,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:16-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:16,100 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:16-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:16,288 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:16-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:16,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:16-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:16,692 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:16-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:16,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:17-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:17,098 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:17-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:17,291 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:17-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:17,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:17-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:17,692 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:17-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:17,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:18-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:18,108 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:18-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:18,294 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:18-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:18,492 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:18-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:18,691 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:18-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:18,887 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:19-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:19,103 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:19-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:19,291 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:19-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:19,492 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:19-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:19,691 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:19-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:19,893 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:20-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:20,108 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:20-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:20,292 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:20-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:20,492 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:20-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:20,684 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:20-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:20,891 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:21-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:21,101 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:21-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:21,291 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:21-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:21,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:21-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:21,694 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:21-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:21,894 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:22-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:22,109 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:22-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:22,292 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:22-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:22,488 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:22-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:22,692 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:22-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:22,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:23-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:23,105 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:23-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:23,293 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:23-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:23,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:23-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:23,693 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:23-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:23,893 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:24-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:24,110 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:24-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:24,289 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:24-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:24,493 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:24-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:24,693 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:24-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:24,895 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:25-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:25,101 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:25-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:25,292 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:25-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:25,493 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:25-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:25,696 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:25-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:25,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:26-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:26,105 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:26-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:26,294 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:26-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:26,496 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:26-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:26,696 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:26-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:26,891 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:27-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:27,108 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:27-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:27,296 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:27-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:27,496 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:27-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:27,695 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:27-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:27,898 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:28-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:28,107 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:28-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:28,297 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:28-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:28,498 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:28-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:28,689 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:28-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:28,895 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:29-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:29,104 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:29-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:29,295 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:29-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:29,495 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:29-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:29,696 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:29-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:29,896 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:30-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:30,109 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:30-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:30,294 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:30-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:30,486 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:30-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:30,687 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:30-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:30,887 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:31-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:31,099 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:31-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:31,286 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:31-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:31,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:31-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:31,691 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:31-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:31,888 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:32-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:32,101 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:32-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:32,285 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:32-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:32,489 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:32-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:32,690 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:32-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:32,898 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:33-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:33,095 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:33-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:33,300 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:33-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:33,503 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:33-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:33,700 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:33-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:33,898 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:34-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:34,102 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:34-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:34,298 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:34-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:34,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:34-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:34,694 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:34-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:34,883 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:35-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:35,103 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:35-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:35,289 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:35-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:35,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:35-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:35,690 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:35-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:35,887 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:36-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:36,095 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:36-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:36,287 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:36-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:36,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:36-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:36,681 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:36-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:36,890 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:37-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:37,091 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:37-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:37,286 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:37-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:37,487 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:37-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:37,687 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:37-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:37,887 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:38-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:38,097 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:38-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:38,287 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:38-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:38,480 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:38-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:38,694 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:38-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:38,892 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,103 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,292 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,644 - CRITICAL - Shutdown: neutral command FAILED (Repeat exit - returning to neutral). Use the physical interlock.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,644 - CRITICAL - MOWER MAY STILL BE MOVING - software could not confirm neutral. Use the physical ignition-kill / blade-clutch interlock. See docs/SAFETY_INTERLOCKS.md.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: Serial loop finished.
+2026-11-08T11:34:49-0600 raspberrypi rc.local[1611]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:34:49-0600 raspberrypi rc.local[1611]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:34:49-0600 raspberrypi rc.local[1611]: 2026-11-08 11:34:49,032 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:34:49-0600 raspberrypi rc.local[1611]: 2026-11-08 11:34:49,032 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:36:54-0600 raspberrypi rc.local[1611]: 2026-11-08 11:36:54,637 - WARNING - No valid heading captured to persist
+2026-11-08T11:36:54-0600 raspberrypi rc.local[1611]: 2026-11-08 11:36:54,637 - WARNING - No valid heading captured to persist
+2026-11-08T11:38:54-0600 raspberrypi rc.local[1611]: 2026-11-08 11:38:54,827 - WARNING - No valid heading captured to persist
+2026-11-08T11:38:54-0600 raspberrypi rc.local[1611]: 2026-11-08 11:38:54,827 - WARNING - No valid heading captured to persist
+2026-11-08T11:39:58-0600 raspberrypi rc.local[1254]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T11:39:58-0600 raspberrypi rc.local[1254]: [constants] RoboClaw: no match for ['Roboclaw', 'Basicmicro'] in /dev/serial/by-id, using fallback /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:39:58-0600 raspberrypi rc.local[1254]: 2026-11-08 11:39:58,790 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:39:58-0600 raspberrypi rc.local[1254]: 2026-11-08 11:39:58,790 - WARNING - Failed to open RoboClaw on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T11:45:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:45:34,034 - WARNING - No valid heading captured to persist
+2026-11-08T11:45:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:45:34,034 - WARNING - No valid heading captured to persist
+2026-11-08T11:47:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:47:34,097 - WARNING - No valid heading captured to persist
+2026-11-08T11:47:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:47:34,097 - WARNING - No valid heading captured to persist
+2026-11-08T11:49:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:49:34,237 - WARNING - No valid heading captured to persist
+2026-11-08T11:49:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:49:34,237 - WARNING - No valid heading captured to persist
+2026-11-08T11:51:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:51:34,431 - WARNING - No valid heading captured to persist
+2026-11-08T11:51:34-0600 raspberrypi rc.local[1254]: 2026-11-08 11:51:34,431 - WARNING - No valid heading captured to persist
+2026-11-08T13:55:46-0600 raspberrypi rc.local[1254]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-08T13:55:46-0600 raspberrypi rc.local[1254]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-08T13:58:50-0600 raspberrypi rc.local[1254]: 2026-11-08 13:58:50,639 - WARNING - No valid heading captured to persist
+2026-11-08T13:58:50-0600 raspberrypi rc.local[1254]: 2026-11-08 13:58:50,639 - WARNING - No valid heading captured to persist
+2026-11-08T14:00:50-0600 raspberrypi rc.local[1254]: 2026-11-08 14:00:50,847 - WARNING - No valid heading captured to persist
+2026-11-08T14:00:50-0600 raspberrypi rc.local[1254]: 2026-11-08 14:00:50,847 - WARNING - No valid heading captured to persist
+2026-11-08T14:02:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:02:51,034 - WARNING - No valid heading captured to persist
+2026-11-08T14:02:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:02:51,034 - WARNING - No valid heading captured to persist
+2026-11-08T14:04:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:04:51,074 - WARNING - No valid heading captured to persist
+2026-11-08T14:04:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:04:51,074 - WARNING - No valid heading captured to persist
+2026-11-08T14:06:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:06:51,236 - WARNING - No valid heading captured to persist
+2026-11-08T14:06:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:06:51,236 - WARNING - No valid heading captured to persist
+2026-11-08T14:08:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:08:51,438 - WARNING - No valid heading captured to persist
+2026-11-08T14:08:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:08:51,438 - WARNING - No valid heading captured to persist
+2026-11-08T14:10:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:10:51,638 - WARNING - No valid heading captured to persist
+2026-11-08T14:10:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:10:51,638 - WARNING - No valid heading captured to persist
+2026-11-08T14:12:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:12:51,839 - WARNING - No valid heading captured to persist
+2026-11-08T14:12:51-0600 raspberrypi rc.local[1254]: 2026-11-08 14:12:51,839 - WARNING - No valid heading captured to persist
+2026-11-08T14:14:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:14:52,038 - WARNING - No valid heading captured to persist
+2026-11-08T14:14:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:14:52,038 - WARNING - No valid heading captured to persist
+2026-11-08T14:16:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:16:52,119 - WARNING - No valid heading captured to persist
+2026-11-08T14:16:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:16:52,119 - WARNING - No valid heading captured to persist
+2026-11-08T14:18:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:18:52,234 - WARNING - No valid heading captured to persist
+2026-11-08T14:18:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:18:52,234 - WARNING - No valid heading captured to persist
+2026-11-08T14:20:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:20:52,437 - WARNING - No valid heading captured to persist
+2026-11-08T14:20:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:20:52,437 - WARNING - No valid heading captured to persist
+2026-11-08T14:22:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:22:52,637 - WARNING - No valid heading captured to persist
+2026-11-08T14:22:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:22:52,637 - WARNING - No valid heading captured to persist
+2026-11-08T14:24:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:24:52,838 - WARNING - No valid heading captured to persist
+2026-11-08T14:24:52-0600 raspberrypi rc.local[1254]: 2026-11-08 14:24:52,838 - WARNING - No valid heading captured to persist
+2026-11-08T14:26:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:26:53,037 - WARNING - No valid heading captured to persist
+2026-11-08T14:26:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:26:53,037 - WARNING - No valid heading captured to persist
+2026-11-08T14:28:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:28:53,239 - WARNING - No valid heading captured to persist
+2026-11-08T14:28:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:28:53,239 - WARNING - No valid heading captured to persist
+2026-11-08T14:30:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:30:53,436 - WARNING - No valid heading captured to persist
+2026-11-08T14:30:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:30:53,436 - WARNING - No valid heading captured to persist
+2026-11-08T14:32:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:32:53,636 - WARNING - No valid heading captured to persist
+2026-11-08T14:32:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:32:53,636 - WARNING - No valid heading captured to persist
+2026-11-08T14:34:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:34:53,835 - WARNING - No valid heading captured to persist
+2026-11-08T14:34:53-0600 raspberrypi rc.local[1254]: 2026-11-08 14:34:53,835 - WARNING - No valid heading captured to persist
+2026-11-08T14:36:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:36:54,038 - WARNING - No valid heading captured to persist
+2026-11-08T14:36:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:36:54,038 - WARNING - No valid heading captured to persist
+2026-11-08T14:38:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:38:54,239 - WARNING - No valid heading captured to persist
+2026-11-08T14:38:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:38:54,239 - WARNING - No valid heading captured to persist
+2026-11-08T14:40:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:40:54,438 - WARNING - No valid heading captured to persist
+2026-11-08T14:40:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:40:54,438 - WARNING - No valid heading captured to persist
+2026-11-08T14:42:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:42:54,638 - WARNING - No valid heading captured to persist
+2026-11-08T14:42:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:42:54,638 - WARNING - No valid heading captured to persist
+2026-11-08T14:44:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:44:54,833 - WARNING - No valid heading captured to persist
+2026-11-08T14:44:54-0600 raspberrypi rc.local[1254]: 2026-11-08 14:44:54,833 - WARNING - No valid heading captured to persist
+2026-11-08T14:46:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:46:55,034 - WARNING - No valid heading captured to persist
+2026-11-08T14:46:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:46:55,034 - WARNING - No valid heading captured to persist
+2026-11-08T14:48:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:48:55,235 - WARNING - No valid heading captured to persist
+2026-11-08T14:48:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:48:55,235 - WARNING - No valid heading captured to persist
+2026-11-15T10:24:35-0600 raspberrypi rc.local[1228]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T10:24:35-0600 raspberrypi rc.local[1228]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T10:24:37-0600 raspberrypi rc.local[1228]: 2026-11-15 10:24:37,281 - WARNING - No valid heading captured to persist
+2026-11-15T10:24:37-0600 raspberrypi rc.local[1228]: 2026-11-15 10:24:37,281 - WARNING - No valid heading captured to persist
+2026-11-15T10:32:26-0600 raspberrypi rc.local[1248]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T10:32:26-0600 raspberrypi rc.local[1248]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T10:34:27-0600 raspberrypi rc.local[1248]: 2026-11-15 10:34:27,227 - WARNING - No valid heading captured to persist
+2026-11-15T10:34:27-0600 raspberrypi rc.local[1248]: 2026-11-15 10:34:27,227 - WARNING - No valid heading captured to persist
+2026-11-15T10:50:17-0600 raspberrypi rc.local[1246]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T10:50:17-0600 raspberrypi rc.local[1246]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T10:52:17-0600 raspberrypi rc.local[1246]: 2026-11-15 10:52:17,816 - WARNING - No valid heading captured to persist
+2026-11-15T10:52:17-0600 raspberrypi rc.local[1246]: 2026-11-15 10:52:17,816 - WARNING - No valid heading captured to persist
+2026-11-15T10:54:17-0600 raspberrypi rc.local[1246]: 2026-11-15 10:54:17,848 - WARNING - No valid heading captured to persist
+2026-11-15T10:54:17-0600 raspberrypi rc.local[1246]: 2026-11-15 10:54:17,848 - WARNING - No valid heading captured to persist
+2026-11-15T10:56:18-0600 raspberrypi rc.local[1246]: 2026-11-15 10:56:18,054 - WARNING - No valid heading captured to persist
+2026-11-15T10:56:18-0600 raspberrypi rc.local[1246]: 2026-11-15 10:56:18,054 - WARNING - No valid heading captured to persist
+2026-11-15T10:58:18-0600 raspberrypi rc.local[1246]: 2026-11-15 10:58:18,264 - WARNING - No valid heading captured to persist
+2026-11-15T10:58:18-0600 raspberrypi rc.local[1246]: 2026-11-15 10:58:18,264 - WARNING - No valid heading captured to persist
+2026-11-15T11:00:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:00:18,462 - WARNING - No valid heading captured to persist
+2026-11-15T11:00:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:00:18,462 - WARNING - No valid heading captured to persist
+2026-11-15T11:02:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:02:18,654 - WARNING - No valid heading captured to persist
+2026-11-15T11:02:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:02:18,654 - WARNING - No valid heading captured to persist
+2026-11-15T11:04:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:04:18,854 - WARNING - No valid heading captured to persist
+2026-11-15T11:04:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:04:18,854 - WARNING - No valid heading captured to persist
+2026-11-15T11:04:23-0600 raspberrypi rc.local[1266]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:04:23-0600 raspberrypi rc.local[1266]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:04:26-0600 raspberrypi rc.local[1266]: 2026-11-15 11:04:26,586 - WARNING - No valid heading captured to persist
+2026-11-15T11:04:26-0600 raspberrypi rc.local[1266]: 2026-11-15 11:04:26,586 - WARNING - No valid heading captured to persist
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,527 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,527 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,541 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,541 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,541 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,541 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,541 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15T11:06:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:06:47,541 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15T11:07:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:07:47,636 - ERROR - GPS RTK fix not achieved within 60.0s — ABORTING
+2026-11-15T11:07:47-0600 raspberrypi rc.local[2133]: 2026-11-15 11:07:47,636 - ERROR - Check: UART2 wire (MB→Rover), SiK radio link, Moving Base power
+2026-11-15T11:07:48-0600 raspberrypi rc.local[2133]: Serial loop finished.
+2026-11-15T11:07:53-0600 raspberrypi rc.local[1266]: 2026-11-15 11:07:53,412 - WARNING - No valid heading captured to persist
+2026-11-15T11:07:53-0600 raspberrypi rc.local[1266]: 2026-11-15 11:07:53,412 - WARNING - No valid heading captured to persist
+2026-11-15T11:08:09-0600 raspberrypi rc.local[2143]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:08:09-0600 raspberrypi rc.local[2143]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,137 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,137 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,466 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,466 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,477 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,477 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,477 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,477 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,477 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15T11:09:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:09:47,477 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15T11:10:01-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:01,704 - WARNING - Epoch timeout (14.3s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:10:01-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:01,914 - WARNING - 2026-11-15 11:10:01 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=5.01m (limit infm), heading=60.7°, target_progress=4.26m, target=(-0.07,4.25), alpha=-39.8°
+2026-11-15T11:10:01-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:01,914 - WARNING - 2026-11-15 11:10:01 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-11-15T11:10:04-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:04,499 - WARNING - 2026-11-15 11:10:04 GNSS invalid - holding neutral: carrSoln=1 (need 2 = RTK Fixed)
+2026-11-15T11:10:36-0600 raspberrypi rc.local[1596]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:10:36-0600 raspberrypi rc.local[1596]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,603 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,604 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,616 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,616 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,617 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,617 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,617 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: 2026-11-15 11:12:31,617 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15T11:12:31-0600 raspberrypi rc.local[2128]: Serial loop finished.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,407 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,407 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,420 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,420 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,420 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,420 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,420 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,420 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,699 - WARNING - 2026-11-15 11:13:36 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 40.7m (remaining 40.7m), cross=2.48m (limit infm), heading=61.9°, target_progress=4.09m, target=(0.35,4.07), alpha=-29.9°
+2026-11-15T11:13:36-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:36,699 - WARNING - 2026-11-15 11:13:36 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-11-15T11:13:38-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:38,439 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:39-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:39,040 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:42-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:42,646 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:43-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:43,244 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:45-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:45,242 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:45-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:45,839 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:46-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:46,356 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:46-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:46,893 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:47-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:47,438 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:48-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:48,037 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:48-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:48,638 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:49-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:49,239 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:49-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:49,837 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:50-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:50,361 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:50-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:50,885 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:51-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:51,439 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:52-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:52,038 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:52-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:52,636 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:53-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:53,240 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:53-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:53,838 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:54-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:54,367 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:55-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:55,036 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:55-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:55,634 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:56-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:56,238 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:56-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:56,836 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:57-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:57,366 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:57-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:57,880 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:58-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:58,392 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:13:59-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:59,033 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:13:59-0600 raspberrypi rc.local[2140]: 2026-11-15 11:13:59,632 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:00-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:00,235 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:00-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:00,833 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:01-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:01,367 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:02-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:02,033 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:02-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:02,633 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:03-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:03,235 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:03-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:03,832 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:04-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:04,370 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:05-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:05,032 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:05-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:05,633 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:06-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:06,235 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:06-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:06,835 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:07-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:07,361 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:08-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:08,035 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:08-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:08,633 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:09-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:09,234 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:09-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:09,832 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:10-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:10,371 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:11-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:11,032 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:11-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:11,630 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:12-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:12,232 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:12-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:12,244 - ERROR - 2026-11-15 11:14:12 GNSS ABORT (incomplete epochs): GNRMC status=None (need 'A'); relPosValid=0; carrSoln=None (need 2 = RTK Fixed); relPosHeadingValid=0; no valid GNSS epoch for 30.2s (abort after 30s)
+2026-11-15T11:14:12-0600 raspberrypi rc.local[2140]: Serial loop finished.
+2026-11-15T11:14:12-0600 raspberrypi rc.local[1279]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T11:14:12-0600 raspberrypi rc.local[1279]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T11:16:25-0600 raspberrypi rc.local[1279]: 2026-11-15 11:16:25,223 - WARNING - No valid heading captured to persist
+2026-11-15T11:16:25-0600 raspberrypi rc.local[1279]: 2026-11-15 11:16:25,223 - WARNING - No valid heading captured to persist
+2026-11-15T12:58:16-0600 raspberrypi rc.local[1216]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T12:58:16-0600 raspberrypi rc.local[1216]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T13:00:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:00:17,025 - WARNING - No valid heading captured to persist
+2026-11-15T13:00:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:00:17,025 - WARNING - No valid heading captured to persist
+2026-11-15T13:02:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:02:17,063 - WARNING - No valid heading captured to persist
+2026-11-15T13:02:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:02:17,063 - WARNING - No valid heading captured to persist
+2026-11-15T13:04:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:04:17,236 - WARNING - No valid heading captured to persist
+2026-11-15T13:04:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:04:17,236 - WARNING - No valid heading captured to persist
+2026-11-15T13:06:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:06:17,432 - WARNING - No valid heading captured to persist
+2026-11-15T13:06:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:06:17,432 - WARNING - No valid heading captured to persist
+2026-11-15T13:08:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:08:17,634 - WARNING - No valid heading captured to persist
+2026-11-15T13:08:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:08:17,634 - WARNING - No valid heading captured to persist
+2026-11-15T13:10:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:10:17,833 - WARNING - No valid heading captured to persist
+2026-11-15T13:10:17-0600 raspberrypi rc.local[1216]: 2026-11-15 13:10:17,833 - WARNING - No valid heading captured to persist
+2026-11-15T13:12:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:12:18,033 - WARNING - No valid heading captured to persist
+2026-11-15T13:12:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:12:18,033 - WARNING - No valid heading captured to persist
+2026-11-15T13:14:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:14:18,239 - WARNING - No valid heading captured to persist
+2026-11-15T13:14:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:14:18,239 - WARNING - No valid heading captured to persist
+2026-11-15T13:16:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:16:18,435 - WARNING - No valid heading captured to persist
+2026-11-15T13:16:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:16:18,435 - WARNING - No valid heading captured to persist
+2026-11-15T13:18:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:18:18,637 - WARNING - No valid heading captured to persist
+2026-11-15T13:18:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:18:18,637 - WARNING - No valid heading captured to persist
+2026-11-15T13:20:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:20:18,839 - WARNING - No valid heading captured to persist
+2026-11-15T13:20:18-0600 raspberrypi rc.local[1216]: 2026-11-15 13:20:18,839 - WARNING - No valid heading captured to persist
+2026-11-15T13:22:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:22:19,039 - WARNING - No valid heading captured to persist
+2026-11-15T13:22:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:22:19,039 - WARNING - No valid heading captured to persist
+2026-11-15T13:24:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:24:19,248 - WARNING - No valid heading captured to persist
+2026-11-15T13:24:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:24:19,248 - WARNING - No valid heading captured to persist
+2026-11-15T13:26:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:26:19,444 - WARNING - No valid heading captured to persist
+2026-11-15T13:26:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:26:19,444 - WARNING - No valid heading captured to persist
+2026-11-15T13:28:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:28:19,645 - WARNING - No valid heading captured to persist
+2026-11-15T13:28:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:28:19,645 - WARNING - No valid heading captured to persist
+2026-11-15T13:30:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:30:19,847 - WARNING - No valid heading captured to persist
+2026-11-15T13:30:19-0600 raspberrypi rc.local[1216]: 2026-11-15 13:30:19,847 - WARNING - No valid heading captured to persist
+2026-11-15T13:32:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:32:20,045 - WARNING - No valid heading captured to persist
+2026-11-15T13:32:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:32:20,045 - WARNING - No valid heading captured to persist
+2026-11-15T13:34:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:34:20,246 - WARNING - No valid heading captured to persist
+2026-11-15T13:34:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:34:20,246 - WARNING - No valid heading captured to persist
+2026-11-15T13:36:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:36:20,444 - WARNING - No valid heading captured to persist
+2026-11-15T13:36:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:36:20,444 - WARNING - No valid heading captured to persist
+2026-11-15T13:38:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:38:20,642 - WARNING - No valid heading captured to persist
+2026-11-15T13:38:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:38:20,642 - WARNING - No valid heading captured to persist
+2026-11-15T13:40:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:40:20,842 - WARNING - No valid heading captured to persist
+2026-11-15T13:40:20-0600 raspberrypi rc.local[1216]: 2026-11-15 13:40:20,842 - WARNING - No valid heading captured to persist
+2026-11-15T13:42:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:42:21,042 - WARNING - No valid heading captured to persist
+2026-11-15T13:42:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:42:21,042 - WARNING - No valid heading captured to persist
+2026-11-15T13:44:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:44:21,242 - WARNING - No valid heading captured to persist
+2026-11-15T13:44:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:44:21,242 - WARNING - No valid heading captured to persist
+2026-11-15T13:46:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:46:21,440 - WARNING - No valid heading captured to persist
+2026-11-15T13:46:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:46:21,440 - WARNING - No valid heading captured to persist
+2026-11-15T13:48:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:48:21,641 - WARNING - No valid heading captured to persist
+2026-11-15T13:48:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:48:21,641 - WARNING - No valid heading captured to persist
+2026-11-15T13:50:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:50:21,843 - WARNING - No valid heading captured to persist
+2026-11-15T13:50:21-0600 raspberrypi rc.local[1216]: 2026-11-15 13:50:21,843 - WARNING - No valid heading captured to persist
+2026-11-15T13:52:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:52:22,042 - WARNING - No valid heading captured to persist
+2026-11-15T13:52:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:52:22,042 - WARNING - No valid heading captured to persist
+2026-11-15T13:54:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:54:22,242 - WARNING - No valid heading captured to persist
+2026-11-15T13:54:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:54:22,242 - WARNING - No valid heading captured to persist
+2026-11-15T13:56:20-0600 raspberrypi rc.local[1261]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T13:56:20-0600 raspberrypi rc.local[1261]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T13:59:35-0600 raspberrypi rc.local[1261]: 2026-11-15 13:59:35,836 - WARNING - No valid heading captured to persist
+2026-11-15T13:59:35-0600 raspberrypi rc.local[1261]: 2026-11-15 13:59:35,836 - WARNING - No valid heading captured to persist
+2026-11-15T14:01:36-0600 raspberrypi rc.local[1261]: 2026-11-15 14:01:36,033 - WARNING - No valid heading captured to persist
+2026-11-15T14:01:36-0600 raspberrypi rc.local[1261]: 2026-11-15 14:01:36,033 - WARNING - No valid heading captured to persist
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: [constants] GPS (Rover F9P): auto-detected /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: [constants] RoboClaw: auto-detected /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,687 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,688 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,700 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,700 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,700 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,700 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,700 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,700 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,907 - WARNING - 2026-11-15 14:04:12 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining 37.2m), cross=4.92m (limit infm), heading=52.5°, target_progress=4.26m, target=(-0.07,4.25), alpha=-32.3°
+2026-11-15T14:04:12-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:12,907 - WARNING - 2026-11-15 14:04:12 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-11-15T14:04:17-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:17,118 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T14:04:34-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:34,115 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T14:04:47-0600 raspberrypi rc.local[2791]: 2026-11-15 14:04:47,525 - ERROR - 2026-11-15 14:04:47 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 28.60m, cross-track 4.18m)
+2026-11-15T14:04:48-0600 raspberrypi rc.local[2791]: Serial loop finished.

@@ -30,6 +30,40 @@ converted to ENU against `config.json` — not the dual-antenna baseline.
 | `528effc` (PR #63) | run 14:04:12 | as above but `gary_arrow_lead_m=3.0`; new `gary_lead_nearest_vertex=False`; startup banner now logs the real arrow lead |
 | `d6d09ae` (PR #64) | **no runs yet** | RoboClaw Buffer flag `0→1` (execute immediately — `0` was queuing every command, including emergency neutral); new command slew limiter `actuator_command_slew_counts_per_epoch=100`; 3 new nav columns (`command_slew_limited`, `command_left/right_before_slew`); `actuator_lag_counts` now logged on every row |
 
+**Authoritative source for the commit per boot:** `selectMode/boot-pull.log`
+— `safe_pull.sh` logs the pinned commit at every boot. Confirmed:
+
+| boot (local time) | commit |
+|---|---|
+| 2026-11-08 13:55 | `60ed4e3` |
+| 2026-11-08 14:50 → pull | `099b0e8` |
+| 2026-11-15 10:24, 10:28, 10:32, 10:36, 10:48, 10:50, 11:04, 11:07, 11:10, 11:14, 12:05, 12:58 | `099b0e8` |
+| 2026-11-15 13:56 | `528effc` |
+| 2026-11-15 ~15:00 (manual pull, no boot) | `d6d09ae` |
+
+## systemd journal extracts (`journal/`)
+
+The Pi keeps a persistent journal (756 MB, 44 boots). The run output is echoed
+there as `rc.local[PID]:` lines, and it is the **only** place the Python
+processes' stderr goes. Extracted here, with NetworkManager / sshd / DHCP
+lines removed (this repo is public):
+
+- `journal/boots.txt` — every retained boot, with its first line and the
+  last non-INFO lines before it ended. This is the power-loss record.
+- `journal/kernel.txt` — kernel log across all boots (USB enumerations,
+  resets, storage errors, under-voltage). As of 2026-11-15: no resets, no
+  storage errors, no under-voltage anywhere.
+- `journal/rc_local_non_info.txt` — every `rc.local` line that is not an
+  INFO echo: WARNING/ERROR lines, Python exceptions and stderr. Zero
+  `Traceback` lines exist in the entire journal; the 36 Python exception
+  lines are all one old `gps_heading_capture_thread` AttributeError
+  (`constants.gps_serial_port`), from before that constant existed.
+- `journal/journal_filtered.txt` — rc.local + kernel + systemd(pid 1) +
+  journald lines, INFO echoes removed. Grep-able context for anything above.
+
+Clock caveat applies to all of these: boots without Wi-Fi start on a restored
+(wrong) clock until NTP corrects it.
+
 ## Hardware / setup timeline (not in any log)
 
 1. **Morning (all runs to 12:56):** static base ZED-F9P had NMEA+UBX output

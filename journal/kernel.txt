@@ -1,0 +1,47 @@
+2026-11-15T13:17:02-0600 raspberrypi systemd-journald[318]: Received client request to flush runtime journal.
+2026-11-15T13:17:03-0600 raspberrypi systemd-journald[318]: File /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb/system.journal corrupted or uncleanly shut down, renaming and replacing.
+2026-11-15T13:17:03-0600 raspberrypi systemd-journald[318]: Oldest entry in /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb/system.journal is older than the configured file retention duration (1month), suggesting rotation.
+2026-11-15T13:17:03-0600 raspberrypi systemd-journald[318]: /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb/system.journal: Journal header limits reached or header out-of-date, rotating.
+2026-11-15T13:17:03-0600 raspberrypi systemd-journald[318]: Failed to read journal file /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb/user-1000.journal for rotation, trying to move it out of the way: Text file busy
+2026-11-15T13:17:03-0600 raspberrypi systemd-journald[318]: Oldest entry in /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb/system.journal is older than the configured file retention duration (1month), suggesting rotation.
+2026-11-15T13:17:03-0600 raspberrypi systemd-journald[318]: /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb/system.journal: Journal header limits reached or header out-of-date, rotating.
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d508500.gpiomem: window base 0x107d508500 size 0x00000040
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d508500.gpiomem: initialised 1 regions as /dev/gpiomem1
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d517c00.gpiomem: window base 0x107d517c00 size 0x00000040
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d517c00.gpiomem: initialised 1 regions as /dev/gpiomem2
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d504100.gpiomem: window base 0x107d504100 size 0x00000020
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d504100.gpiomem: initialised 1 regions as /dev/gpiomem3
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d510700.gpiomem: window base 0x107d510700 size 0x00000020
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 107d510700.gpiomem: initialised 1 regions as /dev/gpiomem4
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 1f000d0000.gpiomem: window base 0x1f000d0000 size 0x00030000
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpi-gpiomem 1f000d0000.gpiomem: initialised 1 regions as /dev/gpiomem0
+2026-11-15T13:17:03-0600 raspberrypi kernel: mc: Linux media interface: v0.10
+2026-11-15T13:17:03-0600 raspberrypi kernel: videodev: Linux video capture interface: v2.00
+2026-11-15T13:17:03-0600 raspberrypi kernel: cdc_acm 3-1:1.0: ttyACM0: USB ACM device
+2026-11-15T13:17:03-0600 raspberrypi kernel: cdc_acm 1-2:1.0: ttyACM1: USB ACM device
+2026-11-15T13:17:03-0600 raspberrypi kernel: usbcore: registered new interface driver cdc_acm
+2026-11-15T13:17:03-0600 raspberrypi kernel: cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+2026-11-15T13:17:03-0600 raspberrypi kernel: pispbe 1000880000.pisp_be: bcm2712_iommu_of_xlate: MMU 1000005100.iommu
+2026-11-15T13:17:03-0600 raspberrypi kernel: pispbe 1000880000.pisp_be: Runtime PM usage count underflow!
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpivid_hevc: module is from the staging directory, the quality is unknown, you have been warned.
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpivid 1000800000.codec: bcm2712_iommu_of_xlate: MMU 1000005100.iommu
+2026-11-15T13:17:03-0600 raspberrypi kernel: rpivid 1000800000.codec: Device registered as /dev/video19
+2026-11-15T13:17:03-0600 raspberrypi kernel: rp1-firmware: probe of rp1_firmware failed with error -110
+2026-11-15T13:17:04-0600 raspberrypi kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+2026-11-15T13:17:04-0600 raspberrypi kernel: Loaded X.509 cert 'benh@debian.org: 577e021cb980e0e820821ba7b54b4961b8b4fadf'
+2026-11-15T13:17:04-0600 raspberrypi kernel: Loaded X.509 cert 'romain.perier@gmail.com: 3abbc6ec146e09d1b6016ab9d6cf71dd233f0328'
+2026-11-15T13:17:04-0600 raspberrypi kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+2026-11-15T13:17:04-0600 raspberrypi kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+2026-11-15T13:17:04-0600 raspberrypi kernel: brcmfmac: F1 signature read @0x18000000=0x15264345
+2026-11-15T13:17:04-0600 raspberrypi kernel: brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+2026-11-15T13:17:04-0600 raspberrypi kernel: usbcore: registered new interface driver brcmfmac
+2026-11-15T13:17:04-0600 raspberrypi kernel: brcmfmac: brcmf_c_process_txcap_blob: no txcap_blob available (err=-2)
+2026-11-15T13:17:04-0600 raspberrypi kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Aug 29 2023 01:47:08 version 7.45.265 (28bca26 CY) FWID 01-b677b91b
+2026-11-15T13:17:04-0600 raspberrypi kernel: alsactl[460]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
+2026-11-15T13:56:02-0600 raspberrypi kernel: Adding 204784k swap on /var/swap.  Priority:-2 extents:9 across:2015232k SS
+2026-11-15T13:56:06-0600 raspberrypi kernel: macb 1f00100000.ethernet eth0: PHY [1f00100000.ethernet-ffffffff:01] driver [Broadcom BCM54213PE] (irq=POLL)
+2026-11-15T13:56:06-0600 raspberrypi kernel: macb 1f00100000.ethernet eth0: configuring for phy/rgmii-id link mode
+2026-11-15T13:56:06-0600 raspberrypi kernel: pps pps0: new PPS source ptp0
+2026-11-15T13:56:06-0600 raspberrypi kernel: macb 1f00100000.ethernet: gem-ptp-timer ptp clock registered.
+2026-11-15T13:56:06-0600 raspberrypi kernel: brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+2026-11-15T14:07:27-0600 raspberrypi kernel: warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211

@@ -1,0 +1,394 @@
+# journalctl --list-boots  (generated 2026-11-15T15:09:16-06:00)
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+-42 978847a65ef24c9abeffea72be91e05a Sun 2026-08-23 16:37:47 CDT Sun 2026-08-30 13:44:50 CDT
+-41 8056b321d3bb46dfb01573e495ea8287 Sun 2026-08-30 13:17:02 CDT Sun 2026-08-30 14:12:35 CDT
+-40 05ae9248ba99435fb0c4e13ca3851d4c Sun 2026-08-30 13:17:03 CDT Sun 2026-09-06 10:20:47 CDT
+-39 da4f463d85ca4fb1a0b884bafad0d821 Sun 2026-09-06 10:17:01 CDT Sun 2026-09-06 10:23:53 CDT
+-38 1c7b40e0b07a4d709f74b91056676f95 Sun 2026-09-06 10:17:03 CDT Sun 2026-09-06 11:29:57 CDT
+-37 458dd0aabb5845e4b379c2a9164c4d67 Sun 2026-09-06 10:17:03 CDT Sun 2026-09-13 10:31:32 CDT
+-36 22158215c12d4256950e917c46f8b3f1 Sun 2026-09-06 10:17:02 CDT Sun 2026-09-13 10:36:43 CDT
+-35 bbd1669fbc1f49619ce33eab9b6bb41c Sun 2026-09-06 10:17:02 CDT Sun 2026-09-13 10:37:08 CDT
+-34 ee097d9909cf4eb082f8a821ccb3d7e9 Sun 2026-09-06 10:17:02 CDT Sun 2026-09-13 10:41:22 CDT
+-33 0504bad74103454787474d39677becc2 Sun 2026-09-06 10:17:01 CDT Sun 2026-09-13 10:44:34 CDT
+-32 ea3296a934ff4ebb9007e92ffeebdafd Sun 2026-09-06 10:17:03 CDT Sun 2026-09-13 11:26:08 CDT
+-31 7353adbd7228488e89e7a62fda39680a Sun 2026-09-06 10:17:02 CDT Sun 2026-09-13 11:29:12 CDT
+-30 79da6aef6845404b95dfd608dd7561db Sun 2026-09-06 10:17:01 CDT Sun 2026-09-13 11:33:32 CDT
+-29 f55a9e874bab426f841a21495cda6ee9 Sun 2026-09-06 10:17:03 CDT Sun 2026-09-13 13:22:42 CDT
+-28 ca9f93674bbb4c0fafc1aada50d51ea1 Sun 2026-09-06 10:17:01 CDT Sun 2026-09-13 13:27:46 CDT
+-27 3e4726f30ae24b1e8cba81702bd9907e Sun 2026-09-06 10:17:03 CDT Sun 2026-09-13 14:28:01 CDT
+-26 bb73b8119b4f49678ae4f857a853b2d4 Sun 2026-09-06 10:17:02 CDT Sun 2026-09-13 14:31:42 CDT
+-25 1a4917773dad4143a0e197b2171dcfc7 Sun 2026-09-06 10:17:01 CDT Sun 2026-09-13 14:36:34 CDT
+-24 97f18e9b0c5a449594e75a88512823d5 Sun 2026-09-06 10:17:02 CDT Sun 2026-11-08 11:26:27 CST
+-23 2117ba6c8b1541b38ba6bc975d911ec1 Sun 2026-09-06 10:17:01 CDT Sun 2026-11-08 11:32:46 CST
+-22 109f52efdf474a8ca89faa5a493eb445 Sun 2026-09-06 10:17:02 CDT Sun 2026-11-08 11:34:52 CST
+-21 d023bc8f12534842be75e9890b82e20e Sun 2026-09-06 10:17:03 CDT Sun 2026-11-08 11:39:26 CST
+-20 5e5d81e5f2444b8ab7236aeda3ffba98 Sun 2026-11-08 11:39:37 CST Sun 2026-11-08 11:53:02 CST
+-19 c4de4385923745c09f29e4dec7b67426 Sun 2026-09-06 10:17:01 CDT Sun 2026-11-08 12:37:25 CST
+-18 3e15db0cd2754b5396ed54689ea2fa4b Sun 2026-11-08 13:17:02 CST Sun 2026-11-08 13:23:15 CST
+-17 3dbc071b39764c80bfed8a5fcbcc65d3 Sun 2026-11-08 13:17:02 CST Sun 2026-11-08 13:25:20 CST
+-16 72bc0edf63ba4862a6405e119cb3df88 Sun 2026-11-08 13:17:01 CST Sun 2026-11-08 13:52:00 CST
+-15 cdaf3965f9094c7aa8bae2801168e684 Sun 2026-11-08 13:17:01 CST Sun 2026-11-08 13:56:02 CST
+-14 ba93cf419cb54f9d91ddd9f924353d0a Sun 2026-11-08 13:17:03 CST Sun 2026-11-08 14:49:12 CST
+-13 fff34197092e4c489eadcad2afbe49b4 Sun 2026-11-08 14:17:03 CST Sun 2026-11-15 10:24:08 CST
+-12 90768a2e995d4928b39bf83c731a93d1 Sun 2026-11-15 10:24:14 CST Sun 2026-11-15 10:27:57 CST
+-11 7916659bd3494b9f981eed07b8398baf Sun 2026-11-08 14:17:02 CST Sun 2026-11-15 10:32:30 CST
+-10 eb180c81016e4f85a9041b4fc4ea8743 Sun 2026-11-08 14:17:03 CST Sun 2026-11-15 10:36:03 CST
+ -9 766f165286cf4ce28d47bc0ec0ab39d1 Sun 2026-11-15 10:36:03 CST Sun 2026-11-15 10:48:28 CST
+ -8 6aff39df08ae4e8bb623e88ecec20813 Sun 2026-11-15 10:36:03 CST Sun 2026-11-15 10:49:05 CST
+ -7 f9de810a1853473187e4b3f7deade464 Sun 2026-11-15 10:36:04 CST Sun 2026-11-15 11:04:18 CST
+ -6 916a1cf227af4b21a503052cd2a40975 Sun 2026-11-15 10:36:03 CST Sun 2026-11-15 11:08:34 CST
+ -5 0c0bd009e8ac4e25bb69636847a4fd9b Sun 2026-11-15 10:36:03 CST Sun 2026-11-15 11:10:48 CST
+ -4 cfc58960502f4c298d5a655553586a58 Sun 2026-11-15 10:36:04 CST Sun 2026-11-15 11:14:13 CST
+ -3 dd67aab4fe294d289d62bcb47bd6fdf6 Sun 2026-11-15 10:36:05 CST Sun 2026-11-15 12:04:30 CST
+ -2 34fa37ea50ff4c80921e094b60d42a1a Sun 2026-11-15 11:17:07 CST Sun 2026-11-15 12:57:41 CST
+ -1 d56af3767f2c4e85818265d518aa603a Sun 2024-12-01 07:28:28 CST Sun 2026-11-15 13:54:22 CST
+  0 f31c6b2c6ddd43a681e99e44444e13dc Sun 2026-11-15 13:17:02 CST Sun 2026-11-15 15:09:16 CST
+
+# per boot: first line, then the last 4 non-INFO, non-network lines before the boot ended
+
+=== boot IDX ===
+   ...
+
+=== boot -42 ===
+2026-08-23T16:37:47-0500 raspberrypi systemd-journald[318]: Received client request to flush runtime journal.
+   ...
+2026-08-30T13:26:02-0500 raspberrypi systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+2026-08-30T13:26:02-0500 raspberrypi systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+2026-08-30T13:26:02-0500 raspberrypi systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+2026-08-30T13:26:02-0500 raspberrypi systemd[1]: run-credentials-systemd\x2dtmpfiles\x2dclean.service.mount: Deactivated successfully.
+
+=== boot -41 ===
+2026-08-30T13:17:02-0500 raspberrypi systemd-journald[325]: Received client request to flush runtime journal.
+   ...
+2026-08-30T14:01:43-0500 raspberrypi systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+2026-08-30T14:01:43-0500 raspberrypi systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+2026-08-30T14:01:43-0500 raspberrypi systemd[1]: run-credentials-systemd\x2dtmpfiles\x2dclean.service.mount: Deactivated successfully.
+2026-08-30T14:12:35-0500 raspberrypi kernel: usb 1-2: USB disconnect, device number 3
+
+=== boot -40 ===
+2026-08-30T13:17:03-0500 raspberrypi systemd-journald[315]: Received client request to flush runtime journal.
+   ...
+2026-09-06T10:17:01-0500 raspberrypi CRON[3701]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2026-09-06T10:17:01-0500 raspberrypi CRON[3700]: pam_unix(cron:session): session closed for user root
+2026-09-06T10:19:17-0500 raspberrypi dbus-daemon[755]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.71' (uid=1000 pid=3717 comm="/usr/share/
+2026-09-06T10:19:17-0500 raspberrypi dbus-daemon[755]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+
+=== boot -39 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[318]: Time spent on flushing to /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb is 6.024ms for 496 entri
+   ...
+2026-09-06T10:23:42-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:42,518 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:42-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:42,719 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-06T10:23:42-0500 raspberrypi rc.local[2137]: 2026-09-06 10:23:42,916 - ERROR - 2026-09-06 10:23:42 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 2.70m, cross-track 1.66m)
+2026-09-06T10:23:44-0500 raspberrypi rc.local[2137]: Serial loop finished.
+
+=== boot -38 ===
+2026-09-06T10:17:03-0500 raspberrypi systemd-journald[320]: Received client request to flush runtime journal.
+   ...
+2026-09-06T11:29:45-0500 raspberrypi dbus-daemon[1077]: [session uid=1000 pid=1077] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.22' (uid=1000 pid=1354 c
+2026-09-06T11:29:45-0500 raspberrypi systemd[1027]: Starting dconf.service - User preferences database...
+2026-09-06T11:29:45-0500 raspberrypi dbus-daemon[1077]: [session uid=1000 pid=1077] Successfully activated service 'ca.desrt.dconf'
+2026-09-06T11:29:45-0500 raspberrypi systemd[1027]: Started dconf.service - User preferences database.
+
+=== boot -37 ===
+2026-09-06T10:17:03-0500 raspberrypi systemd-journald[319]: Received client request to flush runtime journal.
+   ...
+2026-09-13T10:31:17-0500 raspberrypi vsce-sign[2816]: Timestamp signature status:  OK
+2026-09-13T10:31:17-0500 raspberrypi vsce-sign[2816]: Exit code:  Success
+2026-09-13T10:31:32-0500 raspberrypi rc.local[1251]: 2026-09-13 10:31:32,029 - WARNING - No valid heading captured to persist
+2026-09-13T10:31:32-0500 raspberrypi rc.local[1251]: 2026-09-13 10:31:32,029 - WARNING - No valid heading captured to persist
+
+=== boot -36 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,151 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded st
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,151 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=F
+2026-09-13T10:36:35-0500 raspberrypi rc.local[2111]: 2026-09-13 10:36:35,152 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+2026-09-13T10:36:41-0500 raspberrypi rc.local[2111]: Serial loop finished.
+
+=== boot -35 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-09-13T10:36:55-0500 raspberrypi dbus-daemon[1055]: [session uid=1000 pid=1055] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+2026-09-13T10:36:55-0500 raspberrypi systemd[1003]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+2026-09-13T10:37:04-0500 raspberrypi systemd[1]: systemd-fsckd.service: Deactivated successfully.
+2026-09-13T10:37:08-0500 raspberrypi systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+
+=== boot -34 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[317]: Received client request to flush runtime journal.
+   ...
+2026-09-13T10:41:17-0500 raspberrypi rc.local[2138]: 2026-09-13 10:41:17,007 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=F
+2026-09-13T10:41:17-0500 raspberrypi rc.local[2138]: 2026-09-13 10:41:17,007 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+2026-09-13T10:41:17-0500 raspberrypi rc.local[2138]: 2026-09-13 10:41:17,438 - WARNING - 2026-09-13 10:41:17 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining
+2026-09-13T10:41:17-0500 raspberrypi rc.local[2138]: 2026-09-13 10:41:17,438 - WARNING - 2026-09-13 10:41:17 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; t
+
+=== boot -33 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[316]: Time spent on flushing to /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb is 6.034ms for 496 entri
+   ...
+2026-09-13T10:44:33-0500 raspberrypi dbus-daemon[743]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.44' (uid
+2026-09-13T10:44:33-0500 raspberrypi systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+2026-09-13T10:44:34-0500 raspberrypi dbus-daemon[743]: [system] Successfully activated service 'org.freedesktop.hostname1'
+2026-09-13T10:44:34-0500 raspberrypi systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+
+=== boot -32 ===
+2026-09-06T10:17:03-0500 raspberrypi systemd-journald[323]: Received client request to flush runtime journal.
+   ...
+2026-09-13T11:25:30-0500 raspberrypi rc.local[3133]: 2026-09-13 11:25:30,073 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-09-13T11:25:30-0500 raspberrypi rc.local[3133]: 2026-09-13 11:25:30,073 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded st
+2026-09-13T11:25:30-0500 raspberrypi rc.local[3133]: 2026-09-13 11:25:30,073 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=F
+2026-09-13T11:25:30-0500 raspberrypi rc.local[3133]: 2026-09-13 11:25:30,073 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+
+=== boot -31 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,330 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,529 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-09-13T11:28:52-0500 raspberrypi rc.local[2135]: 2026-09-13 11:28:52,746 - ERROR - 2026-09-13 11:28:52 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 7.44m, cross-track 0.05m)
+2026-09-13T11:28:54-0500 raspberrypi rc.local[2135]: Serial loop finished.
+
+=== boot -30 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[324]: Time spent on flushing to /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb is 6.136ms for 500 entri
+   ...
+2026-09-13T11:33:28-0500 raspberrypi dbus-daemon[760]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.51' (uid
+2026-09-13T11:33:28-0500 raspberrypi systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+2026-09-13T11:33:28-0500 raspberrypi dbus-daemon[760]: [system] Successfully activated service 'org.freedesktop.hostname1'
+2026-09-13T11:33:28-0500 raspberrypi systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+
+=== boot -29 ===
+2026-09-06T10:17:03-0500 raspberrypi systemd-journald[321]: Received client request to flush runtime journal.
+   ...
+2026-09-13T13:21:46-0500 raspberrypi dbus-daemon[762]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+2026-09-13T13:21:46-0500 raspberrypi kernel: warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+2026-09-13T13:22:23-0500 raspberrypi rc.local[1256]: 2026-09-13 13:22:23,424 - WARNING - No valid heading captured to persist
+2026-09-13T13:22:23-0500 raspberrypi rc.local[1256]: 2026-09-13 13:22:23,424 - WARNING - No valid heading captured to persist
+
+=== boot -28 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[312]: Received client request to flush runtime journal.
+   ...
+2026-09-13T13:27:39-0500 raspberrypi systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+2026-09-13T13:27:39-0500 raspberrypi dbus-daemon[739]: [system] Successfully activated service 'org.freedesktop.hostname1'
+2026-09-13T13:27:39-0500 raspberrypi systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+2026-09-13T13:27:41-0500 raspberrypi gvfsd[2501]: got no contact to IPC$
+
+=== boot -27 ===
+2026-09-06T10:17:03-0500 raspberrypi systemd-journald[321]: Received client request to flush runtime journal.
+   ...
+2026-09-13T14:27:55-0500 raspberrypi PackageKit[1729]: get-updates transaction /954_beeaddea from uid 1000 finished with success after 3435ms
+2026-09-13T14:28:01-0500 raspberrypi dbus-daemon[758]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.63' (uid=1000 pid=2145 comm="/usr/share/
+2026-09-13T14:28:01-0500 raspberrypi dbus-daemon[758]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+2026-09-13T14:28:01-0500 raspberrypi kernel: warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+
+=== boot -26 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[313]: Received client request to flush runtime journal.
+   ...
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,840 - WARNING - 2026-09-13 14:31:14 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 37.2m (remaining
+2026-09-13T14:31:14-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:14,840 - WARNING - 2026-09-13 14:31:14 [FOLLOW] PURE_PURSUIT TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; 
+2026-09-13T14:31:32-0500 raspberrypi rc.local[2129]: 2026-09-13 14:31:32,894 - ERROR - 2026-09-13 14:31:32 [FOLLOW] SAFETY ABORT: no progress for 25 epochs (progress 14.05m, cross-track 2.25m)
+2026-09-13T14:31:34-0500 raspberrypi rc.local[2129]: Serial loop finished.
+
+=== boot -25 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[317]: Time spent on flushing to /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb is 5.997ms for 496 entri
+   ...
+2026-09-13T14:36:13-0500 raspberrypi systemd[1003]: Starting dconf.service - User preferences database...
+2026-09-13T14:36:13-0500 raspberrypi dbus-daemon[1066]: [session uid=1000 pid=1066] Successfully activated service 'ca.desrt.dconf'
+2026-09-13T14:36:13-0500 raspberrypi systemd[1003]: Started dconf.service - User preferences database.
+2026-09-13T14:36:34-0500 raspberrypi systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+
+=== boot -24 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[319]: Received client request to flush runtime journal.
+   ...
+2026-11-08T11:26:27-0600 raspberrypi rc.local[3419]: 2026-11-08 11:26:27,191 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-08T11:26:27-0600 raspberrypi rc.local[3419]: 2026-11-08 11:26:27,191 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded st
+2026-11-08T11:26:27-0600 raspberrypi rc.local[3419]: 2026-11-08 11:26:27,191 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=F
+2026-11-08T11:26:27-0600 raspberrypi rc.local[3419]: 2026-11-08 11:26:27,191 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+
+=== boot -23 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[320]: Received client request to flush runtime journal.
+   ...
+2026-11-08T11:32:22-0600 raspberrypi rc.local[2125]: 2026-11-08 11:32:22,939 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+2026-11-08T11:32:39-0600 raspberrypi PackageKit[1688]: daemon quit
+2026-11-08T11:32:39-0600 raspberrypi systemd[1]: packagekit.service: Deactivated successfully.
+2026-11-08T11:32:39-0600 raspberrypi systemd[1]: packagekit.service: Consumed 3.646s CPU time.
+
+=== boot -22 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[317]: Received client request to flush runtime journal.
+   ...
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,491 - WARNING - RoboClaw not connected — skipping actuator command.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,644 - CRITICAL - Shutdown: neutral command FAILED (Repeat exit - returning to neutral). Use the physical interlock.
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: 2026-11-08 11:34:39,644 - CRITICAL - MOWER MAY STILL BE MOVING - software could not confirm neutral. Use the physical ignition-kill / blade-clutch 
+2026-11-08T11:34:39-0600 raspberrypi rc.local[2109]: Serial loop finished.
+
+=== boot -21 ===
+2026-09-06T10:17:03-0500 raspberrypi systemd-journald[321]: Received client request to flush runtime journal.
+   ...
+2026-11-08T11:39:26-0600 raspberrypi dbus-daemon[1073]: [session uid=1000 pid=1073] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.22' (uid=1000 pid=1350 c
+2026-11-08T11:39:26-0600 raspberrypi systemd[1024]: Starting dconf.service - User preferences database...
+2026-11-08T11:39:26-0600 raspberrypi dbus-daemon[1073]: [session uid=1000 pid=1073] Successfully activated service 'ca.desrt.dconf'
+2026-11-08T11:39:26-0600 raspberrypi systemd[1024]: Started dconf.service - User preferences database.
+
+=== boot -20 ===
+2026-09-06T10:17:02-0500 raspberrypi systemd-journald[324]: Received client request to flush runtime journal.
+   ...
+2026-11-08T11:52:22-0600 raspberrypi kernel: usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+2026-11-08T11:52:22-0600 raspberrypi kernel: usb 1-2: Product: USB Roboclaw 2x15A
+2026-11-08T11:52:22-0600 raspberrypi kernel: usb 1-2: Manufacturer: Basicmicro Inc.
+2026-11-08T11:52:23-0600 raspberrypi kernel: cdc_acm 1-2:1.0: ttyACM1: USB ACM device
+
+=== boot -19 ===
+2026-09-06T10:17:01-0500 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-11-08T12:37:25-0600 raspberrypi dbus-daemon[1059]: [session uid=1000 pid=1059] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.22' (uid=1000 pid=1444 c
+2026-11-08T12:37:25-0600 raspberrypi systemd[1003]: Starting dconf.service - User preferences database...
+2026-11-08T12:37:25-0600 raspberrypi dbus-daemon[1059]: [session uid=1000 pid=1059] Successfully activated service 'ca.desrt.dconf'
+2026-11-08T12:37:25-0600 raspberrypi systemd[1003]: Started dconf.service - User preferences database.
+
+=== boot -18 ===
+2026-11-08T13:17:02-0600 raspberrypi systemd-journald[321]: Received client request to flush runtime journal.
+   ...
+2026-11-08T13:23:09-0600 raspberrypi packagekitd[1770]: pk_package_set_update_severity: assertion 'update_severity == PK_INFO_ENUM_UNKNOWN || update_severity == PK_INFO_ENUM_LOW || update_severity == 
+2026-11-08T13:23:09-0600 raspberrypi PackageKit[1770]: get-updates transaction /972_dbcbcdbd from uid 1000 finished with success after 5874ms
+2026-11-08T13:23:15-0600 raspberrypi rc.local[1631]: 2026-11-08 13:23:15,843 - WARNING - No valid heading captured to persist
+2026-11-08T13:23:15-0600 raspberrypi rc.local[1631]: 2026-11-08 13:23:15,843 - WARNING - No valid heading captured to persist
+
+=== boot -17 ===
+2026-11-08T13:17:02-0600 raspberrypi systemd-journald[317]: Received client request to flush runtime journal.
+   ...
+2026-11-08T13:24:20-0600 raspberrypi login[1599]: pam_unix(login:session): session opened for user dali(uid=1000) by LOGIN(uid=0)
+2026-11-08T13:24:20-0600 raspberrypi systemd-logind[750]: New session 3 of user dali.
+2026-11-08T13:24:20-0600 raspberrypi systemd[1]: Started session-3.scope - Session 3 of User dali.
+2026-11-08T13:24:27-0600 raspberrypi systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+
+=== boot -16 ===
+2026-11-08T13:17:01-0600 raspberrypi systemd-journald[313]: Received client request to flush runtime journal.
+   ...
+2026-11-08T13:50:46-0600 raspberrypi systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+2026-11-08T13:51:16-0600 raspberrypi systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2026-11-08T13:51:58-0600 raspberrypi rc.local[1231]: 2026-11-08 13:51:58,815 - WARNING - No valid heading captured to persist
+2026-11-08T13:51:58-0600 raspberrypi rc.local[1231]: 2026-11-08 13:51:58,815 - WARNING - No valid heading captured to persist
+
+=== boot -15 ===
+2026-11-08T13:17:01-0600 raspberrypi systemd-journald[315]: Received client request to flush runtime journal.
+   ...
+2026-11-08T13:55:44-0600 raspberrypi rc.local[2124]: 2026-11-08 13:55:44,117 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-08T13:55:50-0600 raspberrypi rc.local[2124]: 2026-11-08 13:55:50,843 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-08T13:55:56-0600 raspberrypi rc.local[2124]: 2026-11-08 13:55:56,509 - ERROR - 2026-11-08 13:55:56 [FOLLOW] SAFETY ABORT: off-track 2.65m > 2.0m for 15 epochs
+2026-11-08T13:55:57-0600 raspberrypi rc.local[2124]: Serial loop finished.
+
+=== boot -14 ===
+2026-11-08T13:17:03-0600 raspberrypi systemd-journald[322]: Received client request to flush runtime journal.
+   ...
+2026-11-08T14:46:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:46:55,034 - WARNING - No valid heading captured to persist
+2026-11-08T14:46:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:46:55,034 - WARNING - No valid heading captured to persist
+2026-11-08T14:48:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:48:55,235 - WARNING - No valid heading captured to persist
+2026-11-08T14:48:55-0600 raspberrypi rc.local[1254]: 2026-11-08 14:48:55,235 - WARNING - No valid heading captured to persist
+
+=== boot -13 ===
+2026-11-08T14:17:03-0600 raspberrypi systemd-journald[321]: Received client request to flush runtime journal.
+   ...
+2026-11-15T10:24:08-0600 raspberrypi vsce-sign[3330]: Primary signature type:  repository primary signature
+2026-11-15T10:24:08-0600 raspberrypi vsce-sign[3330]: Primary signature status:  OK
+2026-11-15T10:24:08-0600 raspberrypi vsce-sign[3330]: Timestamp signature status:  OK
+2026-11-15T10:24:08-0600 raspberrypi vsce-sign[3330]: Exit code:  Success
+
+=== boot -12 ===
+2026-11-08T14:17:01-0600 raspberrypi systemd-journald[318]: Received client request to flush runtime journal.
+   ...
+2026-11-15T10:24:43-0600 raspberrypi systemd[1]: systemd-fsckd.service: Deactivated successfully.
+2026-11-15T10:27:56-0600 raspberrypi dbus-daemon[744]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.50' (uid=1000 pid=1341 comm
+2026-11-15T10:27:56-0600 raspberrypi systemd[1]: Starting packagekit.service - PackageKit Daemon...
+2026-11-15T10:27:57-0600 raspberrypi PackageKit[1693]: daemon start
+
+=== boot -11 ===
+2026-11-08T14:17:02-0600 raspberrypi systemd-journald[316]: Received client request to flush runtime journal.
+   ...
+2026-11-15T10:32:18-0600 raspberrypi rc.local[2126]: 2026-11-15 10:32:18,710 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T10:32:20-0600 raspberrypi rc.local[2126]: 2026-11-15 10:32:20,706 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T10:32:20-0600 raspberrypi rc.local[2126]: 2026-11-15 10:32:20,900 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T10:32:22-0600 raspberrypi rc.local[2126]: Serial loop finished.
+
+=== boot -10 ===
+2026-11-08T14:17:03-0600 raspberrypi systemd-journald[319]: Received client request to flush runtime journal.
+   ...
+2026-11-15T10:36:03-0600 raspberrypi systemd[1]: Reached target poweroff.target - System Power Off.
+2026-11-15T10:36:03-0600 raspberrypi systemd[1]: Shutting down.
+2026-11-15T10:36:03-0600 raspberrypi systemd-shutdown[1]: Syncing filesystems and block devices.
+2026-11-15T10:36:03-0600 raspberrypi systemd-journald[319]: Journal stopped
+
+=== boot -9 ===
+2026-11-15T10:36:03-0600 raspberrypi systemd-journald[309]: Received client request to flush runtime journal.
+   ...
+2026-11-15T10:48:18-0600 raspberrypi rc.local[2119]: 2026-11-15 10:48:18,648 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded st
+2026-11-15T10:48:18-0600 raspberrypi rc.local[2119]: 2026-11-15 10:48:18,648 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=F
+2026-11-15T10:48:18-0600 raspberrypi rc.local[2119]: 2026-11-15 10:48:18,649 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+2026-11-15T10:48:18-0600 raspberrypi rc.local[2119]: Serial loop finished.
+
+=== boot -8 ===
+2026-11-15T10:36:03-0600 raspberrypi systemd-journald[315]: Received client request to flush runtime journal.
+   ...
+2026-11-15T10:48:57-0600 raspberrypi login[1610]: pam_unix(login:session): session opened for user dali(uid=1000) by LOGIN(uid=0)
+2026-11-15T10:48:57-0600 raspberrypi systemd-logind[751]: New session 3 of user dali.
+2026-11-15T10:48:57-0600 raspberrypi systemd[1]: Started session-3.scope - Session 3 of User dali.
+2026-11-15T10:49:03-0600 raspberrypi systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+
+=== boot -7 ===
+2026-11-15T10:36:04-0600 raspberrypi systemd-journald[318]: Received client request to flush runtime journal.
+   ...
+2026-11-15T11:02:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:02:18,654 - WARNING - No valid heading captured to persist
+2026-11-15T11:02:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:02:18,654 - WARNING - No valid heading captured to persist
+2026-11-15T11:04:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:04:18,854 - WARNING - No valid heading captured to persist
+2026-11-15T11:04:18-0600 raspberrypi rc.local[1246]: 2026-11-15 11:04:18,854 - WARNING - No valid heading captured to persist
+
+=== boot -6 ===
+2026-11-15T10:36:03-0600 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded st
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=F
+2026-11-15T11:08:10-0600 raspberrypi rc.local[2143]: 2026-11-15 11:08:10,151 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend 
+
+=== boot -5 ===
+2026-11-15T10:36:03-0600 raspberrypi systemd-journald[317]: Time spent on flushing to /var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb is 5.132ms for 496 entri
+   ...
+2026-11-15T11:10:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:47,086 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:10:47-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:47,613 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:10:48-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:48,141 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:10:48-0600 raspberrypi rc.local[2119]: 2026-11-15 11:10:48,688 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+
+=== boot -4 ===
+2026-11-15T10:36:04-0600 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-11-15T11:14:11-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:11,630 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15T11:14:12-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:12,232 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15T11:14:12-0600 raspberrypi rc.local[2140]: 2026-11-15 11:14:12,244 - ERROR - 2026-11-15 11:14:12 GNSS ABORT (incomplete epochs): GNRMC status=None (need 'A'); relPosValid=0; carrSoln=None (n
+2026-11-15T11:14:12-0600 raspberrypi rc.local[2140]: Serial loop finished.
+
+=== boot -3 ===
+2026-11-15T10:36:05-0600 raspberrypi systemd-journald[313]: Received client request to flush runtime journal.
+   ...
+2026-11-15T12:02:29-0600 raspberrypi rc.local[1279]: 2026-11-15 12:02:29,817 - WARNING - No valid heading captured to persist
+2026-11-15T12:02:29-0600 raspberrypi rc.local[1279]: 2026-11-15 12:02:29,817 - WARNING - No valid heading captured to persist
+2026-11-15T12:04:30-0600 raspberrypi rc.local[1279]: 2026-11-15 12:04:30,018 - WARNING - No valid heading captured to persist
+2026-11-15T12:04:30-0600 raspberrypi rc.local[1279]: 2026-11-15 12:04:30,018 - WARNING - No valid heading captured to persist
+
+=== boot -2 ===
+2026-11-15T11:17:07-0600 raspberrypi systemd-journald[314]: Received client request to flush runtime journal.
+   ...
+2026-11-15T12:57:25-0600 raspberrypi rc.local[2130]: 2026-11-15 12:57:25,122 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T12:57:33-0600 raspberrypi rc.local[2130]: 2026-11-15 12:57:33,913 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T12:57:36-0600 raspberrypi rc.local[2130]: 2026-11-15 12:57:36,133 - WARNING - Unexpected turn_direction: STRAIGHT, defaulting to straight
+2026-11-15T12:57:39-0600 raspberrypi rc.local[2130]: Serial loop finished.
+
+=== boot -1 ===
+2024-12-01T07:28:28-0600 raspberrypi systemd-journald[321]: System Journal (/var/log/journal/c10f7a04a2644eb08c9187ea0a1828eb) is 752.7M, max 4.0G, 3.2G free.
+   ...
+2026-11-15T13:52:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:52:22,042 - WARNING - No valid heading captured to persist
+2026-11-15T13:52:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:52:22,042 - WARNING - No valid heading captured to persist
+2026-11-15T13:54:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:54:22,242 - WARNING - No valid heading captured to persist
+2026-11-15T13:54:22-0600 raspberrypi rc.local[1216]: 2026-11-15 13:54:22,242 - WARNING - No valid heading captured to persist
+
+=== boot 0 ===
+2026-11-15T13:17:02-0600 raspberrypi systemd-journald[318]: Received client request to flush runtime journal.
+   ...
+2026-11-15T15:09:16-0600 raspberrypi systemd-logind[764]: Session 300 logged out. Waiting for processes to exit.
+2026-11-15T15:09:16-0600 raspberrypi systemd-logind[764]: Removed session 300.
+2026-11-15T15:09:16-0600 raspberrypi systemd-logind[764]: New session 301 of user dali.
+2026-11-15T15:09:16-0600 raspberrypi systemd[1]: Started session-301.scope - Session 301 of User dali.
