@@ -1,0 +1,40 @@
+2026-11-15 11:12:31,186 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-11-15_11-12-31.log
+2026-11-15 11:12:31,189 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15 11:12:31,491 - INFO - Encoders reset to zero
+2026-11-15 11:12:31,492 - INFO - Starting readRecordedRun with combination: 55
+2026-11-15 11:12:31,492 - INFO - Selected most recent recording: 55_20260510-134004_GPSData.csv
+2026-11-15 11:12:31,496 - INFO - GREEN_LED initialized on GPIO 17
+2026-11-15 11:12:31,503 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-11-15_11-12-31_navigation_log.csv
+2026-11-15 11:12:31,504 - INFO - ENU origin from first waypoint: 37.9008713333, -97.66418
+2026-11-15 11:12:31,603 - INFO - Path model: 42 rows -> 37 points -> 36 segments, 40.7m total, leading dwell 3.0s
+2026-11-15 11:12:31,603 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15 11:12:31,604 - INFO - === GUIDANCE: gary_arrows === tangent_window=3.0m lookahead=2.0m+0.8s*v [1.5-5.0m] kappa_max=unbounded (no minimum radius) slew=0.6/m/s deadband=0.04/m
+2026-11-15 11:12:31,604 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15 11:12:31,616 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-11-15 11:12:31,616 - INFO - Actuators initialized to neutral (1100)
+2026-11-15 11:12:31,616 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15 11:12:31,616 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15 11:12:31,617 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15 11:12:31,617 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15 11:12:31,617 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15 11:12:31,617 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15 11:12:31,617 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-11-15 11:12:31,617 - INFO - First segment: heading 3.8°, length 0.67m; path ends at (2.81E, 0.81N)
+2026-11-15 11:12:31,617 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-11-15 11:12:31,617 - INFO - Acquire timeout: 300.0s
+2026-11-15 11:12:31,618 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-11-15 11:12:31,618 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-11-15 11:12:31,683 - INFO - GPS status: relPosValid=1, carrSoln=2, headingValid=1 (0.1s)
+2026-11-15 11:12:31,683 - INFO - === GPS RTK FIXED — ready to navigate (0.1s) ===
+2026-11-15 11:12:31,691 - INFO - Using persisted heading from driving to work area: 285.53° (captured at 2026-11-15 11:12:12)
+2026-11-15 11:12:31,882 - INFO - 2026-11-15 11:12:31 Initial Moving Baseline state: active
+2026-11-15 11:12:31,883 - INFO - 2026-11-15 11:12:31 Initial carrier solution: fixed
+2026-11-15 11:12:31,894 - INFO - 2026-11-15 11:12:31 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:12:31,894 - INFO - 2026-11-15 11:12:31 [3.4 OBSERVED] turn_direction: STRAIGHT
+2026-11-15 11:12:31,895 - INFO - 2026-11-15 11:12:31 [3.4 OBSERVED] estimated left/right wheel speeds: 0.006, 0.006 m/s
+2026-11-15 11:12:31,898 - INFO - 2026-11-15 11:12:31 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:12:31,898 - INFO - 2026-11-15 11:12:31 [FOLLOW] Path complete: progress 40.7m of 40.7m
+2026-11-15 11:12:31,909 - INFO - Actuators commanded to neutral (1100) -- End of path - neutral
+2026-11-15 11:12:31,923 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-11-15 11:12:31,926 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-11-15 11:12:31,926 - INFO - GREEN_LED GPIO cleaned up successfully

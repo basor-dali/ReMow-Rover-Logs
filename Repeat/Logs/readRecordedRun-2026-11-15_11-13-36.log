@@ -1,0 +1,395 @@
+2026-11-15 11:13:36,054 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-11-15_11-13-36.log
+2026-11-15 11:13:36,056 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15 11:13:36,359 - INFO - Encoders reset to zero
+2026-11-15 11:13:36,359 - INFO - Starting readRecordedRun with combination: 55
+2026-11-15 11:13:36,359 - INFO - Selected most recent recording: 55_20260510-134004_GPSData.csv
+2026-11-15 11:13:36,363 - INFO - GREEN_LED initialized on GPIO 17
+2026-11-15 11:13:36,372 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-11-15_11-13-36_navigation_log.csv
+2026-11-15 11:13:36,372 - INFO - ENU origin from first waypoint: 37.9008713333, -97.66418
+2026-11-15 11:13:36,407 - INFO - Path model: 42 rows -> 37 points -> 36 segments, 40.7m total, leading dwell 3.0s
+2026-11-15 11:13:36,407 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15 11:13:36,407 - INFO - === GUIDANCE: gary_arrows === tangent_window=3.0m lookahead=2.0m+0.8s*v [1.5-5.0m] kappa_max=unbounded (no minimum radius) slew=0.6/m/s deadband=0.04/m
+2026-11-15 11:13:36,407 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15 11:13:36,420 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-11-15 11:13:36,420 - INFO - Actuators initialized to neutral (1100)
+2026-11-15 11:13:36,420 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15 11:13:36,420 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15 11:13:36,420 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15 11:13:36,420 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15 11:13:36,420 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15 11:13:36,420 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15 11:13:36,420 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-11-15 11:13:36,420 - INFO - First segment: heading 3.8°, length 0.67m; path ends at (2.81E, 0.81N)
+2026-11-15 11:13:36,420 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-11-15 11:13:36,420 - INFO - Acquire timeout: 300.0s
+2026-11-15 11:13:36,420 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-11-15 11:13:36,420 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-11-15 11:13:36,495 - INFO - GPS status: relPosValid=1, carrSoln=2, headingValid=1 (0.1s)
+2026-11-15 11:13:36,495 - INFO - === GPS RTK FIXED — ready to navigate (0.1s) ===
+2026-11-15 11:13:36,499 - INFO - Using persisted heading from driving to work area: 97.07° (captured at 2026-11-15 11:13:14)
+2026-11-15 11:13:36,689 - INFO - 2026-11-15 11:13:36 Initial Moving Baseline state: active
+2026-11-15 11:13:36,689 - INFO - 2026-11-15 11:13:36 Initial carrier solution: fixed
+2026-11-15 11:13:36,696 - INFO - 2026-11-15 11:13:36 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:36,696 - INFO - 2026-11-15 11:13:36 [3.4 OBSERVED] turn_direction: STRAIGHT
+2026-11-15 11:13:36,696 - INFO - 2026-11-15 11:13:36 [3.4 OBSERVED] estimated left/right wheel speeds: 0.009, 0.009 m/s
+2026-11-15 11:13:36,699 - INFO - 2026-11-15 11:13:36 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:36,699 - INFO - 2026-11-15 11:13:36 [TURN] radius scale 0.50: 5.20m -> 2.60m
+2026-11-15 11:13:36,699 - WARNING - 2026-11-15 11:13:36 [FOLLOW] ACQUIRE SKIPPED -> TRACK at nearest projection: progress=0.00m of 40.7m (remaining 40.7m), cross=2.48m (limit infm), heading=61.9°, target_progress=4.09m, target=(0.35,4.07), alpha=-29.9°
+2026-11-15 11:13:36,699 - WARNING - 2026-11-15 11:13:36 [FOLLOW] GARY_ARROWS TRACK GUIDANCE IS NOW ACTIVE - this run evaluates it from epoch one; the recorded start point was never driven to
+2026-11-15 11:13:36,699 - INFO - 2026-11-15 11:13:36 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.48m alpha=-29.9° target=(0.35,4.07) R=5.20 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:36,699 - INFO - 2026-11-15 11:13:36 Turn: LEFT, R: 2.60m, v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:36,699 - INFO - 2026-11-15 11:13:36 left_actuator_position: 853 (counts) from v_L 0.632 m/s
+2026-11-15 11:13:36,699 - INFO - 2026-11-15 11:13:36 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:36,713 - INFO - Sent actuator positions to RoboClaw → M1 (left): 853, M2 (right): 701 (counts)
+2026-11-15 11:13:36,713 - INFO - 2026-11-15 11:13:36 APPLY → left_pos: 853, right_pos: 701 (counts), v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:36,713 - INFO - 2026-11-15 11:13:36 Path tracking needs correction: heading_ok=False (alpha=29.9deg), distance_ok=False (cross=2.482m)
+2026-11-15 11:13:36,896 - INFO - 2026-11-15 11:13:36 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:36,897 - INFO - 2026-11-15 11:13:36 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:36,897 - INFO - 2026-11-15 11:13:36 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:36,900 - INFO - 2026-11-15 11:13:36 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:36,900 - INFO - 2026-11-15 11:13:36 [TURN] radius scale 0.50: 5.21m -> 2.60m
+2026-11-15 11:13:36,900 - INFO - 2026-11-15 11:13:36 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.48m alpha=-29.9° target=(0.35,4.07) R=5.21 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:36,900 - INFO - 2026-11-15 11:13:36 Turn: LEFT, R: 2.60m, v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:36,900 - INFO - 2026-11-15 11:13:36 left_actuator_position: 852 (counts) from v_L 0.632 m/s
+2026-11-15 11:13:36,900 - INFO - 2026-11-15 11:13:36 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:36,916 - INFO - Sent actuator positions to RoboClaw → M1 (left): 852, M2 (right): 701 (counts)
+2026-11-15 11:13:36,916 - INFO - 2026-11-15 11:13:36 APPLY → left_pos: 852, right_pos: 701 (counts), v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:36,916 - INFO - 2026-11-15 11:13:36 Path tracking needs correction: heading_ok=False (alpha=29.9deg), distance_ok=False (cross=2.482m)
+2026-11-15 11:13:37,102 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:37,103 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:37,103 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:37,106 - INFO - 2026-11-15 11:13:37 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:37,106 - INFO - 2026-11-15 11:13:37 [TURN] radius scale 0.50: 5.27m -> 2.64m
+2026-11-15 11:13:37,106 - INFO - 2026-11-15 11:13:37 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.48m alpha=-29.5° target=(0.35,4.07) R=5.27 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:37,106 - INFO - 2026-11-15 11:13:37 Turn: LEFT, R: 2.64m, v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,106 - INFO - 2026-11-15 11:13:37 left_actuator_position: 851 (counts) from v_L 0.634 m/s
+2026-11-15 11:13:37,106 - INFO - 2026-11-15 11:13:37 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:37,120 - INFO - Sent actuator positions to RoboClaw → M1 (left): 851, M2 (right): 701 (counts)
+2026-11-15 11:13:37,120 - INFO - 2026-11-15 11:13:37 APPLY → left_pos: 851, right_pos: 701 (counts), v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,120 - INFO - 2026-11-15 11:13:37 Path tracking needs correction: heading_ok=False (alpha=29.5deg), distance_ok=False (cross=2.482m)
+2026-11-15 11:13:37,292 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:37,292 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:37,292 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:37,294 - INFO - 2026-11-15 11:13:37 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:37,294 - INFO - 2026-11-15 11:13:37 [TURN] radius scale 0.50: 5.16m -> 2.58m
+2026-11-15 11:13:37,294 - INFO - 2026-11-15 11:13:37 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.48m alpha=-30.1° target=(0.35,4.07) R=5.16 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:37,294 - INFO - 2026-11-15 11:13:37 Turn: LEFT, R: 2.58m, v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,294 - INFO - 2026-11-15 11:13:37 left_actuator_position: 854 (counts) from v_L 0.630 m/s
+2026-11-15 11:13:37,294 - INFO - 2026-11-15 11:13:37 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:37,307 - INFO - Sent actuator positions to RoboClaw → M1 (left): 854, M2 (right): 701 (counts)
+2026-11-15 11:13:37,307 - INFO - 2026-11-15 11:13:37 APPLY → left_pos: 854, right_pos: 701 (counts), v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,307 - INFO - 2026-11-15 11:13:37 Path tracking needs correction: heading_ok=False (alpha=30.1deg), distance_ok=False (cross=2.482m)
+2026-11-15 11:13:37,496 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] current_turn_radius: 2.02m
+2026-11-15 11:13:37,496 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:37,496 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] estimated left/right wheel speeds: 0.120, 0.171 m/s
+2026-11-15 11:13:37,499 - INFO - 2026-11-15 11:13:37 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:37,499 - INFO - 2026-11-15 11:13:37 [TURN] radius scale 0.50: 5.24m -> 2.62m
+2026-11-15 11:13:37,499 - INFO - 2026-11-15 11:13:37 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.45m alpha=-29.6° target=(0.35,4.07) R=5.24 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:37,499 - INFO - 2026-11-15 11:13:37 Turn: LEFT, R: 2.62m, v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,499 - INFO - 2026-11-15 11:13:37 left_actuator_position: 851 (counts) from v_L 0.633 m/s
+2026-11-15 11:13:37,500 - INFO - 2026-11-15 11:13:37 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:37,513 - INFO - Sent actuator positions to RoboClaw → M1 (left): 851, M2 (right): 701 (counts)
+2026-11-15 11:13:37,513 - INFO - 2026-11-15 11:13:37 APPLY → left_pos: 851, right_pos: 701 (counts), v_L: 0.63 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,513 - INFO - 2026-11-15 11:13:37 Path tracking needs correction: heading_ok=False (alpha=29.6deg), distance_ok=False (cross=2.453m)
+2026-11-15 11:13:37,693 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] current_turn_radius: 9.48m
+2026-11-15 11:13:37,693 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:37,693 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] estimated left/right wheel speeds: 0.498, 0.463 m/s
+2026-11-15 11:13:37,696 - INFO - 2026-11-15 11:13:37 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:37,696 - INFO - 2026-11-15 11:13:37 [TURN] radius scale 0.50: 4.89m -> 2.45m
+2026-11-15 11:13:37,696 - INFO - 2026-11-15 11:13:37 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.35m alpha=-31.0° target=(0.35,4.07) R=4.89 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:37,696 - INFO - 2026-11-15 11:13:37 Turn: LEFT, R: 2.45m, v_L: 0.62 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,696 - INFO - 2026-11-15 11:13:37 left_actuator_position: 861 (counts) from v_L 0.621 m/s
+2026-11-15 11:13:37,696 - INFO - 2026-11-15 11:13:37 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:37,708 - INFO - Sent actuator positions to RoboClaw → M1 (left): 861, M2 (right): 701 (counts)
+2026-11-15 11:13:37,708 - INFO - 2026-11-15 11:13:37 APPLY → left_pos: 861, right_pos: 701 (counts), v_L: 0.62 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,708 - INFO - 2026-11-15 11:13:37 Path tracking needs correction: heading_ok=False (alpha=31.0deg), distance_ok=False (cross=2.348m)
+2026-11-15 11:13:37,891 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] current_turn_radius: 3.32m
+2026-11-15 11:13:37,891 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:37,891 - INFO - 2026-11-15 11:13:37 [3.4 OBSERVED] estimated left/right wheel speeds: 0.588, 0.727 m/s
+2026-11-15 11:13:37,894 - INFO - 2026-11-15 11:13:37 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:37,894 - INFO - 2026-11-15 11:13:37 [TURN] radius scale 0.50: 4.93m -> 2.46m
+2026-11-15 11:13:37,894 - INFO - 2026-11-15 11:13:37 [FOLLOW] TRACK: progress=0.00m/40.7m seg=0 cross=2.20m alpha=-29.9° target=(0.35,4.07) R=4.93 LEFT v=0.83 dwell=0.0s
+2026-11-15 11:13:37,894 - INFO - 2026-11-15 11:13:37 Turn: LEFT, R: 2.46m, v_L: 0.62 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,894 - INFO - 2026-11-15 11:13:37 left_actuator_position: 860 (counts) from v_L 0.622 m/s
+2026-11-15 11:13:37,894 - INFO - 2026-11-15 11:13:37 right_actuator_position: 701 (counts) from v_R 0.828 m/s
+2026-11-15 11:13:37,907 - INFO - Sent actuator positions to RoboClaw → M1 (left): 860, M2 (right): 701 (counts)
+2026-11-15 11:13:37,907 - INFO - 2026-11-15 11:13:37 APPLY → left_pos: 860, right_pos: 701 (counts), v_L: 0.62 m/s, v_R: 0.83 m/s
+2026-11-15 11:13:37,907 - INFO - 2026-11-15 11:13:37 Path tracking needs correction: heading_ok=False (alpha=29.9deg), distance_ok=False (cross=2.198m)
+2026-11-15 11:13:38,439 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:38,451 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:39,040 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:39,053 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:39,286 - INFO - 2026-11-15 11:13:39 Carrier solution: fixed -> float
+2026-11-15 11:13:39,286 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] current_turn_radius: 1.17m
+2026-11-15 11:13:39,286 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:39,286 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] estimated left/right wheel speeds: 0.359, 0.665 m/s
+2026-11-15 11:13:39,298 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:39,480 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] current_turn_radius: 1.04m
+2026-11-15 11:13:39,480 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:39,480 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] estimated left/right wheel speeds: 0.116, 0.232 m/s
+2026-11-15 11:13:39,492 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:39,684 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:39,684 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:39,684 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:39,697 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:39,881 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:39,881 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:39,881 - INFO - 2026-11-15 11:13:39 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:39,895 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:40,089 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:40,089 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:40,089 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:40,101 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:40,280 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:40,280 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:40,280 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:40,294 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:40,482 - INFO - 2026-11-15 11:13:40 Carrier solution: float -> fixed
+2026-11-15 11:13:40,482 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:40,482 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:40,482 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 [TURN] radius scale 0.50: 21.70m -> 10.85m
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.30m alpha=-4.0° target=(0.48,4.92) R=21.70 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 Turn: LEFT, R: 10.85m, v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 [SPEED] actuator lag 394 counts (EXPECTED 860/701 vs actual 1090/1095): 0.836 -> 0.500 m/s; command 736/696 -> 978/954
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 left_actuator_position: 978 (counts) from v_L 0.469 m/s
+2026-11-15 11:13:40,485 - INFO - 2026-11-15 11:13:40 right_actuator_position: 954 (counts) from v_R 0.500 m/s
+2026-11-15 11:13:40,498 - INFO - Sent actuator positions to RoboClaw → M1 (left): 978, M2 (right): 954 (counts)
+2026-11-15 11:13:40,498 - INFO - 2026-11-15 11:13:40 APPLY → left_pos: 978, right_pos: 954 (counts), v_L: 0.47 m/s, v_R: 0.50 m/s
+2026-11-15 11:13:40,498 - INFO - 2026-11-15 11:13:40 Path tracking needs correction: heading_ok=True (alpha=4.0deg), distance_ok=False (cross=1.303m)
+2026-11-15 11:13:40,682 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:40,682 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:40,682 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:40,685 - INFO - 2026-11-15 11:13:40 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:40,685 - INFO - 2026-11-15 11:13:40 [TURN] radius scale 0.50: 22.19m -> 11.09m
+2026-11-15 11:13:40,685 - INFO - 2026-11-15 11:13:40 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.30m alpha=-3.8° target=(0.48,4.92) R=22.19 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:40,685 - INFO - 2026-11-15 11:13:40 Turn: LEFT, R: 11.09m, v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:40,685 - INFO - 2026-11-15 11:13:40 left_actuator_position: 735 (counts) from v_L 0.785 m/s
+2026-11-15 11:13:40,685 - INFO - 2026-11-15 11:13:40 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:40,698 - INFO - Sent actuator positions to RoboClaw → M1 (left): 735, M2 (right): 696 (counts)
+2026-11-15 11:13:40,698 - INFO - 2026-11-15 11:13:40 APPLY → left_pos: 735, right_pos: 696 (counts), v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:40,698 - INFO - 2026-11-15 11:13:40 Path tracking needs correction: heading_ok=True (alpha=3.8deg), distance_ok=False (cross=1.303m)
+2026-11-15 11:13:40,882 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:40,882 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:40,882 - INFO - 2026-11-15 11:13:40 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:40,885 - INFO - 2026-11-15 11:13:40 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:40,885 - INFO - 2026-11-15 11:13:40 [TURN] radius scale 0.50: 22.44m -> 11.22m
+2026-11-15 11:13:40,885 - INFO - 2026-11-15 11:13:40 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.30m alpha=-3.7° target=(0.48,4.92) R=22.44 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:40,885 - INFO - 2026-11-15 11:13:40 Turn: LEFT, R: 11.22m, v_L: 0.79 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:40,885 - INFO - 2026-11-15 11:13:40 left_actuator_position: 735 (counts) from v_L 0.785 m/s
+2026-11-15 11:13:40,885 - INFO - 2026-11-15 11:13:40 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:40,898 - INFO - Sent actuator positions to RoboClaw → M1 (left): 735, M2 (right): 696 (counts)
+2026-11-15 11:13:40,898 - INFO - 2026-11-15 11:13:40 APPLY → left_pos: 735, right_pos: 696 (counts), v_L: 0.79 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:40,898 - INFO - 2026-11-15 11:13:40 Path tracking needs correction: heading_ok=True (alpha=3.7deg), distance_ok=False (cross=1.303m)
+2026-11-15 11:13:41,090 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:41,090 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:41,090 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:41,094 - INFO - 2026-11-15 11:13:41 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:41,094 - INFO - 2026-11-15 11:13:41 [TURN] radius scale 0.50: 21.78m -> 10.89m
+2026-11-15 11:13:41,094 - INFO - 2026-11-15 11:13:41 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.30m alpha=-4.0° target=(0.48,4.92) R=21.78 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:41,094 - INFO - 2026-11-15 11:13:41 Turn: LEFT, R: 10.89m, v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,094 - INFO - 2026-11-15 11:13:41 left_actuator_position: 736 (counts) from v_L 0.784 m/s
+2026-11-15 11:13:41,094 - INFO - 2026-11-15 11:13:41 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:41,107 - INFO - Sent actuator positions to RoboClaw → M1 (left): 736, M2 (right): 696 (counts)
+2026-11-15 11:13:41,107 - INFO - 2026-11-15 11:13:41 APPLY → left_pos: 736, right_pos: 696 (counts), v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,107 - INFO - 2026-11-15 11:13:41 Path tracking needs correction: heading_ok=True (alpha=4.0deg), distance_ok=False (cross=1.303m)
+2026-11-15 11:13:41,282 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:41,282 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:41,282 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:41,285 - INFO - 2026-11-15 11:13:41 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:41,285 - INFO - 2026-11-15 11:13:41 [TURN] radius scale 0.50: 21.61m -> 10.81m
+2026-11-15 11:13:41,285 - INFO - 2026-11-15 11:13:41 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.29m alpha=-4.1° target=(0.48,4.92) R=21.61 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:41,285 - INFO - 2026-11-15 11:13:41 Turn: LEFT, R: 10.81m, v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,285 - INFO - 2026-11-15 11:13:41 left_actuator_position: 736 (counts) from v_L 0.783 m/s
+2026-11-15 11:13:41,285 - INFO - 2026-11-15 11:13:41 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:41,298 - INFO - Sent actuator positions to RoboClaw → M1 (left): 736, M2 (right): 696 (counts)
+2026-11-15 11:13:41,298 - INFO - 2026-11-15 11:13:41 APPLY → left_pos: 736, right_pos: 696 (counts), v_L: 0.78 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,298 - INFO - 2026-11-15 11:13:41 Path tracking needs correction: heading_ok=True (alpha=4.1deg), distance_ok=False (cross=1.290m)
+2026-11-15 11:13:41,482 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] current_turn_radius: 3.53m
+2026-11-15 11:13:41,482 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:41,482 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] estimated left/right wheel speeds: 0.471, 0.575 m/s
+2026-11-15 11:13:41,485 - INFO - 2026-11-15 11:13:41 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:41,485 - INFO - 2026-11-15 11:13:41 [TURN] radius scale 0.50: 24.59m -> 12.29m
+2026-11-15 11:13:41,486 - INFO - 2026-11-15 11:13:41 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.24m alpha=-2.5° target=(0.48,4.92) R=24.59 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:41,486 - INFO - 2026-11-15 11:13:41 Turn: LEFT, R: 12.29m, v_L: 0.79 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,486 - INFO - 2026-11-15 11:13:41 left_actuator_position: 731 (counts) from v_L 0.789 m/s
+2026-11-15 11:13:41,486 - INFO - 2026-11-15 11:13:41 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:41,498 - INFO - Sent actuator positions to RoboClaw → M1 (left): 731, M2 (right): 696 (counts)
+2026-11-15 11:13:41,498 - INFO - 2026-11-15 11:13:41 APPLY → left_pos: 731, right_pos: 696 (counts), v_L: 0.79 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,498 - INFO - 2026-11-15 11:13:41 Path tracking needs correction: heading_ok=True (alpha=2.5deg), distance_ok=False (cross=1.238m)
+2026-11-15 11:13:41,683 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] current_turn_radius: 52.96m
+2026-11-15 11:13:41,683 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:41,683 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] estimated left/right wheel speeds: 0.673, 0.664 m/s
+2026-11-15 11:13:41,685 - INFO - 2026-11-15 11:13:41 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:41,685 - INFO - 2026-11-15 11:13:41 [TURN] radius scale 0.50: 23.10m -> 11.55m
+2026-11-15 11:13:41,685 - INFO - 2026-11-15 11:13:41 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.17m alpha=-3.0° target=(0.48,4.92) R=23.10 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:41,685 - INFO - 2026-11-15 11:13:41 Turn: LEFT, R: 11.55m, v_L: 0.79 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,685 - INFO - 2026-11-15 11:13:41 left_actuator_position: 733 (counts) from v_L 0.786 m/s
+2026-11-15 11:13:41,685 - INFO - 2026-11-15 11:13:41 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:41,698 - INFO - Sent actuator positions to RoboClaw → M1 (left): 733, M2 (right): 696 (counts)
+2026-11-15 11:13:41,698 - INFO - 2026-11-15 11:13:41 APPLY → left_pos: 733, right_pos: 696 (counts), v_L: 0.79 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,698 - INFO - 2026-11-15 11:13:41 Path tracking needs correction: heading_ok=True (alpha=3.0deg), distance_ok=False (cross=1.173m)
+2026-11-15 11:13:41,884 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] current_turn_radius: 2.59m
+2026-11-15 11:13:41,884 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:41,884 - INFO - 2026-11-15 11:13:41 [3.4 OBSERVED] estimated left/right wheel speeds: 0.673, 0.884 m/s
+2026-11-15 11:13:41,887 - INFO - 2026-11-15 11:13:41 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:41,887 - INFO - 2026-11-15 11:13:41 [TURN] radius scale 0.50: 32.19m -> 16.09m
+2026-11-15 11:13:41,887 - INFO - 2026-11-15 11:13:41 [FOLLOW] TRACK: progress=0.67m/40.7m seg=0 cross=1.11m alpha=0.0° target=(0.48,4.92) R=32.19 LEFT v=0.84 dwell=0.0s
+2026-11-15 11:13:41,887 - INFO - 2026-11-15 11:13:41 Turn: LEFT, R: 16.09m, v_L: 0.80 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,887 - INFO - 2026-11-15 11:13:41 left_actuator_position: 723 (counts) from v_L 0.800 m/s
+2026-11-15 11:13:41,887 - INFO - 2026-11-15 11:13:41 right_actuator_position: 696 (counts) from v_R 0.836 m/s
+2026-11-15 11:13:41,902 - INFO - Sent actuator positions to RoboClaw → M1 (left): 723, M2 (right): 696 (counts)
+2026-11-15 11:13:41,902 - INFO - 2026-11-15 11:13:41 APPLY → left_pos: 723, right_pos: 696 (counts), v_L: 0.80 m/s, v_R: 0.84 m/s
+2026-11-15 11:13:41,902 - INFO - 2026-11-15 11:13:41 Path tracking needs correction: heading_ok=True (alpha=0.0deg), distance_ok=False (cross=1.107m)
+2026-11-15 11:13:42,083 - INFO - 2026-11-15 11:13:42 [3.4 OBSERVED] current_turn_radius: 2.33m
+2026-11-15 11:13:42,083 - INFO - 2026-11-15 11:13:42 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:42,083 - INFO - 2026-11-15 11:13:42 [3.4 OBSERVED] estimated left/right wheel speeds: 0.740, 1.003 m/s
+2026-11-15 11:13:42,085 - INFO - 2026-11-15 11:13:42 [STATE] Current state: FOLLOWING_PATH
+2026-11-15 11:13:42,085 - INFO - 2026-11-15 11:13:42 [TURN] radius scale 0.50: 31.55m -> 15.78m
+2026-11-15 11:13:42,085 - INFO - 2026-11-15 11:13:42 [FOLLOW] TRACK: progress=1.85m/40.7m seg=1 cross=1.03m alpha=1.1° target=(0.54,5.90) R=31.55 LEFT v=1.10 dwell=0.0s
+2026-11-15 11:13:42,085 - INFO - 2026-11-15 11:13:42 Turn: LEFT, R: 15.78m, v_L: 1.05 m/s, v_R: 1.10 m/s
+2026-11-15 11:13:42,085 - INFO - 2026-11-15 11:13:42 left_actuator_position: 531 (counts) from v_L 1.050 m/s
+2026-11-15 11:13:42,085 - INFO - 2026-11-15 11:13:42 right_actuator_position: 494 (counts) from v_R 1.098 m/s
+2026-11-15 11:13:42,098 - INFO - Sent actuator positions to RoboClaw → M1 (left): 531, M2 (right): 494 (counts)
+2026-11-15 11:13:42,098 - INFO - 2026-11-15 11:13:42 APPLY → left_pos: 531, right_pos: 494 (counts), v_L: 1.05 m/s, v_R: 1.10 m/s
+2026-11-15 11:13:42,098 - INFO - 2026-11-15 11:13:42 Path tracking needs correction: heading_ok=True (alpha=1.1deg), distance_ok=False (cross=1.030m)
+2026-11-15 11:13:42,646 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:42,658 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:43,244 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:43,256 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:43,285 - INFO - 2026-11-15 11:13:43 Carrier solution: fixed -> float
+2026-11-15 11:13:43,285 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] current_turn_radius: 6.16m
+2026-11-15 11:13:43,285 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:43,285 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] estimated left/right wheel speeds: 1.326, 1.485 m/s
+2026-11-15 11:13:43,299 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:43,482 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] current_turn_radius: 8.94m
+2026-11-15 11:13:43,482 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:43,482 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] estimated left/right wheel speeds: 1.348, 1.458 m/s
+2026-11-15 11:13:43,495 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:43,679 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] current_turn_radius: 3.82m
+2026-11-15 11:13:43,679 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:43,679 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] estimated left/right wheel speeds: 0.833, 1.001 m/s
+2026-11-15 11:13:43,691 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:43,877 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] current_turn_radius: 5.74m
+2026-11-15 11:13:43,877 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:43,877 - INFO - 2026-11-15 11:13:43 [3.4 OBSERVED] estimated left/right wheel speeds: 0.718, 0.811 m/s
+2026-11-15 11:13:43,906 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:44,090 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] current_turn_radius: 2.05m
+2026-11-15 11:13:44,090 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:44,091 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] estimated left/right wheel speeds: 0.326, 0.461 m/s
+2026-11-15 11:13:44,102 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:44,292 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:44,292 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] turn_direction: RIGHT
+2026-11-15 11:13:44,292 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:44,306 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:44,487 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:44,487 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:44,487 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:44,499 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:44,684 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] current_turn_radius: infm
+2026-11-15 11:13:44,684 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] turn_direction: LEFT
+2026-11-15 11:13:44,684 - INFO - 2026-11-15 11:13:44 [3.4 OBSERVED] estimated left/right wheel speeds: nan, nan m/s
+2026-11-15 11:13:44,696 - INFO - Actuators commanded to neutral (1100) -- GNSS invalid - waiting
+2026-11-15 11:13:45,242 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:45,255 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:45,839 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:45,856 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:46,356 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:46,382 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:46,639 - INFO - HEARTBEAT: Loop running, last GPS data 0.2s ago
+2026-11-15 11:13:46,893 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:46,910 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:47,438 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:47,452 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:48,037 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:48,052 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:48,638 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:48,650 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:49,239 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:49,251 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:49,837 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:49,850 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:50,361 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:50,373 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:50,885 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:50,897 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:51,439 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:51,451 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:52,038 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:52,050 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:52,636 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:52,647 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:53,240 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:53,253 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:53,838 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:53,850 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:54,367 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:54,380 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:55,036 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:55,048 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:55,634 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:55,645 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:56,238 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:56,249 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:56,641 - INFO - HEARTBEAT: Loop running, last GPS data 0.0s ago
+2026-11-15 11:13:56,836 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:56,848 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:57,366 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:57,378 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:57,880 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:57,892 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:58,392 - WARNING - Epoch timeout (0.5s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:58,405 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:59,033 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:13:59,046 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:13:59,632 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:13:59,646 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:00,235 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:00,249 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:00,833 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:00,847 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:01,367 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:01,380 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:02,033 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:02,046 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:02,633 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:02,645 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:03,235 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:03,248 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:03,832 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:03,845 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:04,370 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:04,382 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:05,032 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:05,045 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:05,633 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:05,645 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:06,235 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:06,249 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:06,642 - INFO - HEARTBEAT: Loop running, last GPS data 0.0s ago
+2026-11-15 11:14:06,835 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:06,848 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:07,361 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:07,373 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:08,035 - WARNING - Epoch timeout (0.7s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:08,049 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:08,633 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:08,646 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:09,234 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:09,246 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:09,832 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:09,844 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:10,371 - WARNING - Epoch timeout (0.5s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:10,383 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:11,032 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:11,044 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:11,630 - WARNING - Epoch timeout (0.6s) - GNRMC=True, RELPOSNED=False - holding neutral
+2026-11-15 11:14:11,643 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:12,232 - WARNING - Epoch timeout (0.6s) - GNRMC=False, RELPOSNED=False - holding neutral
+2026-11-15 11:14:12,244 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch - waiting
+2026-11-15 11:14:12,244 - ERROR - 2026-11-15 11:14:12 GNSS ABORT (incomplete epochs): GNRMC status=None (need 'A'); relPosValid=0; carrSoln=None (need 2 = RTK Fixed); relPosHeadingValid=0; no valid GNSS epoch for 30.2s (abort after 30s)
+2026-11-15 11:14:12,257 - INFO - Actuators commanded to neutral (1100) -- Incomplete GPS epoch abort
+2026-11-15 11:14:12,270 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-11-15 11:14:12,272 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-11-15 11:14:12,273 - INFO - GREEN_LED GPIO cleaned up successfully

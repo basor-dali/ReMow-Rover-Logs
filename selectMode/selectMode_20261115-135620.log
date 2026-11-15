@@ -1,0 +1,186 @@
+2026-11-15 13:56:20,131 - INFO - Constants module loaded successfully
+2026-11-15 13:56:20,139 - INFO - RoboClaw opened on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15 13:56:20,455 - INFO - RoboClaw: encoders reset, actuators set to neutral (1100)
+2026-11-15 13:56:20,758 - INFO - RoboClaw: serial port closed (ready for subprocess)
+2026-11-15 13:56:20,758 - INFO - Application started
+2026-11-15 13:56:20,759 - INFO - Starting main function
+2026-11-15 13:56:20,759 - INFO - Waiting for user input...
+2026-11-15 13:56:20,763 - INFO - Background GPS heading capture started
+2026-11-15 13:59:35,742 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 13:59:35,835 - INFO - Background GPS port closed
+2026-11-15 13:59:35,836 - WARNING - No valid heading captured to persist
+2026-11-15 13:59:35,836 - INFO - Waiting for user input...
+2026-11-15 13:59:35,837 - INFO - Background GPS heading capture started
+2026-11-15 14:01:35,905 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:01:36,033 - INFO - Background GPS port closed
+2026-11-15 14:01:36,033 - WARNING - No valid heading captured to persist
+2026-11-15 14:01:36,033 - INFO - Waiting for user input...
+2026-11-15 14:01:36,035 - INFO - Background GPS heading capture started
+2026-11-15 14:03:36,096 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:03:36,109 - INFO - Background GPS port closed
+2026-11-15 14:03:36,196 - INFO - Persisted heading 51.9° (accuracy: 1.0°) captured at 2026-11-15 14:03:35
+2026-11-15 14:03:36,196 - INFO - Waiting for user input...
+2026-11-15 14:03:36,198 - INFO - Background GPS heading capture started
+2026-11-15 14:03:54,641 - INFO - Background GPS port closed
+2026-11-15 14:03:54,662 - INFO - Persisted heading 52.7° (accuracy: 1.0°) captured at 2026-11-15 14:03:54
+2026-11-15 14:03:55,663 - INFO - User selected mode: B
+2026-11-15 14:03:55,663 - INFO - Mode B selected
+2026-11-15 14:03:55,663 - INFO - Enter a 2-digit combination
+2026-11-15 14:03:55,894 - INFO - Digit entered: 6
+2026-11-15 14:03:55,904 - INFO - Digit entered: 6
+2026-11-15 14:03:55,904 - INFO - Combination entered: 66
+2026-11-15 14:03:55,904 - INFO - File with ID 66 found in Record/Data
+2026-11-15 14:04:01,910 - INFO - Deployed version:  @ 
+2026-11-15 14:04:01,912 - INFO - Setting UBX Rate to 200 ms (5 Hz)
+2026-11-15 14:04:10,422 - INFO - UBX Rate set to 200 ms (5 Hz)
+2026-11-15 14:04:10,422 - INFO - Closed GPS port after configuration
+2026-11-15 14:04:10,423 - INFO - Triggering readRecordedRun with combination: 66
+2026-11-15 14:04:49,122 - INFO - Subprocess exited with code: 0
+2026-11-15 14:04:50,163 - INFO - Waiting for user input...
+2026-11-15 14:04:50,220 - INFO - Background GPS heading capture started
+2026-11-15 14:04:56,672 - INFO - Background GPS port closed
+2026-11-15 14:04:56,762 - INFO - Persisted heading 173.2° (accuracy: 1.0°) captured at 2026-11-15 14:04:54
+2026-11-15 14:04:57,828 - INFO - User selected mode: D
+2026-11-15 14:04:57,844 - INFO - Mode D selected
+2026-11-15 14:04:58,864 - INFO - Waiting for user input...
+2026-11-15 14:04:58,920 - INFO - Background GPS heading capture started
+2026-11-15 14:06:58,914 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:06:59,082 - INFO - Background GPS port closed
+2026-11-15 14:06:59,209 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:06:59,229 - INFO - Waiting for user input...
+2026-11-15 14:06:59,297 - INFO - Background GPS heading capture started
+2026-11-15 14:08:59,259 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:08:59,690 - INFO - Background GPS port closed
+2026-11-15 14:09:00,067 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:09:00,087 - INFO - Waiting for user input...
+2026-11-15 14:09:00,140 - INFO - Background GPS heading capture started
+2026-11-15 14:11:00,148 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:11:00,210 - INFO - Background GPS port closed
+2026-11-15 14:11:00,329 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:11:00,350 - INFO - Waiting for user input...
+2026-11-15 14:11:00,411 - INFO - Background GPS heading capture started
+2026-11-15 14:13:00,463 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:13:00,691 - INFO - Background GPS port closed
+2026-11-15 14:13:00,835 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:13:00,850 - INFO - Waiting for user input...
+2026-11-15 14:13:00,923 - INFO - Background GPS heading capture started
+2026-11-15 14:15:00,989 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:15:01,061 - INFO - Background GPS port closed
+2026-11-15 14:15:01,201 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:15:01,217 - INFO - Waiting for user input...
+2026-11-15 14:15:01,289 - INFO - Background GPS heading capture started
+2026-11-15 14:17:01,354 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:17:01,412 - INFO - Background GPS port closed
+2026-11-15 14:17:01,552 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:17:01,573 - INFO - Waiting for user input...
+2026-11-15 14:17:01,637 - INFO - Background GPS heading capture started
+2026-11-15 14:19:01,611 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:19:01,860 - INFO - Background GPS port closed
+2026-11-15 14:19:01,946 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:19:01,962 - INFO - Waiting for user input...
+2026-11-15 14:19:02,033 - INFO - Background GPS heading capture started
+2026-11-15 14:21:02,090 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:21:02,149 - INFO - Background GPS port closed
+2026-11-15 14:21:02,285 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:21:02,301 - INFO - Waiting for user input...
+2026-11-15 14:21:02,379 - INFO - Background GPS heading capture started
+2026-11-15 14:23:02,438 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:23:02,721 - INFO - Background GPS port closed
+2026-11-15 14:23:02,832 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:23:02,848 - INFO - Waiting for user input...
+2026-11-15 14:23:02,911 - INFO - Background GPS heading capture started
+2026-11-15 14:25:02,909 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:25:03,301 - INFO - Background GPS port closed
+2026-11-15 14:25:03,460 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:25:03,475 - INFO - Waiting for user input...
+2026-11-15 14:25:03,526 - INFO - Background GPS heading capture started
+2026-11-15 14:27:03,578 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:27:03,713 - INFO - Background GPS port closed
+2026-11-15 14:27:03,806 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:27:03,816 - INFO - Waiting for user input...
+2026-11-15 14:27:03,885 - INFO - Background GPS heading capture started
+2026-11-15 14:29:03,953 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:29:04,036 - INFO - Background GPS port closed
+2026-11-15 14:29:04,109 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:29:04,125 - INFO - Waiting for user input...
+2026-11-15 14:29:04,186 - INFO - Background GPS heading capture started
+2026-11-15 14:31:04,296 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:31:04,319 - INFO - Background GPS port closed
+2026-11-15 14:31:04,406 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:31:04,422 - INFO - Waiting for user input...
+2026-11-15 14:31:04,493 - INFO - Background GPS heading capture started
+2026-11-15 14:33:04,480 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:33:04,568 - INFO - Background GPS port closed
+2026-11-15 14:33:04,647 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:33:04,667 - INFO - Waiting for user input...
+2026-11-15 14:33:04,729 - INFO - Background GPS heading capture started
+2026-11-15 14:35:04,717 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:35:05,063 - INFO - Background GPS port closed
+2026-11-15 14:35:05,150 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:35:05,176 - INFO - Waiting for user input...
+2026-11-15 14:35:05,237 - INFO - Background GPS heading capture started
+2026-11-15 14:37:05,232 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:37:05,283 - INFO - Background GPS port closed
+2026-11-15 14:37:05,369 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:37:05,385 - INFO - Waiting for user input...
+2026-11-15 14:37:05,456 - INFO - Background GPS heading capture started
+2026-11-15 14:39:05,442 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:39:05,465 - INFO - Background GPS port closed
+2026-11-15 14:39:05,550 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:39:05,571 - INFO - Waiting for user input...
+2026-11-15 14:39:05,638 - INFO - Background GPS heading capture started
+2026-11-15 14:41:05,658 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:41:05,708 - INFO - Background GPS port closed
+2026-11-15 14:41:05,806 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:41:05,806 - INFO - Waiting for user input...
+2026-11-15 14:41:05,847 - INFO - Background GPS heading capture started
+2026-11-15 14:43:05,925 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:43:06,102 - INFO - Background GPS port closed
+2026-11-15 14:43:06,196 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:43:06,221 - INFO - Waiting for user input...
+2026-11-15 14:43:06,294 - INFO - Background GPS heading capture started
+2026-11-15 14:45:06,268 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:45:06,390 - INFO - Background GPS port closed
+2026-11-15 14:45:06,473 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:45:06,493 - INFO - Waiting for user input...
+2026-11-15 14:45:06,550 - INFO - Background GPS heading capture started
+2026-11-15 14:47:06,590 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:47:06,591 - INFO - Background GPS port closed
+2026-11-15 14:47:06,671 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:47:06,686 - INFO - Waiting for user input...
+2026-11-15 14:47:06,759 - INFO - Background GPS heading capture started
+2026-11-15 14:49:06,918 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:49:06,996 - INFO - Background GPS port closed
+2026-11-15 14:49:07,086 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:49:07,097 - INFO - Waiting for user input...
+2026-11-15 14:49:07,179 - INFO - Background GPS heading capture started
+2026-11-15 14:51:07,179 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:51:07,263 - INFO - Background GPS port closed
+2026-11-15 14:51:07,361 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:51:07,371 - INFO - Waiting for user input...
+2026-11-15 14:51:07,429 - INFO - Background GPS heading capture started
+2026-11-15 14:53:07,535 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:53:07,624 - INFO - Background GPS port closed
+2026-11-15 14:53:07,716 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:53:07,731 - INFO - Waiting for user input...
+2026-11-15 14:53:07,816 - INFO - Background GPS heading capture started
+2026-11-15 14:55:07,771 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:55:07,819 - INFO - Background GPS port closed
+2026-11-15 14:55:07,903 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:55:07,918 - INFO - Waiting for user input...
+2026-11-15 14:55:07,981 - INFO - Background GPS heading capture started
+2026-11-15 14:57:07,985 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:57:08,254 - INFO - Background GPS port closed
+2026-11-15 14:57:08,338 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:57:08,353 - INFO - Waiting for user input...
+2026-11-15 14:57:08,429 - INFO - Background GPS heading capture started
+2026-11-15 14:59:08,436 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 14:59:08,525 - INFO - Background GPS port closed
+2026-11-15 14:59:08,616 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 14:59:08,626 - INFO - Waiting for user input...
+2026-11-15 14:59:08,708 - INFO - Background GPS heading capture started
+2026-11-15 15:01:08,730 - INFO - Inactivity timeout reached. Restarting menu.
+2026-11-15 15:01:09,006 - INFO - Background GPS port closed
+2026-11-15 15:01:09,096 - INFO - Persisted heading 352.8° (accuracy: 1.0°) captured at 2026-11-15 14:05:30
+2026-11-15 15:01:09,112 - INFO - Waiting for user input...
+2026-11-15 15:01:09,193 - INFO - Background GPS heading capture started

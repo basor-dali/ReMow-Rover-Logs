@@ -1,0 +1,106 @@
+2026-11-15 11:06:47,112 - INFO - Logging initialized to /home/dali/Documents/ReMow-Rover-Tests/Repeat/Logs/readRecordedRun-2026-11-15_11-06-47.log
+2026-11-15 11:06:47,114 - INFO - RoboClaw opened successfully on /dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00
+2026-11-15 11:06:47,416 - INFO - Encoders reset to zero
+2026-11-15 11:06:47,416 - INFO - Starting readRecordedRun with combination: 66
+2026-11-15 11:06:47,417 - INFO - Selected most recent recording: 66_20260830-114454_GPSData.csv
+2026-11-15 11:06:47,421 - INFO - GREEN_LED initialized on GPIO 17
+2026-11-15 11:06:47,434 - INFO - Navigation CSV initialized at /home/dali/Documents/ReMow-Rover-Tests/Repeat/2026-11-15_11-06-47_navigation_log.csv
+2026-11-15 11:06:47,434 - INFO - ENU origin from first waypoint: 37.9008976667, -97.6641736667
+2026-11-15 11:06:47,527 - INFO - Path model: 35 rows -> 30 points -> 29 segments, 37.2m total, leading dwell 2.0s
+2026-11-15 11:06:47,527 - WARNING - guidance config: minimum_path_turn_radius (0.0) is at or below track_width/2 (0.35) -- the INNER WHEEL REVERSES and the mower PIVOTS instead of turning. Actuators saturate to full opposite lock. This is the 2026-07-05 death-spiral configuration; supervised operation only.
+2026-11-15 11:06:47,527 - INFO - === GUIDANCE: gary_arrows === tangent_window=3.0m lookahead=2.0m+0.8s*v [1.5-5.0m] kappa_max=unbounded (no minimum radius) slew=0.6/m/s deadband=0.04/m
+2026-11-15 11:06:47,527 - WARNING - UNVALIDATED GUIDANCE MODE 'gary_arrows' IS ACTIVE. This steering law has not been field-validated on this machine. Supervised operation only; blade disabled; operator within reach of the physical kill switch.
+2026-11-15 11:06:47,541 - INFO - Actuators commanded to neutral (1100) -- Startup - ensuring neutral position
+2026-11-15 11:06:47,541 - INFO - Actuators initialized to neutral (1100)
+2026-11-15 11:06:47,541 - WARNING - === OFF-TRACK ABORT DISABLED (off_track_abort_enabled=False) ===
+2026-11-15 11:06:47,541 - WARNING - Nothing in software will stop this mower for leaving the route. The 15.0m sanity ceiling still applies, but there is no hardware interlock. Operator on the kill switch, open ground, clear of buildings.
+2026-11-15 11:06:47,541 - WARNING - === SKIP-ACQUIRE ENABLED (path_resume_nearest=True) ===
+2026-11-15 11:06:47,541 - WARNING - ACQUIRE is BYPASSED. Repeat will start in TRACK at the nearest projection on the recorded path; the recorded start point is NOT driven to. This is a gary_arrows TRACK test.
+2026-11-15 11:06:47,541 - WARNING - Refuses to start if cross-track exceeds infm (path_resume_max_cross_track). Rollback: set path_resume_nearest=False for normal ACQUIRE.
+2026-11-15 11:06:47,541 - WARNING - On a LOOPED route this starts wherever the mower is parked, which may be a later leg. Park it where you intend the run to begin.
+2026-11-15 11:06:47,541 - INFO - === UNIFIED PATH FOLLOWER INITIALIZED ===
+2026-11-15 11:06:47,541 - INFO - First segment: heading 2.5°, length 0.33m; path ends at (3.30E, 2.61N)
+2026-11-15 11:06:47,541 - INFO - Initial state: FOLLOWING_PATH (follower mode ACQUIRE)
+2026-11-15 11:06:47,541 - INFO - Acquire timeout: 300.0s
+2026-11-15 11:06:47,541 - INFO - === WAITING FOR GPS RTK FIX ===
+2026-11-15 11:06:47,541 - INFO - Need: relPosValid=1, carrSoln=2, relPosHeadingValid=1 (timeout: 60.0s)
+2026-11-15 11:06:47,905 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (0.4s)
+2026-11-15 11:06:48,913 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (1.4s)
+2026-11-15 11:06:49,931 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (2.4s)
+2026-11-15 11:06:50,912 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (3.4s)
+2026-11-15 11:06:51,913 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (4.4s)
+2026-11-15 11:06:52,905 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (5.4s)
+2026-11-15 11:06:53,906 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (6.4s)
+2026-11-15 11:06:54,907 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (7.4s)
+2026-11-15 11:06:55,907 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (8.4s)
+2026-11-15 11:06:56,032 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (8.5s)
+2026-11-15 11:06:56,221 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (8.7s)
+2026-11-15 11:06:56,423 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (8.9s)
+2026-11-15 11:06:56,624 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (9.1s)
+2026-11-15 11:06:56,824 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (9.3s)
+2026-11-15 11:06:57,051 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (9.5s)
+2026-11-15 11:06:58,097 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (10.6s)
+2026-11-15 11:06:59,104 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (11.6s)
+2026-11-15 11:07:00,104 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (12.6s)
+2026-11-15 11:07:01,104 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (13.6s)
+2026-11-15 11:07:01,251 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (13.7s)
+2026-11-15 11:07:02,297 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (14.8s)
+2026-11-15 11:07:03,306 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (15.8s)
+2026-11-15 11:07:04,307 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (16.8s)
+2026-11-15 11:07:05,305 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (17.8s)
+2026-11-15 11:07:05,597 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (18.1s)
+2026-11-15 11:07:05,991 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (18.4s)
+2026-11-15 11:07:06,237 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (18.7s)
+2026-11-15 11:07:06,425 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (18.9s)
+2026-11-15 11:07:07,498 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (20.0s)
+2026-11-15 11:07:08,507 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (21.0s)
+2026-11-15 11:07:09,515 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (22.0s)
+2026-11-15 11:07:09,661 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (22.1s)
+2026-11-15 11:07:10,718 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (23.2s)
+2026-11-15 11:07:11,735 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (24.2s)
+2026-11-15 11:07:11,884 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (24.3s)
+2026-11-15 11:07:12,945 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (25.4s)
+2026-11-15 11:07:13,955 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (26.4s)
+2026-11-15 11:07:14,953 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (27.4s)
+2026-11-15 11:07:15,959 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (28.4s)
+2026-11-15 11:07:16,954 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (29.4s)
+2026-11-15 11:07:17,958 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (30.4s)
+2026-11-15 11:07:18,960 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (31.4s)
+2026-11-15 11:07:19,970 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (32.4s)
+2026-11-15 11:07:20,959 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (33.4s)
+2026-11-15 11:07:21,962 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (34.4s)
+2026-11-15 11:07:22,966 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (35.4s)
+2026-11-15 11:07:23,963 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (36.4s)
+2026-11-15 11:07:24,967 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (37.4s)
+2026-11-15 11:07:25,970 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (38.4s)
+2026-11-15 11:07:26,966 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (39.4s)
+2026-11-15 11:07:27,970 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (40.4s)
+2026-11-15 11:07:28,972 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (41.4s)
+2026-11-15 11:07:29,969 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (42.4s)
+2026-11-15 11:07:30,972 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (43.4s)
+2026-11-15 11:07:31,974 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (44.4s)
+2026-11-15 11:07:32,970 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (45.4s)
+2026-11-15 11:07:33,974 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (46.4s)
+2026-11-15 11:07:34,122 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (46.6s)
+2026-11-15 11:07:34,290 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (46.7s)
+2026-11-15 11:07:34,498 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (47.0s)
+2026-11-15 11:07:34,690 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (47.1s)
+2026-11-15 11:07:34,896 - INFO - GPS status: relPosValid=1, carrSoln=1, headingValid=1 (47.4s)
+2026-11-15 11:07:35,273 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (47.7s)
+2026-11-15 11:07:36,372 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (48.8s)
+2026-11-15 11:07:37,390 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (49.8s)
+2026-11-15 11:07:38,300 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (50.8s)
+2026-11-15 11:07:39,382 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (51.8s)
+2026-11-15 11:07:40,391 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (52.8s)
+2026-11-15 11:07:41,374 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (53.8s)
+2026-11-15 11:07:42,376 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (54.8s)
+2026-11-15 11:07:43,387 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (55.8s)
+2026-11-15 11:07:44,374 - INFO - GPS status: relPosValid=0, carrSoln=0, headingValid=0 (56.8s)
+2026-11-15 11:07:45,377 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (57.8s)
+2026-11-15 11:07:46,372 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (58.8s)
+2026-11-15 11:07:47,374 - INFO - GPS status: relPosValid=0, carrSoln=1, headingValid=0 (59.8s)
+2026-11-15 11:07:47,636 - ERROR - GPS RTK fix not achieved within 60.0s — ABORTING
+2026-11-15 11:07:47,636 - ERROR - Check: UART2 wire (MB→Rover), SiK radio link, Moving Base power
+2026-11-15 11:07:48,651 - INFO - Actuators commanded to neutral (1100) -- Repeat exit - returning to neutral
+2026-11-15 11:07:48,654 - INFO - Shutdown: actuators confirmed at neutral (Repeat exit - returning to neutral)
+2026-11-15 11:07:48,654 - INFO - GREEN_LED GPIO cleaned up successfully
